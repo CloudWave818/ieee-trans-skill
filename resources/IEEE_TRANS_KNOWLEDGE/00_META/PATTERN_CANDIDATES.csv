@@ -1,0 +1,23 @@
+﻿Pattern_ID,Pattern,Scope_tested,Evidence_count,Eligible_count,Ratio,Journal_span,Retained_as_formal_rule,Reason
+ARCH-RELATED,Independent Related Work section,GENERAL,24,100,0.24,11,False,"Retained when sample, prevalence/rarity, and journal dispersion make the observation actionable; otherwise descriptive only."
+ARCH-PRELIM,Independent Preliminaries section,GENERAL,17,100,0.17,9,True,"Retained when sample, prevalence/rarity, and journal dispersion make the observation actionable; otherwise descriptive only."
+ARCH-PROBLEM,Independent Problem Formulation section,GENERAL,29,100,0.29,16,False,"Retained when sample, prevalence/rarity, and journal dispersion make the observation actionable; otherwise descriptive only."
+EVD-ABL,Explicit ablation,GENERAL,19,100,0.19,12,False,"Retained when sample, prevalence/rarity, and journal dispersion make the observation actionable; otherwise descriptive only."
+EVD-SENS,Sensitivity analysis,GENERAL,16,100,0.16,11,True,"Retained when sample, prevalence/rarity, and journal dispersion make the observation actionable; otherwise descriptive only."
+EVD-ROB,Robustness evidence,GENERAL,17,100,0.17,12,True,"Retained when sample, prevalence/rarity, and journal dispersion make the observation actionable; otherwise descriptive only."
+EVD-GEN,Generalization evidence,GENERAL,54,100,0.54,18,True,"Retained when sample, prevalence/rarity, and journal dispersion make the observation actionable; otherwise descriptive only."
+EVD-RUN,Runtime evidence,GENERAL,48,100,0.48,17,True,"Retained when sample, prevalence/rarity, and journal dispersion make the observation actionable; otherwise descriptive only."
+EVD-COMP,Complexity analysis,GENERAL,20,100,0.2,11,False,"Retained when sample, prevalence/rarity, and journal dispersion make the observation actionable; otherwise descriptive only."
+EVD-SIM,Simulation evidence,GENERAL,95,100,0.95,19,True,"Retained when sample, prevalence/rarity, and journal dispersion make the observation actionable; otherwise descriptive only."
+EVD-REAL,Physical/real-world evidence,GENERAL,48,100,0.48,17,True,"Retained when sample, prevalence/rarity, and journal dispersion make the observation actionable; otherwise descriptive only."
+INTRO-APPLICATION_CONTEXT,Introduction contains APPLICATION_CONTEXT,GENERAL,91,100,0.91,19,True,Rhetorical function detection is conservative and requires human confirmation before phrase-level use.
+INTRO-TECHNICAL_PROBLEM,Introduction contains TECHNICAL_PROBLEM,GENERAL,92,100,0.92,19,True,Rhetorical function detection is conservative and requires human confirmation before phrase-level use.
+INTRO-EXISTING_APPROACHES,Introduction contains EXISTING_APPROACHES,GENERAL,49,100,0.49,18,True,Rhetorical function detection is conservative and requires human confirmation before phrase-level use.
+INTRO-LIMITATION,Introduction contains LIMITATION,GENERAL,97,100,0.97,19,True,Rhetorical function detection is conservative and requires human confirmation before phrase-level use.
+INTRO-RESEARCH_GAP,Introduction contains RESEARCH_GAP,GENERAL,24,100,0.24,16,False,Rhetorical function detection is conservative and requires human confirmation before phrase-level use.
+INTRO-SCIENTIFIC_CHALLENGE,Introduction contains SCIENTIFIC_CHALLENGE,GENERAL,12,100,0.12,8,False,Rhetorical function detection is conservative and requires human confirmation before phrase-level use.
+INTRO-CORE_INSIGHT,Introduction contains CORE_INSIGHT,GENERAL,32,100,0.32,17,False,Rhetorical function detection is conservative and requires human confirmation before phrase-level use.
+INTRO-PROPOSED_APPROACH,Introduction contains PROPOSED_APPROACH,GENERAL,54,100,0.54,17,True,Rhetorical function detection is conservative and requires human confirmation before phrase-level use.
+INTRO-CONTRIBUTIONS,Introduction contains CONTRIBUTIONS,GENERAL,82,100,0.82,19,True,Rhetorical function detection is conservative and requires human confirmation before phrase-level use.
+INTRO-EXPERIMENTAL_PREVIEW,Introduction contains EXPERIMENTAL_PREVIEW,GENERAL,24,100,0.24,13,False,Rhetorical function detection is conservative and requires human confirmation before phrase-level use.
+INTRO-PAPER_ORGANIZATION,Introduction contains PAPER_ORGANIZATION,GENERAL,17,100,0.17,8,False,Rhetorical function detection is conservative and requires human confirmation before phrase-level use.

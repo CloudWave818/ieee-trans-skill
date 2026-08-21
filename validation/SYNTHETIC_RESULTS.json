@@ -1,0 +1,2127 @@
+{
+  "overall_status": "PASS",
+  "cases": 9,
+  "passed": 9,
+  "failed": 0,
+  "results": [
+    {
+      "case_id": "CASE_01_UAV_DRL_NAV_TVT",
+      "description": "experiment design for UAV DRL navigation",
+      "status": "PASS",
+      "checks": [
+        {
+          "check": "status",
+          "status": "PASS",
+          "detail": "actual=ROUTED expected=ROUTED"
+        },
+        {
+          "check": "mode",
+          "status": "PASS",
+          "detail": "actual=E expected=E"
+        },
+        {
+          "check": "domains",
+          "status": "PASS",
+          "detail": "actual=['RL_MARL', 'UAV_AUTONOMY', 'NAVIGATION_PLANNING']"
+        },
+        {
+          "check": "domain_limit",
+          "status": "PASS",
+          "detail": "['RL_MARL', 'UAV_AUTONOMY', 'NAVIGATION_PLANNING']"
+        },
+        {
+          "check": "journal",
+          "status": "PASS",
+          "detail": "TVT"
+        },
+        {
+          "check": "journal_profile",
+          "status": "PASS",
+          "detail": ""
+        },
+        {
+          "check": "general_rules",
+          "status": "PASS",
+          "detail": "['GEN-EVD-001', 'GEN-EVD-002', 'GEN-EVD-005', 'GEN-VIS-001']"
+        },
+        {
+          "check": "domain_rules",
+          "status": "PASS",
+          "detail": "['DOM-RLMA-ABL-002', 'DOM-UAV_-ROB', 'DOM-UAV_-REAL', 'DOM-UAV_-RUN', 'DOM-NAVI-ROB', 'DOM-NAVI-REAL', 'DOM-NAVI-RUN', 'DOM-RL_M-ROB', 'DOM-RL_M-REAL', 'DOM-RL_M-RUN']"
+        },
+        {
+          "check": "journal_rule",
+          "status": "PASS",
+          "detail": "['JRN-TVT-001']"
+        },
+        {
+          "check": "workflow",
+          "status": "PASS",
+          "detail": "['01_PROJECT_DIAGNOSIS', '04_CLAIM_EVIDENCE_DESIGN', '05_EXPERIMENT_DESIGN']"
+        },
+        {
+          "check": "default_or_complex_count",
+          "status": "PASS",
+          "detail": "3"
+        },
+        {
+          "check": "maximum_five",
+          "status": "PASS",
+          "detail": "3"
+        },
+        {
+          "check": "unique_exemplars",
+          "status": "PASS",
+          "detail": ""
+        },
+        {
+          "check": "score_threshold",
+          "status": "PASS",
+          "detail": "[('EX_027', 85), ('EX_001', 75), ('EX_014', 70)]"
+        },
+        {
+          "check": "role_or_evidence_gate",
+          "status": "PASS",
+          "detail": ""
+        },
+        {
+          "check": "domain_relevance",
+          "status": "PASS",
+          "detail": "[('EX_027', 30), ('EX_001', 30), ('EX_014', 20)]"
+        },
+        {
+          "check": "boundary_loaded",
+          "status": "PASS",
+          "detail": ""
+        },
+        {
+          "check": "no_ral",
+          "status": "PASS",
+          "detail": ""
+        },
+        {
+          "check": "domain_scope_integrity",
+          "status": "PASS",
+          "detail": ""
+        },
+        {
+          "check": "journal_scope_integrity",
+          "status": "PASS",
+          "detail": ""
+        }
+      ],
+      "route": {
+        "status": "ROUTED",
+        "case_id": "CASE_01_UAV_DRL_NAV_TVT",
+        "mode": "E",
+        "manuscript_state": "METHOD_READY",
+        "domains": [
+          "RL_MARL",
+          "UAV_AUTONOMY",
+          "NAVIGATION_PLANNING"
+        ],
+        "domain_signal_scores": {
+          "RL_MARL": 119,
+          "UAV_AUTONOMY": 110,
+          "NAVIGATION_PLANNING": 108
+        },
+        "target_journal": "TVT",
+        "journal_locked": true,
+        "journal_candidates": [
+          "TVT"
+        ],
+        "knowledge": {
+          "general_rule_ids": [
+            "GEN-EVD-001",
+            "GEN-EVD-002",
+            "GEN-EVD-005",
+            "GEN-VIS-001"
+          ],
+          "domain_rule_ids": [
+            "DOM-RLMA-ABL-002",
+            "DOM-UAV_-ROB",
+            "DOM-UAV_-REAL",
+            "DOM-UAV_-RUN",
+            "DOM-NAVI-ROB",
+            "DOM-NAVI-REAL",
+            "DOM-NAVI-RUN",
+            "DOM-RL_M-ROB",
+            "DOM-RL_M-REAL",
+            "DOM-RL_M-RUN"
+          ],
+          "journal_rule_ids": [
+            "JRN-TVT-001"
+          ],
+          "domain_profiles": [
+            "D:\\ieee my skills\\ieee-trans-skill\\resources\\IEEE_TRANS_KNOWLEDGE\\06_DOMAINS\\RL_MARL.md",
+            "D:\\ieee my skills\\ieee-trans-skill\\resources\\IEEE_TRANS_KNOWLEDGE\\06_DOMAINS\\UAV_AUTONOMY.md",
+            "D:\\ieee my skills\\ieee-trans-skill\\resources\\IEEE_TRANS_KNOWLEDGE\\06_DOMAINS\\NAVIGATION_PLANNING.md"
+          ],
+          "journal_profile": "D:\\ieee my skills\\ieee-trans-skill\\resources\\IEEE_TRANS_KNOWLEDGE\\07_JOURNALS\\TVT.md",
+          "conflict_resolution": "D:\\ieee my skills\\ieee-trans-skill\\resources\\IEEE_TRANS_KNOWLEDGE\\08_SYNTHESIS\\CONFLICT_RESOLUTION.md"
+        },
+        "requested_roles": [
+          "EXPERIMENT_ARCHITECTURE",
+          "COMPARATIVE_EXPERIMENT",
+          "PLANNING",
+          "NAVIGATION_PLANNING",
+          "UAV"
+        ],
+        "workflows": [
+          "01_PROJECT_DIAGNOSIS",
+          "04_CLAIM_EVIDENCE_DESIGN",
+          "05_EXPERIMENT_DESIGN"
+        ],
+        "exemplars": [
+          {
+            "exemplar_id": "EX_027",
+            "paper_id": "P095",
+            "title": "Enhancing the Robustness of UAV Search Path Planning Based on Deep Reinforcement Learning for Complex Disaster Scenarios",
+            "journal": "TVT",
+            "score": 85,
+            "score_breakdown": {
+              "domain": 30,
+              "role": 15,
+              "paper_type": 15,
+              "journal": 15,
+              "evidence": 5,
+              "rule": 5
+            },
+            "matched_domains": [
+              "NAVIGATION_PLANNING",
+              "RL_MARL",
+              "UAV_AUTONOMY"
+            ],
+            "matched_roles": [
+              "PLANNING",
+              "UAV"
+            ],
+            "matched_evidence": [
+              "GENERALIZATION"
+            ],
+            "card_path": "D:\\ieee my skills\\IEEE_TRANS_EXEMPLARS\\01_CARDS\\EX_027.md",
+            "do_not_generalize": "- Do not generalize disaster maps, reward design, sensing, or vehicle model to other emergency domains. - Journal tendency: TVT is an overlay, not a universal Transactions style. - Theory boundary: no strong formal-theory requirement should be inferred. - Physical-evidence boundary: absence of detected physical evidence is not evidence that all papers of this type can omit it. - Resource boundary: dataset, simulator, hardware, sensing, compute, and team size remain task-specific.",
+            "boundary_gate": "REVIEW_REQUIRED_BEFORE_USE"
+          },
+          {
+            "exemplar_id": "EX_001",
+            "paper_id": "P082",
+            "title": "GCBF+: A Neural Graph Control Barrier Function Framework for Distributed Safe Multiagent Control",
+            "journal": "TRO",
+            "score": 75,
+            "score_breakdown": {
+              "domain": 30,
+              "role": 15,
+              "paper_type": 15,
+              "journal": 0,
+              "evidence": 10,
+              "rule": 5
+            },
+            "matched_domains": [
+              "NAVIGATION_PLANNING",
+              "RL_MARL",
+              "UAV_AUTONOMY"
+            ],
+            "matched_roles": [
+              "EXPERIMENT_ARCHITECTURE"
+            ],
+            "matched_evidence": [
+              "GENERALIZATION",
+              "RUNTIME"
+            ],
+            "card_path": "D:\\ieee my skills\\IEEE_TRANS_EXEMPLARS\\01_CARDS\\EX_001.md",
+            "do_not_generalize": "- Do not generalize its barrier assumptions, graph information pattern, or safety specification to systems with different dynamics. - Journal tendency: TRO is an overlay, not a universal Transactions style. - Theory boundary: formal assumptions and guarantees are central. - Physical-evidence boundary: the physical platform supports this paper’s deployment claim only. - Resource boundary: dataset, simulator, hardware, sensing, compute, and team size remain task-specific.",
+            "boundary_gate": "REVIEW_REQUIRED_BEFORE_USE"
+          },
+          {
+            "exemplar_id": "EX_014",
+            "paper_id": "P048",
+            "title": "EDEN: Efficient Dual-Layer Exploration Planning for Fast UAV Autonomous Exploration in Large 3-D Environments",
+            "journal": "TIE",
+            "score": 70,
+            "score_breakdown": {
+              "domain": 20,
+              "role": 25,
+              "paper_type": 15,
+              "journal": 0,
+              "evidence": 5,
+              "rule": 5
+            },
+            "matched_domains": [
+              "NAVIGATION_PLANNING",
+              "UAV_AUTONOMY"
+            ],
+            "matched_roles": [
+              "PLANNING",
+              "UAV"
+            ],
+            "matched_evidence": [
+              "RUNTIME"
+            ],
+            "card_path": "D:\\ieee my skills\\IEEE_TRANS_EXEMPLARS\\01_CARDS\\EX_014.md",
+            "do_not_generalize": "- Do not generalize map representation, sensor range, platform speed, or environment scale. - Journal tendency: TIE is an overlay, not a universal Transactions style. - Theory boundary: formal assumptions and guarantees are central. - Physical-evidence boundary: the physical platform supports this paper’s deployment claim only. - Resource boundary: dataset, simulator, hardware, sensing, compute, and team size remain task-specific.",
+            "boundary_gate": "REVIEW_REQUIRED_BEFORE_USE"
+          }
+        ],
+        "exemplar_count": 3,
+        "default_exemplar_count": 3,
+        "maximum_exemplar_count": 5,
+        "missing_states": [],
+        "constraints": [
+          "Read each selected card's Do Not Generalize boundary before use.",
+          "Use user project evidence before corpus or exemplar content.",
+          "Do not treat corpus statistics as quotas.",
+          "Do not fabricate missing scientific evidence."
+        ]
+      }
+    },
+    {
+      "case_id": "CASE_02_MULTI_AGENT_MARL_TCYB",
+      "description": "design experiment architecture for multi-agent MARL",
+      "status": "PASS",
+      "checks": [
+        {
+          "check": "status",
+          "status": "PASS",
+          "detail": "actual=ROUTED expected=ROUTED"
+        },
+        {
+          "check": "mode",
+          "status": "PASS",
+          "detail": "actual=E expected=E"
+        },
+        {
+          "check": "domains",
+          "status": "PASS",
+          "detail": "actual=['MULTI_AGENT_DECISION', 'RL_MARL', 'UAV_AUTONOMY']"
+        },
+        {
+          "check": "domain_limit",
+          "status": "PASS",
+          "detail": "['MULTI_AGENT_DECISION', 'RL_MARL', 'UAV_AUTONOMY']"
+        },
+        {
+          "check": "journal",
+          "status": "PASS",
+          "detail": "TCYB"
+        },
+        {
+          "check": "journal_profile",
+          "status": "PASS",
+          "detail": ""
+        },
+        {
+          "check": "general_rules",
+          "status": "PASS",
+          "detail": "['GEN-ARCH-001', 'GEN-EVD-001', 'GEN-EVD-004', 'GEN-EVD-005', 'GEN-VIS-001']"
+        },
+        {
+          "check": "domain_rules",
+          "status": "PASS",
+          "detail": "['DOM-RLMA-ABL-002', 'DOM-UAV_-ROB', 'DOM-UAV_-REAL', 'DOM-UAV_-RUN', 'DOM-RL_M-ROB', 'DOM-RL_M-REAL', 'DOM-RL_M-RUN', 'DOM-MULT-ROB', 'DOM-MULT-REAL', 'DOM-MULT-RUN']"
+        },
+        {
+          "check": "journal_rule",
+          "status": "PASS",
+          "detail": "['JRN-TCYB-001']"
+        },
+        {
+          "check": "workflow",
+          "status": "PASS",
+          "detail": "['01_PROJECT_DIAGNOSIS', '04_CLAIM_EVIDENCE_DESIGN', '05_EXPERIMENT_DESIGN']"
+        },
+        {
+          "check": "default_or_complex_count",
+          "status": "PASS",
+          "detail": "3"
+        },
+        {
+          "check": "maximum_five",
+          "status": "PASS",
+          "detail": "3"
+        },
+        {
+          "check": "unique_exemplars",
+          "status": "PASS",
+          "detail": ""
+        },
+        {
+          "check": "score_threshold",
+          "status": "PASS",
+          "detail": "[('EX_008', 75), ('EX_006', 70), ('EX_013', 70)]"
+        },
+        {
+          "check": "role_or_evidence_gate",
+          "status": "PASS",
+          "detail": ""
+        },
+        {
+          "check": "domain_relevance",
+          "status": "PASS",
+          "detail": "[('EX_008', 30), ('EX_006', 20), ('EX_013', 20)]"
+        },
+        {
+          "check": "boundary_loaded",
+          "status": "PASS",
+          "detail": ""
+        },
+        {
+          "check": "no_ral",
+          "status": "PASS",
+          "detail": ""
+        },
+        {
+          "check": "domain_scope_integrity",
+          "status": "PASS",
+          "detail": ""
+        },
+        {
+          "check": "journal_scope_integrity",
+          "status": "PASS",
+          "detail": ""
+        }
+      ],
+      "route": {
+        "status": "ROUTED",
+        "case_id": "CASE_02_MULTI_AGENT_MARL_TCYB",
+        "mode": "E",
+        "manuscript_state": "METHOD_READY",
+        "domains": [
+          "MULTI_AGENT_DECISION",
+          "RL_MARL",
+          "UAV_AUTONOMY"
+        ],
+        "domain_signal_scores": {
+          "MULTI_AGENT_DECISION": 120,
+          "RL_MARL": 119,
+          "UAV_AUTONOMY": 108
+        },
+        "target_journal": "TCYB",
+        "journal_locked": true,
+        "journal_candidates": [
+          "TCYB"
+        ],
+        "knowledge": {
+          "general_rule_ids": [
+            "GEN-ARCH-001",
+            "GEN-EVD-001",
+            "GEN-EVD-004",
+            "GEN-EVD-005",
+            "GEN-VIS-001"
+          ],
+          "domain_rule_ids": [
+            "DOM-RLMA-ABL-002",
+            "DOM-UAV_-ROB",
+            "DOM-UAV_-REAL",
+            "DOM-UAV_-RUN",
+            "DOM-RL_M-ROB",
+            "DOM-RL_M-REAL",
+            "DOM-RL_M-RUN",
+            "DOM-MULT-ROB",
+            "DOM-MULT-REAL",
+            "DOM-MULT-RUN"
+          ],
+          "journal_rule_ids": [
+            "JRN-TCYB-001"
+          ],
+          "domain_profiles": [
+            "D:\\ieee my skills\\ieee-trans-skill\\resources\\IEEE_TRANS_KNOWLEDGE\\06_DOMAINS\\MULTI_AGENT_DECISION.md",
+            "D:\\ieee my skills\\ieee-trans-skill\\resources\\IEEE_TRANS_KNOWLEDGE\\06_DOMAINS\\RL_MARL.md",
+            "D:\\ieee my skills\\ieee-trans-skill\\resources\\IEEE_TRANS_KNOWLEDGE\\06_DOMAINS\\UAV_AUTONOMY.md"
+          ],
+          "journal_profile": "D:\\ieee my skills\\ieee-trans-skill\\resources\\IEEE_TRANS_KNOWLEDGE\\07_JOURNALS\\TCYB.md",
+          "conflict_resolution": "D:\\ieee my skills\\ieee-trans-skill\\resources\\IEEE_TRANS_KNOWLEDGE\\08_SYNTHESIS\\CONFLICT_RESOLUTION.md"
+        },
+        "requested_roles": [
+          "EXPERIMENT_ARCHITECTURE",
+          "COMPARATIVE_EXPERIMENT",
+          "MULTI_AGENT",
+          "RL_MARL"
+        ],
+        "workflows": [
+          "01_PROJECT_DIAGNOSIS",
+          "04_CLAIM_EVIDENCE_DESIGN",
+          "05_EXPERIMENT_DESIGN"
+        ],
+        "exemplars": [
+          {
+            "exemplar_id": "EX_008",
+            "paper_id": "P033",
+            "title": "Learning-Based Multi-UAV Flocking Control With Limited Visual Field and Instinctive Repulsion",
+            "journal": "TCYB",
+            "score": 75,
+            "score_breakdown": {
+              "domain": 30,
+              "role": 15,
+              "paper_type": 0,
+              "journal": 15,
+              "evidence": 10,
+              "rule": 5
+            },
+            "matched_domains": [
+              "MULTI_AGENT_DECISION",
+              "RL_MARL",
+              "UAV_AUTONOMY"
+            ],
+            "matched_roles": [
+              "MULTI_AGENT",
+              "RL_MARL"
+            ],
+            "matched_evidence": [
+              "GENERALIZATION",
+              "MAIN_COMPARISON",
+              "ROBUSTNESS"
+            ],
+            "card_path": "D:\\ieee my skills\\IEEE_TRANS_EXEMPLARS\\01_CARDS\\EX_008.md",
+            "do_not_generalize": "- Do not generalize the field-of-view model, repulsion law, or swarm dynamics to arbitrary aerial platforms. - Journal tendency: TCYB is an overlay, not a universal Transactions style. - Theory boundary: formal assumptions and guarantees are central. - Physical-evidence boundary: absence of detected physical evidence is not evidence that all papers of this type can omit it. - Resource boundary: dataset, simulator, hardware, sensing, compute, and team size remain task-specific.",
+            "boundary_gate": "REVIEW_REQUIRED_BEFORE_USE"
+          },
+          {
+            "exemplar_id": "EX_006",
+            "paper_id": "P083",
+            "title": "Kimera-Multi: Robust, Distributed, Dense Metric-Semantic SLAM for Multi-Robot Systems",
+            "journal": "TRO",
+            "score": 70,
+            "score_breakdown": {
+              "domain": 20,
+              "role": 25,
+              "paper_type": 15,
+              "journal": 0,
+              "evidence": 5,
+              "rule": 5
+            },
+            "matched_domains": [
+              "MULTI_AGENT_DECISION",
+              "RL_MARL"
+            ],
+            "matched_roles": [
+              "EXPERIMENT_ARCHITECTURE",
+              "MULTI_AGENT",
+              "RL_MARL"
+            ],
+            "matched_evidence": [
+              "MAIN_COMPARISON",
+              "ROBUSTNESS"
+            ],
+            "card_path": "D:\\ieee my skills\\IEEE_TRANS_EXEMPLARS\\01_CARDS\\EX_006.md",
+            "do_not_generalize": "- Do not infer that its datasets, communication regime, or mapping stack cover all multi-robot deployments. - Journal tendency: TRO is an overlay, not a universal Transactions style. - Theory boundary: formal assumptions and guarantees are central. - Physical-evidence boundary: absence of detected physical evidence is not evidence that all papers of this type can omit it. - Resource boundary: dataset, simulator, hardware, sensing, compute, and team size remain task-specific.",
+            "boundary_gate": "REVIEW_REQUIRED_BEFORE_USE"
+          },
+          {
+            "exemplar_id": "EX_013",
+            "paper_id": "P085",
+            "title": "Maximum-Entropy Multi-Agent Dynamic Games: Forward and Inverse Solutions",
+            "journal": "TRO",
+            "score": 70,
+            "score_breakdown": {
+              "domain": 20,
+              "role": 25,
+              "paper_type": 15,
+              "journal": 0,
+              "evidence": 5,
+              "rule": 5
+            },
+            "matched_domains": [
+              "MULTI_AGENT_DECISION",
+              "RL_MARL"
+            ],
+            "matched_roles": [
+              "MULTI_AGENT",
+              "RL_MARL"
+            ],
+            "matched_evidence": [
+              "GENERALIZATION",
+              "MAIN_COMPARISON"
+            ],
+            "card_path": "D:\\ieee my skills\\IEEE_TRANS_EXEMPLARS\\01_CARDS\\EX_013.md",
+            "do_not_generalize": "- Do not generalize equilibrium assumptions, entropy model, or identifiability conditions to all multi-agent learning. - Journal tendency: TRO is an overlay, not a universal Transactions style. - Theory boundary: formal assumptions and guarantees are central. - Physical-evidence boundary: absence of detected physical evidence is not evidence that all papers of this type can omit it. - Resource boundary: dataset, simulator, hardware, sensing, compute, and team size remain task-specific.",
+            "boundary_gate": "REVIEW_REQUIRED_BEFORE_USE"
+          }
+        ],
+        "exemplar_count": 3,
+        "default_exemplar_count": 3,
+        "maximum_exemplar_count": 5,
+        "missing_states": [],
+        "constraints": [
+          "Read each selected card's Do Not Generalize boundary before use.",
+          "Use user project evidence before corpus or exemplar content.",
+          "Do not treat corpus statistics as quotas.",
+          "Do not fabricate missing scientific evidence."
+        ]
+      }
+    },
+    {
+      "case_id": "CASE_03_DISTRIBUTED_CONTROL_TAC",
+      "description": "write the problem formulation and theory section",
+      "status": "PASS",
+      "checks": [
+        {
+          "check": "status",
+          "status": "PASS",
+          "detail": "actual=ROUTED expected=ROUTED"
+        },
+        {
+          "check": "mode",
+          "status": "PASS",
+          "detail": "actual=I expected=I"
+        },
+        {
+          "check": "domains",
+          "status": "PASS",
+          "detail": "actual=['CONTROL', 'MULTI_AGENT_DECISION']"
+        },
+        {
+          "check": "domain_limit",
+          "status": "PASS",
+          "detail": "['CONTROL', 'MULTI_AGENT_DECISION']"
+        },
+        {
+          "check": "journal",
+          "status": "PASS",
+          "detail": "TAC"
+        },
+        {
+          "check": "journal_profile",
+          "status": "PASS",
+          "detail": ""
+        },
+        {
+          "check": "general_rules",
+          "status": "PASS",
+          "detail": "['GEN-ARCH-001', 'GEN-EVD-001', 'GEN-VIS-001']"
+        },
+        {
+          "check": "domain_rules",
+          "status": "PASS",
+          "detail": "['DOM-MULT-ROB', 'DOM-MULT-REAL', 'DOM-MULT-RUN', 'DOM-CONT-ROB', 'DOM-CONT-REAL', 'DOM-CONT-RUN']"
+        },
+        {
+          "check": "journal_rule",
+          "status": "PASS",
+          "detail": "['JRN-TAC-001']"
+        },
+        {
+          "check": "workflow",
+          "status": "PASS",
+          "detail": "['01_PROJECT_DIAGNOSIS', '09_SECTION_WRITING']"
+        },
+        {
+          "check": "default_or_complex_count",
+          "status": "PASS",
+          "detail": "3"
+        },
+        {
+          "check": "maximum_five",
+          "status": "PASS",
+          "detail": "3"
+        },
+        {
+          "check": "unique_exemplars",
+          "status": "PASS",
+          "detail": ""
+        },
+        {
+          "check": "score_threshold",
+          "status": "PASS",
+          "detail": "[('EX_024', 65), ('EX_003', 50), ('EX_005', 50)]"
+        },
+        {
+          "check": "role_or_evidence_gate",
+          "status": "PASS",
+          "detail": ""
+        },
+        {
+          "check": "domain_relevance",
+          "status": "PASS",
+          "detail": "[('EX_024', 20), ('EX_003', 20), ('EX_005', 20)]"
+        },
+        {
+          "check": "boundary_loaded",
+          "status": "PASS",
+          "detail": ""
+        },
+        {
+          "check": "no_ral",
+          "status": "PASS",
+          "detail": ""
+        },
+        {
+          "check": "domain_scope_integrity",
+          "status": "PASS",
+          "detail": ""
+        },
+        {
+          "check": "journal_scope_integrity",
+          "status": "PASS",
+          "detail": ""
+        }
+      ],
+      "route": {
+        "status": "ROUTED",
+        "case_id": "CASE_03_DISTRIBUTED_CONTROL_TAC",
+        "mode": "I",
+        "manuscript_state": "METHOD_READY",
+        "domains": [
+          "CONTROL",
+          "MULTI_AGENT_DECISION"
+        ],
+        "domain_signal_scores": {
+          "CONTROL": 130,
+          "MULTI_AGENT_DECISION": 109
+        },
+        "target_journal": "TAC",
+        "journal_locked": true,
+        "journal_candidates": [
+          "TAC"
+        ],
+        "knowledge": {
+          "general_rule_ids": [
+            "GEN-ARCH-001",
+            "GEN-EVD-001",
+            "GEN-VIS-001"
+          ],
+          "domain_rule_ids": [
+            "DOM-MULT-ROB",
+            "DOM-MULT-REAL",
+            "DOM-MULT-RUN",
+            "DOM-CONT-ROB",
+            "DOM-CONT-REAL",
+            "DOM-CONT-RUN"
+          ],
+          "journal_rule_ids": [
+            "JRN-TAC-001"
+          ],
+          "domain_profiles": [
+            "D:\\ieee my skills\\ieee-trans-skill\\resources\\IEEE_TRANS_KNOWLEDGE\\06_DOMAINS\\CONTROL.md",
+            "D:\\ieee my skills\\ieee-trans-skill\\resources\\IEEE_TRANS_KNOWLEDGE\\06_DOMAINS\\MULTI_AGENT_DECISION.md"
+          ],
+          "journal_profile": "D:\\ieee my skills\\ieee-trans-skill\\resources\\IEEE_TRANS_KNOWLEDGE\\07_JOURNALS\\TAC.md",
+          "conflict_resolution": "D:\\ieee my skills\\ieee-trans-skill\\resources\\IEEE_TRANS_KNOWLEDGE\\08_SYNTHESIS\\CONFLICT_RESOLUTION.md"
+        },
+        "requested_roles": [
+          "PROBLEM_FORMULATION",
+          "THEORY",
+          "STRUCTURE"
+        ],
+        "workflows": [
+          "01_PROJECT_DIAGNOSIS",
+          "09_SECTION_WRITING"
+        ],
+        "exemplars": [
+          {
+            "exemplar_id": "EX_024",
+            "paper_id": "P001",
+            "title": "Distributionally Robust Chance Constrained Data-Enabled Predictive Control",
+            "journal": "TAC",
+            "score": 65,
+            "score_breakdown": {
+              "domain": 20,
+              "role": 25,
+              "paper_type": 0,
+              "journal": 15,
+              "evidence": 0,
+              "rule": 5
+            },
+            "matched_domains": [
+              "CONTROL"
+            ],
+            "matched_roles": [
+              "THEORY"
+            ],
+            "matched_evidence": [],
+            "card_path": "D:\\ieee my skills\\IEEE_TRANS_EXEMPLARS\\01_CARDS\\EX_024.md",
+            "do_not_generalize": "- Do not generalize ambiguity sets, data richness assumptions, or probabilistic guarantees beyond their theorem conditions. - Journal tendency: TAC is an overlay, not a universal Transactions style. - Theory boundary: formal assumptions and guarantees are central. - Physical-evidence boundary: absence of detected physical evidence is not evidence that all papers of this type can omit it. - Resource boundary: dataset, simulator, hardware, sensing, compute, and team size remain task-specific.",
+            "boundary_gate": "REVIEW_REQUIRED_BEFORE_USE"
+          },
+          {
+            "exemplar_id": "EX_003",
+            "paper_id": "P027",
+            "title": "Robust Predictive Motion Planning by Learning Obstacle Uncertainty",
+            "journal": "TCST",
+            "score": 50,
+            "score_breakdown": {
+              "domain": 20,
+              "role": 25,
+              "paper_type": 0,
+              "journal": 0,
+              "evidence": 0,
+              "rule": 5
+            },
+            "matched_domains": [
+              "CONTROL"
+            ],
+            "matched_roles": [
+              "PROBLEM_FORMULATION",
+              "STRUCTURE",
+              "THEORY"
+            ],
+            "matched_evidence": [],
+            "card_path": "D:\\ieee my skills\\IEEE_TRANS_EXEMPLARS\\01_CARDS\\EX_003.md",
+            "do_not_generalize": "- Do not export its uncertainty model, horizon, or obstacle assumptions as generic MPC requirements. - Journal tendency: TCST is an overlay, not a universal Transactions style. - Theory boundary: formal assumptions and guarantees are central. - Physical-evidence boundary: the physical platform supports this paper’s deployment claim only. - Resource boundary: dataset, simulator, hardware, sensing, compute, and team size remain task-specific.",
+            "boundary_gate": "REVIEW_REQUIRED_BEFORE_USE"
+          },
+          {
+            "exemplar_id": "EX_005",
+            "paper_id": "P046",
+            "title": "Model Predictive Optimization and Terminal Sliding Mode Motion Control for Mobile Robot With Obstacle Avoidance",
+            "journal": "TIE",
+            "score": 50,
+            "score_breakdown": {
+              "domain": 20,
+              "role": 25,
+              "paper_type": 0,
+              "journal": 0,
+              "evidence": 0,
+              "rule": 5
+            },
+            "matched_domains": [
+              "CONTROL"
+            ],
+            "matched_roles": [
+              "THEORY"
+            ],
+            "matched_evidence": [],
+            "card_path": "D:\\ieee my skills\\IEEE_TRANS_EXEMPLARS\\01_CARDS\\EX_005.md",
+            "do_not_generalize": "- Do not treat terminal sliding-mode design or its stability conditions as universal for other vehicle dynamics. - Journal tendency: TIE is an overlay, not a universal Transactions style. - Theory boundary: formal assumptions and guarantees are central. - Physical-evidence boundary: the physical platform supports this paper’s deployment claim only. - Resource boundary: dataset, simulator, hardware, sensing, compute, and team size remain task-specific.",
+            "boundary_gate": "REVIEW_REQUIRED_BEFORE_USE"
+          }
+        ],
+        "exemplar_count": 3,
+        "default_exemplar_count": 3,
+        "maximum_exemplar_count": 5,
+        "missing_states": [],
+        "constraints": [
+          "Read each selected card's Do Not Generalize boundary before use.",
+          "Use user project evidence before corpus or exemplar content.",
+          "Do not treat corpus statistics as quotas.",
+          "Do not fabricate missing scientific evidence."
+        ]
+      }
+    },
+    {
+      "case_id": "CASE_04_ROBOT_PHYSICAL_TRO",
+      "description": "build the full paper architecture for a robotics system with physical experiments",
+      "status": "PASS",
+      "checks": [
+        {
+          "check": "status",
+          "status": "PASS",
+          "detail": "actual=ROUTED expected=ROUTED"
+        },
+        {
+          "check": "mode",
+          "status": "PASS",
+          "detail": "actual=B expected=B"
+        },
+        {
+          "check": "domains",
+          "status": "PASS",
+          "detail": "actual=['ROBOTICS', 'CONTROL']"
+        },
+        {
+          "check": "domain_limit",
+          "status": "PASS",
+          "detail": "['ROBOTICS', 'CONTROL']"
+        },
+        {
+          "check": "journal",
+          "status": "PASS",
+          "detail": "TRO"
+        },
+        {
+          "check": "journal_profile",
+          "status": "PASS",
+          "detail": ""
+        },
+        {
+          "check": "general_rules",
+          "status": "PASS",
+          "detail": "['GEN-ARCH-001', 'GEN-EVD-001', 'GEN-EVD-002', 'GEN-EVD-006', 'GEN-VIS-001']"
+        },
+        {
+          "check": "domain_rules",
+          "status": "PASS",
+          "detail": "['DOM-ROBO-ROB', 'DOM-ROBO-REAL', 'DOM-ROBO-RUN', 'DOM-CONT-ROB', 'DOM-CONT-REAL', 'DOM-CONT-RUN']"
+        },
+        {
+          "check": "journal_rule",
+          "status": "PASS",
+          "detail": "['JRN-TRO-001']"
+        },
+        {
+          "check": "workflow",
+          "status": "PASS",
+          "detail": "['01_PROJECT_DIAGNOSIS', '02_RESEARCH_ARCHITECTURE', '03_CONTRIBUTION_DESIGN', '04_CLAIM_EVIDENCE_DESIGN', '05_EXPERIMENT_DESIGN', '08_SECTION_OUTLINE']"
+        },
+        {
+          "check": "default_or_complex_count",
+          "status": "PASS",
+          "detail": "3"
+        },
+        {
+          "check": "maximum_five",
+          "status": "PASS",
+          "detail": "3"
+        },
+        {
+          "check": "unique_exemplars",
+          "status": "PASS",
+          "detail": ""
+        },
+        {
+          "check": "score_threshold",
+          "status": "PASS",
+          "detail": "[('EX_018', 80), ('EX_021', 75), ('EX_017', 75)]"
+        },
+        {
+          "check": "role_or_evidence_gate",
+          "status": "PASS",
+          "detail": ""
+        },
+        {
+          "check": "domain_relevance",
+          "status": "PASS",
+          "detail": "[('EX_018', 30), ('EX_021', 30), ('EX_017', 20)]"
+        },
+        {
+          "check": "boundary_loaded",
+          "status": "PASS",
+          "detail": ""
+        },
+        {
+          "check": "no_ral",
+          "status": "PASS",
+          "detail": ""
+        },
+        {
+          "check": "domain_scope_integrity",
+          "status": "PASS",
+          "detail": ""
+        },
+        {
+          "check": "journal_scope_integrity",
+          "status": "PASS",
+          "detail": ""
+        }
+      ],
+      "route": {
+        "status": "ROUTED",
+        "case_id": "CASE_04_ROBOT_PHYSICAL_TRO",
+        "mode": "B",
+        "manuscript_state": "METHOD_READY",
+        "domains": [
+          "ROBOTICS",
+          "CONTROL"
+        ],
+        "domain_signal_scores": {
+          "ROBOTICS": 110,
+          "CONTROL": 109
+        },
+        "target_journal": "TRO",
+        "journal_locked": true,
+        "journal_candidates": [
+          "TRO"
+        ],
+        "knowledge": {
+          "general_rule_ids": [
+            "GEN-ARCH-001",
+            "GEN-EVD-001",
+            "GEN-EVD-002",
+            "GEN-EVD-006",
+            "GEN-VIS-001"
+          ],
+          "domain_rule_ids": [
+            "DOM-ROBO-ROB",
+            "DOM-ROBO-REAL",
+            "DOM-ROBO-RUN",
+            "DOM-CONT-ROB",
+            "DOM-CONT-REAL",
+            "DOM-CONT-RUN"
+          ],
+          "journal_rule_ids": [
+            "JRN-TRO-001"
+          ],
+          "domain_profiles": [
+            "D:\\ieee my skills\\ieee-trans-skill\\resources\\IEEE_TRANS_KNOWLEDGE\\06_DOMAINS\\ROBOTICS.md",
+            "D:\\ieee my skills\\ieee-trans-skill\\resources\\IEEE_TRANS_KNOWLEDGE\\06_DOMAINS\\CONTROL.md"
+          ],
+          "journal_profile": "D:\\ieee my skills\\ieee-trans-skill\\resources\\IEEE_TRANS_KNOWLEDGE\\07_JOURNALS\\TRO.md",
+          "conflict_resolution": "D:\\ieee my skills\\ieee-trans-skill\\resources\\IEEE_TRANS_KNOWLEDGE\\08_SYNTHESIS\\CONFLICT_RESOLUTION.md"
+        },
+        "requested_roles": [
+          "EXPERIMENT_ARCHITECTURE",
+          "COMPARATIVE_EXPERIMENT",
+          "REAL_WORLD_VALIDATION",
+          "REAL_WORLD",
+          "METHODOLOGY",
+          "PROBLEM_FORMULATION"
+        ],
+        "workflows": [
+          "01_PROJECT_DIAGNOSIS",
+          "02_RESEARCH_ARCHITECTURE",
+          "03_CONTRIBUTION_DESIGN",
+          "04_CLAIM_EVIDENCE_DESIGN",
+          "05_EXPERIMENT_DESIGN",
+          "08_SECTION_OUTLINE"
+        ],
+        "exemplars": [
+          {
+            "exemplar_id": "EX_018",
+            "paper_id": "P086",
+            "title": "A Secure Robot Learning Framework for Cyber Attack Scheduling and Countermeasure",
+            "journal": "TRO",
+            "score": 80,
+            "score_breakdown": {
+              "domain": 30,
+              "role": 25,
+              "paper_type": 0,
+              "journal": 15,
+              "evidence": 5,
+              "rule": 5
+            },
+            "matched_domains": [
+              "CONTROL",
+              "ROBOTICS"
+            ],
+            "matched_roles": [
+              "PROBLEM_FORMULATION",
+              "REAL_WORLD"
+            ],
+            "matched_evidence": [
+              "REAL_WORLD"
+            ],
+            "card_path": "D:\\ieee my skills\\IEEE_TRANS_EXEMPLARS\\01_CARDS\\EX_018.md",
+            "do_not_generalize": "- Do not generalize the attacker model, countermeasure budget, or network assumptions to other threat environments. - Journal tendency: TRO is an overlay, not a universal Transactions style. - Theory boundary: formal assumptions and guarantees are central. - Physical-evidence boundary: the physical platform supports this paper’s deployment claim only. - Resource boundary: dataset, simulator, hardware, sensing, compute, and team size remain task-specific.",
+            "boundary_gate": "REVIEW_REQUIRED_BEFORE_USE"
+          },
+          {
+            "exemplar_id": "EX_021",
+            "paper_id": "P087",
+            "title": "Contact Models in Robotics: A Comparative Analysis",
+            "journal": "TRO",
+            "score": 75,
+            "score_breakdown": {
+              "domain": 30,
+              "role": 25,
+              "paper_type": 0,
+              "journal": 15,
+              "evidence": 0,
+              "rule": 5
+            },
+            "matched_domains": [
+              "CONTROL",
+              "ROBOTICS"
+            ],
+            "matched_roles": [
+              "COMPARATIVE_EXPERIMENT"
+            ],
+            "matched_evidence": [],
+            "card_path": "D:\\ieee my skills\\IEEE_TRANS_EXEMPLARS\\01_CARDS\\EX_021.md",
+            "do_not_generalize": "- Do not turn its ranking into a universal choice across materials, robots, solvers, or contact regimes. - Journal tendency: TRO is an overlay, not a universal Transactions style. - Theory boundary: no strong formal-theory requirement should be inferred. - Physical-evidence boundary: absence of detected physical evidence is not evidence that all papers of this type can omit it. - Resource boundary: dataset, simulator, hardware, sensing, compute, and team size remain task-specific.",
+            "boundary_gate": "REVIEW_REQUIRED_BEFORE_USE"
+          },
+          {
+            "exemplar_id": "EX_017",
+            "paper_id": "P084",
+            "title": "DexRepNet++: Learning Dexterous Robotic Manipulation With Geometric and Spatial Hand-Object Representations",
+            "journal": "TRO",
+            "score": 75,
+            "score_breakdown": {
+              "domain": 20,
+              "role": 25,
+              "paper_type": 0,
+              "journal": 15,
+              "evidence": 10,
+              "rule": 5
+            },
+            "matched_domains": [
+              "ROBOTICS"
+            ],
+            "matched_roles": [
+              "EXPERIMENT_ARCHITECTURE",
+              "METHODOLOGY",
+              "REAL_WORLD"
+            ],
+            "matched_evidence": [
+              "REAL_WORLD",
+              "RUNTIME"
+            ],
+            "card_path": "D:\\ieee my skills\\IEEE_TRANS_EXEMPLARS\\01_CARDS\\EX_017.md",
+            "do_not_generalize": "- Do not generalize object sets, hand embodiment, simulation assets, or demonstration/training resources. - Journal tendency: TRO is an overlay, not a universal Transactions style. - Theory boundary: no strong formal-theory requirement should be inferred. - Physical-evidence boundary: the physical platform supports this paper’s deployment claim only. - Resource boundary: dataset, simulator, hardware, sensing, compute, and team size remain task-specific.",
+            "boundary_gate": "REVIEW_REQUIRED_BEFORE_USE"
+          }
+        ],
+        "exemplar_count": 3,
+        "default_exemplar_count": 3,
+        "maximum_exemplar_count": 5,
+        "missing_states": [],
+        "constraints": [
+          "Read each selected card's Do Not Generalize boundary before use.",
+          "Use user project evidence before corpus or exemplar content.",
+          "Do not treat corpus statistics as quotas.",
+          "Do not fabricate missing scientific evidence."
+        ]
+      }
+    },
+    {
+      "case_id": "CASE_05_TRAJECTORY_TRACKING_TCST",
+      "description": "experiment design for trajectory tracking",
+      "status": "PASS",
+      "checks": [
+        {
+          "check": "status",
+          "status": "PASS",
+          "detail": "actual=ROUTED expected=ROUTED"
+        },
+        {
+          "check": "mode",
+          "status": "PASS",
+          "detail": "actual=E expected=E"
+        },
+        {
+          "check": "domains",
+          "status": "PASS",
+          "detail": "actual=['CONTROL', 'TRAJECTORY_OPTIMIZATION']"
+        },
+        {
+          "check": "domain_limit",
+          "status": "PASS",
+          "detail": "['CONTROL', 'TRAJECTORY_OPTIMIZATION']"
+        },
+        {
+          "check": "journal",
+          "status": "PASS",
+          "detail": "TCST"
+        },
+        {
+          "check": "journal_profile",
+          "status": "PASS",
+          "detail": ""
+        },
+        {
+          "check": "general_rules",
+          "status": "PASS",
+          "detail": "['GEN-ARCH-001', 'GEN-EVD-001', 'GEN-EVD-002', 'GEN-EVD-004', 'GEN-VIS-001']"
+        },
+        {
+          "check": "domain_rules",
+          "status": "PASS",
+          "detail": "['DOM-CONT-ROB', 'DOM-CONT-REAL', 'DOM-CONT-RUN', 'DOM-TRAJ-ROB', 'DOM-TRAJ-REAL', 'DOM-TRAJ-RUN']"
+        },
+        {
+          "check": "journal_rule",
+          "status": "PASS",
+          "detail": "['JRN-TCST-001']"
+        },
+        {
+          "check": "workflow",
+          "status": "PASS",
+          "detail": "['01_PROJECT_DIAGNOSIS', '04_CLAIM_EVIDENCE_DESIGN', '05_EXPERIMENT_DESIGN']"
+        },
+        {
+          "check": "default_or_complex_count",
+          "status": "PASS",
+          "detail": "3"
+        },
+        {
+          "check": "maximum_five",
+          "status": "PASS",
+          "detail": "3"
+        },
+        {
+          "check": "unique_exemplars",
+          "status": "PASS",
+          "detail": ""
+        },
+        {
+          "check": "score_threshold",
+          "status": "PASS",
+          "detail": "[('EX_022', 95), ('EX_016', 70), ('EX_021', 65)]"
+        },
+        {
+          "check": "role_or_evidence_gate",
+          "status": "PASS",
+          "detail": ""
+        },
+        {
+          "check": "domain_relevance",
+          "status": "PASS",
+          "detail": "[('EX_022', 30), ('EX_016', 30), ('EX_021', 30)]"
+        },
+        {
+          "check": "boundary_loaded",
+          "status": "PASS",
+          "detail": ""
+        },
+        {
+          "check": "no_ral",
+          "status": "PASS",
+          "detail": ""
+        },
+        {
+          "check": "domain_scope_integrity",
+          "status": "PASS",
+          "detail": ""
+        },
+        {
+          "check": "journal_scope_integrity",
+          "status": "PASS",
+          "detail": ""
+        }
+      ],
+      "route": {
+        "status": "ROUTED",
+        "case_id": "CASE_05_TRAJECTORY_TRACKING_TCST",
+        "mode": "E",
+        "manuscript_state": "METHOD_READY",
+        "domains": [
+          "CONTROL",
+          "TRAJECTORY_OPTIMIZATION"
+        ],
+        "domain_signal_scores": {
+          "CONTROL": 130,
+          "TRAJECTORY_OPTIMIZATION": 109
+        },
+        "target_journal": "TCST",
+        "journal_locked": true,
+        "journal_candidates": [
+          "TCST"
+        ],
+        "knowledge": {
+          "general_rule_ids": [
+            "GEN-ARCH-001",
+            "GEN-EVD-001",
+            "GEN-EVD-002",
+            "GEN-EVD-004",
+            "GEN-VIS-001"
+          ],
+          "domain_rule_ids": [
+            "DOM-CONT-ROB",
+            "DOM-CONT-REAL",
+            "DOM-CONT-RUN",
+            "DOM-TRAJ-ROB",
+            "DOM-TRAJ-REAL",
+            "DOM-TRAJ-RUN"
+          ],
+          "journal_rule_ids": [
+            "JRN-TCST-001"
+          ],
+          "domain_profiles": [
+            "D:\\ieee my skills\\ieee-trans-skill\\resources\\IEEE_TRANS_KNOWLEDGE\\06_DOMAINS\\CONTROL.md",
+            "D:\\ieee my skills\\ieee-trans-skill\\resources\\IEEE_TRANS_KNOWLEDGE\\06_DOMAINS\\TRAJECTORY_OPTIMIZATION.md"
+          ],
+          "journal_profile": "D:\\ieee my skills\\ieee-trans-skill\\resources\\IEEE_TRANS_KNOWLEDGE\\07_JOURNALS\\TCST.md",
+          "conflict_resolution": "D:\\ieee my skills\\ieee-trans-skill\\resources\\IEEE_TRANS_KNOWLEDGE\\08_SYNTHESIS\\CONFLICT_RESOLUTION.md"
+        },
+        "requested_roles": [
+          "EXPERIMENT_ARCHITECTURE",
+          "COMPARATIVE_EXPERIMENT",
+          "TRAJECTORY_OPTIMIZATION"
+        ],
+        "workflows": [
+          "01_PROJECT_DIAGNOSIS",
+          "04_CLAIM_EVIDENCE_DESIGN",
+          "05_EXPERIMENT_DESIGN"
+        ],
+        "exemplars": [
+          {
+            "exemplar_id": "EX_022",
+            "paper_id": "P028",
+            "title": "Distributed Nonlinear Trajectory Optimization for Multi-Robot Motion Planning",
+            "journal": "TCST",
+            "score": 95,
+            "score_breakdown": {
+              "domain": 30,
+              "role": 25,
+              "paper_type": 15,
+              "journal": 15,
+              "evidence": 5,
+              "rule": 5
+            },
+            "matched_domains": [
+              "CONTROL",
+              "TRAJECTORY_OPTIMIZATION"
+            ],
+            "matched_roles": [
+              "EXPERIMENT_ARCHITECTURE",
+              "TRAJECTORY_OPTIMIZATION"
+            ],
+            "matched_evidence": [
+              "MAIN_COMPARISON",
+              "RUNTIME"
+            ],
+            "card_path": "D:\\ieee my skills\\IEEE_TRANS_EXEMPLARS\\01_CARDS\\EX_022.md",
+            "do_not_generalize": "- Do not generalize communication topology, convergence behaviour, or robot model. - Journal tendency: TCST is an overlay, not a universal Transactions style. - Theory boundary: formal assumptions and guarantees are central. - Physical-evidence boundary: the physical platform supports this paper’s deployment claim only. - Resource boundary: dataset, simulator, hardware, sensing, compute, and team size remain task-specific.",
+            "boundary_gate": "REVIEW_REQUIRED_BEFORE_USE"
+          },
+          {
+            "exemplar_id": "EX_016",
+            "paper_id": "P029",
+            "title": "Mixed-Integer MPC-Based Motion Planning Using Hybrid Zonotopes With Tight Relaxations",
+            "journal": "TCST",
+            "score": 70,
+            "score_breakdown": {
+              "domain": 30,
+              "role": 0,
+              "paper_type": 15,
+              "journal": 15,
+              "evidence": 5,
+              "rule": 5
+            },
+            "matched_domains": [
+              "CONTROL",
+              "TRAJECTORY_OPTIMIZATION"
+            ],
+            "matched_roles": [],
+            "matched_evidence": [
+              "MAIN_COMPARISON"
+            ],
+            "card_path": "D:\\ieee my skills\\IEEE_TRANS_EXEMPLARS\\01_CARDS\\EX_016.md",
+            "do_not_generalize": "- Do not generalize geometric relaxations, solver behaviour, or horizon settings outside the modeled planning class. - Journal tendency: TCST is an overlay, not a universal Transactions style. - Theory boundary: formal assumptions and guarantees are central. - Physical-evidence boundary: absence of detected physical evidence is not evidence that all papers of this type can omit it. - Resource boundary: dataset, simulator, hardware, sensing, compute, and team size remain task-specific.",
+            "boundary_gate": "REVIEW_REQUIRED_BEFORE_USE"
+          },
+          {
+            "exemplar_id": "EX_021",
+            "paper_id": "P087",
+            "title": "Contact Models in Robotics: A Comparative Analysis",
+            "journal": "TRO",
+            "score": 65,
+            "score_breakdown": {
+              "domain": 30,
+              "role": 25,
+              "paper_type": 0,
+              "journal": 0,
+              "evidence": 5,
+              "rule": 5
+            },
+            "matched_domains": [
+              "CONTROL",
+              "TRAJECTORY_OPTIMIZATION"
+            ],
+            "matched_roles": [
+              "COMPARATIVE_EXPERIMENT"
+            ],
+            "matched_evidence": [
+              "MAIN_COMPARISON"
+            ],
+            "card_path": "D:\\ieee my skills\\IEEE_TRANS_EXEMPLARS\\01_CARDS\\EX_021.md",
+            "do_not_generalize": "- Do not turn its ranking into a universal choice across materials, robots, solvers, or contact regimes. - Journal tendency: TRO is an overlay, not a universal Transactions style. - Theory boundary: no strong formal-theory requirement should be inferred. - Physical-evidence boundary: absence of detected physical evidence is not evidence that all papers of this type can omit it. - Resource boundary: dataset, simulator, hardware, sensing, compute, and team size remain task-specific.",
+            "boundary_gate": "REVIEW_REQUIRED_BEFORE_USE"
+          }
+        ],
+        "exemplar_count": 3,
+        "default_exemplar_count": 3,
+        "maximum_exemplar_count": 5,
+        "missing_states": [],
+        "constraints": [
+          "Read each selected card's Do Not Generalize boundary before use.",
+          "Use user project evidence before corpus or exemplar content.",
+          "Do not treat corpus statistics as quotas.",
+          "Do not fabricate missing scientific evidence."
+        ]
+      }
+    },
+    {
+      "case_id": "CASE_06_FULL_DRAFT_REVISION",
+      "description": "revise an existing full draft and improve cross-section consistency",
+      "status": "PASS",
+      "checks": [
+        {
+          "check": "status",
+          "status": "PASS",
+          "detail": "actual=ROUTED expected=ROUTED"
+        },
+        {
+          "check": "mode",
+          "status": "PASS",
+          "detail": "actual=D expected=D"
+        },
+        {
+          "check": "domains",
+          "status": "PASS",
+          "detail": "actual=['ROBOTICS', 'RL_MARL', 'NAVIGATION_PLANNING']"
+        },
+        {
+          "check": "domain_limit",
+          "status": "PASS",
+          "detail": "['ROBOTICS', 'RL_MARL', 'NAVIGATION_PLANNING']"
+        },
+        {
+          "check": "journal",
+          "status": "PASS",
+          "detail": "TRO"
+        },
+        {
+          "check": "journal_profile",
+          "status": "PASS",
+          "detail": ""
+        },
+        {
+          "check": "general_rules",
+          "status": "PASS",
+          "detail": "['GEN-EVD-001', 'GEN-EVD-004', 'GEN-VIS-001']"
+        },
+        {
+          "check": "domain_rules",
+          "status": "PASS",
+          "detail": "['DOM-RLMA-ABL-002', 'DOM-ROBO-ROB', 'DOM-ROBO-REAL', 'DOM-ROBO-RUN', 'DOM-NAVI-ROB', 'DOM-NAVI-REAL', 'DOM-NAVI-RUN', 'DOM-RL_M-ROB', 'DOM-RL_M-REAL', 'DOM-RL_M-RUN']"
+        },
+        {
+          "check": "journal_rule",
+          "status": "PASS",
+          "detail": "['JRN-TRO-001']"
+        },
+        {
+          "check": "workflow",
+          "status": "PASS",
+          "detail": "['01_PROJECT_DIAGNOSIS', '11_FULL_PAPER_INTEGRATION', '09_SECTION_WRITING', '12_FINAL_AUDIT']"
+        },
+        {
+          "check": "default_or_complex_count",
+          "status": "PASS",
+          "detail": "3"
+        },
+        {
+          "check": "maximum_five",
+          "status": "PASS",
+          "detail": "3"
+        },
+        {
+          "check": "unique_exemplars",
+          "status": "PASS",
+          "detail": ""
+        },
+        {
+          "check": "score_threshold",
+          "status": "PASS",
+          "detail": "[('EX_006', 80), ('EX_013', 80), ('EX_017', 80)]"
+        },
+        {
+          "check": "role_or_evidence_gate",
+          "status": "PASS",
+          "detail": ""
+        },
+        {
+          "check": "domain_relevance",
+          "status": "PASS",
+          "detail": "[('EX_006', 30), ('EX_013', 30), ('EX_017', 30)]"
+        },
+        {
+          "check": "boundary_loaded",
+          "status": "PASS",
+          "detail": ""
+        },
+        {
+          "check": "no_ral",
+          "status": "PASS",
+          "detail": ""
+        },
+        {
+          "check": "domain_scope_integrity",
+          "status": "PASS",
+          "detail": ""
+        },
+        {
+          "check": "journal_scope_integrity",
+          "status": "PASS",
+          "detail": ""
+        }
+      ],
+      "route": {
+        "status": "ROUTED",
+        "case_id": "CASE_06_FULL_DRAFT_REVISION",
+        "mode": "D",
+        "manuscript_state": "FULL_DRAFT",
+        "domains": [
+          "ROBOTICS",
+          "RL_MARL",
+          "NAVIGATION_PLANNING"
+        ],
+        "domain_signal_scores": {
+          "ROBOTICS": 110,
+          "RL_MARL": 109,
+          "NAVIGATION_PLANNING": 108
+        },
+        "target_journal": "TRO",
+        "journal_locked": true,
+        "journal_candidates": [
+          "TRO"
+        ],
+        "knowledge": {
+          "general_rule_ids": [
+            "GEN-EVD-001",
+            "GEN-EVD-004",
+            "GEN-VIS-001"
+          ],
+          "domain_rule_ids": [
+            "DOM-RLMA-ABL-002",
+            "DOM-ROBO-ROB",
+            "DOM-ROBO-REAL",
+            "DOM-ROBO-RUN",
+            "DOM-NAVI-ROB",
+            "DOM-NAVI-REAL",
+            "DOM-NAVI-RUN",
+            "DOM-RL_M-ROB",
+            "DOM-RL_M-REAL",
+            "DOM-RL_M-RUN"
+          ],
+          "journal_rule_ids": [
+            "JRN-TRO-001"
+          ],
+          "domain_profiles": [
+            "D:\\ieee my skills\\ieee-trans-skill\\resources\\IEEE_TRANS_KNOWLEDGE\\06_DOMAINS\\ROBOTICS.md",
+            "D:\\ieee my skills\\ieee-trans-skill\\resources\\IEEE_TRANS_KNOWLEDGE\\06_DOMAINS\\RL_MARL.md",
+            "D:\\ieee my skills\\ieee-trans-skill\\resources\\IEEE_TRANS_KNOWLEDGE\\06_DOMAINS\\NAVIGATION_PLANNING.md"
+          ],
+          "journal_profile": "D:\\ieee my skills\\ieee-trans-skill\\resources\\IEEE_TRANS_KNOWLEDGE\\07_JOURNALS\\TRO.md",
+          "conflict_resolution": "D:\\ieee my skills\\ieee-trans-skill\\resources\\IEEE_TRANS_KNOWLEDGE\\08_SYNTHESIS\\CONFLICT_RESOLUTION.md"
+        },
+        "requested_roles": [
+          "STRUCTURE",
+          "RESULT_NARRATIVE"
+        ],
+        "workflows": [
+          "01_PROJECT_DIAGNOSIS",
+          "11_FULL_PAPER_INTEGRATION",
+          "09_SECTION_WRITING",
+          "12_FINAL_AUDIT"
+        ],
+        "exemplars": [
+          {
+            "exemplar_id": "EX_006",
+            "paper_id": "P083",
+            "title": "Kimera-Multi: Robust, Distributed, Dense Metric-Semantic SLAM for Multi-Robot Systems",
+            "journal": "TRO",
+            "score": 80,
+            "score_breakdown": {
+              "domain": 30,
+              "role": 15,
+              "paper_type": 15,
+              "journal": 15,
+              "evidence": 0,
+              "rule": 5
+            },
+            "matched_domains": [
+              "NAVIGATION_PLANNING",
+              "RL_MARL",
+              "ROBOTICS"
+            ],
+            "matched_roles": [
+              "RESULT_NARRATIVE",
+              "STRUCTURE"
+            ],
+            "matched_evidence": [],
+            "card_path": "D:\\ieee my skills\\IEEE_TRANS_EXEMPLARS\\01_CARDS\\EX_006.md",
+            "do_not_generalize": "- Do not infer that its datasets, communication regime, or mapping stack cover all multi-robot deployments. - Journal tendency: TRO is an overlay, not a universal Transactions style. - Theory boundary: formal assumptions and guarantees are central. - Physical-evidence boundary: absence of detected physical evidence is not evidence that all papers of this type can omit it. - Resource boundary: dataset, simulator, hardware, sensing, compute, and team size remain task-specific.",
+            "boundary_gate": "REVIEW_REQUIRED_BEFORE_USE"
+          },
+          {
+            "exemplar_id": "EX_013",
+            "paper_id": "P085",
+            "title": "Maximum-Entropy Multi-Agent Dynamic Games: Forward and Inverse Solutions",
+            "journal": "TRO",
+            "score": 80,
+            "score_breakdown": {
+              "domain": 30,
+              "role": 15,
+              "paper_type": 15,
+              "journal": 15,
+              "evidence": 0,
+              "rule": 5
+            },
+            "matched_domains": [
+              "NAVIGATION_PLANNING",
+              "RL_MARL",
+              "ROBOTICS"
+            ],
+            "matched_roles": [
+              "RESULT_NARRATIVE",
+              "STRUCTURE"
+            ],
+            "matched_evidence": [],
+            "card_path": "D:\\ieee my skills\\IEEE_TRANS_EXEMPLARS\\01_CARDS\\EX_013.md",
+            "do_not_generalize": "- Do not generalize equilibrium assumptions, entropy model, or identifiability conditions to all multi-agent learning. - Journal tendency: TRO is an overlay, not a universal Transactions style. - Theory boundary: formal assumptions and guarantees are central. - Physical-evidence boundary: absence of detected physical evidence is not evidence that all papers of this type can omit it. - Resource boundary: dataset, simulator, hardware, sensing, compute, and team size remain task-specific.",
+            "boundary_gate": "REVIEW_REQUIRED_BEFORE_USE"
+          },
+          {
+            "exemplar_id": "EX_017",
+            "paper_id": "P084",
+            "title": "DexRepNet++: Learning Dexterous Robotic Manipulation With Geometric and Spatial Hand-Object Representations",
+            "journal": "TRO",
+            "score": 80,
+            "score_breakdown": {
+              "domain": 30,
+              "role": 15,
+              "paper_type": 15,
+              "journal": 15,
+              "evidence": 0,
+              "rule": 5
+            },
+            "matched_domains": [
+              "NAVIGATION_PLANNING",
+              "RL_MARL",
+              "ROBOTICS"
+            ],
+            "matched_roles": [
+              "RESULT_NARRATIVE"
+            ],
+            "matched_evidence": [],
+            "card_path": "D:\\ieee my skills\\IEEE_TRANS_EXEMPLARS\\01_CARDS\\EX_017.md",
+            "do_not_generalize": "- Do not generalize object sets, hand embodiment, simulation assets, or demonstration/training resources. - Journal tendency: TRO is an overlay, not a universal Transactions style. - Theory boundary: no strong formal-theory requirement should be inferred. - Physical-evidence boundary: the physical platform supports this paper’s deployment claim only. - Resource boundary: dataset, simulator, hardware, sensing, compute, and team size remain task-specific.",
+            "boundary_gate": "REVIEW_REQUIRED_BEFORE_USE"
+          }
+        ],
+        "exemplar_count": 3,
+        "default_exemplar_count": 3,
+        "maximum_exemplar_count": 5,
+        "missing_states": [],
+        "constraints": [
+          "Read each selected card's Do Not Generalize boundary before use.",
+          "Use user project evidence before corpus or exemplar content.",
+          "Do not treat corpus statistics as quotas.",
+          "Do not fabricate missing scientific evidence."
+        ]
+      }
+    },
+    {
+      "case_id": "CASE_07_EXPERIMENT_ONLY",
+      "description": "experiment design only",
+      "status": "PASS",
+      "checks": [
+        {
+          "check": "status",
+          "status": "PASS",
+          "detail": "actual=ROUTED expected=ROUTED"
+        },
+        {
+          "check": "mode",
+          "status": "PASS",
+          "detail": "actual=E expected=E"
+        },
+        {
+          "check": "domains",
+          "status": "PASS",
+          "detail": "actual=['RL_MARL', 'CONTROL']"
+        },
+        {
+          "check": "domain_limit",
+          "status": "PASS",
+          "detail": "['RL_MARL', 'CONTROL']"
+        },
+        {
+          "check": "journal",
+          "status": "PASS",
+          "detail": "TNNLS"
+        },
+        {
+          "check": "journal_profile",
+          "status": "PASS",
+          "detail": ""
+        },
+        {
+          "check": "general_rules",
+          "status": "PASS",
+          "detail": "['GEN-ARCH-001', 'GEN-EVD-001', 'GEN-EVD-004', 'GEN-VIS-001']"
+        },
+        {
+          "check": "domain_rules",
+          "status": "PASS",
+          "detail": "['DOM-RLMA-ABL-002', 'DOM-RL_M-ROB', 'DOM-RL_M-REAL', 'DOM-RL_M-RUN', 'DOM-CONT-ROB', 'DOM-CONT-REAL', 'DOM-CONT-RUN']"
+        },
+        {
+          "check": "journal_rule",
+          "status": "PASS",
+          "detail": "['JRN-TNNLS-001']"
+        },
+        {
+          "check": "workflow",
+          "status": "PASS",
+          "detail": "['01_PROJECT_DIAGNOSIS', '04_CLAIM_EVIDENCE_DESIGN', '05_EXPERIMENT_DESIGN']"
+        },
+        {
+          "check": "default_or_complex_count",
+          "status": "PASS",
+          "detail": "3"
+        },
+        {
+          "check": "maximum_five",
+          "status": "PASS",
+          "detail": "3"
+        },
+        {
+          "check": "unique_exemplars",
+          "status": "PASS",
+          "detail": ""
+        },
+        {
+          "check": "score_threshold",
+          "status": "PASS",
+          "detail": "[('EX_021', 75), ('EX_006', 75), ('EX_019', 65)]"
+        },
+        {
+          "check": "role_or_evidence_gate",
+          "status": "PASS",
+          "detail": ""
+        },
+        {
+          "check": "domain_relevance",
+          "status": "PASS",
+          "detail": "[('EX_021', 30), ('EX_006', 20), ('EX_019', 20)]"
+        },
+        {
+          "check": "boundary_loaded",
+          "status": "PASS",
+          "detail": ""
+        },
+        {
+          "check": "no_ral",
+          "status": "PASS",
+          "detail": ""
+        },
+        {
+          "check": "domain_scope_integrity",
+          "status": "PASS",
+          "detail": ""
+        },
+        {
+          "check": "journal_scope_integrity",
+          "status": "PASS",
+          "detail": ""
+        }
+      ],
+      "route": {
+        "status": "ROUTED",
+        "case_id": "CASE_07_EXPERIMENT_ONLY",
+        "mode": "E",
+        "manuscript_state": "METHOD_READY",
+        "domains": [
+          "RL_MARL",
+          "CONTROL"
+        ],
+        "domain_signal_scores": {
+          "RL_MARL": 120,
+          "CONTROL": 119
+        },
+        "target_journal": "TNNLS",
+        "journal_locked": true,
+        "journal_candidates": [
+          "TNNLS"
+        ],
+        "knowledge": {
+          "general_rule_ids": [
+            "GEN-ARCH-001",
+            "GEN-EVD-001",
+            "GEN-EVD-004",
+            "GEN-VIS-001"
+          ],
+          "domain_rule_ids": [
+            "DOM-RLMA-ABL-002",
+            "DOM-RL_M-ROB",
+            "DOM-RL_M-REAL",
+            "DOM-RL_M-RUN",
+            "DOM-CONT-ROB",
+            "DOM-CONT-REAL",
+            "DOM-CONT-RUN"
+          ],
+          "journal_rule_ids": [
+            "JRN-TNNLS-001"
+          ],
+          "domain_profiles": [
+            "D:\\ieee my skills\\ieee-trans-skill\\resources\\IEEE_TRANS_KNOWLEDGE\\06_DOMAINS\\RL_MARL.md",
+            "D:\\ieee my skills\\ieee-trans-skill\\resources\\IEEE_TRANS_KNOWLEDGE\\06_DOMAINS\\CONTROL.md"
+          ],
+          "journal_profile": "D:\\ieee my skills\\ieee-trans-skill\\resources\\IEEE_TRANS_KNOWLEDGE\\07_JOURNALS\\TNNLS.md",
+          "conflict_resolution": "D:\\ieee my skills\\ieee-trans-skill\\resources\\IEEE_TRANS_KNOWLEDGE\\08_SYNTHESIS\\CONFLICT_RESOLUTION.md"
+        },
+        "requested_roles": [
+          "EXPERIMENT_ARCHITECTURE",
+          "COMPARATIVE_EXPERIMENT"
+        ],
+        "workflows": [
+          "01_PROJECT_DIAGNOSIS",
+          "04_CLAIM_EVIDENCE_DESIGN",
+          "05_EXPERIMENT_DESIGN"
+        ],
+        "exemplars": [
+          {
+            "exemplar_id": "EX_021",
+            "paper_id": "P087",
+            "title": "Contact Models in Robotics: A Comparative Analysis",
+            "journal": "TRO",
+            "score": 75,
+            "score_breakdown": {
+              "domain": 30,
+              "role": 25,
+              "paper_type": 15,
+              "journal": 0,
+              "evidence": 0,
+              "rule": 5
+            },
+            "matched_domains": [
+              "CONTROL",
+              "RL_MARL"
+            ],
+            "matched_roles": [
+              "COMPARATIVE_EXPERIMENT"
+            ],
+            "matched_evidence": [],
+            "card_path": "D:\\ieee my skills\\IEEE_TRANS_EXEMPLARS\\01_CARDS\\EX_021.md",
+            "do_not_generalize": "- Do not turn its ranking into a universal choice across materials, robots, solvers, or contact regimes. - Journal tendency: TRO is an overlay, not a universal Transactions style. - Theory boundary: no strong formal-theory requirement should be inferred. - Physical-evidence boundary: absence of detected physical evidence is not evidence that all papers of this type can omit it. - Resource boundary: dataset, simulator, hardware, sensing, compute, and team size remain task-specific.",
+            "boundary_gate": "REVIEW_REQUIRED_BEFORE_USE"
+          },
+          {
+            "exemplar_id": "EX_006",
+            "paper_id": "P083",
+            "title": "Kimera-Multi: Robust, Distributed, Dense Metric-Semantic SLAM for Multi-Robot Systems",
+            "journal": "TRO",
+            "score": 75,
+            "score_breakdown": {
+              "domain": 20,
+              "role": 25,
+              "paper_type": 15,
+              "journal": 0,
+              "evidence": 10,
+              "rule": 5
+            },
+            "matched_domains": [
+              "RL_MARL"
+            ],
+            "matched_roles": [
+              "EXPERIMENT_ARCHITECTURE"
+            ],
+            "matched_evidence": [
+              "ABLATION",
+              "ROBUSTNESS"
+            ],
+            "card_path": "D:\\ieee my skills\\IEEE_TRANS_EXEMPLARS\\01_CARDS\\EX_006.md",
+            "do_not_generalize": "- Do not infer that its datasets, communication regime, or mapping stack cover all multi-robot deployments. - Journal tendency: TRO is an overlay, not a universal Transactions style. - Theory boundary: formal assumptions and guarantees are central. - Physical-evidence boundary: absence of detected physical evidence is not evidence that all papers of this type can omit it. - Resource boundary: dataset, simulator, hardware, sensing, compute, and team size remain task-specific.",
+            "boundary_gate": "REVIEW_REQUIRED_BEFORE_USE"
+          },
+          {
+            "exemplar_id": "EX_019",
+            "paper_id": "P057",
+            "title": "LiDAR-Based Autonomous Exploration Method of Mobile Robot Using Deep Reinforcement Learning in Unknown Environments",
+            "journal": "TIM",
+            "score": 65,
+            "score_breakdown": {
+              "domain": 20,
+              "role": 25,
+              "paper_type": 15,
+              "journal": 0,
+              "evidence": 0,
+              "rule": 5
+            },
+            "matched_domains": [
+              "RL_MARL"
+            ],
+            "matched_roles": [
+              "EXPERIMENT_ARCHITECTURE"
+            ],
+            "matched_evidence": [],
+            "card_path": "D:\\ieee my skills\\IEEE_TRANS_EXEMPLARS\\01_CARDS\\EX_019.md",
+            "do_not_generalize": "- Do not generalize LiDAR configuration, reward shaping, map family, or platform dynamics. - Journal tendency: TIM is an overlay, not a universal Transactions style. - Theory boundary: no strong formal-theory requirement should be inferred. - Physical-evidence boundary: the physical platform supports this paper’s deployment claim only. - Resource boundary: dataset, simulator, hardware, sensing, compute, and team size remain task-specific.",
+            "boundary_gate": "REVIEW_REQUIRED_BEFORE_USE"
+          }
+        ],
+        "exemplar_count": 3,
+        "default_exemplar_count": 3,
+        "maximum_exemplar_count": 5,
+        "missing_states": [],
+        "constraints": [
+          "Read each selected card's Do Not Generalize boundary before use.",
+          "Use user project evidence before corpus or exemplar content.",
+          "Do not treat corpus statistics as quotas.",
+          "Do not fabricate missing scientific evidence."
+        ]
+      }
+    },
+    {
+      "case_id": "CASE_08_FIGURE_ONLY",
+      "description": "figure design only for method and experiment results",
+      "status": "PASS",
+      "checks": [
+        {
+          "check": "status",
+          "status": "PASS",
+          "detail": "actual=ROUTED expected=ROUTED"
+        },
+        {
+          "check": "mode",
+          "status": "PASS",
+          "detail": "actual=F expected=F"
+        },
+        {
+          "check": "domains",
+          "status": "PASS",
+          "detail": "actual=['ROBOTICS', 'NAVIGATION_PLANNING']"
+        },
+        {
+          "check": "domain_limit",
+          "status": "PASS",
+          "detail": "['ROBOTICS', 'NAVIGATION_PLANNING']"
+        },
+        {
+          "check": "journal",
+          "status": "PASS",
+          "detail": "TIE"
+        },
+        {
+          "check": "journal_profile",
+          "status": "PASS",
+          "detail": ""
+        },
+        {
+          "check": "general_rules",
+          "status": "PASS",
+          "detail": "['GEN-EVD-001', 'GEN-EVD-006', 'GEN-VIS-001']"
+        },
+        {
+          "check": "domain_rules",
+          "status": "PASS",
+          "detail": "['DOM-ROBO-ROB', 'DOM-ROBO-REAL', 'DOM-ROBO-RUN', 'DOM-NAVI-ROB', 'DOM-NAVI-REAL', 'DOM-NAVI-RUN']"
+        },
+        {
+          "check": "journal_rule",
+          "status": "PASS",
+          "detail": "['JRN-TIE-001']"
+        },
+        {
+          "check": "workflow",
+          "status": "PASS",
+          "detail": "['01_PROJECT_DIAGNOSIS', '04_CLAIM_EVIDENCE_DESIGN', '06_FIGURE_TABLE_DESIGN']"
+        },
+        {
+          "check": "default_or_complex_count",
+          "status": "PASS",
+          "detail": "3"
+        },
+        {
+          "check": "maximum_five",
+          "status": "PASS",
+          "detail": "3"
+        },
+        {
+          "check": "unique_exemplars",
+          "status": "PASS",
+          "detail": ""
+        },
+        {
+          "check": "score_threshold",
+          "status": "PASS",
+          "detail": "[('EX_005', 90), ('EX_010', 90), ('EX_002', 85)]"
+        },
+        {
+          "check": "role_or_evidence_gate",
+          "status": "PASS",
+          "detail": ""
+        },
+        {
+          "check": "domain_relevance",
+          "status": "PASS",
+          "detail": "[('EX_005', 30), ('EX_010', 30), ('EX_002', 30)]"
+        },
+        {
+          "check": "boundary_loaded",
+          "status": "PASS",
+          "detail": ""
+        },
+        {
+          "check": "no_ral",
+          "status": "PASS",
+          "detail": ""
+        },
+        {
+          "check": "domain_scope_integrity",
+          "status": "PASS",
+          "detail": ""
+        },
+        {
+          "check": "journal_scope_integrity",
+          "status": "PASS",
+          "detail": ""
+        }
+      ],
+      "route": {
+        "status": "ROUTED",
+        "case_id": "CASE_08_FIGURE_ONLY",
+        "mode": "F",
+        "manuscript_state": "EXPERIMENT_COMPLETE",
+        "domains": [
+          "ROBOTICS",
+          "NAVIGATION_PLANNING"
+        ],
+        "domain_signal_scores": {
+          "ROBOTICS": 110,
+          "NAVIGATION_PLANNING": 109
+        },
+        "target_journal": "TIE",
+        "journal_locked": true,
+        "journal_candidates": [
+          "TIE"
+        ],
+        "knowledge": {
+          "general_rule_ids": [
+            "GEN-EVD-001",
+            "GEN-EVD-006",
+            "GEN-VIS-001"
+          ],
+          "domain_rule_ids": [
+            "DOM-ROBO-ROB",
+            "DOM-ROBO-REAL",
+            "DOM-ROBO-RUN",
+            "DOM-NAVI-ROB",
+            "DOM-NAVI-REAL",
+            "DOM-NAVI-RUN"
+          ],
+          "journal_rule_ids": [
+            "JRN-TIE-001"
+          ],
+          "domain_profiles": [
+            "D:\\ieee my skills\\ieee-trans-skill\\resources\\IEEE_TRANS_KNOWLEDGE\\06_DOMAINS\\ROBOTICS.md",
+            "D:\\ieee my skills\\ieee-trans-skill\\resources\\IEEE_TRANS_KNOWLEDGE\\06_DOMAINS\\NAVIGATION_PLANNING.md"
+          ],
+          "journal_profile": "D:\\ieee my skills\\ieee-trans-skill\\resources\\IEEE_TRANS_KNOWLEDGE\\07_JOURNALS\\TIE.md",
+          "conflict_resolution": "D:\\ieee my skills\\ieee-trans-skill\\resources\\IEEE_TRANS_KNOWLEDGE\\08_SYNTHESIS\\CONFLICT_RESOLUTION.md"
+        },
+        "requested_roles": [
+          "METHODOLOGY",
+          "EXPERIMENT_ARCHITECTURE",
+          "COMPARATIVE_EXPERIMENT",
+          "FIGURE_ARCHITECTURE",
+          "FIGURE",
+          "RESULT_NARRATIVE",
+          "TABLE_ARCHITECTURE"
+        ],
+        "workflows": [
+          "01_PROJECT_DIAGNOSIS",
+          "04_CLAIM_EVIDENCE_DESIGN",
+          "06_FIGURE_TABLE_DESIGN"
+        ],
+        "exemplars": [
+          {
+            "exemplar_id": "EX_005",
+            "paper_id": "P046",
+            "title": "Model Predictive Optimization and Terminal Sliding Mode Motion Control for Mobile Robot With Obstacle Avoidance",
+            "journal": "TIE",
+            "score": 90,
+            "score_breakdown": {
+              "domain": 30,
+              "role": 15,
+              "paper_type": 15,
+              "journal": 15,
+              "evidence": 10,
+              "rule": 5
+            },
+            "matched_domains": [
+              "NAVIGATION_PLANNING",
+              "ROBOTICS"
+            ],
+            "matched_roles": [
+              "EXPERIMENT_ARCHITECTURE",
+              "FIGURE",
+              "RESULT_NARRATIVE"
+            ],
+            "matched_evidence": [
+              "MAIN_COMPARISON",
+              "REAL_WORLD"
+            ],
+            "card_path": "D:\\ieee my skills\\IEEE_TRANS_EXEMPLARS\\01_CARDS\\EX_005.md",
+            "do_not_generalize": "- Do not treat terminal sliding-mode design or its stability conditions as universal for other vehicle dynamics. - Journal tendency: TIE is an overlay, not a universal Transactions style. - Theory boundary: formal assumptions and guarantees are central. - Physical-evidence boundary: the physical platform supports this paper’s deployment claim only. - Resource boundary: dataset, simulator, hardware, sensing, compute, and team size remain task-specific.",
+            "boundary_gate": "REVIEW_REQUIRED_BEFORE_USE"
+          },
+          {
+            "exemplar_id": "EX_010",
+            "paper_id": "P047",
+            "title": "Real-Time Dynamic Obstacle Avoidance for Robot Manipulators Based on Cascaded Nonlinear MPC With Artificial Potential Field",
+            "journal": "TIE",
+            "score": 90,
+            "score_breakdown": {
+              "domain": 30,
+              "role": 15,
+              "paper_type": 15,
+              "journal": 15,
+              "evidence": 10,
+              "rule": 5
+            },
+            "matched_domains": [
+              "NAVIGATION_PLANNING",
+              "ROBOTICS"
+            ],
+            "matched_roles": [
+              "FIGURE",
+              "RESULT_NARRATIVE"
+            ],
+            "matched_evidence": [
+              "MAIN_COMPARISON",
+              "REAL_WORLD"
+            ],
+            "card_path": "D:\\ieee my skills\\IEEE_TRANS_EXEMPLARS\\01_CARDS\\EX_010.md",
+            "do_not_generalize": "- Do not conclude that every manipulator planner needs this cascade or that one platform proves broad deployment readiness. - Journal tendency: TIE is an overlay, not a universal Transactions style. - Theory boundary: formal assumptions and guarantees are central. - Physical-evidence boundary: the physical platform supports this paper’s deployment claim only. - Resource boundary: dataset, simulator, hardware, sensing, compute, and team size remain task-specific.",
+            "boundary_gate": "REVIEW_REQUIRED_BEFORE_USE"
+          },
+          {
+            "exemplar_id": "EX_002",
+            "paper_id": "P045",
+            "title": "Semantic-Driven Autonomous Visual Navigation for Unmanned Aerial Vehicles",
+            "journal": "TIE",
+            "score": 85,
+            "score_breakdown": {
+              "domain": 30,
+              "role": 25,
+              "paper_type": 0,
+              "journal": 15,
+              "evidence": 10,
+              "rule": 5
+            },
+            "matched_domains": [
+              "NAVIGATION_PLANNING",
+              "ROBOTICS"
+            ],
+            "matched_roles": [
+              "FIGURE_ARCHITECTURE"
+            ],
+            "matched_evidence": [
+              "MAIN_COMPARISON",
+              "REAL_WORLD"
+            ],
+            "card_path": "D:\\ieee my skills\\IEEE_TRANS_EXEMPLARS\\01_CARDS\\EX_002.md",
+            "do_not_generalize": "- Do not assume the same semantic classes, sensor stack, or UAV environment transfer to other robots. - Journal tendency: TIE is an overlay, not a universal Transactions style. - Theory boundary: no strong formal-theory requirement should be inferred. - Physical-evidence boundary: the physical platform supports this paper’s deployment claim only. - Resource boundary: dataset, simulator, hardware, sensing, compute, and team size remain task-specific.",
+            "boundary_gate": "REVIEW_REQUIRED_BEFORE_USE"
+          }
+        ],
+        "exemplar_count": 3,
+        "default_exemplar_count": 3,
+        "maximum_exemplar_count": 5,
+        "missing_states": [],
+        "constraints": [
+          "Read each selected card's Do Not Generalize boundary before use.",
+          "Use user project evidence before corpus or exemplar content.",
+          "Do not treat corpus statistics as quotas.",
+          "Do not fabricate missing scientific evidence."
+        ]
+      }
+    },
+    {
+      "case_id": "CASE_09_RAL_BOUNDARY",
+      "description": "write the paper",
+      "status": "PASS",
+      "checks": [
+        {
+          "check": "status",
+          "status": "PASS",
+          "detail": "actual=OUT_OF_SCOPE expected=OUT_OF_SCOPE"
+        },
+        {
+          "check": "ral_boundary",
+          "status": "PASS",
+          "detail": "RA-L is outside this long-form IEEE Transactions skill."
+        }
+      ],
+      "route": {
+        "status": "OUT_OF_SCOPE",
+        "reason": "RA-L is outside this long-form IEEE Transactions skill.",
+        "case_id": "CASE_09_RAL_BOUNDARY"
+      }
+    }
+  ]
+}

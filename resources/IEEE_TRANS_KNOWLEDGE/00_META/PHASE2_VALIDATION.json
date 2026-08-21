@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "source_corpus_untouched": true,
+  "counts": {
+    "all": 120,
+    "A": 100,
+    "B": 20,
+    "patterns": 22,
+    "rules": 42,
+    "evidence_links": 263,
+    "exemplars": 30
+  },
+  "checks": {
+    "paper_anatomy_100": true,
+    "B_validation_20": true,
+    "all_pdf_sources_present": true,
+    "rule_denominators_A_only": true,
+    "exemplar_range_25_35": true,
+    "no_skill_md": true,
+    "required_status": true
+  }
+}

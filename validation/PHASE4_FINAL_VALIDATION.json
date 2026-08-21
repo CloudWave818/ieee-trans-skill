@@ -1,0 +1,911 @@
+{
+  "validator": "Phase-4 independent structural, routing, workflow, safety, and boundary validator",
+  "overall_status": "PASS",
+  "completion_status": "PHASE 4 IEEE TRANS WRITING SKILL CONSTRUCTED / READY FOR REAL-PAPER VALIDATION",
+  "summary": {
+    "checks": 179,
+    "passed": 179,
+    "failed": 0,
+    "synthetic_cases": 9,
+    "rules": 42,
+    "exemplars": 27,
+    "exemplar_rule_links": 189
+  },
+  "checks": [
+    {
+      "check": "file:SKILL.md",
+      "status": "PASS",
+      "detail": "D:\\ieee my skills\\ieee-trans-skill\\SKILL.md"
+    },
+    {
+      "check": "file:agents/openai.yaml",
+      "status": "PASS",
+      "detail": "D:\\ieee my skills\\ieee-trans-skill\\agents\\openai.yaml"
+    },
+    {
+      "check": "file:PHASE4_FINAL_REPORT.md",
+      "status": "PASS",
+      "detail": "D:\\ieee my skills\\ieee-trans-skill\\PHASE4_FINAL_REPORT.md"
+    },
+    {
+      "check": "file:config/KNOWLEDGE_PATHS.md",
+      "status": "PASS",
+      "detail": "D:\\ieee my skills\\ieee-trans-skill\\config\\KNOWLEDGE_PATHS.md"
+    },
+    {
+      "check": "file:config/JOURNAL_ROUTING.md",
+      "status": "PASS",
+      "detail": "D:\\ieee my skills\\ieee-trans-skill\\config\\JOURNAL_ROUTING.md"
+    },
+    {
+      "check": "file:config/DOMAIN_ROUTING.md",
+      "status": "PASS",
+      "detail": "D:\\ieee my skills\\ieee-trans-skill\\config\\DOMAIN_ROUTING.md"
+    },
+    {
+      "check": "file:config/EXEMPLAR_ROUTING.md",
+      "status": "PASS",
+      "detail": "D:\\ieee my skills\\ieee-trans-skill\\config\\EXEMPLAR_ROUTING.md"
+    },
+    {
+      "check": "file:config/PAPER_TYPE_ROUTING.md",
+      "status": "PASS",
+      "detail": "D:\\ieee my skills\\ieee-trans-skill\\config\\PAPER_TYPE_ROUTING.md"
+    },
+    {
+      "check": "file:workflows/01_PROJECT_DIAGNOSIS.md",
+      "status": "PASS",
+      "detail": "D:\\ieee my skills\\ieee-trans-skill\\workflows\\01_PROJECT_DIAGNOSIS.md"
+    },
+    {
+      "check": "file:workflows/02_RESEARCH_ARCHITECTURE.md",
+      "status": "PASS",
+      "detail": "D:\\ieee my skills\\ieee-trans-skill\\workflows\\02_RESEARCH_ARCHITECTURE.md"
+    },
+    {
+      "check": "file:workflows/03_CONTRIBUTION_DESIGN.md",
+      "status": "PASS",
+      "detail": "D:\\ieee my skills\\ieee-trans-skill\\workflows\\03_CONTRIBUTION_DESIGN.md"
+    },
+    {
+      "check": "file:workflows/04_CLAIM_EVIDENCE_DESIGN.md",
+      "status": "PASS",
+      "detail": "D:\\ieee my skills\\ieee-trans-skill\\workflows\\04_CLAIM_EVIDENCE_DESIGN.md"
+    },
+    {
+      "check": "file:workflows/05_EXPERIMENT_DESIGN.md",
+      "status": "PASS",
+      "detail": "D:\\ieee my skills\\ieee-trans-skill\\workflows\\05_EXPERIMENT_DESIGN.md"
+    },
+    {
+      "check": "file:workflows/06_FIGURE_TABLE_DESIGN.md",
+      "status": "PASS",
+      "detail": "D:\\ieee my skills\\ieee-trans-skill\\workflows\\06_FIGURE_TABLE_DESIGN.md"
+    },
+    {
+      "check": "file:workflows/07_PAGE_BUDGET.md",
+      "status": "PASS",
+      "detail": "D:\\ieee my skills\\ieee-trans-skill\\workflows\\07_PAGE_BUDGET.md"
+    },
+    {
+      "check": "file:workflows/08_SECTION_OUTLINE.md",
+      "status": "PASS",
+      "detail": "D:\\ieee my skills\\ieee-trans-skill\\workflows\\08_SECTION_OUTLINE.md"
+    },
+    {
+      "check": "file:workflows/09_SECTION_WRITING.md",
+      "status": "PASS",
+      "detail": "D:\\ieee my skills\\ieee-trans-skill\\workflows\\09_SECTION_WRITING.md"
+    },
+    {
+      "check": "file:workflows/10_RESULTS_INTERPRETATION.md",
+      "status": "PASS",
+      "detail": "D:\\ieee my skills\\ieee-trans-skill\\workflows\\10_RESULTS_INTERPRETATION.md"
+    },
+    {
+      "check": "file:workflows/11_FULL_PAPER_INTEGRATION.md",
+      "status": "PASS",
+      "detail": "D:\\ieee my skills\\ieee-trans-skill\\workflows\\11_FULL_PAPER_INTEGRATION.md"
+    },
+    {
+      "check": "file:workflows/12_FINAL_AUDIT.md",
+      "status": "PASS",
+      "detail": "D:\\ieee my skills\\ieee-trans-skill\\workflows\\12_FINAL_AUDIT.md"
+    },
+    {
+      "check": "file:audits/SCIENTIFIC_LOGIC_AUDIT.md",
+      "status": "PASS",
+      "detail": "D:\\ieee my skills\\ieee-trans-skill\\audits\\SCIENTIFIC_LOGIC_AUDIT.md"
+    },
+    {
+      "check": "file:audits/CONTRIBUTION_AUDIT.md",
+      "status": "PASS",
+      "detail": "D:\\ieee my skills\\ieee-trans-skill\\audits\\CONTRIBUTION_AUDIT.md"
+    },
+    {
+      "check": "file:audits/CLAIM_EVIDENCE_AUDIT.md",
+      "status": "PASS",
+      "detail": "D:\\ieee my skills\\ieee-trans-skill\\audits\\CLAIM_EVIDENCE_AUDIT.md"
+    },
+    {
+      "check": "file:audits/EXPERIMENT_AUDIT.md",
+      "status": "PASS",
+      "detail": "D:\\ieee my skills\\ieee-trans-skill\\audits\\EXPERIMENT_AUDIT.md"
+    },
+    {
+      "check": "file:audits/FIGURE_TABLE_AUDIT.md",
+      "status": "PASS",
+      "detail": "D:\\ieee my skills\\ieee-trans-skill\\audits\\FIGURE_TABLE_AUDIT.md"
+    },
+    {
+      "check": "file:audits/WRITING_STYLE_AUDIT.md",
+      "status": "PASS",
+      "detail": "D:\\ieee my skills\\ieee-trans-skill\\audits\\WRITING_STYLE_AUDIT.md"
+    },
+    {
+      "check": "file:audits/JOURNAL_FIT_AUDIT.md",
+      "status": "PASS",
+      "detail": "D:\\ieee my skills\\ieee-trans-skill\\audits\\JOURNAL_FIT_AUDIT.md"
+    },
+    {
+      "check": "file:audits/AI_WRITING_AUDIT.md",
+      "status": "PASS",
+      "detail": "D:\\ieee my skills\\ieee-trans-skill\\audits\\AI_WRITING_AUDIT.md"
+    },
+    {
+      "check": "file:audits/REVIEWER_AUDIT.md",
+      "status": "PASS",
+      "detail": "D:\\ieee my skills\\ieee-trans-skill\\audits\\REVIEWER_AUDIT.md"
+    },
+    {
+      "check": "file:templates/PROJECT_PROFILE.md",
+      "status": "PASS",
+      "detail": "D:\\ieee my skills\\ieee-trans-skill\\templates\\PROJECT_PROFILE.md"
+    },
+    {
+      "check": "file:templates/CLAIM_EVIDENCE_MATRIX.md",
+      "status": "PASS",
+      "detail": "D:\\ieee my skills\\ieee-trans-skill\\templates\\CLAIM_EVIDENCE_MATRIX.md"
+    },
+    {
+      "check": "file:templates/CONTRIBUTION_MATRIX.md",
+      "status": "PASS",
+      "detail": "D:\\ieee my skills\\ieee-trans-skill\\templates\\CONTRIBUTION_MATRIX.md"
+    },
+    {
+      "check": "file:templates/EXPERIMENT_MATRIX.md",
+      "status": "PASS",
+      "detail": "D:\\ieee my skills\\ieee-trans-skill\\templates\\EXPERIMENT_MATRIX.md"
+    },
+    {
+      "check": "file:templates/FIGURE_TABLE_PLAN.md",
+      "status": "PASS",
+      "detail": "D:\\ieee my skills\\ieee-trans-skill\\templates\\FIGURE_TABLE_PLAN.md"
+    },
+    {
+      "check": "file:templates/PAGE_BUDGET.md",
+      "status": "PASS",
+      "detail": "D:\\ieee my skills\\ieee-trans-skill\\templates\\PAGE_BUDGET.md"
+    },
+    {
+      "check": "file:templates/PAPER_BLUEPRINT.md",
+      "status": "PASS",
+      "detail": "D:\\ieee my skills\\ieee-trans-skill\\templates\\PAPER_BLUEPRINT.md"
+    },
+    {
+      "check": "file:templates/SECTION_BRIEF.md",
+      "status": "PASS",
+      "detail": "D:\\ieee my skills\\ieee-trans-skill\\templates\\SECTION_BRIEF.md"
+    },
+    {
+      "check": "file:templates/FINAL_AUDIT_REPORT.md",
+      "status": "PASS",
+      "detail": "D:\\ieee my skills\\ieee-trans-skill\\templates\\FINAL_AUDIT_REPORT.md"
+    },
+    {
+      "check": "file:scripts/route_project.py",
+      "status": "PASS",
+      "detail": "D:\\ieee my skills\\ieee-trans-skill\\scripts\\route_project.py"
+    },
+    {
+      "check": "file:scripts/run_synthetic_tests.py",
+      "status": "PASS",
+      "detail": "D:\\ieee my skills\\ieee-trans-skill\\scripts\\run_synthetic_tests.py"
+    },
+    {
+      "check": "file:scripts/validate_phase4.py",
+      "status": "PASS",
+      "detail": "D:\\ieee my skills\\ieee-trans-skill\\scripts\\validate_phase4.py"
+    },
+    {
+      "check": "file:validation/SKILL_VALIDATION_PLAN.md",
+      "status": "PASS",
+      "detail": "D:\\ieee my skills\\ieee-trans-skill\\validation\\SKILL_VALIDATION_PLAN.md"
+    },
+    {
+      "check": "file:validation/ROUTING_TESTS.md",
+      "status": "PASS",
+      "detail": "D:\\ieee my skills\\ieee-trans-skill\\validation\\ROUTING_TESTS.md"
+    },
+    {
+      "check": "file:validation/WORKFLOW_TESTS.md",
+      "status": "PASS",
+      "detail": "D:\\ieee my skills\\ieee-trans-skill\\validation\\WORKFLOW_TESTS.md"
+    },
+    {
+      "check": "file:validation/synthetic_cases.json",
+      "status": "PASS",
+      "detail": "D:\\ieee my skills\\ieee-trans-skill\\validation\\synthetic_cases.json"
+    },
+    {
+      "check": "file:validation/SYNTHETIC_RESULTS.json",
+      "status": "PASS",
+      "detail": "D:\\ieee my skills\\ieee-trans-skill\\validation\\SYNTHETIC_RESULTS.json"
+    },
+    {
+      "check": "directory:agents",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "directory:config",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "directory:workflows",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "directory:audits",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "directory:templates",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "directory:scripts",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "directory:validation",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "skill_frontmatter_present",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "skill_frontmatter_only_name_description",
+      "status": "PASS",
+      "detail": "['name', 'description']"
+    },
+    {
+      "check": "skill_name_valid",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "skill_description_trigger_scope",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "skill_under_500_lines",
+      "status": "PASS",
+      "detail": "151"
+    },
+    {
+      "check": "skill_under_5000_words",
+      "status": "PASS",
+      "detail": "1308"
+    },
+    {
+      "check": "no_todo_placeholders",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "agent_display_name",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "agent_short_description",
+      "status": "PASS",
+      "detail": "Evidence-first IEEE Transactions paper workflow"
+    },
+    {
+      "check": "agent_default_prompt_mentions_skill",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "skill_creator_quick_validate",
+      "status": "PASS",
+      "detail": "Skill is valid!"
+    },
+    {
+      "check": "python_compile:route_project.py",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "python_compile:run_synthetic_tests.py",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "python_compile:validate_phase4.py",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "skill_contract:IDEA_ONLY",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "skill_contract:METHOD_READY",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "skill_contract:EXPERIMENT_PARTIAL",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "skill_contract:EXPERIMENT_COMPLETE",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "skill_contract:DRAFT_PARTIAL",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "skill_contract:FULL_DRAFT",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "skill_contract:REVISION",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "skill_contract:MISSING_INPUT",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "skill_contract:NEEDS_EXPERIMENT",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "skill_contract:NEEDS_REFERENCE",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "skill_contract:NEEDS_AUTHOR_DECISION",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "skill_contract:CLAIM_WITHOUT_EVIDENCE",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "skill_contract:PAPER ARCHITECTURE READY",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "skill_contract:SUBMISSION-LEVEL DRAFT",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "skill_contract:Formal General Rule",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "skill_contract:Do Not Generalize",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "skill_contract:RA-L",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "skill_contract:three exemplars",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "skill_contract:at most five",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "mode:A",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "mode:B",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "mode:C",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "mode:D",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "mode:E",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "mode:F",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "mode:G",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "mode:H",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "mode:I",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "mode:J",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "workflow_entry:01_PROJECT_DIAGNOSIS.md",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "workflow_exit:01_PROJECT_DIAGNOSIS.md",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "workflow_entry:02_RESEARCH_ARCHITECTURE.md",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "workflow_exit:02_RESEARCH_ARCHITECTURE.md",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "workflow_entry:03_CONTRIBUTION_DESIGN.md",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "workflow_exit:03_CONTRIBUTION_DESIGN.md",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "workflow_entry:04_CLAIM_EVIDENCE_DESIGN.md",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "workflow_exit:04_CLAIM_EVIDENCE_DESIGN.md",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "workflow_entry:05_EXPERIMENT_DESIGN.md",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "workflow_exit:05_EXPERIMENT_DESIGN.md",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "workflow_entry:06_FIGURE_TABLE_DESIGN.md",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "workflow_exit:06_FIGURE_TABLE_DESIGN.md",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "workflow_entry:07_PAGE_BUDGET.md",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "workflow_exit:07_PAGE_BUDGET.md",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "workflow_entry:08_SECTION_OUTLINE.md",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "workflow_exit:08_SECTION_OUTLINE.md",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "workflow_entry:09_SECTION_WRITING.md",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "workflow_exit:09_SECTION_WRITING.md",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "workflow_entry:10_RESULTS_INTERPRETATION.md",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "workflow_exit:10_RESULTS_INTERPRETATION.md",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "workflow_entry:11_FULL_PAPER_INTEGRATION.md",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "workflow_exit:11_FULL_PAPER_INTEGRATION.md",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "workflow_entry:12_FINAL_AUDIT.md",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "workflow_exit:12_FINAL_AUDIT.md",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "audit_output:AI_WRITING_AUDIT.md",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "audit_severity_or_blocker:AI_WRITING_AUDIT.md",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "audit_output:CLAIM_EVIDENCE_AUDIT.md",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "audit_severity_or_blocker:CLAIM_EVIDENCE_AUDIT.md",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "audit_output:CONTRIBUTION_AUDIT.md",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "audit_severity_or_blocker:CONTRIBUTION_AUDIT.md",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "audit_output:EXPERIMENT_AUDIT.md",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "audit_severity_or_blocker:EXPERIMENT_AUDIT.md",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "audit_output:FIGURE_TABLE_AUDIT.md",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "audit_severity_or_blocker:FIGURE_TABLE_AUDIT.md",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "audit_output:JOURNAL_FIT_AUDIT.md",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "audit_severity_or_blocker:JOURNAL_FIT_AUDIT.md",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "audit_output:REVIEWER_AUDIT.md",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "audit_severity_or_blocker:REVIEWER_AUDIT.md",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "audit_output:SCIENTIFIC_LOGIC_AUDIT.md",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "audit_severity_or_blocker:SCIENTIFIC_LOGIC_AUDIT.md",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "audit_output:WRITING_STYLE_AUDIT.md",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "audit_severity_or_blocker:WRITING_STYLE_AUDIT.md",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "template_contract:PROJECT_PROFILE.md",
+      "status": "PASS",
+      "detail": "[]"
+    },
+    {
+      "check": "template_contract:CLAIM_EVIDENCE_MATRIX.md",
+      "status": "PASS",
+      "detail": "[]"
+    },
+    {
+      "check": "template_contract:CONTRIBUTION_MATRIX.md",
+      "status": "PASS",
+      "detail": "[]"
+    },
+    {
+      "check": "template_contract:EXPERIMENT_MATRIX.md",
+      "status": "PASS",
+      "detail": "[]"
+    },
+    {
+      "check": "template_contract:FIGURE_TABLE_PLAN.md",
+      "status": "PASS",
+      "detail": "[]"
+    },
+    {
+      "check": "template_contract:PAGE_BUDGET.md",
+      "status": "PASS",
+      "detail": "[]"
+    },
+    {
+      "check": "template_contract:PAPER_BLUEPRINT.md",
+      "status": "PASS",
+      "detail": "[]"
+    },
+    {
+      "check": "template_contract:SECTION_BRIEF.md",
+      "status": "PASS",
+      "detail": "[]"
+    },
+    {
+      "check": "template_contract:FINAL_AUDIT_REPORT.md",
+      "status": "PASS",
+      "detail": "[]"
+    },
+    {
+      "check": "upstream_rule_total_42",
+      "status": "PASS",
+      "detail": "42"
+    },
+    {
+      "check": "upstream_rule_scopes_7_22_13",
+      "status": "PASS",
+      "detail": "{'general': 7, 'domain': 22, 'journal': 13}"
+    },
+    {
+      "check": "upstream_exemplars_27",
+      "status": "PASS",
+      "detail": "27"
+    },
+    {
+      "check": "upstream_rule_links_189",
+      "status": "PASS",
+      "detail": "189"
+    },
+    {
+      "check": "phase3_validation_pass",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "upstream_read_only_since_skill_creation:IEEE_TRANS_CORPUS",
+      "status": "PASS",
+      "detail": "newest=1787232775.728289 skill_created=1787276111.3926196"
+    },
+    {
+      "check": "upstream_read_only_since_skill_creation:IEEE_TRANS_KNOWLEDGE",
+      "status": "PASS",
+      "detail": "newest=1787270505.6207004 skill_created=1787276111.3926196"
+    },
+    {
+      "check": "upstream_read_only_since_skill_creation:IEEE_TRANS_EXEMPLARS",
+      "status": "PASS",
+      "detail": "newest=1787270813.110015 skill_created=1787276111.3926196"
+    },
+    {
+      "check": "no_pdf_copied_into_skill",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "no_skill_in_upstream_layers",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "synthetic_runner_exit",
+      "status": "PASS",
+      "detail": "{\n  \"overall_status\": \"PASS\",\n  \"cases\": 9,\n  \"passed\": 9,\n  \"failed\": 0\n}"
+    },
+    {
+      "check": "synthetic_overall_pass",
+      "status": "PASS",
+      "detail": "{'cases': 9, 'passed': 9, 'failed': 0}"
+    },
+    {
+      "check": "synthetic_at_least_eight",
+      "status": "PASS",
+      "detail": "9"
+    },
+    {
+      "check": "all_synthetic_checks_pass",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "default_three_exemplars",
+      "status": "PASS",
+      "detail": "[3, 3, 3, 3, 3, 3, 3, 3]"
+    },
+    {
+      "check": "maximum_five_exemplars",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "two_to_four_domains",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "ral_excluded",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "final_report_status",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "final_report_section:1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "final_report_section:2",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "final_report_section:3",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "final_report_section:4",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "final_report_section:5",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "final_report_section:6",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "final_report_section:7",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "final_report_section:8",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "final_report_section:9",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "final_report_section:10",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "final_report_section:11",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "final_report_section:12",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "real_paper_validation_not_stable_claim",
+      "status": "PASS",
+      "detail": ""
+    }
+  ]
+}

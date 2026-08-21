@@ -1,0 +1,450 @@
+{
+  "validator": "independent phase-3 structural and referential validator",
+  "overall_status": "PASS",
+  "summary": {
+    "checks": 87,
+    "passed": 87,
+    "failed": 0,
+    "exemplars": 27,
+    "rule_links": 189,
+    "journals": 12,
+    "primary_roles": 19
+  },
+  "checks": [
+    {
+      "check": "directory:00_META",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "directory:01_CARDS",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "directory:02_INDEXES",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "directory:03_ROUTING",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "directory:04_ANALYSIS",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "directory:05_VALIDATION",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "file:00_META/EXEMPLAR_REGISTRY.csv",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "file:00_META/EXEMPLAR_RULE_LINKS.csv",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "file:00_META/EXEMPLAR_ROUTING.csv",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "file:00_META/EXEMPLAR_BUILD_STATUS.md",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "file:02_INDEXES/BY_ROLE.md",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "file:02_INDEXES/BY_DOMAIN.md",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "file:02_INDEXES/BY_JOURNAL.md",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "file:02_INDEXES/BY_PAPER_TYPE.md",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "file:02_INDEXES/BY_RULE.md",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "file:03_ROUTING/RETRIEVAL_ARCHITECTURE.md",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "file:03_ROUTING/ROUTING_RULES.md",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "file:03_ROUTING/QUERY_EXAMPLES.md",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "file:04_ANALYSIS/EXEMPLAR_COVERAGE_AUDIT.md",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "file:04_ANALYSIS/EXEMPLAR_DIVERSITY_AUDIT.md",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "file:04_ANALYSIS/EXEMPLAR_REDUNDANCY_AUDIT.md",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "file:04_ANALYSIS/PHASE3_FINAL_REPORT.md",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "file:04_ANALYSIS/CANDIDATE_AUDIT.csv",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "file:05_VALIDATION/EXEMPLAR_VALIDATION.csv",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "file:05_VALIDATION/VISUAL_PAGE_AUDIT.csv",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "file:05_VALIDATION/VISUAL_AUDIT_SUMMARY.md",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "file:05_VALIDATION/SOURCE_OVERLAP_AUDIT.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "phase2.5:PHASE2_5_RULE_AUDIT.md",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "phase2.5:UNCERTAINTY_AUDIT.md",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "phase2.5:PHASE2_5_RULE_CHANGES.csv",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "exemplar_count_25_to_30",
+      "status": "PASS",
+      "detail": "27"
+    },
+    {
+      "check": "card_count_matches_registry",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "unique_exemplar_ids",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "unique_paper_ids",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "sequential_exemplar_ids",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "routing_one_row_per_exemplar",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "validation_one_row_per_exemplar",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "visual_audit_one_row_per_exemplar",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "all_visual_pages_rendered",
+      "status": "PASS",
+      "detail": "27/27"
+    },
+    {
+      "check": "all_visual_pages_inspected",
+      "status": "PASS",
+      "detail": "27/27"
+    },
+    {
+      "check": "candidate_audit_has_30",
+      "status": "PASS",
+      "detail": "30"
+    },
+    {
+      "check": "candidate_decisions_27_keep_3_drop",
+      "status": "PASS",
+      "detail": "{'KEEP': 27, 'DROP_REDUNDANT': 3}"
+    },
+    {
+      "check": "all_cards_have_required_sections",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "all_cards_substantive_length",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "all_source_pdfs_exist_outside_output",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "rule_links_nonempty",
+      "status": "PASS",
+      "detail": "189"
+    },
+    {
+      "check": "rule_link_exemplar_fk",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "rule_link_rule_fk",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "rule_link_relationship_enum",
+      "status": "PASS",
+      "detail": "['DOMAIN_SPECIFIC_EXAMPLE', 'JOURNAL_SPECIFIC_EXAMPLE', 'SUPPORTS']"
+    },
+    {
+      "check": "every_card_has_rule_links",
+      "status": "PASS",
+      "detail": "7"
+    },
+    {
+      "check": "all_builder_validations_pass",
+      "status": "PASS",
+      "detail": "27/27"
+    },
+    {
+      "check": "teaching_role:INTRODUCTION",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "teaching_role:PROBLEM_FORMULATION",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "teaching_role:METHODOLOGY",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "teaching_role:THEORY",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "teaching_role:EXPERIMENT_ARCHITECTURE",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "teaching_role:FIGURE",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "teaching_role:TABLE",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "teaching_role:RESULT_NARRATIVE",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "teaching_role:REAL_WORLD_VALIDATION",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "teaching_role:CONTROL",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "teaching_role:RL_MARL",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "teaching_role:MULTI_AGENT",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "teaching_role:PLANNING",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "teaching_role:UAV",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "domain:UAV_AUTONOMY",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "domain:RL_MARL",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "domain:MULTI_AGENT_DECISION",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "domain:CONTROL",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "domain:NAVIGATION_PLANNING",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "domain:ROBOTICS",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "journal_diversity_at_least_10",
+      "status": "PASS",
+      "detail": "{'TRO': 7, 'TIE': 4, 'TCST': 4, 'TSMCS': 1, 'TNNLS': 1, 'TCYB': 1, 'TASE': 2, 'TIV': 3, 'TMECH': 1, 'TIM': 1, 'TAC': 1, 'TVT': 1}"
+    },
+    {
+      "check": "role_diversity_at_least_12",
+      "status": "PASS",
+      "detail": "{'INTRODUCTION': 1, 'FIGURE_ARCHITECTURE': 2, 'PROBLEM_FORMULATION': 2, 'METHODOLOGY': 2, 'THEORY': 2, 'EXPERIMENT_ARCHITECTURE': 2, 'ROBUSTNESS_DESIGN': 2, 'TABLE_ARCHITECTURE': 1, 'RESULT_NARRATIVE': 1, 'REAL_WORLD_VALIDATION': 1, 'CONTROL': 2, 'RL_MARL': 1, 'MULTI_AGENT': 1, 'UAV': 1, 'PLANNING': 1, 'STRUCTURE': 1, 'COMPARATIVE_EXPERIMENT': 1, 'TRAJECTORY_OPTIMIZATION': 2, 'NAVIGATION_PLANNING': 1}"
+    },
+    {
+      "check": "largest_journal_below_30_percent",
+      "status": "PASS",
+      "detail": "7/27"
+    },
+    {
+      "check": "largest_primary_role_below_20_percent",
+      "status": "PASS",
+      "detail": "2/27"
+    },
+    {
+      "check": "formal_rule_total_42",
+      "status": "PASS",
+      "detail": "42"
+    },
+    {
+      "check": "phase2.5_scope_counts_7_22_13",
+      "status": "PASS",
+      "detail": "7/22/13"
+    },
+    {
+      "check": "reclassified_rule_present",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "old_rule_absent",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "uncertainty_token:UNKNOWN",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "uncertainty_token:ESTIMATED",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "uncertainty_token:LOWER_BOUND",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "uncertainty_not_zero_policy",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "required_status_in_build_status",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "required_status_in_final_report",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "phase4_not_created",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "no_long_source_sentence_overlap",
+      "status": "PASS",
+      "detail": "max=0 threshold=21"
+    }
+  ]
+}

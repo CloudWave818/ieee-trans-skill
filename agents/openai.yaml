@@ -1,0 +1,4 @@
+interface:
+  display_name: "IEEE Transactions Paper Architect"
+  short_description: "Evidence-first IEEE Transactions paper workflow"
+  default_prompt: "Use $ieee-trans-skill to diagnose my project and build an evidence-grounded IEEE Transactions paper plan."

@@ -1,0 +1,225 @@
+{
+  "method": "Exact normalized word-run comparison between analytical card sections and full PDF text; metadata, title, structural headings, and figure/table inventory sections are excluded.",
+  "window_words": 12,
+  "failure_threshold_words": 21,
+  "overall_status": "PASS",
+  "maximum_observed_word_run": 0,
+  "cards": [
+    {
+      "Exemplar_ID": "EX_001",
+      "Paper_ID": "P082",
+      "Longest_exact_word_run": 0,
+      "Threshold": 21,
+      "Status": "PASS",
+      "Longest_run_preview": ""
+    },
+    {
+      "Exemplar_ID": "EX_002",
+      "Paper_ID": "P045",
+      "Longest_exact_word_run": 0,
+      "Threshold": 21,
+      "Status": "PASS",
+      "Longest_run_preview": ""
+    },
+    {
+      "Exemplar_ID": "EX_003",
+      "Paper_ID": "P027",
+      "Longest_exact_word_run": 0,
+      "Threshold": 21,
+      "Status": "PASS",
+      "Longest_run_preview": ""
+    },
+    {
+      "Exemplar_ID": "EX_004",
+      "Paper_ID": "P092",
+      "Longest_exact_word_run": 0,
+      "Threshold": 21,
+      "Status": "PASS",
+      "Longest_run_preview": ""
+    },
+    {
+      "Exemplar_ID": "EX_005",
+      "Paper_ID": "P046",
+      "Longest_exact_word_run": 0,
+      "Threshold": 21,
+      "Status": "PASS",
+      "Longest_run_preview": ""
+    },
+    {
+      "Exemplar_ID": "EX_006",
+      "Paper_ID": "P083",
+      "Longest_exact_word_run": 0,
+      "Threshold": 21,
+      "Status": "PASS",
+      "Longest_run_preview": ""
+    },
+    {
+      "Exemplar_ID": "EX_007",
+      "Paper_ID": "P077",
+      "Longest_exact_word_run": 0,
+      "Threshold": 21,
+      "Status": "PASS",
+      "Longest_run_preview": ""
+    },
+    {
+      "Exemplar_ID": "EX_008",
+      "Paper_ID": "P033",
+      "Longest_exact_word_run": 0,
+      "Threshold": 21,
+      "Status": "PASS",
+      "Longest_run_preview": ""
+    },
+    {
+      "Exemplar_ID": "EX_009",
+      "Paper_ID": "P016",
+      "Longest_exact_word_run": 0,
+      "Threshold": 21,
+      "Status": "PASS",
+      "Longest_run_preview": ""
+    },
+    {
+      "Exemplar_ID": "EX_010",
+      "Paper_ID": "P047",
+      "Longest_exact_word_run": 0,
+      "Threshold": 21,
+      "Status": "PASS",
+      "Longest_run_preview": ""
+    },
+    {
+      "Exemplar_ID": "EX_011",
+      "Paper_ID": "P017",
+      "Longest_exact_word_run": 0,
+      "Threshold": 21,
+      "Status": "PASS",
+      "Longest_run_preview": ""
+    },
+    {
+      "Exemplar_ID": "EX_012",
+      "Paper_ID": "P066",
+      "Longest_exact_word_run": 0,
+      "Threshold": 21,
+      "Status": "PASS",
+      "Longest_run_preview": ""
+    },
+    {
+      "Exemplar_ID": "EX_013",
+      "Paper_ID": "P085",
+      "Longest_exact_word_run": 0,
+      "Threshold": 21,
+      "Status": "PASS",
+      "Longest_run_preview": ""
+    },
+    {
+      "Exemplar_ID": "EX_014",
+      "Paper_ID": "P048",
+      "Longest_exact_word_run": 0,
+      "Threshold": 21,
+      "Status": "PASS",
+      "Longest_run_preview": ""
+    },
+    {
+      "Exemplar_ID": "EX_015",
+      "Paper_ID": "P071",
+      "Longest_exact_word_run": 0,
+      "Threshold": 21,
+      "Status": "PASS",
+      "Longest_run_preview": ""
+    },
+    {
+      "Exemplar_ID": "EX_016",
+      "Paper_ID": "P029",
+      "Longest_exact_word_run": 0,
+      "Threshold": 21,
+      "Status": "PASS",
+      "Longest_run_preview": ""
+    },
+    {
+      "Exemplar_ID": "EX_017",
+      "Paper_ID": "P084",
+      "Longest_exact_word_run": 0,
+      "Threshold": 21,
+      "Status": "PASS",
+      "Longest_run_preview": ""
+    },
+    {
+      "Exemplar_ID": "EX_018",
+      "Paper_ID": "P086",
+      "Longest_exact_word_run": 0,
+      "Threshold": 21,
+      "Status": "PASS",
+      "Longest_run_preview": ""
+    },
+    {
+      "Exemplar_ID": "EX_019",
+      "Paper_ID": "P057",
+      "Longest_exact_word_run": 0,
+      "Threshold": 21,
+      "Status": "PASS",
+      "Longest_run_preview": ""
+    },
+    {
+      "Exemplar_ID": "EX_020",
+      "Paper_ID": "P067",
+      "Longest_exact_word_run": 0,
+      "Threshold": 21,
+      "Status": "PASS",
+      "Longest_run_preview": ""
+    },
+    {
+      "Exemplar_ID": "EX_021",
+      "Paper_ID": "P087",
+      "Longest_exact_word_run": 0,
+      "Threshold": 21,
+      "Status": "PASS",
+      "Longest_run_preview": ""
+    },
+    {
+      "Exemplar_ID": "EX_022",
+      "Paper_ID": "P028",
+      "Longest_exact_word_run": 0,
+      "Threshold": 21,
+      "Status": "PASS",
+      "Longest_run_preview": ""
+    },
+    {
+      "Exemplar_ID": "EX_023",
+      "Paper_ID": "P031",
+      "Longest_exact_word_run": 0,
+      "Threshold": 21,
+      "Status": "PASS",
+      "Longest_run_preview": ""
+    },
+    {
+      "Exemplar_ID": "EX_024",
+      "Paper_ID": "P001",
+      "Longest_exact_word_run": 0,
+      "Threshold": 21,
+      "Status": "PASS",
+      "Longest_run_preview": ""
+    },
+    {
+      "Exemplar_ID": "EX_025",
+      "Paper_ID": "P068",
+      "Longest_exact_word_run": 0,
+      "Threshold": 21,
+      "Status": "PASS",
+      "Longest_run_preview": ""
+    },
+    {
+      "Exemplar_ID": "EX_026",
+      "Paper_ID": "P088",
+      "Longest_exact_word_run": 0,
+      "Threshold": 21,
+      "Status": "PASS",
+      "Longest_run_preview": ""
+    },
+    {
+      "Exemplar_ID": "EX_027",
+      "Paper_ID": "P095",
+      "Longest_exact_word_run": 0,
+      "Threshold": 21,
+      "Status": "PASS",
+      "Longest_run_preview": ""
+    }
+  ]
+}
