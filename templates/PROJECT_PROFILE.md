@@ -39,6 +39,16 @@
 | Reviewer comments |  |  |  |
 | Known limitations |  |  |  |
 
+## Terminology baseline
+
+- Terminology Ledger required: YES / NO / `NOT_REQUIRED_FOR_LOCAL_TASK`
+- Author-preferred canonical terms:
+- Existing acronym or symbol list location:
+- Known same-concept/multiple-name conflicts:
+- Known same-name/multiple-concept conflicts:
+- Sections with the highest terminology or clarity risk:
+- Current terminology status: `UNASSESSED` / `BASELINED` / `CONFLICTS_OPEN` / `CONTROLLED`
+
 ## Missing-state log
 
 Use only `MISSING_INPUT`, `NEEDS_EXPERIMENT`, `NEEDS_REFERENCE`, `NEEDS_AUTHOR_DECISION`, or `NOT_REQUIRED_FOR_LOCAL_TASK`.

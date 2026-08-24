@@ -7,6 +7,7 @@ Audit for automated-writing patterns that obscure science rather than for superf
 - Are contributions packaged into a fixed count without scientific distinction?
 - Are generic claims such as “significantly improves” unsupported by values/tests?
 - Are paragraphs symmetrical, repetitive, or transition-heavy without information gain?
+- Does the prose coin inflated names for ordinary steps, stack abstract nouns, or replace a concrete operation with vague labels such as “paradigm,” “mechanism,” or “framework”?
 - Are “comprehensive,” “novel,” “robust,” “efficient,” or “real-world” used beyond evidence?
 - Does text invent plausible-but-unverified citations, data, baselines, datasets, hardware, theorems, runtime, or statistics?
 - Are mechanism explanations generic stories detached from method, assumptions, experiment, or data?

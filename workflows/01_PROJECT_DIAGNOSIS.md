@@ -14,6 +14,7 @@ Collect or mark unknown:
 - theoretical level and physical-experiment availability;
 - manuscript state;
 - available method, data, experiments, results, figures, tables, contributions, draft sections, reviewer comments, and limitations.
+- existing technical terms, abbreviations, symbols, aliases, inconsistent names, and author-preferred canonical names.
 
 Never infer an available experiment from a planned experiment or a deployment claim from a simulation.
 
@@ -37,7 +38,8 @@ Never infer an available experiment from a planned experiment or a deployment cl
 6. Identify which gates and workflows are required; skip unrelated ones.
 7. Label every blocking gap with an approved missing-state label.
 8. Create a route request for `scripts/route_project.py` when deterministic card/rule selection is useful.
+9. For an existing draft or terminology-heavy project, create `templates/TERMINOLOGY_LEDGER.md`; record observed names before deciding which one is canonical.
 
 ## Exit
 
-Exit only when project state, selected mode, task scope, domains, paper type, journal status, available evidence, and unresolved author decisions are explicit. The output is a completed Project Profile plus a routing decision log.
+Exit only when project state, selected mode, task scope, domains, paper type, journal status, available evidence, terminology baseline, and unresolved author decisions are explicit. The output is a completed Project Profile plus a routing decision log and, when applicable, a Terminology Ledger.

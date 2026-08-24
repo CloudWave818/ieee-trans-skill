@@ -46,12 +46,16 @@ required_files = [
     ], 1)],
     *[f"audits/{name}.md" for name in [
         "SCIENTIFIC_LOGIC_AUDIT", "CONTRIBUTION_AUDIT", "CLAIM_EVIDENCE_AUDIT", "EXPERIMENT_AUDIT",
-        "FIGURE_TABLE_AUDIT", "WRITING_STYLE_AUDIT", "JOURNAL_FIT_AUDIT", "AI_WRITING_AUDIT", "REVIEWER_AUDIT",
+        "FIGURE_TABLE_AUDIT", "WRITING_STYLE_AUDIT", "JOURNAL_FIT_AUDIT", "AI_WRITING_AUDIT",
+        "TERMINOLOGY_CLARITY_AUDIT", "REVIEWER_AUDIT",
     ]],
     *[f"templates/{name}.md" for name in [
         "PROJECT_PROFILE", "CLAIM_EVIDENCE_MATRIX", "CONTRIBUTION_MATRIX", "EXPERIMENT_MATRIX",
-        "FIGURE_TABLE_PLAN", "PAGE_BUDGET", "PAPER_BLUEPRINT", "SECTION_BRIEF", "FINAL_AUDIT_REPORT",
+        "FIGURE_TABLE_PLAN", "FIGURE_DESIGN_BRIEF", "PAGE_BUDGET", "PAPER_BLUEPRINT", "SECTION_BRIEF",
+        "TERMINOLOGY_LEDGER", "FINAL_AUDIT_REPORT",
     ]],
+    "references/UAV_VISUAL_PLAYBOOK.md",
+    "references/TERMINOLOGY_AND_CLARITY_CONTROL.md",
     "scripts/route_project.py", "scripts/run_synthetic_tests.py", "scripts/validate_phase4.py",
     "validation/SKILL_VALIDATION_PLAN.md", "validation/ROUTING_TESTS.md", "validation/WORKFLOW_TESTS.md",
     "validation/synthetic_cases.json", "validation/SYNTHETIC_RESULTS.json",
@@ -71,6 +75,7 @@ frontmatter = yaml.safe_load(front.group(1)) if front else {}
 check("skill_frontmatter_only_name_description", set(frontmatter) == {"name", "description"}, str(list(frontmatter)))
 check("skill_name_valid", frontmatter.get("name") == "ieee-trans-skill")
 check("skill_description_trigger_scope", all(x.lower() in frontmatter.get("description", "").lower() for x in ["ieee transactions", "experiment", "reviewer", "ra-l"]))
+check("skill_description_visual_scope", all(x.lower() in frontmatter.get("description", "").lower() for x in ["visual architecture", "figure-count", "uav hardware/flight/trajectory"]))
 line_count = len(skill_text.splitlines())
 word_count = len(re.findall(r"\b\w+\b", skill_text))
 check("skill_under_500_lines", line_count < 500, str(line_count))
@@ -102,6 +107,8 @@ required_skill_terms = [
     "MISSING_INPUT", "NEEDS_EXPERIMENT", "NEEDS_REFERENCE", "NEEDS_AUTHOR_DECISION",
     "CLAIM_WITHOUT_EVIDENCE", "PAPER ARCHITECTURE READY", "SUBMISSION-LEVEL DRAFT",
     "Formal General Rule", "Do Not Generalize", "RA-L", "three exemplars", "at most five",
+    "FIGURE_DESIGN_BRIEF", "UAV_VISUAL_PLAYBOOK", "full-paper visual architecture",
+    "TERMINOLOGY_LEDGER", "TERMINOLOGY_CLARITY_AUDIT", "one concept–one canonical name", "rename globally",
 ]
 for term in required_skill_terms:
     check(f"skill_contract:{term}", term.lower() in skill_text.lower())
@@ -118,19 +125,41 @@ for p in sorted((ROOT / "audits").glob("*.md")):
     check(f"audit_severity_or_blocker:{p.name}", "BLOCKER" in text or "Severity" in text)
 
 template_contracts = {
-    "PROJECT_PROFILE.md": ["Target journal", "Research domains", "Manuscript state", "Available project evidence", "Missing-state log"],
+    "PROJECT_PROFILE.md": ["Target journal", "Research domains", "Manuscript state", "Available project evidence", "Terminology baseline", "Missing-state log"],
     "CLAIM_EVIDENCE_MATRIX.md": ["Required evidence", "Available evidence", "Missing evidence", "Metric", "Baseline"],
     "CONTRIBUTION_MATRIX.md": ["Novelty boundary", "Problem addressed", "Mechanism", "Strength", "Risk"],
     "EXPERIMENT_MATRIX.md": ["Scientific question", "Failure criterion", "Baselines and fairness", "Reproducibility"],
     "FIGURE_TABLE_PLAN.md": ["Evidence role", "What it proves", "Loss if removed"],
+    "FIGURE_DESIGN_BRIEF.md": ["Core claim defended", "Panel specification", "UAV/hardware/flight specification", "Data and integrity contract", "Caption contract", "Acceptance checks"],
     "PAGE_BUDGET.md": ["Target journal", "Method complexity", "Contingency reserve"],
     "PAPER_BLUEPRINT.md": ["Purpose", "Scientific question", "Input dependencies", "Transition from previous", "Transition to next"],
-    "SECTION_BRIEF.md": ["Relevant General rules", "Selected exemplars", "Forbidden overclaims", "Expected output"],
-    "FINAL_AUDIT_REPORT.md": ["BLOCKER", "MAJOR", "MODERATE", "MINOR", "SUBMISSION-LEVEL DRAFT"],
+    "SECTION_BRIEF.md": ["Relevant General rules", "Selected exemplars", "Canonical terms", "Forbidden aliases", "Forbidden overclaims", "Expected output"],
+    "TERMINOLOGY_LEDGER.md": ["Canonical terminology", "Acronym admission and budget", "Terminology conflict log", "Rename and retirement log", "Section terminology contract", "Clarity debt log", "NEEDS_AUTHOR_DECISION"],
+    "FINAL_AUDIT_REPORT.md": ["BLOCKER", "MAJOR", "MODERATE", "MINOR", "SUBMISSION-LEVEL DRAFT", "Terminology Ledger status", "terminology conflicts closed"],
 }
 for name, terms in template_contracts.items():
     text = (ROOT / "templates" / name).read_text(encoding="utf-8")
     check(f"template_contract:{name}", all(term.lower() in text.lower() for term in terms), str([t for t in terms if t.lower() not in text.lower()]))
+
+visual_workflow = (ROOT / "workflows/06_FIGURE_TABLE_DESIGN.md").read_text(encoding="utf-8")
+for term in ["Minimum defensible count", "recommended working count", "figure-role inventory", "per-figure drawing briefs", "UAV-specific hard check", "CLAIM_WITHOUT_EVIDENCE"]:
+    check(f"visual_workflow_contract:{term}", term.lower() in visual_workflow.lower())
+uav_playbook = (ROOT / "references/UAV_VISUAL_PLAYBOOK.md").read_text(encoding="utf-8")
+for term in ["median of 10 figures", "Platform/setup figure", "Flight sequence", "Trajectory figure", "State/control curves", "Swarm/formation figure", "P059", "P109"]:
+    check(f"uav_visual_playbook:{term}", term.lower() in uav_playbook.lower())
+
+terminology_reference = (ROOT / "references/TERMINOLOGY_AND_CLARITY_CONTROL.md").read_text(encoding="utf-8")
+for term in ["One concept–one canonical name", "One name–one concept", "Term-admission test", "Acronym control", "Cross-section terminology contract", "actor, action, object, condition", "Rename globally"]:
+    check(f"terminology_reference:{term}", term.lower() in terminology_reference.lower())
+
+terminology_audit = (ROOT / "audits/TERMINOLOGY_CLARITY_AUDIT.md").read_text(encoding="utf-8")
+for term in ["same-concept/multiple-name", "same-name/multiple-concept", "acronyms to keep, remove, or rename", "section-by-section global rename plan", "BLOCKER", "NEEDS_AUTHOR_DECISION"]:
+    check(f"terminology_audit:{term}", term.lower() in terminology_audit.lower())
+
+section_workflow = (ROOT / "workflows/09_SECTION_WRITING.md").read_text(encoding="utf-8")
+integration_workflow = (ROOT / "workflows/11_FULL_PAPER_INTEGRATION.md").read_text(encoding="utf-8")
+check("section_workflow_uses_terminology_ledger", "TERMINOLOGY_LEDGER.md" in section_workflow)
+check("integration_workflow_global_rename", all(term.lower() in integration_workflow.lower() for term in ["terminology_ledger.md", "global rename plan", "title, abstract", "figures", "tables"]))
 
 # Live upstream contracts.
 rules = read_csv(KNOWLEDGE / "00_META/RULE_REGISTRY.csv")
@@ -148,9 +177,11 @@ check("upstream_rule_links_189", len(links) == 189, str(len(links)))
 phase3 = json.loads((EXEMPLARS / "05_VALIDATION/PHASE3_INDEPENDENT_VALIDATION.json").read_text(encoding="utf-8"))
 check("phase3_validation_pass", phase3.get("overall_status") == "PASS")
 
-# Phase-4 did not touch or copy upstream assets.
+# The skill package must not mutate the embedded Knowledge/Exemplars snapshots.
+# The optional external Corpus is maintained independently and can legitimately
+# receive later download/audit updates, so its timestamp is not a skill-integrity gate.
 skill_created = ROOT.stat().st_ctime
-for layer in [p for p in [CORPUS, KNOWLEDGE, EXEMPLARS] if p.is_dir()]:
+for layer in [p for p in [KNOWLEDGE, EXEMPLARS] if p.is_dir()]:
     newest = max((p.stat().st_mtime for p in layer.rglob("*") if p.is_file()), default=0)
     check(f"upstream_read_only_since_skill_creation:{layer.name}", newest < skill_created, f"newest={newest} skill_created={skill_created}")
 check("no_pdf_copied_into_skill", not any(ROOT.rglob("*.pdf")))
@@ -163,8 +194,12 @@ synthetic = json.loads((ROOT / "validation/SYNTHETIC_RESULTS.json").read_text(en
 check("synthetic_overall_pass", synthetic.get("overall_status") == "PASS", str({k: synthetic.get(k) for k in ["cases", "passed", "failed"]}))
 check("synthetic_at_least_eight", synthetic.get("cases", 0) >= 8, str(synthetic.get("cases")))
 check("all_synthetic_checks_pass", all(c["status"] == "PASS" for r in synthetic["results"] for c in r["checks"]))
-routed = [r["route"] for r in synthetic["results"] if r["route"].get("status") == "ROUTED"]
-check("default_three_exemplars", all(r["exemplar_count"] == 3 for r in routed), str([r["exemplar_count"] for r in routed]))
+routed_results = [r for r in synthetic["results"] if r["route"].get("status") == "ROUTED"]
+routed = [r["route"] for r in routed_results]
+default_routes = [r["route"] for r in routed_results if not r["route"].get("exemplar_count") == 5]
+complex_routes = [r["route"] for r in routed_results if r["route"].get("exemplar_count") == 5]
+check("default_three_exemplars", all(r["exemplar_count"] == 3 for r in default_routes), str([r["exemplar_count"] for r in default_routes]))
+check("complex_cross_domain_five_exemplars", all(r["exemplar_count"] == 5 for r in complex_routes), str([r["exemplar_count"] for r in complex_routes]))
 check("maximum_five_exemplars", all(r["exemplar_count"] <= 5 for r in routed))
 check("two_to_four_domains", all(2 <= len(r["domains"]) <= 4 for r in routed))
 check("ral_excluded", any(r["route"].get("status") == "OUT_OF_SCOPE" and "RA-L" in r["route"].get("reason", "") for r in synthetic["results"]))

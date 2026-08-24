@@ -14,8 +14,9 @@ Run in order:
 4. `audits/EXPERIMENT_AUDIT.md`
 5. `audits/FIGURE_TABLE_AUDIT.md`
 6. `audits/JOURNAL_FIT_AUDIT.md`
-7. `audits/WRITING_STYLE_AUDIT.md` and `audits/AI_WRITING_AUDIT.md`
-8. `audits/REVIEWER_AUDIT.md`
+7. `audits/TERMINOLOGY_CLARITY_AUDIT.md`
+8. `audits/WRITING_STYLE_AUDIT.md` and `audits/AI_WRITING_AUDIT.md`
+9. `audits/REVIEWER_AUDIT.md`
 
 ## Severity
 
@@ -29,7 +30,7 @@ For every finding record evidence location, affected claim/contribution, require
 ## Decision rules
 
 - `PAPER ARCHITECTURE READY`: no architecture blocker; provisional or planned evidence remains explicitly labeled.
-- `SUBMISSION-LEVEL DRAFT`: no blocker and every major scientific claim has closed evidence; journal fit and reproducibility risks are resolved or transparently bounded.
-- `NOT READY`: any blocker, fabricated/ambiguous evidence, missing central baseline, or unsupported major claim remains.
+- `SUBMISSION-LEVEL DRAFT`: no blocker and every major scientific claim has closed evidence; terminology conflicts, journal fit, and reproducibility risks are resolved or transparently bounded.
+- `NOT READY`: any blocker, fabricated/ambiguous evidence, unresolved concept-name ambiguity, missing central baseline, or unsupported major claim remains.
 
 English fluency cannot change readiness. Ask: “If the target were rejection, where is the easiest defensible attack?” Feed that attack into a revision loop and rerun affected audits.

@@ -73,7 +73,7 @@
     "method_type": "reinforcement-learning robot navigation",
     "application_system": "mobile robot",
     "research_problem": "robust navigation in crowded environments",
-    "task": "revise an existing full draft and improve cross-section consistency",
+    "task": "revise an existing full draft, reconcile inconsistent names for the same concepts, reduce unnecessary acronyms and terminology, and replace ornate vague prose with direct technical explanations",
     "manuscript_state": "FULL_DRAFT",
     "expected": {"mode": "D", "domains": ["ROBOTICS", "RL_MARL", "NAVIGATION_PLANNING"], "journal": "TRO", "general_rules": ["GEN-EVD-004", "GEN-VIS-001"], "workflow": "11_FULL_PAPER_INTEGRATION"}
   },
@@ -93,15 +93,16 @@
   {
     "case_id": "CASE_08_FIGURE_ONLY",
     "target_journal": "TIE",
-    "domains": ["ROBOTICS", "NAVIGATION_PLANNING"],
-    "paper_type": "Navigation / planning paper",
-    "method_type": "robot navigation planner",
-    "application_system": "physical robot",
-    "research_problem": "communicating navigation mechanism and real-world evidence",
-    "task": "figure design only for method and experiment results",
-    "evidence_needs": ["MAIN_COMPARISON", "REAL_WORLD"],
+    "domains": ["UAV_AUTONOMY", "ROBOTICS", "NAVIGATION_PLANNING"],
+    "paper_type": "UAV autonomy paper",
+    "method_type": "UAV navigation planner with onboard perception",
+    "application_system": "physical autonomous UAV",
+    "research_problem": "communicating the method, real flight, executed trajectories, and disturbance evidence",
+    "task": "plan the full-paper figure count and figure sequence, then describe every UAV hardware, flight, trajectory, and result figure precisely enough for an author to draw",
+    "evidence_needs": ["MAIN_COMPARISON", "REAL_WORLD", "ROBUSTNESS", "RUNTIME"],
+    "physical_experiment_available": true,
     "manuscript_state": "EXPERIMENT_COMPLETE",
-    "expected": {"mode": "F", "domains": ["ROBOTICS", "NAVIGATION_PLANNING"], "journal": "TIE", "general_rules": ["GEN-EVD-006", "GEN-VIS-001"], "workflow": "06_FIGURE_TABLE_DESIGN"}
+    "expected": {"mode": "F", "domains": ["UAV_AUTONOMY", "ROBOTICS", "NAVIGATION_PLANNING"], "journal": "TIE", "general_rules": ["GEN-EVD-004", "GEN-EVD-006", "GEN-VIS-001"], "workflow": "06_FIGURE_TABLE_DESIGN"}
   },
   {
     "case_id": "CASE_09_RAL_BOUNDARY",

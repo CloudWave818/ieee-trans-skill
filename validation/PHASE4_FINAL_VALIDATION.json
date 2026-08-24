@@ -3,8 +3,8 @@
   "overall_status": "PASS",
   "completion_status": "PHASE 4 IEEE TRANS WRITING SKILL CONSTRUCTED / READY FOR REAL-PAPER VALIDATION",
   "summary": {
-    "checks": 179,
-    "passed": 179,
+    "checks": 225,
+    "passed": 225,
     "failed": 0,
     "synthetic_cases": 9,
     "rules": 42,
@@ -153,6 +153,11 @@
       "detail": "D:\\ieee my skills\\ieee-trans-skill\\audits\\AI_WRITING_AUDIT.md"
     },
     {
+      "check": "file:audits/TERMINOLOGY_CLARITY_AUDIT.md",
+      "status": "PASS",
+      "detail": "D:\\ieee my skills\\ieee-trans-skill\\audits\\TERMINOLOGY_CLARITY_AUDIT.md"
+    },
+    {
       "check": "file:audits/REVIEWER_AUDIT.md",
       "status": "PASS",
       "detail": "D:\\ieee my skills\\ieee-trans-skill\\audits\\REVIEWER_AUDIT.md"
@@ -183,6 +188,11 @@
       "detail": "D:\\ieee my skills\\ieee-trans-skill\\templates\\FIGURE_TABLE_PLAN.md"
     },
     {
+      "check": "file:templates/FIGURE_DESIGN_BRIEF.md",
+      "status": "PASS",
+      "detail": "D:\\ieee my skills\\ieee-trans-skill\\templates\\FIGURE_DESIGN_BRIEF.md"
+    },
+    {
       "check": "file:templates/PAGE_BUDGET.md",
       "status": "PASS",
       "detail": "D:\\ieee my skills\\ieee-trans-skill\\templates\\PAGE_BUDGET.md"
@@ -198,9 +208,24 @@
       "detail": "D:\\ieee my skills\\ieee-trans-skill\\templates\\SECTION_BRIEF.md"
     },
     {
+      "check": "file:templates/TERMINOLOGY_LEDGER.md",
+      "status": "PASS",
+      "detail": "D:\\ieee my skills\\ieee-trans-skill\\templates\\TERMINOLOGY_LEDGER.md"
+    },
+    {
       "check": "file:templates/FINAL_AUDIT_REPORT.md",
       "status": "PASS",
       "detail": "D:\\ieee my skills\\ieee-trans-skill\\templates\\FINAL_AUDIT_REPORT.md"
+    },
+    {
+      "check": "file:references/UAV_VISUAL_PLAYBOOK.md",
+      "status": "PASS",
+      "detail": "D:\\ieee my skills\\ieee-trans-skill\\references\\UAV_VISUAL_PLAYBOOK.md"
+    },
+    {
+      "check": "file:references/TERMINOLOGY_AND_CLARITY_CONTROL.md",
+      "status": "PASS",
+      "detail": "D:\\ieee my skills\\ieee-trans-skill\\references\\TERMINOLOGY_AND_CLARITY_CONTROL.md"
     },
     {
       "check": "file:scripts/route_project.py",
@@ -298,14 +323,19 @@
       "detail": ""
     },
     {
+      "check": "skill_description_visual_scope",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
       "check": "skill_under_500_lines",
       "status": "PASS",
-      "detail": "151"
+      "detail": "173"
     },
     {
       "check": "skill_under_5000_words",
       "status": "PASS",
-      "detail": "1308"
+      "detail": "1839"
     },
     {
       "check": "no_todo_placeholders",
@@ -320,7 +350,7 @@
     {
       "check": "agent_short_description",
       "status": "PASS",
-      "detail": "Evidence-first IEEE Transactions paper workflow"
+      "detail": "Plan evidence, visuals, terminology, and clear IEEE papers"
     },
     {
       "check": "agent_default_prompt_mentions_skill",
@@ -439,6 +469,41 @@
     },
     {
       "check": "skill_contract:at most five",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "skill_contract:FIGURE_DESIGN_BRIEF",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "skill_contract:UAV_VISUAL_PLAYBOOK",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "skill_contract:full-paper visual architecture",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "skill_contract:TERMINOLOGY_LEDGER",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "skill_contract:TERMINOLOGY_CLARITY_AUDIT",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "skill_contract:one concept–one canonical name",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "skill_contract:rename globally",
       "status": "PASS",
       "detail": ""
     },
@@ -693,6 +758,16 @@
       "detail": ""
     },
     {
+      "check": "audit_output:TERMINOLOGY_CLARITY_AUDIT.md",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "audit_severity_or_blocker:TERMINOLOGY_CLARITY_AUDIT.md",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
       "check": "audit_output:WRITING_STYLE_AUDIT.md",
       "status": "PASS",
       "detail": ""
@@ -728,6 +803,11 @@
       "detail": "[]"
     },
     {
+      "check": "template_contract:FIGURE_DESIGN_BRIEF.md",
+      "status": "PASS",
+      "detail": "[]"
+    },
+    {
       "check": "template_contract:PAGE_BUDGET.md",
       "status": "PASS",
       "detail": "[]"
@@ -743,9 +823,159 @@
       "detail": "[]"
     },
     {
+      "check": "template_contract:TERMINOLOGY_LEDGER.md",
+      "status": "PASS",
+      "detail": "[]"
+    },
+    {
       "check": "template_contract:FINAL_AUDIT_REPORT.md",
       "status": "PASS",
       "detail": "[]"
+    },
+    {
+      "check": "visual_workflow_contract:Minimum defensible count",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "visual_workflow_contract:recommended working count",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "visual_workflow_contract:figure-role inventory",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "visual_workflow_contract:per-figure drawing briefs",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "visual_workflow_contract:UAV-specific hard check",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "visual_workflow_contract:CLAIM_WITHOUT_EVIDENCE",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "uav_visual_playbook:median of 10 figures",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "uav_visual_playbook:Platform/setup figure",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "uav_visual_playbook:Flight sequence",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "uav_visual_playbook:Trajectory figure",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "uav_visual_playbook:State/control curves",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "uav_visual_playbook:Swarm/formation figure",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "uav_visual_playbook:P059",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "uav_visual_playbook:P109",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "terminology_reference:One concept–one canonical name",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "terminology_reference:One name–one concept",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "terminology_reference:Term-admission test",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "terminology_reference:Acronym control",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "terminology_reference:Cross-section terminology contract",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "terminology_reference:actor, action, object, condition",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "terminology_reference:Rename globally",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "terminology_audit:same-concept/multiple-name",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "terminology_audit:same-name/multiple-concept",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "terminology_audit:acronyms to keep, remove, or rename",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "terminology_audit:section-by-section global rename plan",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "terminology_audit:BLOCKER",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "terminology_audit:NEEDS_AUTHOR_DECISION",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "section_workflow_uses_terminology_ledger",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "integration_workflow_global_rename",
+      "status": "PASS",
+      "detail": ""
     },
     {
       "check": "upstream_rule_total_42",
@@ -771,11 +1001,6 @@
       "check": "phase3_validation_pass",
       "status": "PASS",
       "detail": ""
-    },
-    {
-      "check": "upstream_read_only_since_skill_creation:IEEE_TRANS_CORPUS",
-      "status": "PASS",
-      "detail": "newest=1787232775.728289 skill_created=1787276111.3926196"
     },
     {
       "check": "upstream_read_only_since_skill_creation:IEEE_TRANS_KNOWLEDGE",
@@ -820,7 +1045,12 @@
     {
       "check": "default_three_exemplars",
       "status": "PASS",
-      "detail": "[3, 3, 3, 3, 3, 3, 3, 3]"
+      "detail": "[3, 3, 3, 3, 3, 3, 3]"
+    },
+    {
+      "check": "complex_cross_domain_five_exemplars",
+      "status": "PASS",
+      "detail": "[5]"
     },
     {
       "check": "maximum_five_exemplars",

@@ -10,12 +10,17 @@ Require a named target section, relevant project evidence, and either a Paper Bl
 2. Load the matching file in `IEEE_TRANS_KNOWLEDGE/02_SECTIONS/`.
 3. Load only relevant writing guidance from `05_WRITING/`.
 4. Re-route three exemplars for the target section, at most five for a complex section.
-5. Record claims, evidence, rules, exemplar roles/boundaries, forbidden overclaims, terminology, and expected output.
+5. Load `templates/TERMINOLOGY_LEDGER.md` or create the relevant subset for this section.
+6. Record claims, evidence, rules, exemplar roles/boundaries, forbidden overclaims, canonical terminology, allowed new terms, and expected output.
 
 ## Draft
 
 - Give each paragraph one scientific function and a visible relation to the section purpose.
 - Establish information before using it; keep notation and terminology stable.
+- Use the canonical name from the ledger every time the same concept appears; stylistic variation is not a reason to invent an alias.
+- Do not introduce a new acronym, symbol, module name, mechanism label, or metric name until it passes the term-admission test and is entered in the ledger.
+- Define a permitted new term at first use, then use the same form in prose, equations, algorithms, captions, legends, and tables.
+- Prefer concrete actor–action–object sentences; split a sentence when it carries more than one main claim or hides the logical condition.
 - Bind claims to evidence or verified references at the correct rhetorical location.
 - Use journal and domain profiles to adjust emphasis, not to imitate stock phrasing.
 - Use exemplar architecture only; do not copy sentences, transitions, or contribution wording.
@@ -32,4 +37,4 @@ Require a named target section, relevant project evidence, and either a Paper Bl
 
 ## Exit
 
-Run the relevant audit file. The section must satisfy its brief, contain no fabricated evidence, and preserve connections to previous/next sections.
+Run the relevant audit file, including `audits/TERMINOLOGY_CLARITY_AUDIT.md` when the section adds or uses technical terminology. The section must satisfy its brief, contain no fabricated evidence, preserve connections to previous/next sections, and introduce no unlogged aliases.

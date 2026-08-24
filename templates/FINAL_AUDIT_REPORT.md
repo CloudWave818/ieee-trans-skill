@@ -5,6 +5,8 @@
 - Target journal:
 - Manuscript state:
 - Audit scope:
+- Terminology Ledger status: `NOT_REQUIRED` / `CONFLICTS_OPEN` / `CONTROLLED`
+- Terminology and clarity audit: PASS / FAIL
 - `PAPER ARCHITECTURE READY`: YES / NO
 - `SUBMISSION-LEVEL DRAFT`: YES / NO
 - Overall decision: `READY`, `CONDITIONAL`, or `NOT READY`
@@ -27,4 +29,5 @@
 
 - No fabricated citation/result/baseline/statistic/hardware/theorem/runtime/dataset/claim detected: YES / NO
 - All major evidence closed for submission-level status: YES / NO
+- All concept-name, acronym, symbol, figure/table, and cross-section terminology conflicts closed: YES / NO
 - Fluency was not used as readiness evidence: YES / NO

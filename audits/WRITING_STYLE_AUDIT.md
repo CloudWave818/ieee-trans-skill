@@ -12,6 +12,9 @@
 - Does Related Work synthesize boundaries instead of listing papers?
 - Do Abstract and Conclusion stay within verified results?
 - Are sentences concise without deleting assumptions or scientific qualifiers?
+- Can the reader identify the actor, action, object, condition, and evidence without decoding abstract noun chains?
+- Does each sentence carry one main claim and each paragraph one scientific job?
+- Are vague antecedents such as “this method,” “the above strategy,” and “it” resolved when multiple referents exist?
 - Is journal emphasis respected without imitating exemplar phrases?
 
 ## Severity
@@ -20,4 +23,4 @@ Escalate a writing issue to `MAJOR` when wording changes the scientific claim, c
 
 ## Output
 
-Provide location, problem, scientific consequence, revision instruction, and a verification question; do not rewrite correct unaffected text by default.
+Provide location, problem, scientific consequence, revision instruction, and a verification question; do not rewrite correct unaffected text by default. Route terminology conflicts to `TERMINOLOGY_CLARITY_AUDIT.md` rather than treating them as cosmetic variety.
