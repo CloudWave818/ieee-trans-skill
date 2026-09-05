@@ -1,0 +1,2 @@
+# Preserve source-document bytes on all platforms; never normalize PDF line endings.
+*.pdf binary
