@@ -2,11 +2,11 @@
 
 A portable Codex skill for planning, drafting, auditing, and revising long-form IEEE Transactions manuscripts in UAV autonomy, robotics, navigation and planning, trajectory optimization, reinforcement learning, multi-agent decision making, and control.
 
-The repository contains the skill plus its compact derived Knowledge and Exemplar resources. It intentionally does **not** contain the 120 source-paper PDFs.
+The repository contains the skill, its derived Knowledge and Exemplar resources, and the **29 user-preferred source PDFs** in [papers/preferred_29](papers/preferred_29). These PDFs total about 249 MiB and match the versions used in the figure-reading records. The older 120-paper corpus remains separate.
 
 ## 中文快速使用
 
-本技能可根据论文、方法思路或题目，规划完整图组，生成可绘制的机制/场景图，并为数据尚缺的结果图提供布局和详细执行说明。无人机作图优先采用用户选定的 29 篇范本；学习记录、风格规则和布局草图随技能分发，原论文 PDF 和页面图像留在本地。
+本技能可根据论文、方法思路或题目，规划完整图组，生成可绘制的机制/场景图，并为数据尚缺的结果图提供布局和详细执行说明。无人机作图优先采用用户选定的 29 篇范本；学习记录、风格规则、布局草图以及这 29 篇原始 PDF 均随仓库分发。图例卡片可直接打开原 PDF，页面图片和提取文本可在需要时重新生成。
 
 安装后，在 Codex 中明确调用：
 
@@ -60,11 +60,18 @@ Expected result: all synthetic routing cases pass.
 - `workflows`, `audits`, and `templates`: task execution assets.
 - `scripts`: deterministic router and validation tools.
 
-Original PDFs remain local and separate for copyright and repository-size reasons. Routine skill use does not require them.
+Preferred source PDFs are in `papers/preferred_29`; see [the source index](papers/preferred_29/README.md) for paper-to-file links. Routine planning can use the derived records; open the PDF for exact visual or text verification. Rendered page images and extracted full text remain local caches rather than duplicate repository assets.
 
 ## Visually inspected figure cases
 
-For UAV figure design, start with the **user-preferred 29 papers** in `references/preferred_29/INDEX.md`: 337 PDF pages reviewed, 281 figure-level AI reading records, and 12 detailed key designs with editable SVG layout studies. Read `STYLE_PLAYBOOK.md` for the preferred colors, pictograms, grouping and connectors, and `RL_FIGURE_PLAYBOOK.md` for learning curves, policy interfaces and deployment evidence. Figure-level reading is not full transcription or certification of every axis/statistic. Original images and text remain in the sibling local `USER_PREFERRED_VISUAL_LIBRARY`; its `index.html` pairs source pages with the notes. `python scripts/build_preferred_library.py` rebuilds cards and the gallery from manually written review notes, requiring that local source library.
+For UAV figure design, start with the **user-preferred 29 papers** in `references/preferred_29/INDEX.md`: 337 PDF pages reviewed, 281 figure-level AI reading records, and 12 detailed key designs with editable SVG layout studies. Read `STYLE_PLAYBOOK.md` for the preferred colors, pictograms, grouping and connectors, and `RL_FIGURE_PLAYBOOK.md` for learning curves, policy interfaces and deployment evidence. Figure-level reading is not full transcription or certification of every axis/statistic. The 29 originals are in `papers/preferred_29`. Rendered images and extracted text remain in the sibling local `USER_PREFERRED_VISUAL_LIBRARY`; its `index.html` pairs source pages with the notes. To recreate that optional gallery, run the following from the repository root (requires PyMuPDF and Poppler `pdftoppm`):
+
+```powershell
+python scripts/prepare_preferred_papers.py --source papers/preferred_29 --output ../USER_PREFERRED_VISUAL_LIBRARY/source_pages
+python scripts/build_preferred_library.py
+```
+
+Rendering does not constitute a new visual review. Existing records retain their review scope and PDF identity checks.
 
 `python scripts/query_visual_cases.py "safety training"` now searches preferred figures first; `--source legacy` accesses the prior collection. A title-only worked example, editable mechanism diagram and empty behavior layout are in `examples/preferred_uav_rl/`. They are provisional design artifacts, not empirical results.
 

@@ -48,7 +48,8 @@ def query_preferred(cases, terms, limit=3):
     return [{'case_id':c['case_id'],'score':score,'title':c.get('design',{}).get('focus',c['title']),
              'card':c['card'],'figures':[c['figure']],'pdf_page':c['pdf_page'],
              'review_status':c['review_status'],'detail_level':c['detail_level'],
-             'source_set':c['source_set'],'boundary':c.get('design',{}).get('boundary',c['transfer'])}
+             'source_set':c['source_set'],'source_pdf':c.get('source_pdf'),
+             'boundary':c.get('design',{}).get('boundary',c['transfer'])}
             for score,_,c in ranked[:limit]]
 
 

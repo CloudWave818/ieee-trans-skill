@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Publish manually reviewed preferred-paper notes; never infer review from rendering.
 
-Original pages/context stay in a local library outside the portable skill.
+Rendered pages/context stay in a local library; source PDFs are in papers/preferred_29.
 Rebuild after editing review_notes.tsv, papers.tsv or key_designs.json.
 """
 import argparse
@@ -90,6 +90,7 @@ def build(library):
                     if c['figure']==num.removeprefix('S')]
         rec={'case_id':cid,'paper_id':pid,'figure':num,'pdf_page':page,
              'title':paper['title'],'filename':source['filename'],'source_sha256':source['sha256'],
+             'source_pdf':f'papers/preferred_29/{source["filename"]}',
              'source_set':'USER_PREFERRED_29','learning_type':paper['learning_type'],
              'tags':paper['tags'].split(),'paper_story':paper['paper_story'],
              'observed':row['panels_and_encoding'],'purpose':row['purpose_and_context'],
@@ -107,6 +108,7 @@ def build(library):
         records.append(rec)
         lines=[f'# {cid} · {paper["title"]}', '',
                f'- 原 PDF：`{source["filename"]}`；Fig. {num}；PDF 第 {page} 页（从 1 计，与刊印页码区分）。',
+               f'- [仓库原始 PDF]({rel(ROOT/rec["source_pdf"],cards)}#page={page})（可直接下载；下方页面图/正文链接为本地渲染缓存）。',
                f'- 来源：USER_PREFERRED_29；SHA256：`{source["sha256"]}`。',
                f'- 阅读：2026-09-05，Codex AI；{rec["detail_level"]}。已读页面原图、图注及相关上下文；未逐一转录全部小字。',
                f'- [原图所在页]({rel(image,cards)}) · [该页图注与正文]({rel(context,cards)}) · [全文上下文]({rel(context.parent/"fulltext.txt",cards)})',
@@ -132,7 +134,7 @@ def build(library):
     (REF/'papers.json').write_text(json.dumps(inventory,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     index=['# 用户优先范本：29 篇逐图学习库','',
            f'{len(papers)} 篇，{sum(p["pdf_pages"] for p in inventory)} 页，{len(records)} 条逐图记录，{len(keys)} 张关键图的细化方案和 SVG 布局草图。',
-           '这不是训练模型权重，而是后续任务可检索、可追溯的项目知识。全部条目是 AI 阅读记录；小字/统计定义未全量转录。原 PDF、页面与全文保留在本地库。',
+           '这不是训练模型权重，而是后续任务可检索、可追溯的项目知识。全部条目是 AI 阅读记录；小字/统计定义未全量转录。原 PDF 随仓库保存在 papers/preferred_29；页面图和提取全文是可重建的本地缓存。',
            '', '[风格与模仿规则](STYLE_PLAYBOOK.md) · [强化学习图组](RL_FIGURE_PLAYBOOK.md)',
            '', '检索：`python scripts/query_visual_cases.py "safety training"`；优先检索本库，无相关匹配再查旧库。',
            '', '|论文|主题/故事|图数|学习类型|','|---|---|---:|---|']
@@ -166,7 +168,7 @@ def write_gallery(library,papers,records):
             search=e(' '.join([cid,r['title'],tags,r['observed'],r['purpose'],r['learning_type']]))
             chunks.append(f'<article data-search="{search}"><header><h3>{cid} · PDF {page} 页</h3><span>{e(r["detail_level"])}</span></header><div class="card"><a class="source" href="{img}" target="_blank"><img loading="lazy" src="{img}" alt="{cid} 原图所在 PDF 页"></a><div class="notes">')
             chunks.append(f'<p class="tags">{e(tags)}</p><h4>图里是什么</h4><p>{e(r["observed"])}</p><h4>为什么这样组合</h4><p>{e(r["purpose"])}</p><h4>可以怎样迁移</h4><p>{e(r["transfer"])}</p>')
-            chunks.append(f'<p><a target="_blank" href="source_pages/{pid}/p{page:02}.txt">本页图注与正文</a> · <a target="_blank" href="source_pages/{pid}/fulltext.txt">全文上下文</a> · <a href="{rel(ROOT/r["card"],library)}">详细卡片</a></p>')
+            chunks.append(f'<p><a target="_blank" href="{rel(ROOT/r["source_pdf"],library)}#page={page}">原始 PDF</a> · <a target="_blank" href="source_pages/{pid}/p{page:02}.txt">本页图注与正文</a> · <a target="_blank" href="source_pages/{pid}/fulltext.txt">全文上下文</a> · <a href="{rel(ROOT/r["card"],library)}">详细卡片</a></p>')
             if 'design' in r:
                 k=r['design'];chunks.append('<details open><summary>细化方案与布局草图</summary>')
                 for label,field in [('原图布局','observed_layout'),('坐标 / 接口','ports_or_axes'),('机制与证据','mechanism_to_evidence'),('迁移方案','recipe'),('数据采集','data_contract'),('边界','boundary')]:

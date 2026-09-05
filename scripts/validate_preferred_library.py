@@ -26,6 +26,8 @@ def validate(local=False):
         group=[c for c in cases if c['paper_id']==p['paper']]
         check(p['paper']+':declared_count',len(group)==p['reviewed_figures'])
         check(p['paper']+':page_bounds',all(1<=c['pdf_page']<=p['pdf_pages'] for c in group))
+        bundled=ROOT/'papers/preferred_29'/p['filename']
+        check(p['paper']+':bundled_pdf_digest',bundled.is_file() and hashlib.sha256(bundled.read_bytes()).hexdigest()==p['sha256'])
         if local:
             pdf=ROOT.parent/'范本pdf'/p['filename']
             check(p['paper']+':pdf_digest',pdf.is_file() and hashlib.sha256(pdf.read_bytes()).hexdigest()==p['sha256'])

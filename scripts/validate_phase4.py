@@ -227,7 +227,11 @@ skill_created = ROOT.stat().st_ctime
 for layer in [p for p in [KNOWLEDGE, EXEMPLARS] if p.is_dir()]:
     newest = max((p.stat().st_mtime for p in layer.rglob("*") if p.is_file()), default=0)
     check(f"upstream_read_only_since_skill_creation:{layer.name}", newest < skill_created, f"newest={newest} skill_created={skill_created}")
-check("no_pdf_copied_into_skill", not any(ROOT.rglob("*.pdf")))
+preferred_pdf_index = json.loads((ROOT / "references/preferred_29/papers.json").read_text(encoding="utf-8"))
+expected_pdf_paths = {f"papers/preferred_29/{paper['filename']}" for paper in preferred_pdf_index}
+actual_pdf_paths = {path.relative_to(ROOT).as_posix() for path in ROOT.rglob("*.pdf")}
+check("only_user_authorized_preferred_pdfs_in_skill", actual_pdf_paths == expected_pdf_paths,
+      f"Expected {len(expected_pdf_paths)} explicitly requested preferred PDFs; found {len(actual_pdf_paths)}")
 check("no_skill_in_upstream_layers", not any((layer / "SKILL.md").exists() for layer in [CORPUS, KNOWLEDGE, EXEMPLARS] if layer.is_dir()))
 
 # Execute synthetic validation as part of the completion audit.

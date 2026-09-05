@@ -1363,9 +1363,9 @@
       "detail": "newest=1787270813.110015 skill_created=1787276111.3926196"
     },
     {
-      "check": "no_pdf_copied_into_skill",
+      "check": "only_user_authorized_preferred_pdfs_in_skill",
       "status": "PASS",
-      "detail": ""
+      "detail": "Expected 29 explicitly requested preferred PDFs; found 29"
     },
     {
       "check": "no_skill_in_upstream_layers",
