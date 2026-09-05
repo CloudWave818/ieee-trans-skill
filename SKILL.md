@@ -1,6 +1,6 @@
 ---
 name: ieee-trans-skill
-description: Build, diagnose, revise, or audit long-form IEEE Transactions manuscripts in UAVs, robotics, autonomous systems, navigation, path or trajectory planning and optimization, reinforcement learning, deep RL, MARL, multi-agent decision making, game-theoretic methods, intelligent or distributed control, and learning-based control. Use for idea-to-paper planning, method/results-to-paper development, experiment design, full-paper visual architecture, figure-count and figure-type planning, per-figure drawing briefs, UAV hardware/flight/trajectory figure planning, terminology normalization, acronym control, clarity repair, cross-section consistency, figure/table design, journal adaptation, section writing, full-paper integration, draft improvement, and reviewer-style audit. Exclude IEEE Robotics and Automation Letters (RA-L), short-letter workflows, and requests that only need grammar polishing without scientific-architecture decisions.
+description: Build, diagnose, revise, or audit long-form IEEE Transactions manuscripts in UAVs, robotics, autonomous systems, navigation or trajectory planning, reinforcement learning, MARL, multi-agent decision making, game-theoretic methods, and intelligent, distributed, or learning-based control. Use for idea/method/results-to-paper planning, experiment and evidence design, full-paper visual architecture, corpus-grounded figure-count/type planning, portable Web-GPT figure-planning protocols, AI-ready figure-description Markdown, drawing/data-plot specifications, UAV hardware/flight/trajectory visuals, terminology/acronym/clarity control, journal adaptation, section/full-paper revision, and reviewer audit. Exclude IEEE Robotics and Automation Letters (RA-L), short-letter workflows, and grammar-only polishing without scientific-architecture decisions.
 ---
 
 # IEEE Transactions Paper Architect
@@ -42,13 +42,15 @@ Never draft full prose before this diagnosis. For a tightly scoped user request,
 | C — RESULTS TO PAPER | verified results drive the paper | 04 → 10 → 06 → 08 |
 | D — DRAFT IMPROVEMENT | partial/full draft or revision | 01 diagnosis → 11 integration → targeted 09 |
 | E — EXPERIMENT DESIGN | experiments only | 04 → 05 |
-| F — FIGURE TABLE DESIGN | full-paper visual architecture, figure inventory, drawing briefs, figures, or tables | 04 → 06 |
+| F — FIGURE TABLE DESIGN | full-paper visual architecture, figure inventory, AI-ready figure-description Markdown, drawing briefs, figures, or tables | 04 → 06 |
 | G — JOURNAL ADAPTATION | choose or adapt to a venue | journal routing → 07 → 08 → 12 |
 | H — REVIEWER AUDIT | pre-submission or rejection-risk review | 12 |
 | I — SECTION WRITING | one named section | 09 plus the section-specific knowledge file |
 | J — FULL PAPER INTEGRATION | align a near-complete manuscript | 11 → 12 |
 
 When more than one mode applies, choose the narrowest mode that answers the request. Do not run the whole pipeline for a local task.
+
+For a one-figure Mode F request, embed the relevant diagnosis and claim checks in the requested figure document. Leave the journal UNDECIDED when it does not affect this decision; do not select a venue or create a full-paper profile/budget. Retrieve one to three relevant inspected visual cases instead of loading three full-paper exemplars. Zero matching cases is permitted with an explicit MANUSCRIPT_DERIVED rationale. Load only the rules/profiles that affect this figure and audit only its applicable claims, inputs and rendering. This local exception controls the broader default routing and completion instructions below and in supporting configs/workflows; the deterministic full-project router retains its existing defaults.
 
 ## Route knowledge
 
@@ -94,7 +96,7 @@ Advance only when the current gate has evidence:
 | G2 Contributions | Contribution Matrix | two to four verifiable contributions or an explicit unresolved contribution decision |
 | G3 Claims | Claim–Evidence Matrix | every major claim has available or planned evidence; gaps labeled |
 | G4 Experiments | Experiment Matrix | claims map to fair tests, metrics, baselines, and analysis |
-| G5 Visuals | Visual Architecture + Figure/Table Plan + drawing briefs | total count is justified; every asset has a scientific question, evidence role, data source, section home, and executable design description |
+| G5 Visuals | Visual Architecture + Figure/Table Plan + `PAPER_FIGURE_DESCRIPTION.md` | total count is justified; every asset has a scientific question, evidence role, source data, rendering route, section home, and executable drawing or plotting specification |
 | G6 Blueprint | Page Budget + Paper Blueprint | every section has inputs, evidence, transitions, and conditional length |
 | G7 Section | Section Brief + section terminology contract | claims, evidence, canonical terms, permitted new terms, rules, exemplars, and forbidden overclaims are explicit |
 | G8 Final audit | Final Audit Report | no `BLOCKER`; major evidence and terminology conflicts are closed before `SUBMISSION-LEVEL DRAFT` |
@@ -115,11 +117,29 @@ Use `templates/CONTRIBUTION_MATRIX.md` and `templates/CLAIM_EVIDENCE_MATRIX.md`.
 
 Use `workflows/06_FIGURE_TABLE_DESIGN.md` and `templates/FIGURE_TABLE_PLAN.md` before full drafting. First design the full-paper visual architecture: recommend a justified figure/table count range, select the figure roles, order them from problem and mechanism to evidence and boundary cases, and identify mandatory versus optional assets. Corpus medians and IQRs are planning anchors, never quotas.
 
-For every planned figure, fill `templates/FIGURE_DESIGN_BRIEF.md` until a researcher or designer can draw it without guessing the scientific content. Specify the claim, visual type, final column span, panel geometry, objects, arrows, axes, encodings, annotations, data dependencies, caption contract, and acceptance checks. A vague label such as “trajectory figure” or “framework diagram” does not pass G5.
+For a whole paper or multi-figure request, read `references/FIGURE_DESCRIPTION_TAXONOMY.md` and produce one consolidated project artifact from `templates/PAPER_FIGURE_DESCRIPTION.md`. Classify every figure by primary type and rendering route, then state exactly what an author, plotting agent, vector-design agent, or image tool must create.
+
+For UAV visual design, the user's 29 preferred papers are the primary style and construction library: read `references/preferred_29/STYLE_PLAYBOOK.md`, then retrieve specific figures with `scripts/query_visual_cases.py`. Use `references/preferred_29/INDEX.md` for paper stories and the 281 figure records; select detailed cards rather than loading them all. Deliberately adapt their color relationships, grouping, pictograms, connectors and panel composition to the manuscript's actual mechanism. These visual sources may be used regardless of their publication venue; the RA-L writing exclusion does not exclude a supplied visual reference. Older cases supplement missing relationships. For learning-based UAV work read `references/preferred_29/RL_FIGURE_PLAYBOOK.md`; actual RL training normally needs a learning-process figure considered alongside final task, safety, ablation and transfer evidence. A network or a frozen zero-shot model alone does not imply RL.
+
+A title alone is enough to produce a concrete `PROVISIONAL_FROM_TITLE` visual plan and editable mechanism/layout sketch. Separate known inputs, design assumptions and unresolved mechanisms. Do not require a full manuscript to begin; do not turn assumed mechanisms into claims or invent results. See `examples/preferred_uav_rl/PAPER_FIGURE_DESCRIPTION.md` for a worked example.
+
+When the user wants to perform the same planning in a standalone web chat without this Skill, provide `references/WEB_GPT_FIGURE_PLANNER.md`. It is the portable, self-contained protocol. Use the three-layer evidence contract in `references/VISUAL_DESIGN_EVIDENCE.md`: CORPUS_PRIOR informs scale/roles; INSPECTED_REFERENCE supports construction; the manuscript-specific claim/evidence trigger determines content. Permit MANUSCRIPT_DERIVED designs without a matching corpus ID when justified. Retrieve the preferred cases first, and `references/visual_cases/INDEX.md` for supplemental relationships; record reference scope and uncertainty. Include a layout sketch for key figures, the mechanism change, and the experiment-collection contract. Distinguish SPEC_READY, DRAFT_RENDERED, VISUALLY_CHECKED, and INDEPENDENT_HANDOFF_TESTED; structural checks cannot certify drawing quality.
+
+For every planned figure, complete its entry in `PAPER_FIGURE_DESCRIPTION.md`; use `templates/FIGURE_DESIGN_BRIEF.md` as an optional standalone extraction for a designer. Specify the claim, exact visual subtype, final column span, panel geometry, objects, arrows, axes, series, aggregation, uncertainty, encodings, annotations, data dependencies, caption contract, and acceptance checks. A vague label such as “trajectory figure,” “result plot,” or “framework diagram” does not pass G5.
+
+Assign one rendering route:
+
+For a mixed composite, assign a route to each panel and a whole-figure readiness status. Missing central measurements keep the full figure NOT_READY; an available symbolic mechanism or empty layout can still be rendered as an explicitly provisional planning draft. A completed plan does not make missing empirical panels SPEC_READY or close G5.
+
+- `DATA_PLOT`: quantitative chart or trajectory generated from named source data and a reproducible plotting specification; never ask an image generator to invent values, curves, error bars, or axes.
+- `VECTOR_SCHEMATIC`: architecture, block, mechanism, geometry, or algorithm diagram described by explicit nodes, edges, groups, labels, and layout constraints.
+- `PHOTO_COMPOSITE`: real platform, site, flight, or qualitative evidence assembled only from traceable source photographs, frames, maps, or screenshots.
+- `TABLE`: exact values or configurations presented as a structured table.
+- `NOT_READY`: the necessary data or visual source is missing; use an approved missing-state label.
 
 For UAV or autonomous-flight papers, also read `references/UAV_VISUAL_PLAYBOOK.md`. Explicitly decide whether the claims require a platform photograph, sensor/computation annotation, experiment-site overview, external flight sequence, onboard/FPV view, 2-D or 3-D trajectory, time-aligned state/control curves, formation/safety-distance view, failure or disturbance case, and simulation-to-real comparison. Do not claim a physical or flight result when the corresponding asset or source data are unavailable.
 
-For every asset, state what it proves and what the paper loses if it is removed. Remove, merge, or demote assets without an evidence role. If the user cannot draw it, return the completed design brief even when no image is generated.
+For every asset, state what it proves and what the paper loses if it is removed. Remove, merge, or demote assets without an evidence role. If no image is generated, the completed `PAPER_FIGURE_DESCRIPTION.md` is still a required deliverable and must be sufficiently explicit for a downstream AI or researcher to execute without guessing scientific content.
 
 Use `templates/PAGE_BUDGET.md` with the target journal, paper type, and complexity. Never convert a corpus median into a fixed page, figure, table, or equation quota.
 

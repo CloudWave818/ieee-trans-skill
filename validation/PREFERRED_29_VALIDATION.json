@@ -1,0 +1,3834 @@
+{
+  "status": "PASS",
+  "papers": 29,
+  "pages": 337,
+  "figure_notes": 281,
+  "key_designs": 12,
+  "scope": "Provenance, coverage, query behavior and XML only; not drawing quality or scientific certification.",
+  "checks": [
+    {
+      "check": "unique_figures",
+      "passed": true
+    },
+    {
+      "check": "paper_coverage",
+      "passed": true
+    },
+    {
+      "check": "key_figures_exist",
+      "passed": true
+    },
+    {
+      "check": "separate_supplementary_numbering",
+      "passed": true
+    },
+    {
+      "check": "not_inventing_unlocated_figures",
+      "passed": true
+    },
+    {
+      "check": "R01:declared_count",
+      "passed": true
+    },
+    {
+      "check": "R01:page_bounds",
+      "passed": true
+    },
+    {
+      "check": "R01:pdf_digest",
+      "passed": true
+    },
+    {
+      "check": "R02:declared_count",
+      "passed": true
+    },
+    {
+      "check": "R02:page_bounds",
+      "passed": true
+    },
+    {
+      "check": "R02:pdf_digest",
+      "passed": true
+    },
+    {
+      "check": "R03:declared_count",
+      "passed": true
+    },
+    {
+      "check": "R03:page_bounds",
+      "passed": true
+    },
+    {
+      "check": "R03:pdf_digest",
+      "passed": true
+    },
+    {
+      "check": "R04:declared_count",
+      "passed": true
+    },
+    {
+      "check": "R04:page_bounds",
+      "passed": true
+    },
+    {
+      "check": "R04:pdf_digest",
+      "passed": true
+    },
+    {
+      "check": "R05:declared_count",
+      "passed": true
+    },
+    {
+      "check": "R05:page_bounds",
+      "passed": true
+    },
+    {
+      "check": "R05:pdf_digest",
+      "passed": true
+    },
+    {
+      "check": "R06:declared_count",
+      "passed": true
+    },
+    {
+      "check": "R06:page_bounds",
+      "passed": true
+    },
+    {
+      "check": "R06:pdf_digest",
+      "passed": true
+    },
+    {
+      "check": "R07:declared_count",
+      "passed": true
+    },
+    {
+      "check": "R07:page_bounds",
+      "passed": true
+    },
+    {
+      "check": "R07:pdf_digest",
+      "passed": true
+    },
+    {
+      "check": "R08:declared_count",
+      "passed": true
+    },
+    {
+      "check": "R08:page_bounds",
+      "passed": true
+    },
+    {
+      "check": "R08:pdf_digest",
+      "passed": true
+    },
+    {
+      "check": "R09:declared_count",
+      "passed": true
+    },
+    {
+      "check": "R09:page_bounds",
+      "passed": true
+    },
+    {
+      "check": "R09:pdf_digest",
+      "passed": true
+    },
+    {
+      "check": "R10:declared_count",
+      "passed": true
+    },
+    {
+      "check": "R10:page_bounds",
+      "passed": true
+    },
+    {
+      "check": "R10:pdf_digest",
+      "passed": true
+    },
+    {
+      "check": "R11:declared_count",
+      "passed": true
+    },
+    {
+      "check": "R11:page_bounds",
+      "passed": true
+    },
+    {
+      "check": "R11:pdf_digest",
+      "passed": true
+    },
+    {
+      "check": "R12:declared_count",
+      "passed": true
+    },
+    {
+      "check": "R12:page_bounds",
+      "passed": true
+    },
+    {
+      "check": "R12:pdf_digest",
+      "passed": true
+    },
+    {
+      "check": "R13:declared_count",
+      "passed": true
+    },
+    {
+      "check": "R13:page_bounds",
+      "passed": true
+    },
+    {
+      "check": "R13:pdf_digest",
+      "passed": true
+    },
+    {
+      "check": "R14:declared_count",
+      "passed": true
+    },
+    {
+      "check": "R14:page_bounds",
+      "passed": true
+    },
+    {
+      "check": "R14:pdf_digest",
+      "passed": true
+    },
+    {
+      "check": "R15:declared_count",
+      "passed": true
+    },
+    {
+      "check": "R15:page_bounds",
+      "passed": true
+    },
+    {
+      "check": "R15:pdf_digest",
+      "passed": true
+    },
+    {
+      "check": "R16:declared_count",
+      "passed": true
+    },
+    {
+      "check": "R16:page_bounds",
+      "passed": true
+    },
+    {
+      "check": "R16:pdf_digest",
+      "passed": true
+    },
+    {
+      "check": "R17:declared_count",
+      "passed": true
+    },
+    {
+      "check": "R17:page_bounds",
+      "passed": true
+    },
+    {
+      "check": "R17:pdf_digest",
+      "passed": true
+    },
+    {
+      "check": "R18:declared_count",
+      "passed": true
+    },
+    {
+      "check": "R18:page_bounds",
+      "passed": true
+    },
+    {
+      "check": "R18:pdf_digest",
+      "passed": true
+    },
+    {
+      "check": "R19:declared_count",
+      "passed": true
+    },
+    {
+      "check": "R19:page_bounds",
+      "passed": true
+    },
+    {
+      "check": "R19:pdf_digest",
+      "passed": true
+    },
+    {
+      "check": "R20:declared_count",
+      "passed": true
+    },
+    {
+      "check": "R20:page_bounds",
+      "passed": true
+    },
+    {
+      "check": "R20:pdf_digest",
+      "passed": true
+    },
+    {
+      "check": "R21:declared_count",
+      "passed": true
+    },
+    {
+      "check": "R21:page_bounds",
+      "passed": true
+    },
+    {
+      "check": "R21:pdf_digest",
+      "passed": true
+    },
+    {
+      "check": "R22:declared_count",
+      "passed": true
+    },
+    {
+      "check": "R22:page_bounds",
+      "passed": true
+    },
+    {
+      "check": "R22:pdf_digest",
+      "passed": true
+    },
+    {
+      "check": "R23:declared_count",
+      "passed": true
+    },
+    {
+      "check": "R23:page_bounds",
+      "passed": true
+    },
+    {
+      "check": "R23:pdf_digest",
+      "passed": true
+    },
+    {
+      "check": "R24:declared_count",
+      "passed": true
+    },
+    {
+      "check": "R24:page_bounds",
+      "passed": true
+    },
+    {
+      "check": "R24:pdf_digest",
+      "passed": true
+    },
+    {
+      "check": "R25:declared_count",
+      "passed": true
+    },
+    {
+      "check": "R25:page_bounds",
+      "passed": true
+    },
+    {
+      "check": "R25:pdf_digest",
+      "passed": true
+    },
+    {
+      "check": "R26:declared_count",
+      "passed": true
+    },
+    {
+      "check": "R26:page_bounds",
+      "passed": true
+    },
+    {
+      "check": "R26:pdf_digest",
+      "passed": true
+    },
+    {
+      "check": "R27:declared_count",
+      "passed": true
+    },
+    {
+      "check": "R27:page_bounds",
+      "passed": true
+    },
+    {
+      "check": "R27:pdf_digest",
+      "passed": true
+    },
+    {
+      "check": "R28:declared_count",
+      "passed": true
+    },
+    {
+      "check": "R28:page_bounds",
+      "passed": true
+    },
+    {
+      "check": "R28:pdf_digest",
+      "passed": true
+    },
+    {
+      "check": "R29:declared_count",
+      "passed": true
+    },
+    {
+      "check": "R29:page_bounds",
+      "passed": true
+    },
+    {
+      "check": "R29:pdf_digest",
+      "passed": true
+    },
+    {
+      "check": "R01-F1:card",
+      "passed": true
+    },
+    {
+      "check": "R01-F1:content",
+      "passed": true
+    },
+    {
+      "check": "R01-F1:local_source",
+      "passed": true
+    },
+    {
+      "check": "R01-F2:card",
+      "passed": true
+    },
+    {
+      "check": "R01-F2:content",
+      "passed": true
+    },
+    {
+      "check": "R01-F2:local_source",
+      "passed": true
+    },
+    {
+      "check": "R01-F3:card",
+      "passed": true
+    },
+    {
+      "check": "R01-F3:content",
+      "passed": true
+    },
+    {
+      "check": "R01-F3:local_source",
+      "passed": true
+    },
+    {
+      "check": "R01-F4:card",
+      "passed": true
+    },
+    {
+      "check": "R01-F4:content",
+      "passed": true
+    },
+    {
+      "check": "R01-F4:local_source",
+      "passed": true
+    },
+    {
+      "check": "R01-F5:card",
+      "passed": true
+    },
+    {
+      "check": "R01-F5:content",
+      "passed": true
+    },
+    {
+      "check": "R01-F5:local_source",
+      "passed": true
+    },
+    {
+      "check": "R01-F6:card",
+      "passed": true
+    },
+    {
+      "check": "R01-F6:content",
+      "passed": true
+    },
+    {
+      "check": "R01-F6:local_source",
+      "passed": true
+    },
+    {
+      "check": "R01-F7:card",
+      "passed": true
+    },
+    {
+      "check": "R01-F7:content",
+      "passed": true
+    },
+    {
+      "check": "R01-F7:local_source",
+      "passed": true
+    },
+    {
+      "check": "R01-F8:card",
+      "passed": true
+    },
+    {
+      "check": "R01-F8:content",
+      "passed": true
+    },
+    {
+      "check": "R01-F8:local_source",
+      "passed": true
+    },
+    {
+      "check": "R01-F9:card",
+      "passed": true
+    },
+    {
+      "check": "R01-F9:content",
+      "passed": true
+    },
+    {
+      "check": "R01-F9:local_source",
+      "passed": true
+    },
+    {
+      "check": "R02-F1:card",
+      "passed": true
+    },
+    {
+      "check": "R02-F1:content",
+      "passed": true
+    },
+    {
+      "check": "R02-F1:local_source",
+      "passed": true
+    },
+    {
+      "check": "R02-F2:card",
+      "passed": true
+    },
+    {
+      "check": "R02-F2:content",
+      "passed": true
+    },
+    {
+      "check": "R02-F2:local_source",
+      "passed": true
+    },
+    {
+      "check": "R02-F3:card",
+      "passed": true
+    },
+    {
+      "check": "R02-F3:content",
+      "passed": true
+    },
+    {
+      "check": "R02-F3:local_source",
+      "passed": true
+    },
+    {
+      "check": "R02-F4:card",
+      "passed": true
+    },
+    {
+      "check": "R02-F4:content",
+      "passed": true
+    },
+    {
+      "check": "R02-F4:local_source",
+      "passed": true
+    },
+    {
+      "check": "R02-F5:card",
+      "passed": true
+    },
+    {
+      "check": "R02-F5:content",
+      "passed": true
+    },
+    {
+      "check": "R02-F5:local_source",
+      "passed": true
+    },
+    {
+      "check": "R02-F6:card",
+      "passed": true
+    },
+    {
+      "check": "R02-F6:content",
+      "passed": true
+    },
+    {
+      "check": "R02-F6:local_source",
+      "passed": true
+    },
+    {
+      "check": "R03-F1:card",
+      "passed": true
+    },
+    {
+      "check": "R03-F1:content",
+      "passed": true
+    },
+    {
+      "check": "R03-F1:local_source",
+      "passed": true
+    },
+    {
+      "check": "R03-F2:card",
+      "passed": true
+    },
+    {
+      "check": "R03-F2:content",
+      "passed": true
+    },
+    {
+      "check": "R03-F2:local_source",
+      "passed": true
+    },
+    {
+      "check": "R03-F3:card",
+      "passed": true
+    },
+    {
+      "check": "R03-F3:content",
+      "passed": true
+    },
+    {
+      "check": "R03-F3:local_source",
+      "passed": true
+    },
+    {
+      "check": "R03-F4:card",
+      "passed": true
+    },
+    {
+      "check": "R03-F4:content",
+      "passed": true
+    },
+    {
+      "check": "R03-F4:local_source",
+      "passed": true
+    },
+    {
+      "check": "R03-F5:card",
+      "passed": true
+    },
+    {
+      "check": "R03-F5:content",
+      "passed": true
+    },
+    {
+      "check": "R03-F5:local_source",
+      "passed": true
+    },
+    {
+      "check": "R03-F6:card",
+      "passed": true
+    },
+    {
+      "check": "R03-F6:content",
+      "passed": true
+    },
+    {
+      "check": "R03-F6:local_source",
+      "passed": true
+    },
+    {
+      "check": "R03-F7:card",
+      "passed": true
+    },
+    {
+      "check": "R03-F7:content",
+      "passed": true
+    },
+    {
+      "check": "R03-F7:local_source",
+      "passed": true
+    },
+    {
+      "check": "R03-F8:card",
+      "passed": true
+    },
+    {
+      "check": "R03-F8:content",
+      "passed": true
+    },
+    {
+      "check": "R03-F8:local_source",
+      "passed": true
+    },
+    {
+      "check": "R03-F9:card",
+      "passed": true
+    },
+    {
+      "check": "R03-F9:content",
+      "passed": true
+    },
+    {
+      "check": "R03-F9:local_source",
+      "passed": true
+    },
+    {
+      "check": "R03-F10:card",
+      "passed": true
+    },
+    {
+      "check": "R03-F10:content",
+      "passed": true
+    },
+    {
+      "check": "R03-F10:local_source",
+      "passed": true
+    },
+    {
+      "check": "R03-F11:card",
+      "passed": true
+    },
+    {
+      "check": "R03-F11:content",
+      "passed": true
+    },
+    {
+      "check": "R03-F11:local_source",
+      "passed": true
+    },
+    {
+      "check": "R03-F12:card",
+      "passed": true
+    },
+    {
+      "check": "R03-F12:content",
+      "passed": true
+    },
+    {
+      "check": "R03-F12:local_source",
+      "passed": true
+    },
+    {
+      "check": "R04-F1:card",
+      "passed": true
+    },
+    {
+      "check": "R04-F1:content",
+      "passed": true
+    },
+    {
+      "check": "R04-F1:local_source",
+      "passed": true
+    },
+    {
+      "check": "R04-F2:card",
+      "passed": true
+    },
+    {
+      "check": "R04-F2:content",
+      "passed": true
+    },
+    {
+      "check": "R04-F2:local_source",
+      "passed": true
+    },
+    {
+      "check": "R04-F3:card",
+      "passed": true
+    },
+    {
+      "check": "R04-F3:content",
+      "passed": true
+    },
+    {
+      "check": "R04-F3:local_source",
+      "passed": true
+    },
+    {
+      "check": "R04-F4:card",
+      "passed": true
+    },
+    {
+      "check": "R04-F4:content",
+      "passed": true
+    },
+    {
+      "check": "R04-F4:local_source",
+      "passed": true
+    },
+    {
+      "check": "R04-F5:card",
+      "passed": true
+    },
+    {
+      "check": "R04-F5:content",
+      "passed": true
+    },
+    {
+      "check": "R04-F5:local_source",
+      "passed": true
+    },
+    {
+      "check": "R04-F6:card",
+      "passed": true
+    },
+    {
+      "check": "R04-F6:content",
+      "passed": true
+    },
+    {
+      "check": "R04-F6:local_source",
+      "passed": true
+    },
+    {
+      "check": "R04-F7:card",
+      "passed": true
+    },
+    {
+      "check": "R04-F7:content",
+      "passed": true
+    },
+    {
+      "check": "R04-F7:local_source",
+      "passed": true
+    },
+    {
+      "check": "R04-F8:card",
+      "passed": true
+    },
+    {
+      "check": "R04-F8:content",
+      "passed": true
+    },
+    {
+      "check": "R04-F8:local_source",
+      "passed": true
+    },
+    {
+      "check": "R04-F9:card",
+      "passed": true
+    },
+    {
+      "check": "R04-F9:content",
+      "passed": true
+    },
+    {
+      "check": "R04-F9:local_source",
+      "passed": true
+    },
+    {
+      "check": "R04-F10:card",
+      "passed": true
+    },
+    {
+      "check": "R04-F10:content",
+      "passed": true
+    },
+    {
+      "check": "R04-F10:local_source",
+      "passed": true
+    },
+    {
+      "check": "R04-F11:card",
+      "passed": true
+    },
+    {
+      "check": "R04-F11:content",
+      "passed": true
+    },
+    {
+      "check": "R04-F11:local_source",
+      "passed": true
+    },
+    {
+      "check": "R04-F12:card",
+      "passed": true
+    },
+    {
+      "check": "R04-F12:content",
+      "passed": true
+    },
+    {
+      "check": "R04-F12:local_source",
+      "passed": true
+    },
+    {
+      "check": "R04-F13:card",
+      "passed": true
+    },
+    {
+      "check": "R04-F13:content",
+      "passed": true
+    },
+    {
+      "check": "R04-F13:local_source",
+      "passed": true
+    },
+    {
+      "check": "R04-F14:card",
+      "passed": true
+    },
+    {
+      "check": "R04-F14:content",
+      "passed": true
+    },
+    {
+      "check": "R04-F14:local_source",
+      "passed": true
+    },
+    {
+      "check": "R04-F15:card",
+      "passed": true
+    },
+    {
+      "check": "R04-F15:content",
+      "passed": true
+    },
+    {
+      "check": "R04-F15:local_source",
+      "passed": true
+    },
+    {
+      "check": "R04-F16:card",
+      "passed": true
+    },
+    {
+      "check": "R04-F16:content",
+      "passed": true
+    },
+    {
+      "check": "R04-F16:local_source",
+      "passed": true
+    },
+    {
+      "check": "R04-F17:card",
+      "passed": true
+    },
+    {
+      "check": "R04-F17:content",
+      "passed": true
+    },
+    {
+      "check": "R04-F17:local_source",
+      "passed": true
+    },
+    {
+      "check": "R05-F1:card",
+      "passed": true
+    },
+    {
+      "check": "R05-F1:content",
+      "passed": true
+    },
+    {
+      "check": "R05-F1:local_source",
+      "passed": true
+    },
+    {
+      "check": "R05-F2:card",
+      "passed": true
+    },
+    {
+      "check": "R05-F2:content",
+      "passed": true
+    },
+    {
+      "check": "R05-F2:local_source",
+      "passed": true
+    },
+    {
+      "check": "R05-F3:card",
+      "passed": true
+    },
+    {
+      "check": "R05-F3:content",
+      "passed": true
+    },
+    {
+      "check": "R05-F3:local_source",
+      "passed": true
+    },
+    {
+      "check": "R05-F4:card",
+      "passed": true
+    },
+    {
+      "check": "R05-F4:content",
+      "passed": true
+    },
+    {
+      "check": "R05-F4:local_source",
+      "passed": true
+    },
+    {
+      "check": "R05-F5:card",
+      "passed": true
+    },
+    {
+      "check": "R05-F5:content",
+      "passed": true
+    },
+    {
+      "check": "R05-F5:local_source",
+      "passed": true
+    },
+    {
+      "check": "R05-F6:card",
+      "passed": true
+    },
+    {
+      "check": "R05-F6:content",
+      "passed": true
+    },
+    {
+      "check": "R05-F6:local_source",
+      "passed": true
+    },
+    {
+      "check": "R05-F7:card",
+      "passed": true
+    },
+    {
+      "check": "R05-F7:content",
+      "passed": true
+    },
+    {
+      "check": "R05-F7:local_source",
+      "passed": true
+    },
+    {
+      "check": "R05-F8:card",
+      "passed": true
+    },
+    {
+      "check": "R05-F8:content",
+      "passed": true
+    },
+    {
+      "check": "R05-F8:local_source",
+      "passed": true
+    },
+    {
+      "check": "R06-F1:card",
+      "passed": true
+    },
+    {
+      "check": "R06-F1:content",
+      "passed": true
+    },
+    {
+      "check": "R06-F1:local_source",
+      "passed": true
+    },
+    {
+      "check": "R06-F2:card",
+      "passed": true
+    },
+    {
+      "check": "R06-F2:content",
+      "passed": true
+    },
+    {
+      "check": "R06-F2:local_source",
+      "passed": true
+    },
+    {
+      "check": "R06-F3:card",
+      "passed": true
+    },
+    {
+      "check": "R06-F3:content",
+      "passed": true
+    },
+    {
+      "check": "R06-F3:local_source",
+      "passed": true
+    },
+    {
+      "check": "R06-F4:card",
+      "passed": true
+    },
+    {
+      "check": "R06-F4:content",
+      "passed": true
+    },
+    {
+      "check": "R06-F4:local_source",
+      "passed": true
+    },
+    {
+      "check": "R06-F5:card",
+      "passed": true
+    },
+    {
+      "check": "R06-F5:content",
+      "passed": true
+    },
+    {
+      "check": "R06-F5:local_source",
+      "passed": true
+    },
+    {
+      "check": "R06-F6:card",
+      "passed": true
+    },
+    {
+      "check": "R06-F6:content",
+      "passed": true
+    },
+    {
+      "check": "R06-F6:local_source",
+      "passed": true
+    },
+    {
+      "check": "R06-F7:card",
+      "passed": true
+    },
+    {
+      "check": "R06-F7:content",
+      "passed": true
+    },
+    {
+      "check": "R06-F7:local_source",
+      "passed": true
+    },
+    {
+      "check": "R06-F8:card",
+      "passed": true
+    },
+    {
+      "check": "R06-F8:content",
+      "passed": true
+    },
+    {
+      "check": "R06-F8:local_source",
+      "passed": true
+    },
+    {
+      "check": "R06-F9:card",
+      "passed": true
+    },
+    {
+      "check": "R06-F9:content",
+      "passed": true
+    },
+    {
+      "check": "R06-F9:local_source",
+      "passed": true
+    },
+    {
+      "check": "R06-F10:card",
+      "passed": true
+    },
+    {
+      "check": "R06-F10:content",
+      "passed": true
+    },
+    {
+      "check": "R06-F10:local_source",
+      "passed": true
+    },
+    {
+      "check": "R07-F1:card",
+      "passed": true
+    },
+    {
+      "check": "R07-F1:content",
+      "passed": true
+    },
+    {
+      "check": "R07-F1:local_source",
+      "passed": true
+    },
+    {
+      "check": "R07-F3:card",
+      "passed": true
+    },
+    {
+      "check": "R07-F3:content",
+      "passed": true
+    },
+    {
+      "check": "R07-F3:local_source",
+      "passed": true
+    },
+    {
+      "check": "R07-F4:card",
+      "passed": true
+    },
+    {
+      "check": "R07-F4:content",
+      "passed": true
+    },
+    {
+      "check": "R07-F4:local_source",
+      "passed": true
+    },
+    {
+      "check": "R07-F5:card",
+      "passed": true
+    },
+    {
+      "check": "R07-F5:content",
+      "passed": true
+    },
+    {
+      "check": "R07-F5:local_source",
+      "passed": true
+    },
+    {
+      "check": "R07-F6:card",
+      "passed": true
+    },
+    {
+      "check": "R07-F6:content",
+      "passed": true
+    },
+    {
+      "check": "R07-F6:local_source",
+      "passed": true
+    },
+    {
+      "check": "R07-F7:card",
+      "passed": true
+    },
+    {
+      "check": "R07-F7:content",
+      "passed": true
+    },
+    {
+      "check": "R07-F7:local_source",
+      "passed": true
+    },
+    {
+      "check": "R07-F8:card",
+      "passed": true
+    },
+    {
+      "check": "R07-F8:content",
+      "passed": true
+    },
+    {
+      "check": "R07-F8:local_source",
+      "passed": true
+    },
+    {
+      "check": "R07-F9:card",
+      "passed": true
+    },
+    {
+      "check": "R07-F9:content",
+      "passed": true
+    },
+    {
+      "check": "R07-F9:local_source",
+      "passed": true
+    },
+    {
+      "check": "R08-F1:card",
+      "passed": true
+    },
+    {
+      "check": "R08-F1:content",
+      "passed": true
+    },
+    {
+      "check": "R08-F1:local_source",
+      "passed": true
+    },
+    {
+      "check": "R08-F2:card",
+      "passed": true
+    },
+    {
+      "check": "R08-F2:content",
+      "passed": true
+    },
+    {
+      "check": "R08-F2:local_source",
+      "passed": true
+    },
+    {
+      "check": "R08-F3:card",
+      "passed": true
+    },
+    {
+      "check": "R08-F3:content",
+      "passed": true
+    },
+    {
+      "check": "R08-F3:local_source",
+      "passed": true
+    },
+    {
+      "check": "R08-F4:card",
+      "passed": true
+    },
+    {
+      "check": "R08-F4:content",
+      "passed": true
+    },
+    {
+      "check": "R08-F4:local_source",
+      "passed": true
+    },
+    {
+      "check": "R08-F5:card",
+      "passed": true
+    },
+    {
+      "check": "R08-F5:content",
+      "passed": true
+    },
+    {
+      "check": "R08-F5:local_source",
+      "passed": true
+    },
+    {
+      "check": "R08-F6:card",
+      "passed": true
+    },
+    {
+      "check": "R08-F6:content",
+      "passed": true
+    },
+    {
+      "check": "R08-F6:local_source",
+      "passed": true
+    },
+    {
+      "check": "R08-F7:card",
+      "passed": true
+    },
+    {
+      "check": "R08-F7:content",
+      "passed": true
+    },
+    {
+      "check": "R08-F7:local_source",
+      "passed": true
+    },
+    {
+      "check": "R09-F1:card",
+      "passed": true
+    },
+    {
+      "check": "R09-F1:content",
+      "passed": true
+    },
+    {
+      "check": "R09-F1:local_source",
+      "passed": true
+    },
+    {
+      "check": "R09-F2:card",
+      "passed": true
+    },
+    {
+      "check": "R09-F2:content",
+      "passed": true
+    },
+    {
+      "check": "R09-F2:local_source",
+      "passed": true
+    },
+    {
+      "check": "R09-F3:card",
+      "passed": true
+    },
+    {
+      "check": "R09-F3:content",
+      "passed": true
+    },
+    {
+      "check": "R09-F3:local_source",
+      "passed": true
+    },
+    {
+      "check": "R09-F4:card",
+      "passed": true
+    },
+    {
+      "check": "R09-F4:content",
+      "passed": true
+    },
+    {
+      "check": "R09-F4:local_source",
+      "passed": true
+    },
+    {
+      "check": "R09-F5:card",
+      "passed": true
+    },
+    {
+      "check": "R09-F5:content",
+      "passed": true
+    },
+    {
+      "check": "R09-F5:local_source",
+      "passed": true
+    },
+    {
+      "check": "R09-F6:card",
+      "passed": true
+    },
+    {
+      "check": "R09-F6:content",
+      "passed": true
+    },
+    {
+      "check": "R09-F6:local_source",
+      "passed": true
+    },
+    {
+      "check": "R09-FS1:card",
+      "passed": true
+    },
+    {
+      "check": "R09-FS1:content",
+      "passed": true
+    },
+    {
+      "check": "R09-FS1:local_source",
+      "passed": true
+    },
+    {
+      "check": "R09-FS2:card",
+      "passed": true
+    },
+    {
+      "check": "R09-FS2:content",
+      "passed": true
+    },
+    {
+      "check": "R09-FS2:local_source",
+      "passed": true
+    },
+    {
+      "check": "R09-FS3:card",
+      "passed": true
+    },
+    {
+      "check": "R09-FS3:content",
+      "passed": true
+    },
+    {
+      "check": "R09-FS3:local_source",
+      "passed": true
+    },
+    {
+      "check": "R10-F1:card",
+      "passed": true
+    },
+    {
+      "check": "R10-F1:content",
+      "passed": true
+    },
+    {
+      "check": "R10-F1:local_source",
+      "passed": true
+    },
+    {
+      "check": "R10-F2:card",
+      "passed": true
+    },
+    {
+      "check": "R10-F2:content",
+      "passed": true
+    },
+    {
+      "check": "R10-F2:local_source",
+      "passed": true
+    },
+    {
+      "check": "R10-F3:card",
+      "passed": true
+    },
+    {
+      "check": "R10-F3:content",
+      "passed": true
+    },
+    {
+      "check": "R10-F3:local_source",
+      "passed": true
+    },
+    {
+      "check": "R10-F4:card",
+      "passed": true
+    },
+    {
+      "check": "R10-F4:content",
+      "passed": true
+    },
+    {
+      "check": "R10-F4:local_source",
+      "passed": true
+    },
+    {
+      "check": "R10-F5:card",
+      "passed": true
+    },
+    {
+      "check": "R10-F5:content",
+      "passed": true
+    },
+    {
+      "check": "R10-F5:local_source",
+      "passed": true
+    },
+    {
+      "check": "R10-F6:card",
+      "passed": true
+    },
+    {
+      "check": "R10-F6:content",
+      "passed": true
+    },
+    {
+      "check": "R10-F6:local_source",
+      "passed": true
+    },
+    {
+      "check": "R10-F7:card",
+      "passed": true
+    },
+    {
+      "check": "R10-F7:content",
+      "passed": true
+    },
+    {
+      "check": "R10-F7:local_source",
+      "passed": true
+    },
+    {
+      "check": "R10-F8:card",
+      "passed": true
+    },
+    {
+      "check": "R10-F8:content",
+      "passed": true
+    },
+    {
+      "check": "R10-F8:local_source",
+      "passed": true
+    },
+    {
+      "check": "R10-F9:card",
+      "passed": true
+    },
+    {
+      "check": "R10-F9:content",
+      "passed": true
+    },
+    {
+      "check": "R10-F9:local_source",
+      "passed": true
+    },
+    {
+      "check": "R10-F10:card",
+      "passed": true
+    },
+    {
+      "check": "R10-F10:content",
+      "passed": true
+    },
+    {
+      "check": "R10-F10:local_source",
+      "passed": true
+    },
+    {
+      "check": "R10-F11:card",
+      "passed": true
+    },
+    {
+      "check": "R10-F11:content",
+      "passed": true
+    },
+    {
+      "check": "R10-F11:local_source",
+      "passed": true
+    },
+    {
+      "check": "R10-F12:card",
+      "passed": true
+    },
+    {
+      "check": "R10-F12:content",
+      "passed": true
+    },
+    {
+      "check": "R10-F12:local_source",
+      "passed": true
+    },
+    {
+      "check": "R10-F13:card",
+      "passed": true
+    },
+    {
+      "check": "R10-F13:content",
+      "passed": true
+    },
+    {
+      "check": "R10-F13:local_source",
+      "passed": true
+    },
+    {
+      "check": "R11-F1:card",
+      "passed": true
+    },
+    {
+      "check": "R11-F1:content",
+      "passed": true
+    },
+    {
+      "check": "R11-F1:local_source",
+      "passed": true
+    },
+    {
+      "check": "R11-F2:card",
+      "passed": true
+    },
+    {
+      "check": "R11-F2:content",
+      "passed": true
+    },
+    {
+      "check": "R11-F2:local_source",
+      "passed": true
+    },
+    {
+      "check": "R11-F3:card",
+      "passed": true
+    },
+    {
+      "check": "R11-F3:content",
+      "passed": true
+    },
+    {
+      "check": "R11-F3:local_source",
+      "passed": true
+    },
+    {
+      "check": "R11-F4:card",
+      "passed": true
+    },
+    {
+      "check": "R11-F4:content",
+      "passed": true
+    },
+    {
+      "check": "R11-F4:local_source",
+      "passed": true
+    },
+    {
+      "check": "R11-F5:card",
+      "passed": true
+    },
+    {
+      "check": "R11-F5:content",
+      "passed": true
+    },
+    {
+      "check": "R11-F5:local_source",
+      "passed": true
+    },
+    {
+      "check": "R11-F6:card",
+      "passed": true
+    },
+    {
+      "check": "R11-F6:content",
+      "passed": true
+    },
+    {
+      "check": "R11-F6:local_source",
+      "passed": true
+    },
+    {
+      "check": "R11-F7:card",
+      "passed": true
+    },
+    {
+      "check": "R11-F7:content",
+      "passed": true
+    },
+    {
+      "check": "R11-F7:local_source",
+      "passed": true
+    },
+    {
+      "check": "R11-F8:card",
+      "passed": true
+    },
+    {
+      "check": "R11-F8:content",
+      "passed": true
+    },
+    {
+      "check": "R11-F8:local_source",
+      "passed": true
+    },
+    {
+      "check": "R11-F9:card",
+      "passed": true
+    },
+    {
+      "check": "R11-F9:content",
+      "passed": true
+    },
+    {
+      "check": "R11-F9:local_source",
+      "passed": true
+    },
+    {
+      "check": "R11-F10:card",
+      "passed": true
+    },
+    {
+      "check": "R11-F10:content",
+      "passed": true
+    },
+    {
+      "check": "R11-F10:local_source",
+      "passed": true
+    },
+    {
+      "check": "R11-F11:card",
+      "passed": true
+    },
+    {
+      "check": "R11-F11:content",
+      "passed": true
+    },
+    {
+      "check": "R11-F11:local_source",
+      "passed": true
+    },
+    {
+      "check": "R11-F12:card",
+      "passed": true
+    },
+    {
+      "check": "R11-F12:content",
+      "passed": true
+    },
+    {
+      "check": "R11-F12:local_source",
+      "passed": true
+    },
+    {
+      "check": "R11-F13:card",
+      "passed": true
+    },
+    {
+      "check": "R11-F13:content",
+      "passed": true
+    },
+    {
+      "check": "R11-F13:local_source",
+      "passed": true
+    },
+    {
+      "check": "R11-F14:card",
+      "passed": true
+    },
+    {
+      "check": "R11-F14:content",
+      "passed": true
+    },
+    {
+      "check": "R11-F14:local_source",
+      "passed": true
+    },
+    {
+      "check": "R11-F15:card",
+      "passed": true
+    },
+    {
+      "check": "R11-F15:content",
+      "passed": true
+    },
+    {
+      "check": "R11-F15:local_source",
+      "passed": true
+    },
+    {
+      "check": "R11-F16:card",
+      "passed": true
+    },
+    {
+      "check": "R11-F16:content",
+      "passed": true
+    },
+    {
+      "check": "R11-F16:local_source",
+      "passed": true
+    },
+    {
+      "check": "R11-F17:card",
+      "passed": true
+    },
+    {
+      "check": "R11-F17:content",
+      "passed": true
+    },
+    {
+      "check": "R11-F17:local_source",
+      "passed": true
+    },
+    {
+      "check": "R11-F18:card",
+      "passed": true
+    },
+    {
+      "check": "R11-F18:content",
+      "passed": true
+    },
+    {
+      "check": "R11-F18:local_source",
+      "passed": true
+    },
+    {
+      "check": "R11-F19:card",
+      "passed": true
+    },
+    {
+      "check": "R11-F19:content",
+      "passed": true
+    },
+    {
+      "check": "R11-F19:local_source",
+      "passed": true
+    },
+    {
+      "check": "R11-F20:card",
+      "passed": true
+    },
+    {
+      "check": "R11-F20:content",
+      "passed": true
+    },
+    {
+      "check": "R11-F20:local_source",
+      "passed": true
+    },
+    {
+      "check": "R11-F21:card",
+      "passed": true
+    },
+    {
+      "check": "R11-F21:content",
+      "passed": true
+    },
+    {
+      "check": "R11-F21:local_source",
+      "passed": true
+    },
+    {
+      "check": "R12-F1:card",
+      "passed": true
+    },
+    {
+      "check": "R12-F1:content",
+      "passed": true
+    },
+    {
+      "check": "R12-F1:local_source",
+      "passed": true
+    },
+    {
+      "check": "R12-F2:card",
+      "passed": true
+    },
+    {
+      "check": "R12-F2:content",
+      "passed": true
+    },
+    {
+      "check": "R12-F2:local_source",
+      "passed": true
+    },
+    {
+      "check": "R12-F3:card",
+      "passed": true
+    },
+    {
+      "check": "R12-F3:content",
+      "passed": true
+    },
+    {
+      "check": "R12-F3:local_source",
+      "passed": true
+    },
+    {
+      "check": "R12-F4:card",
+      "passed": true
+    },
+    {
+      "check": "R12-F4:content",
+      "passed": true
+    },
+    {
+      "check": "R12-F4:local_source",
+      "passed": true
+    },
+    {
+      "check": "R12-F5:card",
+      "passed": true
+    },
+    {
+      "check": "R12-F5:content",
+      "passed": true
+    },
+    {
+      "check": "R12-F5:local_source",
+      "passed": true
+    },
+    {
+      "check": "R12-F6:card",
+      "passed": true
+    },
+    {
+      "check": "R12-F6:content",
+      "passed": true
+    },
+    {
+      "check": "R12-F6:local_source",
+      "passed": true
+    },
+    {
+      "check": "R12-F7:card",
+      "passed": true
+    },
+    {
+      "check": "R12-F7:content",
+      "passed": true
+    },
+    {
+      "check": "R12-F7:local_source",
+      "passed": true
+    },
+    {
+      "check": "R12-F8:card",
+      "passed": true
+    },
+    {
+      "check": "R12-F8:content",
+      "passed": true
+    },
+    {
+      "check": "R12-F8:local_source",
+      "passed": true
+    },
+    {
+      "check": "R12-F9:card",
+      "passed": true
+    },
+    {
+      "check": "R12-F9:content",
+      "passed": true
+    },
+    {
+      "check": "R12-F9:local_source",
+      "passed": true
+    },
+    {
+      "check": "R12-F10:card",
+      "passed": true
+    },
+    {
+      "check": "R12-F10:content",
+      "passed": true
+    },
+    {
+      "check": "R12-F10:local_source",
+      "passed": true
+    },
+    {
+      "check": "R13-F1:card",
+      "passed": true
+    },
+    {
+      "check": "R13-F1:content",
+      "passed": true
+    },
+    {
+      "check": "R13-F1:local_source",
+      "passed": true
+    },
+    {
+      "check": "R13-F2:card",
+      "passed": true
+    },
+    {
+      "check": "R13-F2:content",
+      "passed": true
+    },
+    {
+      "check": "R13-F2:local_source",
+      "passed": true
+    },
+    {
+      "check": "R13-F3:card",
+      "passed": true
+    },
+    {
+      "check": "R13-F3:content",
+      "passed": true
+    },
+    {
+      "check": "R13-F3:local_source",
+      "passed": true
+    },
+    {
+      "check": "R13-F4:card",
+      "passed": true
+    },
+    {
+      "check": "R13-F4:content",
+      "passed": true
+    },
+    {
+      "check": "R13-F4:local_source",
+      "passed": true
+    },
+    {
+      "check": "R13-F5:card",
+      "passed": true
+    },
+    {
+      "check": "R13-F5:content",
+      "passed": true
+    },
+    {
+      "check": "R13-F5:local_source",
+      "passed": true
+    },
+    {
+      "check": "R13-F6:card",
+      "passed": true
+    },
+    {
+      "check": "R13-F6:content",
+      "passed": true
+    },
+    {
+      "check": "R13-F6:local_source",
+      "passed": true
+    },
+    {
+      "check": "R13-F7:card",
+      "passed": true
+    },
+    {
+      "check": "R13-F7:content",
+      "passed": true
+    },
+    {
+      "check": "R13-F7:local_source",
+      "passed": true
+    },
+    {
+      "check": "R13-F8:card",
+      "passed": true
+    },
+    {
+      "check": "R13-F8:content",
+      "passed": true
+    },
+    {
+      "check": "R13-F8:local_source",
+      "passed": true
+    },
+    {
+      "check": "R13-F9:card",
+      "passed": true
+    },
+    {
+      "check": "R13-F9:content",
+      "passed": true
+    },
+    {
+      "check": "R13-F9:local_source",
+      "passed": true
+    },
+    {
+      "check": "R13-F10:card",
+      "passed": true
+    },
+    {
+      "check": "R13-F10:content",
+      "passed": true
+    },
+    {
+      "check": "R13-F10:local_source",
+      "passed": true
+    },
+    {
+      "check": "R14-F1:card",
+      "passed": true
+    },
+    {
+      "check": "R14-F1:content",
+      "passed": true
+    },
+    {
+      "check": "R14-F1:local_source",
+      "passed": true
+    },
+    {
+      "check": "R14-F2:card",
+      "passed": true
+    },
+    {
+      "check": "R14-F2:content",
+      "passed": true
+    },
+    {
+      "check": "R14-F2:local_source",
+      "passed": true
+    },
+    {
+      "check": "R14-F3:card",
+      "passed": true
+    },
+    {
+      "check": "R14-F3:content",
+      "passed": true
+    },
+    {
+      "check": "R14-F3:local_source",
+      "passed": true
+    },
+    {
+      "check": "R14-F4:card",
+      "passed": true
+    },
+    {
+      "check": "R14-F4:content",
+      "passed": true
+    },
+    {
+      "check": "R14-F4:local_source",
+      "passed": true
+    },
+    {
+      "check": "R14-F5:card",
+      "passed": true
+    },
+    {
+      "check": "R14-F5:content",
+      "passed": true
+    },
+    {
+      "check": "R14-F5:local_source",
+      "passed": true
+    },
+    {
+      "check": "R14-F6:card",
+      "passed": true
+    },
+    {
+      "check": "R14-F6:content",
+      "passed": true
+    },
+    {
+      "check": "R14-F6:local_source",
+      "passed": true
+    },
+    {
+      "check": "R14-F7:card",
+      "passed": true
+    },
+    {
+      "check": "R14-F7:content",
+      "passed": true
+    },
+    {
+      "check": "R14-F7:local_source",
+      "passed": true
+    },
+    {
+      "check": "R14-F8:card",
+      "passed": true
+    },
+    {
+      "check": "R14-F8:content",
+      "passed": true
+    },
+    {
+      "check": "R14-F8:local_source",
+      "passed": true
+    },
+    {
+      "check": "R14-F9:card",
+      "passed": true
+    },
+    {
+      "check": "R14-F9:content",
+      "passed": true
+    },
+    {
+      "check": "R14-F9:local_source",
+      "passed": true
+    },
+    {
+      "check": "R14-F10:card",
+      "passed": true
+    },
+    {
+      "check": "R14-F10:content",
+      "passed": true
+    },
+    {
+      "check": "R14-F10:local_source",
+      "passed": true
+    },
+    {
+      "check": "R14-F11:card",
+      "passed": true
+    },
+    {
+      "check": "R14-F11:content",
+      "passed": true
+    },
+    {
+      "check": "R14-F11:local_source",
+      "passed": true
+    },
+    {
+      "check": "R14-F12:card",
+      "passed": true
+    },
+    {
+      "check": "R14-F12:content",
+      "passed": true
+    },
+    {
+      "check": "R14-F12:local_source",
+      "passed": true
+    },
+    {
+      "check": "R14-F13:card",
+      "passed": true
+    },
+    {
+      "check": "R14-F13:content",
+      "passed": true
+    },
+    {
+      "check": "R14-F13:local_source",
+      "passed": true
+    },
+    {
+      "check": "R15-F1:card",
+      "passed": true
+    },
+    {
+      "check": "R15-F1:content",
+      "passed": true
+    },
+    {
+      "check": "R15-F1:local_source",
+      "passed": true
+    },
+    {
+      "check": "R15-F2:card",
+      "passed": true
+    },
+    {
+      "check": "R15-F2:content",
+      "passed": true
+    },
+    {
+      "check": "R15-F2:local_source",
+      "passed": true
+    },
+    {
+      "check": "R15-F3:card",
+      "passed": true
+    },
+    {
+      "check": "R15-F3:content",
+      "passed": true
+    },
+    {
+      "check": "R15-F3:local_source",
+      "passed": true
+    },
+    {
+      "check": "R15-F4:card",
+      "passed": true
+    },
+    {
+      "check": "R15-F4:content",
+      "passed": true
+    },
+    {
+      "check": "R15-F4:local_source",
+      "passed": true
+    },
+    {
+      "check": "R15-F5:card",
+      "passed": true
+    },
+    {
+      "check": "R15-F5:content",
+      "passed": true
+    },
+    {
+      "check": "R15-F5:local_source",
+      "passed": true
+    },
+    {
+      "check": "R15-F6:card",
+      "passed": true
+    },
+    {
+      "check": "R15-F6:content",
+      "passed": true
+    },
+    {
+      "check": "R15-F6:local_source",
+      "passed": true
+    },
+    {
+      "check": "R16-F1:card",
+      "passed": true
+    },
+    {
+      "check": "R16-F1:content",
+      "passed": true
+    },
+    {
+      "check": "R16-F1:local_source",
+      "passed": true
+    },
+    {
+      "check": "R16-F2:card",
+      "passed": true
+    },
+    {
+      "check": "R16-F2:content",
+      "passed": true
+    },
+    {
+      "check": "R16-F2:local_source",
+      "passed": true
+    },
+    {
+      "check": "R16-F3:card",
+      "passed": true
+    },
+    {
+      "check": "R16-F3:content",
+      "passed": true
+    },
+    {
+      "check": "R16-F3:local_source",
+      "passed": true
+    },
+    {
+      "check": "R16-F4:card",
+      "passed": true
+    },
+    {
+      "check": "R16-F4:content",
+      "passed": true
+    },
+    {
+      "check": "R16-F4:local_source",
+      "passed": true
+    },
+    {
+      "check": "R16-F5:card",
+      "passed": true
+    },
+    {
+      "check": "R16-F5:content",
+      "passed": true
+    },
+    {
+      "check": "R16-F5:local_source",
+      "passed": true
+    },
+    {
+      "check": "R16-F6:card",
+      "passed": true
+    },
+    {
+      "check": "R16-F6:content",
+      "passed": true
+    },
+    {
+      "check": "R16-F6:local_source",
+      "passed": true
+    },
+    {
+      "check": "R16-F7:card",
+      "passed": true
+    },
+    {
+      "check": "R16-F7:content",
+      "passed": true
+    },
+    {
+      "check": "R16-F7:local_source",
+      "passed": true
+    },
+    {
+      "check": "R16-F8:card",
+      "passed": true
+    },
+    {
+      "check": "R16-F8:content",
+      "passed": true
+    },
+    {
+      "check": "R16-F8:local_source",
+      "passed": true
+    },
+    {
+      "check": "R16-F9:card",
+      "passed": true
+    },
+    {
+      "check": "R16-F9:content",
+      "passed": true
+    },
+    {
+      "check": "R16-F9:local_source",
+      "passed": true
+    },
+    {
+      "check": "R17-F1:card",
+      "passed": true
+    },
+    {
+      "check": "R17-F1:content",
+      "passed": true
+    },
+    {
+      "check": "R17-F1:local_source",
+      "passed": true
+    },
+    {
+      "check": "R17-F2:card",
+      "passed": true
+    },
+    {
+      "check": "R17-F2:content",
+      "passed": true
+    },
+    {
+      "check": "R17-F2:local_source",
+      "passed": true
+    },
+    {
+      "check": "R17-F3:card",
+      "passed": true
+    },
+    {
+      "check": "R17-F3:content",
+      "passed": true
+    },
+    {
+      "check": "R17-F3:local_source",
+      "passed": true
+    },
+    {
+      "check": "R17-F4:card",
+      "passed": true
+    },
+    {
+      "check": "R17-F4:content",
+      "passed": true
+    },
+    {
+      "check": "R17-F4:local_source",
+      "passed": true
+    },
+    {
+      "check": "R17-F5:card",
+      "passed": true
+    },
+    {
+      "check": "R17-F5:content",
+      "passed": true
+    },
+    {
+      "check": "R17-F5:local_source",
+      "passed": true
+    },
+    {
+      "check": "R17-F6:card",
+      "passed": true
+    },
+    {
+      "check": "R17-F6:content",
+      "passed": true
+    },
+    {
+      "check": "R17-F6:local_source",
+      "passed": true
+    },
+    {
+      "check": "R17-F7:card",
+      "passed": true
+    },
+    {
+      "check": "R17-F7:content",
+      "passed": true
+    },
+    {
+      "check": "R17-F7:local_source",
+      "passed": true
+    },
+    {
+      "check": "R17-F8:card",
+      "passed": true
+    },
+    {
+      "check": "R17-F8:content",
+      "passed": true
+    },
+    {
+      "check": "R17-F8:local_source",
+      "passed": true
+    },
+    {
+      "check": "R18-F1:card",
+      "passed": true
+    },
+    {
+      "check": "R18-F1:content",
+      "passed": true
+    },
+    {
+      "check": "R18-F1:local_source",
+      "passed": true
+    },
+    {
+      "check": "R18-F2:card",
+      "passed": true
+    },
+    {
+      "check": "R18-F2:content",
+      "passed": true
+    },
+    {
+      "check": "R18-F2:local_source",
+      "passed": true
+    },
+    {
+      "check": "R18-F3:card",
+      "passed": true
+    },
+    {
+      "check": "R18-F3:content",
+      "passed": true
+    },
+    {
+      "check": "R18-F3:local_source",
+      "passed": true
+    },
+    {
+      "check": "R18-F4:card",
+      "passed": true
+    },
+    {
+      "check": "R18-F4:content",
+      "passed": true
+    },
+    {
+      "check": "R18-F4:local_source",
+      "passed": true
+    },
+    {
+      "check": "R18-F5:card",
+      "passed": true
+    },
+    {
+      "check": "R18-F5:content",
+      "passed": true
+    },
+    {
+      "check": "R18-F5:local_source",
+      "passed": true
+    },
+    {
+      "check": "R18-F6:card",
+      "passed": true
+    },
+    {
+      "check": "R18-F6:content",
+      "passed": true
+    },
+    {
+      "check": "R18-F6:local_source",
+      "passed": true
+    },
+    {
+      "check": "R18-F7:card",
+      "passed": true
+    },
+    {
+      "check": "R18-F7:content",
+      "passed": true
+    },
+    {
+      "check": "R18-F7:local_source",
+      "passed": true
+    },
+    {
+      "check": "R18-F8:card",
+      "passed": true
+    },
+    {
+      "check": "R18-F8:content",
+      "passed": true
+    },
+    {
+      "check": "R18-F8:local_source",
+      "passed": true
+    },
+    {
+      "check": "R18-F9:card",
+      "passed": true
+    },
+    {
+      "check": "R18-F9:content",
+      "passed": true
+    },
+    {
+      "check": "R18-F9:local_source",
+      "passed": true
+    },
+    {
+      "check": "R18-F10:card",
+      "passed": true
+    },
+    {
+      "check": "R18-F10:content",
+      "passed": true
+    },
+    {
+      "check": "R18-F10:local_source",
+      "passed": true
+    },
+    {
+      "check": "R18-F11:card",
+      "passed": true
+    },
+    {
+      "check": "R18-F11:content",
+      "passed": true
+    },
+    {
+      "check": "R18-F11:local_source",
+      "passed": true
+    },
+    {
+      "check": "R18-F12:card",
+      "passed": true
+    },
+    {
+      "check": "R18-F12:content",
+      "passed": true
+    },
+    {
+      "check": "R18-F12:local_source",
+      "passed": true
+    },
+    {
+      "check": "R18-F13:card",
+      "passed": true
+    },
+    {
+      "check": "R18-F13:content",
+      "passed": true
+    },
+    {
+      "check": "R18-F13:local_source",
+      "passed": true
+    },
+    {
+      "check": "R18-F14:card",
+      "passed": true
+    },
+    {
+      "check": "R18-F14:content",
+      "passed": true
+    },
+    {
+      "check": "R18-F14:local_source",
+      "passed": true
+    },
+    {
+      "check": "R18-F15:card",
+      "passed": true
+    },
+    {
+      "check": "R18-F15:content",
+      "passed": true
+    },
+    {
+      "check": "R18-F15:local_source",
+      "passed": true
+    },
+    {
+      "check": "R18-F16:card",
+      "passed": true
+    },
+    {
+      "check": "R18-F16:content",
+      "passed": true
+    },
+    {
+      "check": "R18-F16:local_source",
+      "passed": true
+    },
+    {
+      "check": "R18-F17:card",
+      "passed": true
+    },
+    {
+      "check": "R18-F17:content",
+      "passed": true
+    },
+    {
+      "check": "R18-F17:local_source",
+      "passed": true
+    },
+    {
+      "check": "R18-F18:card",
+      "passed": true
+    },
+    {
+      "check": "R18-F18:content",
+      "passed": true
+    },
+    {
+      "check": "R18-F18:local_source",
+      "passed": true
+    },
+    {
+      "check": "R19-F1:card",
+      "passed": true
+    },
+    {
+      "check": "R19-F1:content",
+      "passed": true
+    },
+    {
+      "check": "R19-F1:local_source",
+      "passed": true
+    },
+    {
+      "check": "R19-F2:card",
+      "passed": true
+    },
+    {
+      "check": "R19-F2:content",
+      "passed": true
+    },
+    {
+      "check": "R19-F2:local_source",
+      "passed": true
+    },
+    {
+      "check": "R19-F3:card",
+      "passed": true
+    },
+    {
+      "check": "R19-F3:content",
+      "passed": true
+    },
+    {
+      "check": "R19-F3:local_source",
+      "passed": true
+    },
+    {
+      "check": "R19-F4:card",
+      "passed": true
+    },
+    {
+      "check": "R19-F4:content",
+      "passed": true
+    },
+    {
+      "check": "R19-F4:local_source",
+      "passed": true
+    },
+    {
+      "check": "R19-F5:card",
+      "passed": true
+    },
+    {
+      "check": "R19-F5:content",
+      "passed": true
+    },
+    {
+      "check": "R19-F5:local_source",
+      "passed": true
+    },
+    {
+      "check": "R19-F6:card",
+      "passed": true
+    },
+    {
+      "check": "R19-F6:content",
+      "passed": true
+    },
+    {
+      "check": "R19-F6:local_source",
+      "passed": true
+    },
+    {
+      "check": "R19-F7:card",
+      "passed": true
+    },
+    {
+      "check": "R19-F7:content",
+      "passed": true
+    },
+    {
+      "check": "R19-F7:local_source",
+      "passed": true
+    },
+    {
+      "check": "R19-F8:card",
+      "passed": true
+    },
+    {
+      "check": "R19-F8:content",
+      "passed": true
+    },
+    {
+      "check": "R19-F8:local_source",
+      "passed": true
+    },
+    {
+      "check": "R20-F1:card",
+      "passed": true
+    },
+    {
+      "check": "R20-F1:content",
+      "passed": true
+    },
+    {
+      "check": "R20-F1:local_source",
+      "passed": true
+    },
+    {
+      "check": "R20-F2:card",
+      "passed": true
+    },
+    {
+      "check": "R20-F2:content",
+      "passed": true
+    },
+    {
+      "check": "R20-F2:local_source",
+      "passed": true
+    },
+    {
+      "check": "R20-F3:card",
+      "passed": true
+    },
+    {
+      "check": "R20-F3:content",
+      "passed": true
+    },
+    {
+      "check": "R20-F3:local_source",
+      "passed": true
+    },
+    {
+      "check": "R20-F4:card",
+      "passed": true
+    },
+    {
+      "check": "R20-F4:content",
+      "passed": true
+    },
+    {
+      "check": "R20-F4:local_source",
+      "passed": true
+    },
+    {
+      "check": "R20-F5:card",
+      "passed": true
+    },
+    {
+      "check": "R20-F5:content",
+      "passed": true
+    },
+    {
+      "check": "R20-F5:local_source",
+      "passed": true
+    },
+    {
+      "check": "R21-F1:card",
+      "passed": true
+    },
+    {
+      "check": "R21-F1:content",
+      "passed": true
+    },
+    {
+      "check": "R21-F1:local_source",
+      "passed": true
+    },
+    {
+      "check": "R21-F2:card",
+      "passed": true
+    },
+    {
+      "check": "R21-F2:content",
+      "passed": true
+    },
+    {
+      "check": "R21-F2:local_source",
+      "passed": true
+    },
+    {
+      "check": "R21-F3:card",
+      "passed": true
+    },
+    {
+      "check": "R21-F3:content",
+      "passed": true
+    },
+    {
+      "check": "R21-F3:local_source",
+      "passed": true
+    },
+    {
+      "check": "R21-F4:card",
+      "passed": true
+    },
+    {
+      "check": "R21-F4:content",
+      "passed": true
+    },
+    {
+      "check": "R21-F4:local_source",
+      "passed": true
+    },
+    {
+      "check": "R21-F5:card",
+      "passed": true
+    },
+    {
+      "check": "R21-F5:content",
+      "passed": true
+    },
+    {
+      "check": "R21-F5:local_source",
+      "passed": true
+    },
+    {
+      "check": "R21-F6:card",
+      "passed": true
+    },
+    {
+      "check": "R21-F6:content",
+      "passed": true
+    },
+    {
+      "check": "R21-F6:local_source",
+      "passed": true
+    },
+    {
+      "check": "R21-F7:card",
+      "passed": true
+    },
+    {
+      "check": "R21-F7:content",
+      "passed": true
+    },
+    {
+      "check": "R21-F7:local_source",
+      "passed": true
+    },
+    {
+      "check": "R21-F8:card",
+      "passed": true
+    },
+    {
+      "check": "R21-F8:content",
+      "passed": true
+    },
+    {
+      "check": "R21-F8:local_source",
+      "passed": true
+    },
+    {
+      "check": "R21-F9:card",
+      "passed": true
+    },
+    {
+      "check": "R21-F9:content",
+      "passed": true
+    },
+    {
+      "check": "R21-F9:local_source",
+      "passed": true
+    },
+    {
+      "check": "R21-F10:card",
+      "passed": true
+    },
+    {
+      "check": "R21-F10:content",
+      "passed": true
+    },
+    {
+      "check": "R21-F10:local_source",
+      "passed": true
+    },
+    {
+      "check": "R22-F1:card",
+      "passed": true
+    },
+    {
+      "check": "R22-F1:content",
+      "passed": true
+    },
+    {
+      "check": "R22-F1:local_source",
+      "passed": true
+    },
+    {
+      "check": "R22-F2:card",
+      "passed": true
+    },
+    {
+      "check": "R22-F2:content",
+      "passed": true
+    },
+    {
+      "check": "R22-F2:local_source",
+      "passed": true
+    },
+    {
+      "check": "R22-F3:card",
+      "passed": true
+    },
+    {
+      "check": "R22-F3:content",
+      "passed": true
+    },
+    {
+      "check": "R22-F3:local_source",
+      "passed": true
+    },
+    {
+      "check": "R22-F4:card",
+      "passed": true
+    },
+    {
+      "check": "R22-F4:content",
+      "passed": true
+    },
+    {
+      "check": "R22-F4:local_source",
+      "passed": true
+    },
+    {
+      "check": "R22-F5:card",
+      "passed": true
+    },
+    {
+      "check": "R22-F5:content",
+      "passed": true
+    },
+    {
+      "check": "R22-F5:local_source",
+      "passed": true
+    },
+    {
+      "check": "R22-F6:card",
+      "passed": true
+    },
+    {
+      "check": "R22-F6:content",
+      "passed": true
+    },
+    {
+      "check": "R22-F6:local_source",
+      "passed": true
+    },
+    {
+      "check": "R22-F7:card",
+      "passed": true
+    },
+    {
+      "check": "R22-F7:content",
+      "passed": true
+    },
+    {
+      "check": "R22-F7:local_source",
+      "passed": true
+    },
+    {
+      "check": "R23-F1:card",
+      "passed": true
+    },
+    {
+      "check": "R23-F1:content",
+      "passed": true
+    },
+    {
+      "check": "R23-F1:local_source",
+      "passed": true
+    },
+    {
+      "check": "R23-F2:card",
+      "passed": true
+    },
+    {
+      "check": "R23-F2:content",
+      "passed": true
+    },
+    {
+      "check": "R23-F2:local_source",
+      "passed": true
+    },
+    {
+      "check": "R23-F3:card",
+      "passed": true
+    },
+    {
+      "check": "R23-F3:content",
+      "passed": true
+    },
+    {
+      "check": "R23-F3:local_source",
+      "passed": true
+    },
+    {
+      "check": "R23-F4:card",
+      "passed": true
+    },
+    {
+      "check": "R23-F4:content",
+      "passed": true
+    },
+    {
+      "check": "R23-F4:local_source",
+      "passed": true
+    },
+    {
+      "check": "R23-F5:card",
+      "passed": true
+    },
+    {
+      "check": "R23-F5:content",
+      "passed": true
+    },
+    {
+      "check": "R23-F5:local_source",
+      "passed": true
+    },
+    {
+      "check": "R23-F6:card",
+      "passed": true
+    },
+    {
+      "check": "R23-F6:content",
+      "passed": true
+    },
+    {
+      "check": "R23-F6:local_source",
+      "passed": true
+    },
+    {
+      "check": "R23-F7:card",
+      "passed": true
+    },
+    {
+      "check": "R23-F7:content",
+      "passed": true
+    },
+    {
+      "check": "R23-F7:local_source",
+      "passed": true
+    },
+    {
+      "check": "R24-F1:card",
+      "passed": true
+    },
+    {
+      "check": "R24-F1:content",
+      "passed": true
+    },
+    {
+      "check": "R24-F1:local_source",
+      "passed": true
+    },
+    {
+      "check": "R24-F2:card",
+      "passed": true
+    },
+    {
+      "check": "R24-F2:content",
+      "passed": true
+    },
+    {
+      "check": "R24-F2:local_source",
+      "passed": true
+    },
+    {
+      "check": "R24-F3:card",
+      "passed": true
+    },
+    {
+      "check": "R24-F3:content",
+      "passed": true
+    },
+    {
+      "check": "R24-F3:local_source",
+      "passed": true
+    },
+    {
+      "check": "R24-F4:card",
+      "passed": true
+    },
+    {
+      "check": "R24-F4:content",
+      "passed": true
+    },
+    {
+      "check": "R24-F4:local_source",
+      "passed": true
+    },
+    {
+      "check": "R24-F5:card",
+      "passed": true
+    },
+    {
+      "check": "R24-F5:content",
+      "passed": true
+    },
+    {
+      "check": "R24-F5:local_source",
+      "passed": true
+    },
+    {
+      "check": "R24-F6:card",
+      "passed": true
+    },
+    {
+      "check": "R24-F6:content",
+      "passed": true
+    },
+    {
+      "check": "R24-F6:local_source",
+      "passed": true
+    },
+    {
+      "check": "R24-F7:card",
+      "passed": true
+    },
+    {
+      "check": "R24-F7:content",
+      "passed": true
+    },
+    {
+      "check": "R24-F7:local_source",
+      "passed": true
+    },
+    {
+      "check": "R25-F1:card",
+      "passed": true
+    },
+    {
+      "check": "R25-F1:content",
+      "passed": true
+    },
+    {
+      "check": "R25-F1:local_source",
+      "passed": true
+    },
+    {
+      "check": "R25-F2:card",
+      "passed": true
+    },
+    {
+      "check": "R25-F2:content",
+      "passed": true
+    },
+    {
+      "check": "R25-F2:local_source",
+      "passed": true
+    },
+    {
+      "check": "R25-F3:card",
+      "passed": true
+    },
+    {
+      "check": "R25-F3:content",
+      "passed": true
+    },
+    {
+      "check": "R25-F3:local_source",
+      "passed": true
+    },
+    {
+      "check": "R25-F4:card",
+      "passed": true
+    },
+    {
+      "check": "R25-F4:content",
+      "passed": true
+    },
+    {
+      "check": "R25-F4:local_source",
+      "passed": true
+    },
+    {
+      "check": "R25-F5:card",
+      "passed": true
+    },
+    {
+      "check": "R25-F5:content",
+      "passed": true
+    },
+    {
+      "check": "R25-F5:local_source",
+      "passed": true
+    },
+    {
+      "check": "R25-F6:card",
+      "passed": true
+    },
+    {
+      "check": "R25-F6:content",
+      "passed": true
+    },
+    {
+      "check": "R25-F6:local_source",
+      "passed": true
+    },
+    {
+      "check": "R26-F1:card",
+      "passed": true
+    },
+    {
+      "check": "R26-F1:content",
+      "passed": true
+    },
+    {
+      "check": "R26-F1:local_source",
+      "passed": true
+    },
+    {
+      "check": "R26-F2:card",
+      "passed": true
+    },
+    {
+      "check": "R26-F2:content",
+      "passed": true
+    },
+    {
+      "check": "R26-F2:local_source",
+      "passed": true
+    },
+    {
+      "check": "R26-F3:card",
+      "passed": true
+    },
+    {
+      "check": "R26-F3:content",
+      "passed": true
+    },
+    {
+      "check": "R26-F3:local_source",
+      "passed": true
+    },
+    {
+      "check": "R26-F4:card",
+      "passed": true
+    },
+    {
+      "check": "R26-F4:content",
+      "passed": true
+    },
+    {
+      "check": "R26-F4:local_source",
+      "passed": true
+    },
+    {
+      "check": "R26-F5:card",
+      "passed": true
+    },
+    {
+      "check": "R26-F5:content",
+      "passed": true
+    },
+    {
+      "check": "R26-F5:local_source",
+      "passed": true
+    },
+    {
+      "check": "R26-F6:card",
+      "passed": true
+    },
+    {
+      "check": "R26-F6:content",
+      "passed": true
+    },
+    {
+      "check": "R26-F6:local_source",
+      "passed": true
+    },
+    {
+      "check": "R26-F7:card",
+      "passed": true
+    },
+    {
+      "check": "R26-F7:content",
+      "passed": true
+    },
+    {
+      "check": "R26-F7:local_source",
+      "passed": true
+    },
+    {
+      "check": "R26-F8:card",
+      "passed": true
+    },
+    {
+      "check": "R26-F8:content",
+      "passed": true
+    },
+    {
+      "check": "R26-F8:local_source",
+      "passed": true
+    },
+    {
+      "check": "R26-F9:card",
+      "passed": true
+    },
+    {
+      "check": "R26-F9:content",
+      "passed": true
+    },
+    {
+      "check": "R26-F9:local_source",
+      "passed": true
+    },
+    {
+      "check": "R26-F10:card",
+      "passed": true
+    },
+    {
+      "check": "R26-F10:content",
+      "passed": true
+    },
+    {
+      "check": "R26-F10:local_source",
+      "passed": true
+    },
+    {
+      "check": "R26-F11:card",
+      "passed": true
+    },
+    {
+      "check": "R26-F11:content",
+      "passed": true
+    },
+    {
+      "check": "R26-F11:local_source",
+      "passed": true
+    },
+    {
+      "check": "R26-F12:card",
+      "passed": true
+    },
+    {
+      "check": "R26-F12:content",
+      "passed": true
+    },
+    {
+      "check": "R26-F12:local_source",
+      "passed": true
+    },
+    {
+      "check": "R26-F13:card",
+      "passed": true
+    },
+    {
+      "check": "R26-F13:content",
+      "passed": true
+    },
+    {
+      "check": "R26-F13:local_source",
+      "passed": true
+    },
+    {
+      "check": "R26-F14:card",
+      "passed": true
+    },
+    {
+      "check": "R26-F14:content",
+      "passed": true
+    },
+    {
+      "check": "R26-F14:local_source",
+      "passed": true
+    },
+    {
+      "check": "R26-F15:card",
+      "passed": true
+    },
+    {
+      "check": "R26-F15:content",
+      "passed": true
+    },
+    {
+      "check": "R26-F15:local_source",
+      "passed": true
+    },
+    {
+      "check": "R27-F1:card",
+      "passed": true
+    },
+    {
+      "check": "R27-F1:content",
+      "passed": true
+    },
+    {
+      "check": "R27-F1:local_source",
+      "passed": true
+    },
+    {
+      "check": "R27-F2:card",
+      "passed": true
+    },
+    {
+      "check": "R27-F2:content",
+      "passed": true
+    },
+    {
+      "check": "R27-F2:local_source",
+      "passed": true
+    },
+    {
+      "check": "R27-F3:card",
+      "passed": true
+    },
+    {
+      "check": "R27-F3:content",
+      "passed": true
+    },
+    {
+      "check": "R27-F3:local_source",
+      "passed": true
+    },
+    {
+      "check": "R27-F4:card",
+      "passed": true
+    },
+    {
+      "check": "R27-F4:content",
+      "passed": true
+    },
+    {
+      "check": "R27-F4:local_source",
+      "passed": true
+    },
+    {
+      "check": "R27-F5:card",
+      "passed": true
+    },
+    {
+      "check": "R27-F5:content",
+      "passed": true
+    },
+    {
+      "check": "R27-F5:local_source",
+      "passed": true
+    },
+    {
+      "check": "R27-F6:card",
+      "passed": true
+    },
+    {
+      "check": "R27-F6:content",
+      "passed": true
+    },
+    {
+      "check": "R27-F6:local_source",
+      "passed": true
+    },
+    {
+      "check": "R28-F1:card",
+      "passed": true
+    },
+    {
+      "check": "R28-F1:content",
+      "passed": true
+    },
+    {
+      "check": "R28-F1:local_source",
+      "passed": true
+    },
+    {
+      "check": "R28-F2:card",
+      "passed": true
+    },
+    {
+      "check": "R28-F2:content",
+      "passed": true
+    },
+    {
+      "check": "R28-F2:local_source",
+      "passed": true
+    },
+    {
+      "check": "R28-F3:card",
+      "passed": true
+    },
+    {
+      "check": "R28-F3:content",
+      "passed": true
+    },
+    {
+      "check": "R28-F3:local_source",
+      "passed": true
+    },
+    {
+      "check": "R28-F4:card",
+      "passed": true
+    },
+    {
+      "check": "R28-F4:content",
+      "passed": true
+    },
+    {
+      "check": "R28-F4:local_source",
+      "passed": true
+    },
+    {
+      "check": "R28-F5:card",
+      "passed": true
+    },
+    {
+      "check": "R28-F5:content",
+      "passed": true
+    },
+    {
+      "check": "R28-F5:local_source",
+      "passed": true
+    },
+    {
+      "check": "R28-F6:card",
+      "passed": true
+    },
+    {
+      "check": "R28-F6:content",
+      "passed": true
+    },
+    {
+      "check": "R28-F6:local_source",
+      "passed": true
+    },
+    {
+      "check": "R28-F7:card",
+      "passed": true
+    },
+    {
+      "check": "R28-F7:content",
+      "passed": true
+    },
+    {
+      "check": "R28-F7:local_source",
+      "passed": true
+    },
+    {
+      "check": "R28-F8:card",
+      "passed": true
+    },
+    {
+      "check": "R28-F8:content",
+      "passed": true
+    },
+    {
+      "check": "R28-F8:local_source",
+      "passed": true
+    },
+    {
+      "check": "R29-F1:card",
+      "passed": true
+    },
+    {
+      "check": "R29-F1:content",
+      "passed": true
+    },
+    {
+      "check": "R29-F1:local_source",
+      "passed": true
+    },
+    {
+      "check": "R29-F2:card",
+      "passed": true
+    },
+    {
+      "check": "R29-F2:content",
+      "passed": true
+    },
+    {
+      "check": "R29-F2:local_source",
+      "passed": true
+    },
+    {
+      "check": "R29-F3:card",
+      "passed": true
+    },
+    {
+      "check": "R29-F3:content",
+      "passed": true
+    },
+    {
+      "check": "R29-F3:local_source",
+      "passed": true
+    },
+    {
+      "check": "R29-F4:card",
+      "passed": true
+    },
+    {
+      "check": "R29-F4:content",
+      "passed": true
+    },
+    {
+      "check": "R29-F4:local_source",
+      "passed": true
+    },
+    {
+      "check": "R29-F5:card",
+      "passed": true
+    },
+    {
+      "check": "R29-F5:content",
+      "passed": true
+    },
+    {
+      "check": "R29-F5:local_source",
+      "passed": true
+    },
+    {
+      "check": "R29-F6:card",
+      "passed": true
+    },
+    {
+      "check": "R29-F6:content",
+      "passed": true
+    },
+    {
+      "check": "R29-F6:local_source",
+      "passed": true
+    },
+    {
+      "check": "R29-F7:card",
+      "passed": true
+    },
+    {
+      "check": "R29-F7:content",
+      "passed": true
+    },
+    {
+      "check": "R29-F7:local_source",
+      "passed": true
+    },
+    {
+      "check": "R29-F8:card",
+      "passed": true
+    },
+    {
+      "check": "R29-F8:content",
+      "passed": true
+    },
+    {
+      "check": "R29-F8:local_source",
+      "passed": true
+    },
+    {
+      "check": "R04-F14.svg:editable_xml",
+      "passed": true
+    },
+    {
+      "check": "R05-F4.svg:editable_xml",
+      "passed": true
+    },
+    {
+      "check": "R06-F2.svg:editable_xml",
+      "passed": true
+    },
+    {
+      "check": "R11-F2.svg:editable_xml",
+      "passed": true
+    },
+    {
+      "check": "R15-F4.svg:editable_xml",
+      "passed": true
+    },
+    {
+      "check": "R20-F2.svg:editable_xml",
+      "passed": true
+    },
+    {
+      "check": "R20-F3.svg:editable_xml",
+      "passed": true
+    },
+    {
+      "check": "R23-F3.svg:editable_xml",
+      "passed": true
+    },
+    {
+      "check": "R25-F1.svg:editable_xml",
+      "passed": true
+    },
+    {
+      "check": "R25-F2.svg:editable_xml",
+      "passed": true
+    },
+    {
+      "check": "R29-F2.svg:editable_xml",
+      "passed": true
+    },
+    {
+      "check": "R29-F6.svg:editable_xml",
+      "passed": true
+    },
+    {
+      "check": "behavior_layout.svg:editable_xml",
+      "passed": true
+    },
+    {
+      "check": "mechanism.svg:editable_xml",
+      "passed": true
+    },
+    {
+      "check": "no_forced_match",
+      "passed": true
+    },
+    {
+      "check": "unreviewed_renders_not_promoted",
+      "passed": true
+    },
+    {
+      "check": "safety_learning_retrieval",
+      "passed": true
+    },
+    {
+      "check": "exact_case_locator",
+      "passed": true
+    },
+    {
+      "check": "zero_shot_not_labeled_RL",
+      "passed": true
+    },
+    {
+      "check": "neural_estimation_not_labeled_RL",
+      "passed": true
+    },
+    {
+      "check": "RL_query_excludes_frozen_and_supervised_models",
+      "passed": true
+    }
+  ]
+}

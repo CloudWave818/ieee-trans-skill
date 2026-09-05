@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 640" width="180mm" height="115.2mm">
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8" fill="#38434B"/></marker></defs>
+<rect width="1000" height="640" fill="white"/>
+<g font-family="Arial, sans-serif" fill="#26343E">
+<rect x="40" y="65" width="660" height="460" rx="8" fill="#FFFFFF" stroke="#687681" stroke-width="1.8"/>
+<text x="370.0" y="89" text-anchor="middle" font-size="20">Normalized Return vs Steps (0M–40M)</text>
+<path d="M70,500 H680 M70,500 V150" fill="none" stroke="#495760" stroke-width="2"/>
+<rect x="740" y="65" width="230" height="300" rx="8" fill="#F0F1F3" stroke="#687681" stroke-width="1.8"/>
+<text x="855.0" y="89" text-anchor="middle" font-size="20">Encoder + N_e + N_bs</text>
+<text x="855.0" y="114" text-anchor="middle" font-size="20">legend</text>
+<rect x="740" y="390" width="230" height="135" rx="8" fill="#FFF3CC" stroke="#687681" stroke-width="1.8"/>
+<text x="855.0" y="414" text-anchor="middle" font-size="20">Band definition:</text>
+<text x="855.0" y="439" text-anchor="middle" font-size="20">unresolved</text>
+<text x="30" y="623" font-size="18">R15-F4 | layout study only • no source image or measured curve reconstructed</text></g></svg>

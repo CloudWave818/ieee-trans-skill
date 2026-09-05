@@ -25,7 +25,7 @@ Classify every recommended action:
 5. Create a global rename plan and apply it across title, abstract, contributions, headings, prose, notation, equations, algorithms, figures, tables, captions, legends, experiments, conclusion, and supplementary material.
 6. Reconcile assumptions, datasets, baseline names, metrics, and numerical values across sections.
 7. Remove unjustified one-off terminology and acronyms; distinguish related concepts whose differences matter scientifically.
-8. Reconcile every in-text figure/table callout with its evidence role and canonical terminology.
+8. Reconcile every in-text figure/table callout with its evidence role, canonical terminology, and corresponding block in `PAPER_FIGURE_DESCRIPTION.md`; update the description when a figure is added, merged, deleted, or renumbered.
 9. Apply the locked journal profile without changing scientific content to chase style.
 10. Route only affected sections through `09_SECTION_WRITING.md`.
 11. For revision, map every reviewer request to manuscript evidence and a response action; do not promise unperformed work as completed.

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 640" width="180mm" height="115.2mm">
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8" fill="#38434B"/></marker></defs>
+<rect width="1000" height="640" fill="white"/>
+<g font-family="Arial, sans-serif" fill="#26343E">
+<rect x="25" y="130" width="230" height="220" rx="8" fill="#E5F2E3" stroke="#687681" stroke-width="1.8"/>
+<text x="140.0" y="154" text-anchor="middle" font-size="20">UAV + target</text>
+<text x="140.0" y="179" text-anchor="middle" font-size="20">observations</text>
+<rect x="320" y="145" width="310" height="190" rx="8" fill="#E3F0FC" stroke="#687681" stroke-width="1.8"/>
+<text x="475.0" y="169" text-anchor="middle" font-size="20">Policy: 64 ReLU → 64 ReLU</text>
+<rect x="725" y="165" width="250" height="150" rx="8" fill="#FFF3CC" stroke="#687681" stroke-width="1.8"/>
+<text x="850.0" y="189" text-anchor="middle" font-size="20">Catch time (s)</text>
+<rect x="355" y="430" width="260" height="100" rx="8" fill="#F0F1F3" stroke="#687681" stroke-width="1.8"/>
+<text x="485.0" y="454" text-anchor="middle" font-size="20">Trajectory planner</text>
+<rect x="35" y="430" width="240" height="100" rx="8" fill="#F0F1F3" stroke="#687681" stroke-width="1.8"/>
+<text x="155.0" y="454" text-anchor="middle" font-size="20">Controller /</text>
+<text x="155.0" y="479" text-anchor="middle" font-size="20">environment</text>
+<path d="M255,240 L320,240" stroke="#38434B" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<text x="287.5" y="232.0" text-anchor="middle" font-size="17" fill="none" stroke="white" stroke-width="5">state</text>
+<text x="287.5" y="232.0" text-anchor="middle" font-size="17" fill="#26343E">state</text>
+<path d="M630,240 L725,240" stroke="#38434B" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<text x="677.5" y="232.0" text-anchor="middle" font-size="17" fill="none" stroke="white" stroke-width="5">time</text>
+<text x="677.5" y="232.0" text-anchor="middle" font-size="17" fill="#26343E">time</text>
+<path d="M850,315 L615,465" stroke="#38434B" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<text x="732.5" y="382.0" text-anchor="middle" font-size="17" fill="none" stroke="white" stroke-width="5">time condition</text>
+<text x="732.5" y="382.0" text-anchor="middle" font-size="17" fill="#26343E">time condition</text>
+<path d="M355,480 L275,480" stroke="#38434B" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<text x="315.0" y="472.0" text-anchor="middle" font-size="17" fill="none" stroke="white" stroke-width="5">trajectory</text>
+<text x="315.0" y="472.0" text-anchor="middle" font-size="17" fill="#26343E">trajectory</text>
+<path d="M150,430 L150,350" stroke="#38434B" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<text x="150.0" y="382.0" text-anchor="middle" font-size="17" fill="none" stroke="white" stroke-width="5">feedback</text>
+<text x="150.0" y="382.0" text-anchor="middle" font-size="17" fill="#26343E">feedback</text>
+<text x="30" y="623" font-size="18">R05-F4 | layout study only • no source image or measured curve reconstructed</text></g></svg>

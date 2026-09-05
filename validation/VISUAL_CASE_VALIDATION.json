@@ -1,0 +1,597 @@
+{
+  "status": "PASS",
+  "scope": "Provenance, selected coverage and retrieval behavior only; not drawing quality.",
+  "papers": 20,
+  "cases": 20,
+  "figures": 38,
+  "checks": [
+    {
+      "check": "unique_case_ids",
+      "passed": true
+    },
+    {
+      "check": "declared_a_level_sample",
+      "passed": true
+    },
+    {
+      "check": "exact_selected_figure_scope",
+      "passed": true
+    },
+    {
+      "check": "VC-P001:source_locator",
+      "passed": true
+    },
+    {
+      "check": "VC-P001:card_exists",
+      "passed": true
+    },
+    {
+      "check": "VC-P001:review_content",
+      "passed": true
+    },
+    {
+      "check": "VC-P001:positive_panel_counts",
+      "passed": true
+    },
+    {
+      "check": "VC-P001:page_image_relative",
+      "passed": true
+    },
+    {
+      "check": "VC-P001:context_relative",
+      "passed": true
+    },
+    {
+      "check": "VC-P001:source_digest",
+      "passed": true
+    },
+    {
+      "check": "VC-P006:source_locator",
+      "passed": true
+    },
+    {
+      "check": "VC-P006:card_exists",
+      "passed": true
+    },
+    {
+      "check": "VC-P006:review_content",
+      "passed": true
+    },
+    {
+      "check": "VC-P006:positive_panel_counts",
+      "passed": true
+    },
+    {
+      "check": "VC-P006:page_image_relative",
+      "passed": true
+    },
+    {
+      "check": "VC-P006:context_relative",
+      "passed": true
+    },
+    {
+      "check": "VC-P006:source_digest",
+      "passed": true
+    },
+    {
+      "check": "VC-P010:source_locator",
+      "passed": true
+    },
+    {
+      "check": "VC-P010:card_exists",
+      "passed": true
+    },
+    {
+      "check": "VC-P010:review_content",
+      "passed": true
+    },
+    {
+      "check": "VC-P010:positive_panel_counts",
+      "passed": true
+    },
+    {
+      "check": "VC-P010:page_image_relative",
+      "passed": true
+    },
+    {
+      "check": "VC-P010:context_relative",
+      "passed": true
+    },
+    {
+      "check": "VC-P010:source_digest",
+      "passed": true
+    },
+    {
+      "check": "VC-P017:source_locator",
+      "passed": true
+    },
+    {
+      "check": "VC-P017:card_exists",
+      "passed": true
+    },
+    {
+      "check": "VC-P017:review_content",
+      "passed": true
+    },
+    {
+      "check": "VC-P017:positive_panel_counts",
+      "passed": true
+    },
+    {
+      "check": "VC-P017:page_image_relative",
+      "passed": true
+    },
+    {
+      "check": "VC-P017:context_relative",
+      "passed": true
+    },
+    {
+      "check": "VC-P017:source_digest",
+      "passed": true
+    },
+    {
+      "check": "VC-P020:source_locator",
+      "passed": true
+    },
+    {
+      "check": "VC-P020:card_exists",
+      "passed": true
+    },
+    {
+      "check": "VC-P020:review_content",
+      "passed": true
+    },
+    {
+      "check": "VC-P020:positive_panel_counts",
+      "passed": true
+    },
+    {
+      "check": "VC-P020:page_image_relative",
+      "passed": true
+    },
+    {
+      "check": "VC-P020:context_relative",
+      "passed": true
+    },
+    {
+      "check": "VC-P020:source_digest",
+      "passed": true
+    },
+    {
+      "check": "VC-P021:source_locator",
+      "passed": true
+    },
+    {
+      "check": "VC-P021:card_exists",
+      "passed": true
+    },
+    {
+      "check": "VC-P021:review_content",
+      "passed": true
+    },
+    {
+      "check": "VC-P021:positive_panel_counts",
+      "passed": true
+    },
+    {
+      "check": "VC-P021:page_image_relative",
+      "passed": true
+    },
+    {
+      "check": "VC-P021:context_relative",
+      "passed": true
+    },
+    {
+      "check": "VC-P021:source_digest",
+      "passed": true
+    },
+    {
+      "check": "VC-P027:source_locator",
+      "passed": true
+    },
+    {
+      "check": "VC-P027:card_exists",
+      "passed": true
+    },
+    {
+      "check": "VC-P027:review_content",
+      "passed": true
+    },
+    {
+      "check": "VC-P027:positive_panel_counts",
+      "passed": true
+    },
+    {
+      "check": "VC-P027:page_image_relative",
+      "passed": true
+    },
+    {
+      "check": "VC-P027:context_relative",
+      "passed": true
+    },
+    {
+      "check": "VC-P027:source_digest",
+      "passed": true
+    },
+    {
+      "check": "VC-P028:source_locator",
+      "passed": true
+    },
+    {
+      "check": "VC-P028:card_exists",
+      "passed": true
+    },
+    {
+      "check": "VC-P028:review_content",
+      "passed": true
+    },
+    {
+      "check": "VC-P028:positive_panel_counts",
+      "passed": true
+    },
+    {
+      "check": "VC-P028:page_image_relative",
+      "passed": true
+    },
+    {
+      "check": "VC-P028:context_relative",
+      "passed": true
+    },
+    {
+      "check": "VC-P028:source_digest",
+      "passed": true
+    },
+    {
+      "check": "VC-P031:source_locator",
+      "passed": true
+    },
+    {
+      "check": "VC-P031:card_exists",
+      "passed": true
+    },
+    {
+      "check": "VC-P031:review_content",
+      "passed": true
+    },
+    {
+      "check": "VC-P031:positive_panel_counts",
+      "passed": true
+    },
+    {
+      "check": "VC-P031:page_image_relative",
+      "passed": true
+    },
+    {
+      "check": "VC-P031:context_relative",
+      "passed": true
+    },
+    {
+      "check": "VC-P031:source_digest",
+      "passed": true
+    },
+    {
+      "check": "VC-P033:source_locator",
+      "passed": true
+    },
+    {
+      "check": "VC-P033:card_exists",
+      "passed": true
+    },
+    {
+      "check": "VC-P033:review_content",
+      "passed": true
+    },
+    {
+      "check": "VC-P033:positive_panel_counts",
+      "passed": true
+    },
+    {
+      "check": "VC-P033:page_image_relative",
+      "passed": true
+    },
+    {
+      "check": "VC-P033:context_relative",
+      "passed": true
+    },
+    {
+      "check": "VC-P033:source_digest",
+      "passed": true
+    },
+    {
+      "check": "VC-P034:source_locator",
+      "passed": true
+    },
+    {
+      "check": "VC-P034:card_exists",
+      "passed": true
+    },
+    {
+      "check": "VC-P034:review_content",
+      "passed": true
+    },
+    {
+      "check": "VC-P034:positive_panel_counts",
+      "passed": true
+    },
+    {
+      "check": "VC-P034:page_image_relative",
+      "passed": true
+    },
+    {
+      "check": "VC-P034:context_relative",
+      "passed": true
+    },
+    {
+      "check": "VC-P034:source_digest",
+      "passed": true
+    },
+    {
+      "check": "VC-P045:source_locator",
+      "passed": true
+    },
+    {
+      "check": "VC-P045:card_exists",
+      "passed": true
+    },
+    {
+      "check": "VC-P045:review_content",
+      "passed": true
+    },
+    {
+      "check": "VC-P045:positive_panel_counts",
+      "passed": true
+    },
+    {
+      "check": "VC-P045:page_image_relative",
+      "passed": true
+    },
+    {
+      "check": "VC-P045:context_relative",
+      "passed": true
+    },
+    {
+      "check": "VC-P045:source_digest",
+      "passed": true
+    },
+    {
+      "check": "VC-P048:source_locator",
+      "passed": true
+    },
+    {
+      "check": "VC-P048:card_exists",
+      "passed": true
+    },
+    {
+      "check": "VC-P048:review_content",
+      "passed": true
+    },
+    {
+      "check": "VC-P048:positive_panel_counts",
+      "passed": true
+    },
+    {
+      "check": "VC-P048:page_image_relative",
+      "passed": true
+    },
+    {
+      "check": "VC-P048:context_relative",
+      "passed": true
+    },
+    {
+      "check": "VC-P048:source_digest",
+      "passed": true
+    },
+    {
+      "check": "VC-P051:source_locator",
+      "passed": true
+    },
+    {
+      "check": "VC-P051:card_exists",
+      "passed": true
+    },
+    {
+      "check": "VC-P051:review_content",
+      "passed": true
+    },
+    {
+      "check": "VC-P051:positive_panel_counts",
+      "passed": true
+    },
+    {
+      "check": "VC-P051:page_image_relative",
+      "passed": true
+    },
+    {
+      "check": "VC-P051:context_relative",
+      "passed": true
+    },
+    {
+      "check": "VC-P051:source_digest",
+      "passed": true
+    },
+    {
+      "check": "VC-P059:source_locator",
+      "passed": true
+    },
+    {
+      "check": "VC-P059:card_exists",
+      "passed": true
+    },
+    {
+      "check": "VC-P059:review_content",
+      "passed": true
+    },
+    {
+      "check": "VC-P059:positive_panel_counts",
+      "passed": true
+    },
+    {
+      "check": "VC-P059:page_image_relative",
+      "passed": true
+    },
+    {
+      "check": "VC-P059:context_relative",
+      "passed": true
+    },
+    {
+      "check": "VC-P059:source_digest",
+      "passed": true
+    },
+    {
+      "check": "VC-P063:source_locator",
+      "passed": true
+    },
+    {
+      "check": "VC-P063:card_exists",
+      "passed": true
+    },
+    {
+      "check": "VC-P063:review_content",
+      "passed": true
+    },
+    {
+      "check": "VC-P063:positive_panel_counts",
+      "passed": true
+    },
+    {
+      "check": "VC-P063:page_image_relative",
+      "passed": true
+    },
+    {
+      "check": "VC-P063:context_relative",
+      "passed": true
+    },
+    {
+      "check": "VC-P063:source_digest",
+      "passed": true
+    },
+    {
+      "check": "VC-P069:source_locator",
+      "passed": true
+    },
+    {
+      "check": "VC-P069:card_exists",
+      "passed": true
+    },
+    {
+      "check": "VC-P069:review_content",
+      "passed": true
+    },
+    {
+      "check": "VC-P069:positive_panel_counts",
+      "passed": true
+    },
+    {
+      "check": "VC-P069:page_image_relative",
+      "passed": true
+    },
+    {
+      "check": "VC-P069:context_relative",
+      "passed": true
+    },
+    {
+      "check": "VC-P069:source_digest",
+      "passed": true
+    },
+    {
+      "check": "VC-P077:source_locator",
+      "passed": true
+    },
+    {
+      "check": "VC-P077:card_exists",
+      "passed": true
+    },
+    {
+      "check": "VC-P077:review_content",
+      "passed": true
+    },
+    {
+      "check": "VC-P077:positive_panel_counts",
+      "passed": true
+    },
+    {
+      "check": "VC-P077:page_image_relative",
+      "passed": true
+    },
+    {
+      "check": "VC-P077:context_relative",
+      "passed": true
+    },
+    {
+      "check": "VC-P077:source_digest",
+      "passed": true
+    },
+    {
+      "check": "VC-P082:source_locator",
+      "passed": true
+    },
+    {
+      "check": "VC-P082:card_exists",
+      "passed": true
+    },
+    {
+      "check": "VC-P082:review_content",
+      "passed": true
+    },
+    {
+      "check": "VC-P082:positive_panel_counts",
+      "passed": true
+    },
+    {
+      "check": "VC-P082:page_image_relative",
+      "passed": true
+    },
+    {
+      "check": "VC-P082:context_relative",
+      "passed": true
+    },
+    {
+      "check": "VC-P082:source_digest",
+      "passed": true
+    },
+    {
+      "check": "VC-P088:source_locator",
+      "passed": true
+    },
+    {
+      "check": "VC-P088:card_exists",
+      "passed": true
+    },
+    {
+      "check": "VC-P088:review_content",
+      "passed": true
+    },
+    {
+      "check": "VC-P088:positive_panel_counts",
+      "passed": true
+    },
+    {
+      "check": "VC-P088:page_image_relative",
+      "passed": true
+    },
+    {
+      "check": "VC-P088:context_relative",
+      "passed": true
+    },
+    {
+      "check": "VC-P088:source_digest",
+      "passed": true
+    },
+    {
+      "check": "unknown_relationship_no_forced_match",
+      "passed": true
+    },
+    {
+      "check": "renders_not_promoted_to_inspected_references",
+      "passed": true
+    },
+    {
+      "check": "retrieval_respects_limit",
+      "passed": true
+    },
+    {
+      "check": "robust_action_case_retrievable",
+      "passed": true
+    }
+  ]
+}

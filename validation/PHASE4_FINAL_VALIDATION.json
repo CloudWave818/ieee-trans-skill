@@ -3,8 +3,8 @@
   "overall_status": "PASS",
   "completion_status": "PHASE 4 IEEE TRANS WRITING SKILL CONSTRUCTED / READY FOR REAL-PAPER VALIDATION",
   "summary": {
-    "checks": 225,
-    "passed": 225,
+    "checks": 295,
+    "passed": 295,
     "failed": 0,
     "synthetic_cases": 9,
     "rules": 42,
@@ -193,6 +193,11 @@
       "detail": "D:\\ieee my skills\\ieee-trans-skill\\templates\\FIGURE_DESIGN_BRIEF.md"
     },
     {
+      "check": "file:templates/PAPER_FIGURE_DESCRIPTION.md",
+      "status": "PASS",
+      "detail": "D:\\ieee my skills\\ieee-trans-skill\\templates\\PAPER_FIGURE_DESCRIPTION.md"
+    },
+    {
       "check": "file:templates/PAGE_BUDGET.md",
       "status": "PASS",
       "detail": "D:\\ieee my skills\\ieee-trans-skill\\templates\\PAGE_BUDGET.md"
@@ -221,6 +226,16 @@
       "check": "file:references/UAV_VISUAL_PLAYBOOK.md",
       "status": "PASS",
       "detail": "D:\\ieee my skills\\ieee-trans-skill\\references\\UAV_VISUAL_PLAYBOOK.md"
+    },
+    {
+      "check": "file:references/FIGURE_DESCRIPTION_TAXONOMY.md",
+      "status": "PASS",
+      "detail": "D:\\ieee my skills\\ieee-trans-skill\\references\\FIGURE_DESCRIPTION_TAXONOMY.md"
+    },
+    {
+      "check": "file:references/WEB_GPT_FIGURE_PLANNER.md",
+      "status": "PASS",
+      "detail": "D:\\ieee my skills\\ieee-trans-skill\\references\\WEB_GPT_FIGURE_PLANNER.md"
     },
     {
       "check": "file:references/TERMINOLOGY_AND_CLARITY_CONTROL.md",
@@ -330,12 +345,12 @@
     {
       "check": "skill_under_500_lines",
       "status": "PASS",
-      "detail": "173"
+      "detail": "193"
     },
     {
       "check": "skill_under_5000_words",
       "status": "PASS",
-      "detail": "1839"
+      "detail": "2459"
     },
     {
       "check": "no_todo_placeholders",
@@ -350,7 +365,7 @@
     {
       "check": "agent_short_description",
       "status": "PASS",
-      "detail": "Plan evidence, visuals, terminology, and clear IEEE papers"
+      "detail": "Plan IEEE evidence and figures in preferred UAV styles"
     },
     {
       "check": "agent_default_prompt_mentions_skill",
@@ -478,12 +493,62 @@
       "detail": ""
     },
     {
+      "check": "skill_contract:PAPER_FIGURE_DESCRIPTION",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "skill_contract:FIGURE_DESCRIPTION_TAXONOMY",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "skill_contract:WEB_GPT_FIGURE_PLANNER",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
       "check": "skill_contract:UAV_VISUAL_PLAYBOOK",
       "status": "PASS",
       "detail": ""
     },
     {
       "check": "skill_contract:full-paper visual architecture",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "skill_contract:DATA_PLOT",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "skill_contract:VECTOR_SCHEMATIC",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "skill_contract:PHOTO_COMPOSITE",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "skill_contract:NOT_READY",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "skill_contract:three-layer evidence contract",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "skill_contract:MANUSCRIPT_DERIVED",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "skill_contract:manuscript-specific claim/evidence trigger",
       "status": "PASS",
       "detail": ""
     },
@@ -808,6 +873,11 @@
       "detail": "[]"
     },
     {
+      "check": "template_contract:PAPER_FIGURE_DESCRIPTION.md",
+      "status": "PASS",
+      "detail": "[]"
+    },
+    {
       "check": "template_contract:PAGE_BUDGET.md",
       "status": "PASS",
       "detail": "[]"
@@ -844,6 +914,36 @@
     },
     {
       "check": "visual_workflow_contract:figure-role inventory",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "visual_workflow_contract:consolidated figure-description document",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "visual_workflow_contract:PAPER_FIGURE_DESCRIPTION.md",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "visual_workflow_contract:100-paper corpus rule ID",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "visual_workflow_contract:manuscript claim/evidence trigger",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "visual_workflow_contract:MANUSCRIPT_DERIVED",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "visual_workflow_contract:rendering route",
       "status": "PASS",
       "detail": ""
     },
@@ -901,6 +1001,256 @@
       "check": "uav_visual_playbook:P109",
       "status": "PASS",
       "detail": ""
+    },
+    {
+      "check": "figure_description_taxonomy:DATA_PLOT",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "figure_description_taxonomy:VECTOR_SCHEMATIC",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "figure_description_taxonomy:PHOTO_COMPOSITE",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "figure_description_taxonomy:Training convergence curve",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "figure_description_taxonomy:Comparison bar",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "figure_description_taxonomy:Robustness or sensitivity curve",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "figure_description_taxonomy:Time-series response",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "figure_description_taxonomy:Trajectory or spatial map",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "figure_description_taxonomy:Hardware/photo/flight composite",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "figure_description_taxonomy:Using figures from reference papers",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "figure_description_taxonomy:Do Not Generalize",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "figure_description_taxonomy:Never ask a generative-image model to create quantitative evidence",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "figure_audit_handoff:exact subtype",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "figure_audit_handoff:rendering route",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "figure_audit_handoff:DATA_PLOT",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "figure_audit_handoff:VECTOR_SCHEMATIC",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "figure_audit_handoff:PHOTO_COMPOSITE",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "figure_audit_handoff:PAPER_FIGURE_DESCRIPTION.md",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "figure_audit_handoff:synthetic physical evidence",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "web_gpt_planner:本文件自包含",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "web_gpt_planner:三层图片依据",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "web_gpt_planner:C100-COUNT-001",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "web_gpt_planner:C100-TYPE-RL",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "web_gpt_planner:C100-JRN-TRO",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "web_gpt_planner:C100-ROLE-QUANT",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "web_gpt_planner:C100-PHYSICAL-YES",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "web_gpt_planner:不要只检查现有图片",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "web_gpt_planner:PAPER_FIGURE_DESCRIPTION.md",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "web_gpt_planner:DATA_PLOT",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "web_gpt_planner:VECTOR_SCHEMATIC",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "web_gpt_planner:PHOTO_COMPOSITE",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "web_gpt_planner:NOT_READY",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "web_gpt_planner:训练收敛曲线",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "web_planner_live_100_papers",
+      "status": "PASS",
+      "detail": "100"
+    },
+    {
+      "check": "web_planner_live_1163_a_figures",
+      "status": "PASS",
+      "detail": "1163"
+    },
+    {
+      "check": "web_planner_live_median_figures_10",
+      "status": "PASS",
+      "detail": "10.0"
+    },
+    {
+      "check": "web_planner_live_median_panels_20",
+      "status": "PASS",
+      "detail": "20.0"
+    },
+    {
+      "check": "web_planner_live_type:UNCLASSIFIED",
+      "status": "PASS",
+      "detail": "actual=(659, 99) expected=(659, 99)"
+    },
+    {
+      "check": "web_planner_live_type:QUANTITATIVE_RESULT",
+      "status": "PASS",
+      "detail": "actual=(213, 72) expected=(213, 72)"
+    },
+    {
+      "check": "web_planner_live_type:SCENARIO",
+      "status": "PASS",
+      "detail": "actual=(157, 58) expected=(157, 58)"
+    },
+    {
+      "check": "web_planner_live_type:TRAJECTORY",
+      "status": "PASS",
+      "detail": "actual=(125, 47) expected=(125, 47)"
+    },
+    {
+      "check": "web_planner_live_type:PROBLEM",
+      "status": "PASS",
+      "detail": "actual=(73, 34) expected=(73, 34)"
+    },
+    {
+      "check": "web_planner_live_type:METHOD_FRAMEWORK",
+      "status": "PASS",
+      "detail": "actual=(42, 33) expected=(42, 33)"
+    },
+    {
+      "check": "web_planner_live_type:REAL_WORLD",
+      "status": "PASS",
+      "detail": "actual=(23, 13) expected=(23, 13)"
+    },
+    {
+      "check": "web_planner_live_type:QUALITATIVE_RESULT",
+      "status": "PASS",
+      "detail": "actual=(20, 14) expected=(20, 14)"
+    },
+    {
+      "check": "web_planner_live_type:SENSITIVITY",
+      "status": "PASS",
+      "detail": "actual=(19, 11) expected=(19, 11)"
+    },
+    {
+      "check": "web_planner_live_type:ROBUSTNESS",
+      "status": "PASS",
+      "detail": "actual=(17, 12) expected=(17, 12)"
+    },
+    {
+      "check": "web_planner_live_type:GENERALIZATION",
+      "status": "PASS",
+      "detail": "actual=(5, 5) expected=(5, 5)"
+    },
+    {
+      "check": "web_planner_live_type:ABLATION",
+      "status": "PASS",
+      "detail": "actual=(4, 3) expected=(4, 3)"
+    },
+    {
+      "check": "web_planner_live_type:RUNTIME",
+      "status": "PASS",
+      "detail": "actual=(2, 2) expected=(2, 2)"
     },
     {
       "check": "terminology_reference:One concept–one canonical name",

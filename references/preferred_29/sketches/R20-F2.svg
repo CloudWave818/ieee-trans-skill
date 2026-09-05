@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 640" width="180mm" height="115.2mm">
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8" fill="#38434B"/></marker></defs>
+<rect width="1000" height="640" fill="white"/>
+<g font-family="Arial, sans-serif" fill="#26343E">
+<rect x="25" y="65" width="240" height="175" rx="8" fill="#ECE5F7" stroke="#687681" stroke-width="1.8"/>
+<text x="145.0" y="89" text-anchor="middle" font-size="20">Biased reset pools</text>
+<rect x="25" y="300" width="240" height="145" rx="8" fill="#ECE5F7" stroke="#687681" stroke-width="1.8"/>
+<text x="145.0" y="324" text-anchor="middle" font-size="20">State expansion</text>
+<rect x="340" y="65" width="300" height="140" rx="8" fill="#E5F2E3" stroke="#687681" stroke-width="1.8"/>
+<text x="490.0" y="89" text-anchor="middle" font-size="20">Aerobatic intention + state</text>
+<rect x="340" y="285" width="300" height="150" rx="8" fill="#E3F0FC" stroke="#687681" stroke-width="1.8"/>
+<text x="490.0" y="309" text-anchor="middle" font-size="20">Control policy / 100 Hz</text>
+<rect x="730" y="210" width="240" height="190" rx="8" fill="#EDF0F2" stroke="#687681" stroke-width="1.8"/>
+<text x="850.0" y="234" text-anchor="middle" font-size="20">Quadrotor dynamics</text>
+<path d="M745,382 l60.0,-20 l48.0,16 l60.0,-27" fill="none" stroke="#A8B1B8" stroke-width="2"/>
+<rect x="330" y="495" width="640" height="80" rx="8" fill="#FBE8D5" stroke="#687681" stroke-width="1.8"/>
+<text x="650.0" y="519" text-anchor="middle" font-size="20">Task reward + magnitude + change + yaw</text>
+<path d="M145,240 L145,300" stroke="#38434B" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<text x="145.0" y="262.0" text-anchor="middle" font-size="17" fill="none" stroke="white" stroke-width="5">seed states</text>
+<text x="145.0" y="262.0" text-anchor="middle" font-size="17" fill="#26343E">seed states</text>
+<path d="M265,370 L340,370" stroke="#38434B" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<text x="302.5" y="362.0" text-anchor="middle" font-size="17" fill="none" stroke="white" stroke-width="5">sampled state</text>
+<text x="302.5" y="362.0" text-anchor="middle" font-size="17" fill="#26343E">sampled state</text>
+<path d="M490,205 L490,285" stroke="#38434B" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<text x="490.0" y="237.0" text-anchor="middle" font-size="17" fill="none" stroke="white" stroke-width="5">intention/state</text>
+<text x="490.0" y="237.0" text-anchor="middle" font-size="17" fill="#26343E">intention/state</text>
+<path d="M640,355 L730,305" stroke="#38434B" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<text x="685.0" y="322.0" text-anchor="middle" font-size="17" fill="none" stroke="white" stroke-width="5">T, body rates</text>
+<text x="685.0" y="322.0" text-anchor="middle" font-size="17" fill="#26343E">T, body rates</text>
+<path d="M730,400 L640,420" stroke="#38434B" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<text x="685.0" y="402.0" text-anchor="middle" font-size="17" fill="none" stroke="white" stroke-width="5">feedback</text>
+<text x="685.0" y="402.0" text-anchor="middle" font-size="17" fill="#26343E">feedback</text>
+<text x="30" y="623" font-size="18">R20-F2 | layout study only • no source image or measured curve reconstructed</text></g></svg>

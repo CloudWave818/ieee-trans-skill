@@ -1,0 +1,128 @@
+[
+  {
+    "case_id":"R04-F14","focus":"实飞事件—地图—队形误差的一致证据",
+    "observed_layout":"左侧约三分之二：三行实景与 RViz 配对，下面是队形相似性误差；右侧约三分之一：贯穿高度的俯视轨迹。比例为观察估计。",
+    "ports_or_axes":"实景和地图以 (a)–(c) 对应阶段；(d) 横轴时间 s，纵轴队形相似性误差；(e) 平面空间轨迹。曲线与轨迹必须沿用同一队伍/阶段标记。",
+    "mechanism_to_evidence":"密集障碍中队形能变形通过并恢复，需要同时看空间轨迹、真实机群及形状误差；仅轨迹不证明队形保持。",
+    "recipe":"选一个事先声明选择规则的试验。左上三行各放外部帧与同时间地图，左下画整段队形误差；右侧画全程轨迹与障碍。用三条事件线/编号把阶段定位到误差曲线和轨迹。",
+    "data_contract":"trial_id、相机/日志时钟映射、各机位置及 ID、障碍地图、队形误差的定义与参考形状、事件时刻。轨迹图空间轴的具体单位须回查原图，不能从此草图推断。",
+    "boundary":"R02 与 R04 是相关研究线，复用画法不计作两个独立证据。真实照片不证明全体试验成功。",
+    "zones":[[30,40,260,110,"(a) Flight frame 1","photo"],[310,40,260,110,"Map at event 1","spatial"],[30,175,260,110,"(b) Flight frame 2","photo"],[310,175,260,110,"Map at event 2","spatial"],[30,310,260,110,"(c) Flight frame 3","photo"],[310,310,260,110,"Map at event 3","spatial"],[30,445,540,130,"(d) Shape error vs time (s)","axis"],[620,40,350,535,"(e) Full spatial trajectories","spatial"]],"edges":[]
+  },
+  {
+    "case_id":"R05-F4","focus":"高层强化学习选择捕获时间",
+    "observed_layout":"左侧绿色观测向量、中间蓝色两层网络、右侧黄色时间动作；下方规划/控制和环境反馈闭环。",
+    "ports_or_axes":"观测包括无人机位置、速度、姿态和目标位置、速度；网络为两层 64 单元 ReLU；输出捕获时间（秒）。策略之后仍有轨迹优化与跟踪控制。",
+    "mechanism_to_evidence":"策略决定什么时候捕获，优化器处理怎样飞到捕获点；把时间动作误画成电机输出会彻底改变方法。",
+    "recipe":"左 25% 画按对象分组的状态条；中 30% 画真实层数和激活；右 25% 只保留高层动作及单位；下 25% 高度画优化、控制、环境反馈，箭头写时间/轨迹/状态。",
+    "data_contract":"本稿的观测字段、实际网络、动作单位/边界、策略更新率和规划重算时刻。不要沿用 64 单元除非实现相同。",
+    "boundary":"该论文所见图中没有学习曲线；Fig.5 是解析平滑函数，不是奖励收敛。缺图不能变成今后不需要训练证据的理由。",
+    "zones":[[25,130,230,220,"UAV + target observations","green"],[320,145,310,190,"Policy: 64 ReLU → 64 ReLU","blue"],[725,165,250,150,"Catch time (s)","yellow"],[355,430,260,100,"Trajectory planner","gray"],[35,430,240,100,"Controller / environment","gray"]],
+    "edges":[[255,240,320,240,"state"],[630,240,725,240,"time"],[850,315,615,465,"time condition"],[355,480,275,480,"trajectory"],[150,430,150,350,"feedback"]]
+  },
+  {
+    "case_id":"R06-F2","focus":"意图改变预测，再改变可见性约束下的规划",
+    "observed_layout":"左侧平台/感知缩略图；右侧浅黄意图、浅蓝预测、浅绿轨迹优化，虚线圆角分组。",
+    "ports_or_axes":"平台观测→目标状态；目标状态/历史→意图推断→目标预测→轨迹优化→控制。优化区的几何插图明确目标、无人机、障碍和可见性。",
+    "mechanism_to_evidence":"创新发生在意图驱动预测以及安全/可见性联合优化；预测误差、遮挡事件和安全距离应分别对应验证。",
+    "recipe":"左约 20% 放平台和真正输入图，中约 45% 上下放意图及预测，右约 30% 放几何优化和输出轨迹。每个模块附一个与内部运算对应的小图：运动模式、候选未来、视线与障碍。",
+    "data_contract":"目标检测/状态估计来源、意图集合、预测时域、优化输入输出、跟踪控制接口、可见性和距离判据。",
+    "boundary":"不能把普通网络框换名为意图模块；没有意图变量的手稿不能照搬该科学机制。",
+    "zones":[[20,100,200,380,"Platform / perception","photo"],[285,80,340,185,"Intention hypotheses","yellow"],[285,330,340,185,"Target prediction","blue"],[700,100,275,380,"Visibility + safety optimization","green"]],
+    "edges":[[220,180,285,180,"target state"],[455,265,455,330,"intention"],[625,420,700,420,"future target"],[835,480,835,555,"trajectory"]]
+  },
+  {
+    "case_id":"R11-F2","focus":"用任务×约束矩阵解释共有困难与不同终端条件",
+    "observed_layout":"左侧 Tracking / Perching 两列，Visibility / Safety / Dynamic feasibility 三行；右侧接终端灵活性和时空优化。每格是几何小图。",
+    "ports_or_axes":"两列共用目标、无人机和障碍语义；跟踪和栖停不能共享未经区分的终端位置/姿态约束。这里无统计坐标轴。",
+    "mechanism_to_evidence":"同一个场景切换任务后，可见性、安全和可行性约束如何变化，是方法动机；右侧机制要接住这些变化。",
+    "recipe":"需要比较两个任务时，用左 65% 的 2×3 几何矩阵替代六个文字盒；右 30% 把终端约束与优化模块纵排。格内画视线、距离、速度/姿态限制，不能只写标签。",
+    "data_contract":"两任务的终端状态集合、障碍/目标几何、视场定义和动力学约束。",
+    "boundary":"此草图只标占位；最终应绘制本稿几何，不把跟踪/栖停名称迁移到不相关任务。",
+    "zones":[[30,60,275,145,"Tracking: visibility","yellow"],[330,60,275,145,"Perching: visibility","yellow"],[30,225,275,145,"Tracking: safety","green"],[330,225,275,145,"Perching: safety","green"],[30,390,275,145,"Tracking: feasibility","blue"],[330,390,275,145,"Perching: feasibility","blue"],[700,140,270,135,"Terminal flexibility","pink"],[700,345,270,150,"Space-time optimization","blue"]],"edges":[[605,135,700,190,"constraints"],[835,275,835,345,"terminal set"]]
+  },
+  {
+    "case_id":"R15-F4","focus":"训练资源/编码器对学习过程的影响",
+    "observed_layout":"单轴多曲线，白底、浅网格、透明色带；图例将编码器和并行环境/批量配置一起写出。",
+    "ports_or_axes":"原图 x: Steps，0M–40M；y: Normalized Return，图注又称 undiscounted return。图例包括 Ours、2DCNN、3DCNN 及 N_e、N_bs。Steps 的累计口径、归一化公式、色带统计含义未由已读图注确认。",
+    "mechanism_to_evidence":"点云编码能否提高学习效率，与并行环境数和训练批量混在同一对比中；读者必须知道哪些比较控制了训练预算。",
+    "recipe":"若目标是编码器比较，先固定训练协议，在图例区分编码器；若目标是训练规模，再单独分面比较环境数。主轴优先累计环境步数，补充墙钟时间及硬件。明确种子级聚合和不确定性。",
+    "data_contract":"seed、env_steps、update_idx、wall_time_s、return_raw、reward_version、encoder、num_envs、batch_size；归一化基准、平滑窗口和色带公式必须提供。",
+    "boundary":"不能默认原图阴影是 95% CI，也不能把 1024 个并行环境当作 1024 个独立随机种子。",
+    "zones":[[40,65,660,460,"Normalized Return vs Steps (0M–40M)","axis"],[740,65,230,300,"Encoder + N_e + N_bs legend","gray"],[740,390,230,135,"Band definition: unresolved","yellow"]],"edges":[]
+  },
+  {
+    "case_id":"R20-F2","focus":"偏置重置和状态扩展如何改变训练分布",
+    "observed_layout":"浅蓝外层 Training Pipeline；左紫色重置池和状态扩展，上中绿色意图/状态，下中蓝色策略网络，右侧四旋翼；底部紫色飞行动作与橙色奖励条。",
+    "ports_or_axes":"重置池→状态扩展→采样状态；意图与飞行状态→策略；策略以 100 Hz 输出归一化推力和机体系角速度。seed points 回到扩展池，previous action 回到策略输入。",
+    "mechanism_to_evidence":"策略形状并非唯一创新：可到达状态的扩展和重置分布让稀疏成功信号可学习。对应消融应改变采样机制并在共同起点和共同奖励下评价。",
+    "recipe":"把新增采样路径放左侧独立紫色容器，用起始状态散点/可达扩展小图替代抽象模块；主策略闭环居中，底部将原任务奖励与动作正则分开列。箭头标采样状态、动作、回放状态。",
+    "data_contract":"重置池定义和更新规则、各采样概率、状态字段、动作归一化及频率、奖励分项、评估起始集。示意中的比例不得凭视觉面积猜测。",
+    "boundary":"Fig.1 是 Blender 渲染的任务说明，不是实飞长曝光照片；本例动作接口不适用于 R25 的姿态参考动作。",
+    "zones":[[25,65,240,175,"Biased reset pools","purple"],[25,300,240,145,"State expansion","purple"],[340,65,300,140,"Aerobatic intention + state","green"],[340,285,300,150,"Control policy / 100 Hz","blue"],[730,210,240,190,"Quadrotor dynamics","photo"],[330,495,640,80,"Task reward + magnitude + change + yaw","peach"]],
+    "edges":[[145,240,145,300,"seed states"],[265,370,340,370,"sampled state"],[490,205,490,285,"intention/state"],[640,355,730,305,"T, body rates"],[730,400,640,420,"feedback"]]
+  },
+  {
+    "case_id":"R20-F3","focus":"动作是否学会与为何更易学会成对展示",
+    "observed_layout":"三行特技动作，左列三维轨迹/沿途姿态，右列 Average Reward—Learning Iterations 曲线，同行对应同一动作。",
+    "ports_or_axes":"右列 Proposed / SP / RS，共同的 S_start 初始状态集以及原始奖励 Eq.(3) 下评价；左列位置与姿态是空间变量，不能与训练迭代共用轴。",
+    "mechanism_to_evidence":"偏置采样让不同动作可学习；空间图展示最终行为，学习曲线展示不同机制的训练差异。共同评价奖励使重塑奖励的基线可比较。",
+    "recipe":"每个任务一行，左 45% 画代表轨迹和稀疏姿态，右 50% 画固定协议评估回报。行标题命名动作，方法颜色跨行固定。三行太密时正文保留两种关键动作，其余入补充。",
+    "data_contract":"共同 evaluation_initial_set、eval_reward_version、seed、训练迭代到环境步数的换算、每次评估试验数、checkpoint、代表轨迹的选择规则。",
+    "boundary":"若训练奖励不同，不能直接把各自训练回报放一起宣布性能提升。左侧成功样例不代表成功率。",
+    "zones":[[30,40,420,155,"Maneuver A: trajectory + poses","spatial"],[510,40,450,155,"A: eval reward vs iterations","axis"],[30,225,420,155,"Maneuver B: trajectory + poses","spatial"],[510,225,450,155,"B: eval reward vs iterations","axis"],[30,410,420,155,"Maneuver C: trajectory + poses","spatial"],[510,410,450,155,"C: eval reward vs iterations","axis"]],"edges":[]
+  },
+  {
+    "case_id":"R23-F3","focus":"特权 critic 与域对抗支路的训练/部署边界",
+    "observed_layout":"左侧物理仿真、3DGS RGB、实拍 RGB 和深度来源；中间上绿 critic、下紫 actor；右下橙 GRL 与域分类器，顶部红虚线 PPO 梯度，灰色外框。",
+    "ports_or_axes":"训练 critic 用特权深度，actor 用单目 RGB；CNN→GRU→MLP，状态向量按图进入网络；actor features→GRL→domain classifier，反向梯度回到特征编码器。正向黑实线，反传彩色虚线。",
+    "mechanism_to_evidence":"域适应在表征而非执行端添加一个神奇纠错盒；特权信息不能沿箭头泄漏到部署 actor。对应消融需隔离 DR、DA 与动力随机化。",
+    "recipe":"左 20% 画真实数据来源缩略图，中 55% 双行网络，右 20% 画输出/损失；域分类器靠近 actor 特征抽取点。用训练专用浅底区域括住 critic、PPO 和域损失，单独给部署路径。",
+    "data_contract":"RGB/深度分辨率与通道、状态字段、特征抽取层、GRL 梯度方向、sim/real 数据划分、动作单位、部署可用输入；不得混入测试场景做适配却称未见泛化。",
+    "boundary":"预训练再做适配的曲线不是从零同预算训练；Fig.4 的 DR+DA+DY 初始化来源要随图说明。图中的实拍数据不表示在线实机 RL 更新。",
+    "zones":[[20,70,220,150,"Simulation depth (privileged)","green"],[20,315,220,185,"Sim RGB / real RGB","photo"],[320,65,410,140,"Critic: CNN → GRU → MLP","green"],[320,285,410,140,"Actor: CNN → GRU → MLP","purple"],[790,65,185,140,"PPO loss","pink"],[770,460,205,110,"GRL → domain classifier","peach"]],
+    "edges":[[240,145,320,145,"depth + state"],[240,355,320,355,"RGB + state"],[730,355,975,355,"action"],[520,425,770,500,"features"],[885,460,570,425,"reverse gradient","dashed"],[790,125,730,125,"PPO gradient","dashed"],[885,205,730,285,"actor update","dashed"]]
+  },
+  {
+    "case_id":"R25-F1","focus":"训练奖励塑形与部署安全过滤器是两处不同机制",
+    "observed_layout":"上/中 actor–critic 粉色分区，CNN 灰梯形、GRU 绿矩形、MLP 粉三角；右侧绿色训练闭环和蓝色部署闭环；部署在 actor 与 PX4 间插 HOCBF。",
+    "ports_or_axes":"actor 动作为归一化推力 f_n 和 roll/pitch/yaw 参考（100 Hz），并非机体系角速度；训练有特权状态、actor 观测噪声/丢失。正文过滤器在参考加速度上求解，图中未展开动作↔加速度接口。",
+    "mechanism_to_evidence":"Dijkstra/CBF 训练引导提高学到有效导航的机会；HOCBF 部署修改不安全指令。必须分别测学习效率、实际碰撞/约束违反、过滤器干预量与成本。",
+    "recipe":"用上下两条泳道明确训练/部署，突出新增过滤器。新稿必须展开 policy action→参考加速度→QP/HOCBF→控制指令的实际映射；若本稿直接输出加速度则无需虚构转换盒。",
+    "data_contract":"动作语义和限幅、坐标系、控制频率、参考加速度转换、障碍状态、h 与高阶条件、QP slack/不可行恢复、部署计算平台。",
+    "boundary":"源图的接口省略不应被照搬。CBF 名称不是实机零碰撞或形式安全保证；保证依赖模型、相对阶、估计和可行性假设。",
+    "zones":[[20,70,200,130,"Privileged state","green"],[290,70,410,130,"Critic / PPO training","pink"],[20,300,200,130,"Depth + noisy state","peach"],[290,300,330,130,"Actor: CNN–GRU–MLP","pink"],[760,70,215,150,"Vectorized simulation","green"],[690,300,150,130,"HOCBF filter","blue"],[865,300,110,130,"PX4","blue"],[290,495,685,70,"Expand actual action ↔ acceleration interface in a new paper","yellow"]],
+    "edges":[[220,130,290,130,"state"],[220,365,290,365,"observation"],[619,365,690,365,"action"],[840,365,865,365,"safe cmd"],[619,300,760,220,"training action"],[760,190,700,190,"ground truth"]]
+  },
+  {
+    "case_id":"R25-F2","focus":"训练成功率与训练场景一起交代",
+    "observed_layout":"左侧 Success Rate (%)—Training Iterations，右侧仿真场景图；Distance、Dijkstra、Dijkstra+CBF 三条方法曲线。",
+    "ports_or_axes":"横轴训练迭代数，纵轴成功率百分数；正文训练任务采用进入目标周围 5 m 球的成功定义。并行仿真环境数不是随机种子数。",
+    "mechanism_to_evidence":"奖励引导改变学习过程，而右侧场景解释学习问题的难度；需要另图报告更严格部署任务及安全性。",
+    "recipe":"左 65% 放共同定义下的成功率学习曲线，右 30% 放训练环境及起终点；明确评估还是训练滚动统计、窗口、样本数与 seed。若部署阈值不同在图注直接指出。",
+    "data_contract":"iteration、env_steps、seed、eval_or_train、episodes、successes、goal_radius_m、scene_set、reward_variant；不同算法固定采样预算或同时给换算。",
+    "boundary":"训练中进入 5 m 球的成功率不能改称最终精确到达率；本图不是碰撞率或安全证明。",
+    "zones":[[30,65,620,460,"Success rate (%) vs training iterations","axis"],[700,65,270,320,"Training environment + goal","spatial"],[700,420,270,105,"Success definition / sample unit","yellow"]],"edges":[]
+  },
+  {
+    "case_id":"R29-F2","focus":"硬件—软件—动力学统一机制总图",
+    "observed_layout":"纵向三带：(a) 硬件约 30%，(b) 软件约 45%，(c) 动力学约 25%。细黑分区边框与标题缺口，浅蓝任务、浅橙规划、浅黄控制、浅绿估计，正交连线。",
+    "ports_or_axes":"硬件中心为真实平台并配机构局部与 2DoF/3DoF 示意；软件任务→轨迹/形变规划→位置/姿态/舵机控制→执行器，估计量反馈；底部形变几何、坐标系与受力。",
+    "mechanism_to_evidence":"手式构型如何改变飞行和操作能力，不能被一个通用 planner/controller 流程替代。独立的形变指令及其执行路径是这张图的辨识点。",
+    "recipe":"硬件论文用三带结构，控制/RL 论文可以只借软件带。规划拆成飞行与形变两支，执行器分推力电机与形变驱动；每个任务小图标必须对应真实支持任务。浅色背景帮助分组，黑箭头承载接口。",
+    "data_contract":"机构自由度、实际传感器/执行器、轨迹与形变命令、估计状态、坐标/受力符号及任务自主程度。",
+    "boundary":"Nature 的纵向整页信息密度不能直接压进 IEEE 单栏；需减少面板或用双栏。颜色是观察到的色系，不声称提取了出版源文件的精确色值。",
+    "zones":[[30,25,270,135,"(a) Mechanism detail","photo"],[330,25,350,135,"Real robot / hardware","photo"],[710,25,260,135,"2DoF / 3DoF motion","spatial"],[30,210,200,215,"(b) Task planner + icons","blue"],[275,210,220,100,"Trajectory planning","peach"],[275,335,220,90,"Deformation planning","peach"],[555,210,200,215,"Position / attitude / servo","yellow"],[815,210,155,100,"Actuators","gray"],[815,335,155,90,"Estimator","green"],[30,480,940,100,"(c) Geometry + coordinates + forces","spatial"]],
+    "edges":[[230,260,275,260,"task"],[230,380,275,380,"mode"],[495,260,555,260,"trajectory"],[495,380,555,380,"morphology"],[755,260,815,260,"commands"],[815,380,755,380,"state"]]
+  },
+  {
+    "case_id":"R29-F6","focus":"连续操作的事件编号贯穿实景与状态曲线",
+    "observed_layout":"左侧三条长实景序列包含 ①–⑧，右侧三维参考轨迹和多行诊断曲线；曲线包括三轴 ATE、外力、舵角/抓握状态。",
+    "ports_or_axes":"三维图用空间位置；诊断图横轴共享任务时间，纵轴各自为误差/力/舵角或离散模式。图中每个事件用照片和日志一起定位。",
+    "mechanism_to_evidence":"飞行中切换抓握形态时如何保持精度，并响应真实接触/交互外力，是可观察机制；单一位置误差无法说明模式切换。",
+    "recipe":"左约 55% 放三阶段叠影，右约 40% 自上而下放路径、误差、外力和模式；照片里圈出关键接触对象，曲线上用相同编号和竖线。只把同一次试验放在共同时间轴。",
+    "data_contract":"原始视频和帧号、统一日志时间、参考/实测位置、外力是测量还是估计、舵机角/抓握模式、接触事件和姿态、选定试验规则。",
+    "boundary":"若暂无实拍或力估计，留空对应面板并写 NEEDS_EXPERIMENT；不能用生成图片或虚构曲线填满。",
+    "zones":[[30,40,520,150,"Stage 1 photos / events 1–3","photo"],[30,225,520,150,"Stage 2 photos / events 4–6","photo"],[30,410,520,150,"Stage 3 photos / events 7–8","photo"],[605,40,365,115,"3D reference + executed path","spatial"],[605,180,365,110,"Position error vs time","axis"],[605,315,365,110,"External force vs time","axis"],[605,450,365,110,"Servo / grasp state vs time","axis"]],"edges":[]
+  }
+]

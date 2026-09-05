@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 640" width="180mm" height="115.2mm">
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8" fill="#38434B"/></marker></defs>
+<rect width="1000" height="640" fill="white"/>
+<g font-family="Arial, sans-serif" fill="#26343E">
+<rect x="30" y="40" width="420" height="155" rx="8" fill="#F4F8FC" stroke="#687681" stroke-width="1.8"/>
+<text x="240.0" y="64" text-anchor="middle" font-size="20">Maneuver A: trajectory + poses</text>
+<rect x="510" y="40" width="450" height="155" rx="8" fill="#FFFFFF" stroke="#687681" stroke-width="1.8"/>
+<text x="735.0" y="64" text-anchor="middle" font-size="20">A: eval reward vs iterations</text>
+<path d="M540,170 H940 M540,170 V117.5" fill="none" stroke="#495760" stroke-width="2"/>
+<rect x="30" y="225" width="420" height="155" rx="8" fill="#F4F8FC" stroke="#687681" stroke-width="1.8"/>
+<text x="240.0" y="249" text-anchor="middle" font-size="20">Maneuver B: trajectory + poses</text>
+<rect x="510" y="225" width="450" height="155" rx="8" fill="#FFFFFF" stroke="#687681" stroke-width="1.8"/>
+<text x="735.0" y="249" text-anchor="middle" font-size="20">B: eval reward vs iterations</text>
+<path d="M540,355 H940 M540,355 V302.5" fill="none" stroke="#495760" stroke-width="2"/>
+<rect x="30" y="410" width="420" height="155" rx="8" fill="#F4F8FC" stroke="#687681" stroke-width="1.8"/>
+<text x="240.0" y="434" text-anchor="middle" font-size="20">Maneuver C: trajectory + poses</text>
+<rect x="510" y="410" width="450" height="155" rx="8" fill="#FFFFFF" stroke="#687681" stroke-width="1.8"/>
+<text x="735.0" y="434" text-anchor="middle" font-size="20">C: eval reward vs iterations</text>
+<path d="M540,540 H940 M540,540 V487.5" fill="none" stroke="#495760" stroke-width="2"/>
+<text x="30" y="623" font-size="18">R20-F3 | layout study only • no source image or measured curve reconstructed</text></g></svg>

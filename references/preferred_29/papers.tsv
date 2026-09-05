@@ -1,0 +1,30 @@
+paper	title	learning_type	tags	paper_story
+R01	Fast-Tracker: A Robust Aerial System for Tracking Agile Target in Cluttered Environments	NOT_RL	tracking 追踪 occlusion 遮挡 prediction 预测	先用场景和系统闭环定位问题，再拆解预测、搜索和重规划，最后用实飞及追踪响应支撑鲁棒性。
+R02	Distributed Swarm Trajectory Optimization for Formation Flight in Dense Environments	NOT_RL	formation 编队 swarm 集群 distributed 分布式	用空间编队约束解释优化，再以密集场景、多机轨迹和队形误差说明保持形状与避障的平衡；与 R04 属相关研究线，不能当独立重复证据。
+R03	Bubble Planner: Planning High-speed Smooth Quadrotor Trajectories using Receding Corridors	NOT_RL	corridor 走廊 planning 规划 geometry 几何	气泡/走廊几何是方法核心，局部剖面和连续规划过程比笼统框图更能说明可行域与高速平滑运动。
+R04	Robust and Efficient Trajectory Planning for Formation Flight in Dense Environments	NOT_RL	formation 编队 swarm 集群 real-flight 实飞	几何和优化机制逐层展开，最后将真实飞行、地图轨迹、队形变化和误差合成事件对应的证据；与 R02 有复用内容。
+R05	Catch Planner: Catching High-Speed Targets in the Flight	RL_HIGH_LEVEL	catching 捕获 PPO reinforcement 强化学习 high-level 高层策略	策略选择捕获时间，优化器产生可飞轨迹；网兜尺寸、动态约束和真实捕获过程共同解释任务可行性，不能把策略动作画成电机指令。
+R06	Intention-Aware Planner for Robust and Safe Aerial Tracking	NOT_RL	intention 意图 tracking 追踪 visibility 可见性 prediction 预测	先估计运动意图、再预测目标、最后联合可见性和安全优化；局部几何图解释每项代价怎样改变跟踪行为。
+R07	ColAG: A Collaborative Air-Ground Framework for Perception-Limited UGVs’ Navigation	NOT_RL	air-ground 空地 collaboration 协作 UGV navigation 导航	无人机补足地面车感知，信息交换和路径协作连接到地面导航收益；本 PDF 未定位到 Fig.2，不补造。
+R08	Simultaneous Time Synchronization and Mutual Localization for Multi-robot System	NOT_RL	synchronization 同步 localization 定位 multi-robot 多机器人	测量与时钟关系先画清，再用定位轨迹和同步误差分别验证两个耦合目标。
+R09	Collaborative Planning for Catching and Transporting Objects in Unstructured Environments	NOT_RL	catching 捕获 transport 运输 collaboration 协作	多机捕获到运输的任务链，需要几何/受力、协同规划和任务过程配套；附录重新编号的三图单列 S1–S3。
+R10	Edge Accelerated Robot Navigation With Collaborative Motion Planning	NOT_RL	edge 边缘计算 collaboration 协同 navigation 导航 latency 时延	端边信息流与网络/计算开销并列，导航轨迹和时间指标说明卸载是否值得；正文 Fig.14 引用未对应到原图。
+R11	Adaptive Tracking and Perching for Quadrotor in Dynamic Scenarios	NOT_RL	perching 栖停 tracking 跟踪 dynamic 动态	跟踪和栖停共享可见性、安全与动力约束，但终端条件不同；通过成对机制图和分阶段实验讲清适应性。
+R12	Learning Speed Adaptation for Flight in Clutter	RL_HIGH_LEVEL	speed 速度 SAC reinforcement 强化学习 planning 规划	学习速度约束而非直接姿态控制；安全/速度权衡与实飞体现策略作用，不能把速度—成功率曲线当训练曲线。
+R13	Sparse-Graph-Enabled Formation Planning for Large-Scale Aerial Swarms	NOT_RL	sparse 稀疏 graph 图 formation 编队 scalability 规模	稀疏图如何保留形状信息是机制，机器人数量—时间/性能关系才是可扩展性证据。
+R14	Safe and Agile Transportation of Cable-Suspended Payload via Multiple Aerial Robots	NOT_RL	payload 吊载 cable 缆绳 transport 运输 force 受力	负载、绳索和多机动力耦合先几何化，轨迹、张力和状态约束配合运输事件验证安全敏捷性；未定位正文提到的 Fig.14。
+R15	Flying on Point Clouds with Reinforcement Learning	RL_DIRECT_CONTROL	point-cloud 点云 PPO reinforcement 强化学习 training 训练	点云编码直接服务飞行控制，以编码器/训练配置比较、未见环境和真实飞行连接表示学习与部署；训练阴影定义未确认。
+R16	FLOAT Drone: A Fully-actuated Coaxial Aerial Robot for Close-Proximity Operations	NOT_RL	fully-actuated 全驱动 hardware 硬件 contact 接触	机构赋予独立力/姿态能力，分解硬件与控制，再用近距离操作和接触响应验证；不能只学普通四旋翼图标。
+R17	Efficient Trajectory Generation Based on Traversable Planes in 3D Complex Architectural Spaces	NOT_RL	traversable-plane 可通行平面 geometry 几何 planning 规划	建筑空间中的可通行平面与连接关系决定搜索结构；效率结果要和场景复杂度一起读。
+R18	LEMON-Mapping: Loop-Enhanced Large-Scale Multi-Session Point Cloud Merging and Optimization for Globally Consistent Mapping	NOT_RL	mapping 建图 loop 回环 point-cloud 点云 consistency 一致性	多会话合并和回环优化通过全局地图、局部放大与误差证据逐层展示；漂亮大地图不足以证明一致性。
+R19	Shape-Adaptive Planning and Control for a Deformable Quadrotor	NOT_RL	deformable 变形 morphology 构型 planning 规划 control 控制	构型改变可穿越空间及动力学，机构、可行域、轨迹与形变状态必须关联。
+R20	Reactive Aerobatic Flight via Reinforcement Learning	RL_DIRECT_CONTROL	curriculum 课程 reset 重置 aerobatic 特技 PPO training 训练	偏置重置与状态扩展改变训练分布，动作意图和飞行状态进入策略；共同初态/原始奖励下评价以避免奖励修改造成假优势。
+R21	Number Adaptive Formation Flight Planning via Affine Deformable Guidance in Narrow Environments	NOT_RL	formation 编队 affine 仿射 number 数量 adaptation 自适应	数量变化与仿射队形引导对应窄通道中的形状重构；用分阶段队形和误差解释重组而非单纯多条彩线。
+R22	DPNet: Doppler LiDAR Motion Planning for Highly-Dynamic Environments	SUPERVISED_NOT_RL	Doppler 多普勒 dynamic 动态 neural-Kalman 神经卡尔曼 MPC	多普勒测量、神经卡尔曼估计和 MPC 接口连接动态障碍预测与规划；有网络不等于强化学习。
+R23	Flying in Clutter on Monocular RGB by Learning in 3D Radiance Fields with Domain Adaptation	RL_ASYMMETRIC	RGB 单目 PPO domain-adaptation 域适应 GRL training 训练	训练用特权深度 critic 与域分类器，部署只用 RGB actor；域适应的反向梯度和实/仿真数据路径必须显式。
+R24	USS-Nav: Unified Spatio-Semantic Scene Graph for Lightweight UAV Zero-Shot Object Navigation	ZERO_SHOT_NOT_RL	semantic 语义 graph 图 zero-shot 零样本 VLM	统一几何语义图支撑轻量零样本导航，核心是图构建和决策接口；固定语言模型调用不要求 PPO 奖励曲线。
+R25	High-Speed Vision-Based Flight in Clutter with Safety-Shielded Reinforcement Learning	RL_ASYMMETRIC_SHIELDED	safety 安全 shield 屏蔽 HOCBF PPO training 训练 depth 深度	训练奖励中的 CBF 与部署 HOCBF 过滤器是两个位置的机制，必须区分；训练成功率不能代替部署安全与速度评估。
+R26	NavDreamer: Video Models as Zero-Shot 3D Navigators	ZERO_SHOT_NOT_RL	video 视频 zero-shot 零样本 VLM waypoint 航点	视频采样、语言评分、尺度恢复和航点执行组成零样本导航链；固定模型采样不画新训练曲线。
+R27	Primitive-based Truncated Diffusion for Efficient Trajectory Generation of Differential Drive Mobile Manipulators	SUPERVISED_DIFFUSION_NOT_RL	diffusion 扩散 primitive 基元 manipulator 机械臂 sampling 采样	基元与截断扩散改变采样成本/多样性，关键点表示连接全机体约束；本 PDF 的仿真结果不冒称实机。
+R28	D-VLC: Decentralized Vision-Language Collaboration for Heterogeneous Embodied Multi-Robot Systems in Unknown Environments	ZERO_SHOT_NOT_RL	VLM heterogeneous 异构 decentralized 分散 collaboration 协作	能力感知、局部视觉记忆和异步协作连接到实际任务事件；初始化任务分解不等于全程中央控制，本 PDF 是仿真。
+R29	Hand-like autonomous flying robot for airborne grasping and interaction	NOT_RL	grasping 抓取 deformation 变形 hardware 硬件 interaction 交互	手式机构、任务规划、形变与控制形成完整操作链；实景事件与误差/外力/舵机状态对应，Nature 风格可以迁移到 IEEE 图。

@@ -1837,7 +1837,7 @@
     },
     {
       "case_id": "CASE_08_FIGURE_ONLY",
-      "description": "plan the full-paper figure count and figure sequence, then describe every UAV hardware, flight, trajectory, and result figure precisely enough for an author to draw",
+      "description": "plan the full-paper figure count and sequence, classify every item as block diagram, algorithm schematic, bar chart, training convergence curve, trajectory, real-flight image, or another exact subtype, and output one consolidated PAPER_FIGURE_DESCRIPTION.md with source-data schemas and copy-ready AI or plotting instructions",
       "status": "PASS",
       "checks": [
         {
@@ -1908,7 +1908,7 @@
         {
           "check": "score_threshold",
           "status": "PASS",
-          "detail": "[('EX_002', 95), ('EX_014', 95), ('EX_026', 80), ('EX_008', 70), ('EX_009', 70)]"
+          "detail": "[('EX_002', 95), ('EX_014', 85), ('EX_024', 80), ('EX_026', 80), ('EX_005', 70)]"
         },
         {
           "check": "role_or_evidence_gate",
@@ -1918,7 +1918,7 @@
         {
           "check": "domain_relevance",
           "status": "PASS",
-          "detail": "[('EX_002', 30), ('EX_014', 30), ('EX_026', 30), ('EX_008', 20), ('EX_009', 20)]"
+          "detail": "[('EX_002', 30), ('EX_014', 30), ('EX_024', 30), ('EX_026', 30), ('EX_005', 20)]"
         },
         {
           "check": "boundary_loaded",
@@ -1999,13 +1999,10 @@
           "conflict_resolution": "D:\\ieee my skills\\ieee-trans-skill\\resources\\IEEE_TRANS_KNOWLEDGE\\08_SYNTHESIS\\CONFLICT_RESOLUTION.md"
         },
         "requested_roles": [
+          "THEORY",
           "FIGURE_ARCHITECTURE",
           "FIGURE",
-          "RESULT_NARRATIVE",
-          "REAL_WORLD_VALIDATION",
-          "REAL_WORLD",
           "TRAJECTORY_OPTIMIZATION",
-          "UAV",
           "TABLE_ARCHITECTURE"
         ],
         "workflows": [
@@ -2035,9 +2032,7 @@
               "UAV_AUTONOMY"
             ],
             "matched_roles": [
-              "FIGURE_ARCHITECTURE",
-              "REAL_WORLD",
-              "UAV"
+              "FIGURE_ARCHITECTURE"
             ],
             "matched_evidence": [
               "MAIN_COMPARISON",
@@ -2052,10 +2047,10 @@
             "paper_id": "P048",
             "title": "EDEN: Efficient Dual-Layer Exploration Planning for Fast UAV Autonomous Exploration in Large 3-D Environments",
             "journal": "TIE",
-            "score": 95,
+            "score": 85,
             "score_breakdown": {
               "domain": 30,
-              "role": 25,
+              "role": 15,
               "paper_type": 15,
               "journal": 15,
               "evidence": 5,
@@ -2068,9 +2063,7 @@
               "UAV_AUTONOMY"
             ],
             "matched_roles": [
-              "REAL_WORLD",
-              "RESULT_NARRATIVE",
-              "UAV"
+              "THEORY"
             ],
             "matched_evidence": [
               "MAIN_COMPARISON",
@@ -2079,6 +2072,36 @@
             ],
             "card_path": "D:\\ieee my skills\\IEEE_TRANS_EXEMPLARS\\01_CARDS\\EX_014.md",
             "do_not_generalize": "- Do not generalize map representation, sensor range, platform speed, or environment scale. - Journal tendency: TIE is an overlay, not a universal Transactions style. - Theory boundary: formal assumptions and guarantees are central. - Physical-evidence boundary: the physical platform supports this paper’s deployment claim only. - Resource boundary: dataset, simulator, hardware, sensing, compute, and team size remain task-specific.",
+            "boundary_gate": "REVIEW_REQUIRED_BEFORE_USE"
+          },
+          {
+            "exemplar_id": "EX_024",
+            "paper_id": "P001",
+            "title": "Distributionally Robust Chance Constrained Data-Enabled Predictive Control",
+            "journal": "TAC",
+            "score": 80,
+            "score_breakdown": {
+              "domain": 30,
+              "role": 25,
+              "paper_type": 15,
+              "journal": 0,
+              "evidence": 5,
+              "rule": 5
+            },
+            "matched_domains": [
+              "NAVIGATION_PLANNING",
+              "ROBOTICS",
+              "TRAJECTORY_OPTIMIZATION",
+              "UAV_AUTONOMY"
+            ],
+            "matched_roles": [
+              "THEORY"
+            ],
+            "matched_evidence": [
+              "MAIN_COMPARISON"
+            ],
+            "card_path": "D:\\ieee my skills\\IEEE_TRANS_EXEMPLARS\\01_CARDS\\EX_024.md",
+            "do_not_generalize": "- Do not generalize ambiguity sets, data richness assumptions, or probabilistic guarantees beyond their theorem conditions. - Journal tendency: TAC is an overlay, not a universal Transactions style. - Theory boundary: formal assumptions and guarantees are central. - Physical-evidence boundary: absence of detected physical evidence is not evidence that all papers of this type can omit it. - Resource boundary: dataset, simulator, hardware, sensing, compute, and team size remain task-specific.",
             "boundary_gate": "REVIEW_REQUIRED_BEFORE_USE"
           },
           {
@@ -2104,8 +2127,7 @@
             "matched_roles": [
               "FIGURE",
               "FIGURE_ARCHITECTURE",
-              "REAL_WORLD",
-              "RESULT_NARRATIVE"
+              "THEORY"
             ],
             "matched_evidence": [
               "MAIN_COMPARISON",
@@ -2117,64 +2139,35 @@
             "boundary_gate": "REVIEW_REQUIRED_BEFORE_USE"
           },
           {
-            "exemplar_id": "EX_008",
-            "paper_id": "P033",
-            "title": "Learning-Based Multi-UAV Flocking Control With Limited Visual Field and Instinctive Repulsion",
-            "journal": "TCYB",
+            "exemplar_id": "EX_005",
+            "paper_id": "P046",
+            "title": "Model Predictive Optimization and Terminal Sliding Mode Motion Control for Mobile Robot With Obstacle Avoidance",
+            "journal": "TIE",
             "score": 70,
             "score_breakdown": {
               "domain": 20,
               "role": 25,
-              "paper_type": 15,
-              "journal": 0,
-              "evidence": 5,
-              "rule": 5
-            },
-            "matched_domains": [
-              "UAV_AUTONOMY"
-            ],
-            "matched_roles": [
-              "RESULT_NARRATIVE",
-              "TABLE_ARCHITECTURE",
-              "UAV"
-            ],
-            "matched_evidence": [
-              "MAIN_COMPARISON",
-              "ROBUSTNESS"
-            ],
-            "card_path": "D:\\ieee my skills\\IEEE_TRANS_EXEMPLARS\\01_CARDS\\EX_008.md",
-            "do_not_generalize": "- Do not generalize the field-of-view model, repulsion law, or swarm dynamics to arbitrary aerial platforms. - Journal tendency: TCYB is an overlay, not a universal Transactions style. - Theory boundary: formal assumptions and guarantees are central. - Physical-evidence boundary: absence of detected physical evidence is not evidence that all papers of this type can omit it. - Resource boundary: dataset, simulator, hardware, sensing, compute, and team size remain task-specific.",
-            "boundary_gate": "REVIEW_REQUIRED_BEFORE_USE"
-          },
-          {
-            "exemplar_id": "EX_009",
-            "paper_id": "P016",
-            "title": "Dynamic Charging and Path Planning for UAV-Powered Rechargeable WSNs Using Multi-Agent Deep Reinforcement Learning",
-            "journal": "TASE",
-            "score": 70,
-            "score_breakdown": {
-              "domain": 20,
-              "role": 25,
-              "paper_type": 15,
-              "journal": 0,
+              "paper_type": 0,
+              "journal": 15,
               "evidence": 5,
               "rule": 5
             },
             "matched_domains": [
               "NAVIGATION_PLANNING",
               "ROBOTICS",
-              "UAV_AUTONOMY"
+              "TRAJECTORY_OPTIMIZATION"
             ],
             "matched_roles": [
-              "RESULT_NARRATIVE",
-              "UAV"
+              "FIGURE",
+              "THEORY"
             ],
             "matched_evidence": [
               "MAIN_COMPARISON",
+              "REAL_WORLD",
               "RUNTIME"
             ],
-            "card_path": "D:\\ieee my skills\\IEEE_TRANS_EXEMPLARS\\01_CARDS\\EX_009.md",
-            "do_not_generalize": "- Do not generalize the reward design, WSN model, or charging assumptions to unrelated service-routing tasks. - Journal tendency: TASE is an overlay, not a universal Transactions style. - Theory boundary: formal assumptions and guarantees are central. - Physical-evidence boundary: absence of detected physical evidence is not evidence that all papers of this type can omit it. - Resource boundary: dataset, simulator, hardware, sensing, compute, and team size remain task-specific.",
+            "card_path": "D:\\ieee my skills\\IEEE_TRANS_EXEMPLARS\\01_CARDS\\EX_005.md",
+            "do_not_generalize": "- Do not treat terminal sliding-mode design or its stability conditions as universal for other vehicle dynamics. - Journal tendency: TIE is an overlay, not a universal Transactions style. - Theory boundary: formal assumptions and guarantees are central. - Physical-evidence boundary: the physical platform supports this paper’s deployment claim only. - Resource boundary: dataset, simulator, hardware, sensing, compute, and team size remain task-specific.",
             "boundary_gate": "REVIEW_REQUIRED_BEFORE_USE"
           }
         ],

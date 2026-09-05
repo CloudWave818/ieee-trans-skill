@@ -2,6 +2,10 @@
 
 Use `IEEE_TRANS_EXEMPLARS/00_META/EXEMPLAR_ROUTING.csv`, then open only the selected cards.
 
+For a one-figure Mode F task, the SKILL.md local exception applies: use one to three inspected visual cases, or an explicit no-match manuscript-derived design, without forcing three full-paper exemplars. The scoring/default-count rules below govern full-project exemplar routing.
+
+For UAV visual construction, retrieve `references/preferred_29/` first with `scripts/query_visual_cases.py`. These user-selected visual sources control the requested style regardless of their venue; this is separate from routing full-paper exemplars for scientific evidence burden. Do not let the journal gate exclude a supplied reference diagram, or let an old general visual card override the user's preferred construction.
+
 ## Input
 
 Normalize target journal, two to four domains, paper type, method type, current task, current section, evidence needs, and optional rule IDs.

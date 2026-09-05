@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 640" width="180mm" height="115.2mm">
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8" fill="#38434B"/></marker></defs>
+<rect width="1000" height="640" fill="white"/>
+<g font-family="Arial, sans-serif" fill="#26343E">
+<rect x="20" y="70" width="200" height="130" rx="8" fill="#E5F2E3" stroke="#687681" stroke-width="1.8"/>
+<text x="120.0" y="94" text-anchor="middle" font-size="20">Privileged state</text>
+<rect x="290" y="70" width="410" height="130" rx="8" fill="#F8E4EC" stroke="#687681" stroke-width="1.8"/>
+<text x="495.0" y="94" text-anchor="middle" font-size="20">Critic / PPO training</text>
+<rect x="20" y="300" width="200" height="130" rx="8" fill="#FBE8D5" stroke="#687681" stroke-width="1.8"/>
+<text x="120.0" y="324" text-anchor="middle" font-size="20">Depth + noisy</text>
+<text x="120.0" y="349" text-anchor="middle" font-size="20">state</text>
+<rect x="290" y="300" width="330" height="130" rx="8" fill="#F8E4EC" stroke="#687681" stroke-width="1.8"/>
+<text x="455.0" y="324" text-anchor="middle" font-size="20">Actor: CNN–GRU–MLP</text>
+<rect x="760" y="70" width="215" height="150" rx="8" fill="#E5F2E3" stroke="#687681" stroke-width="1.8"/>
+<text x="867.5" y="94" text-anchor="middle" font-size="20">Vectorized</text>
+<text x="867.5" y="119" text-anchor="middle" font-size="20">simulation</text>
+<rect x="690" y="300" width="150" height="130" rx="8" fill="#E3F0FC" stroke="#687681" stroke-width="1.8"/>
+<text x="765.0" y="324" text-anchor="middle" font-size="20">HOCBF filter</text>
+<rect x="865" y="300" width="110" height="130" rx="8" fill="#E3F0FC" stroke="#687681" stroke-width="1.8"/>
+<text x="920.0" y="324" text-anchor="middle" font-size="20">PX4</text>
+<rect x="290" y="495" width="685" height="70" rx="8" fill="#FFF3CC" stroke="#687681" stroke-width="1.8"/>
+<text x="632.5" y="519" text-anchor="middle" font-size="20">Expand actual action ↔ acceleration interface in a new paper</text>
+<path d="M220,130 L290,130" stroke="#38434B" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<text x="255.0" y="122.0" text-anchor="middle" font-size="17" fill="none" stroke="white" stroke-width="5">state</text>
+<text x="255.0" y="122.0" text-anchor="middle" font-size="17" fill="#26343E">state</text>
+<path d="M220,365 L290,365" stroke="#38434B" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<text x="255.0" y="357.0" text-anchor="middle" font-size="17" fill="none" stroke="white" stroke-width="5">observation</text>
+<text x="255.0" y="357.0" text-anchor="middle" font-size="17" fill="#26343E">observation</text>
+<path d="M619,365 L690,365" stroke="#38434B" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<text x="654.5" y="357.0" text-anchor="middle" font-size="17" fill="none" stroke="white" stroke-width="5">action</text>
+<text x="654.5" y="357.0" text-anchor="middle" font-size="17" fill="#26343E">action</text>
+<path d="M840,365 L865,365" stroke="#38434B" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<text x="852.5" y="357.0" text-anchor="middle" font-size="17" fill="none" stroke="white" stroke-width="5">safe cmd</text>
+<text x="852.5" y="357.0" text-anchor="middle" font-size="17" fill="#26343E">safe cmd</text>
+<path d="M619,300 L760,220" stroke="#38434B" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<text x="689.5" y="252.0" text-anchor="middle" font-size="17" fill="none" stroke="white" stroke-width="5">training action</text>
+<text x="689.5" y="252.0" text-anchor="middle" font-size="17" fill="#26343E">training action</text>
+<path d="M760,190 L700,190" stroke="#38434B" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<text x="730.0" y="182.0" text-anchor="middle" font-size="17" fill="none" stroke="white" stroke-width="5">ground truth</text>
+<text x="730.0" y="182.0" text-anchor="middle" font-size="17" fill="#26343E">ground truth</text>
+<text x="30" y="623" font-size="18">R25-F1 | layout study only • no source image or measured curve reconstructed</text></g></svg>

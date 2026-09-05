@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="180mm" height="108mm" viewBox="0 0 1200 720">
+<defs>
+ <marker id="a" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#364653"/></marker>
+ <marker id="p" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#74569E"/></marker>
+</defs>
+<rect width="1200" height="720" fill="white"/>
+<g font-family="Arial, sans-serif" fill="#263746" font-size="20">
+<text x="24" y="30" font-size="23" font-weight="bold">Dynamic-obstacle navigation: a provisional mechanism design</text>
+<rect x="22" y="52" width="1156" height="150" rx="12" fill="#ECE5F7" stroke="#B5A5CF" stroke-width="1.5"/>
+<text x="40" y="79" font-weight="bold" fill="#74569E">TRAINING ONLY</text>
+<rect x="40" y="96" width="240" height="82" rx="8" fill="white" stroke="#B5A5CF"/>
+<text x="160" y="126" text-anchor="middle">Simulation rollouts</text><text x="160" y="155" text-anchor="middle">privileged state</text>
+<rect x="380" y="96" width="300" height="82" rx="8" fill="#E5F2E3" stroke="#739B7E"/>
+<text x="530" y="126" text-anchor="middle">Critic + PPO objective</text><text x="530" y="155" text-anchor="middle">fixed evaluation protocol</text>
+<path d="M280 135H380" stroke="#364653" stroke-width="2.5" fill="none" marker-end="url(#a)"/>
+<text x="736" y="123">Reward / safety shaping:</text><text x="736" y="154">a separate training intervention</text>
+<text x="30" y="248" font-weight="bold" fill="#28628E">DEPLOYMENT</text>
+<text x="710" y="248" fill="#28628E">No privileged input at deployment</text>
+<rect x="25" y="282" width="185" height="163" rx="9" fill="#E5F2E3" stroke="#739B7E" stroke-width="1.7"/>
+<rect x="50" y="302" width="50" height="35" fill="#A3BBAE"/><rect x="57" y="310" width="50" height="35" fill="#C4D7CE" stroke="#739B7E"/>
+<text x="117" y="372" text-anchor="middle">Depth + state</text><text x="117" y="405" text-anchor="middle">D, p, v, q, g−p</text>
+<rect x="265" y="282" width="190" height="163" rx="9" fill="#F8E4EC" stroke="#B28099" stroke-width="1.7"/>
+<rect x="294" y="310" width="18" height="38" fill="#CE9AB4"/><rect x="320" y="313" width="14" height="32" fill="#B9819E"/><circle cx="366" cy="315" r="6" fill="#9C4B73"/><circle cx="366" cy="340" r="6" fill="#9C4B73"/><circle cx="401" cy="327" r="6" fill="#9C4B73"/><path d="M334 329L360 315M334 329L360 340M372 315L395 327M372 340L395 327" stroke="#9C4B73" fill="none"/>
+<text x="360" y="378" text-anchor="middle">Encoder + actor</text><text x="360" y="406" text-anchor="middle">world acceleration</text><text x="360" y="431" text-anchor="middle">m/s²</text>
+<rect x="525" y="282" width="185" height="163" rx="9" fill="#E3F0FC" stroke="#28628E" stroke-width="2.7"/>
+<text x="617" y="325" text-anchor="middle" font-weight="bold">Safety QP</text><text x="617" y="363" text-anchor="middle">minimize action</text><text x="617" y="390" text-anchor="middle">change</text><text x="617" y="421" text-anchor="middle" fill="#28628E">constraints ↑</text>
+<rect x="780" y="282" width="185" height="163" rx="9" fill="#FFF3CC" stroke="#BDA560" stroke-width="1.7"/>
+<text x="872" y="315" text-anchor="middle">Controller</text><text x="872" y="345" text-anchor="middle">gravity</text><text x="872" y="374" text-anchor="middle">compensation</text><text x="872" y="410" text-anchor="middle">yaw reference</text>
+<rect x="1030" y="282" width="145" height="163" rx="9" fill="#F0F1F3" stroke="#82919B" stroke-width="1.7"/>
+<path d="M1070 312L1135 357M1070 357L1135 312" stroke="#52616D" stroke-width="5"/><g stroke="#52616D" fill="white" stroke-width="2"><ellipse cx="1070" cy="312" rx="18" ry="7"/><ellipse cx="1135" cy="357" rx="18" ry="7"/><ellipse cx="1070" cy="357" rx="18" ry="7"/><ellipse cx="1135" cy="312" rx="18" ry="7"/></g>
+<text x="1102" y="400" text-anchor="middle">UAV + scene</text>
+<g stroke="#364653" stroke-width="2.5" fill="none" marker-end="url(#a)"><path d="M210 361H265"/><path d="M455 361H525"/><path d="M710 361H780"/><path d="M965 361H1030"/></g>
+<text x="489" y="320" text-anchor="middle">a_nom</text><text x="745" y="320" text-anchor="middle">a_safe</text>
+<text x="1000" y="277" text-anchor="middle" font-size="18">thrust / body rates</text>
+<path d="M530 178V221H360V282" stroke="#74569E" stroke-width="2.5" stroke-dasharray="7 5" fill="none" marker-end="url(#p)"/>
+<text x="579" y="224" fill="#74569E">policy update (training)</text>
+<rect x="25" y="516" width="290" height="116" rx="8" fill="#E5F2E3" stroke="#739B7E"/>
+<text x="170" y="548" text-anchor="middle">Obstacle tracker</text><text x="170" y="582" text-anchor="middle">p_o, v_o, uncertainty</text><text x="170" y="612" text-anchor="middle">from perception history</text>
+<rect x="415" y="516" width="295" height="116" rx="8" fill="#FBE8D5" stroke="#BA8961"/>
+<text x="562" y="548" text-anchor="middle">Dynamic constraint builder</text><text x="562" y="582" text-anchor="middle">h = ||p−p_o||² − r_safe²</text><text x="562" y="612" text-anchor="middle">relative-motion model</text>
+<path d="M117 445V516M315 574H415M617 516V445" stroke="#364653" stroke-width="2.5" fill="none" marker-end="url(#a)"/>
+<path d="M117 480H450V516" stroke="#364653" stroke-width="2.5" fill="none" marker-end="url(#a)"/>
+<text x="357" y="472">ego p, v</text>
+<rect x="780" y="516" width="395" height="116" rx="8" fill="#FFF7E2" stroke="#BDA560" stroke-dasharray="6 4"/>
+<text x="977" y="546" text-anchor="middle">Unresolved implementation:</text><text x="977" y="580" text-anchor="middle">QP infeasible / timeout → fallback TBD</text><text x="977" y="612" text-anchor="middle">No safety guarantee claimed</text>
+<path d="M710 430H748V483H977V516" stroke="#A47B34" stroke-width="2" stroke-dasharray="6 4" fill="none" marker-end="url(#a)"/>
+<text x="857" y="474" fill="#8A6F21">QP status</text>
+<path d="M1175 412H1190V661H12V361H25" stroke="#52616D" stroke-width="2" fill="none" marker-end="url(#a)"/>
+<text x="250" y="684">physical observation feedback</text>
+<text x="24" y="711" font-size="18" fill="#6B7680">Style study: R25-F1 / R23-F3 / R20-F2. Assumed interfaces; no experimental data.</text>
+</g></svg>

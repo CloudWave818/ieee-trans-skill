@@ -4,7 +4,7 @@ Status: `PHASE 4 IEEE TRANS WRITING SKILL CONSTRUCTED / READY FOR REAL-PAPER VAL
 
 ## 1. Skill architecture
 
-`SKILL.md` is the concise control plane. Five files in `config/` define knowledge, journal, domain, exemplar, and paper-type routing. Twelve workflow files implement diagnosis through final audit. Nine audit files, nine reusable templates, deterministic scripts, and validation artifacts provide execution and quality control. The Skill contains no copied corpus.
+`SKILL.md` is the concise control plane. Five files in `config/` define knowledge, journal, domain, exemplar, and paper-type routing. Twelve workflow files implement diagnosis through final audit. Ten audit files, twelve reusable templates, deterministic scripts, and validation artifacts provide execution and quality control. The Skill contains no copied corpus.
 
 ## 2. Routing architecture
 
@@ -43,7 +43,7 @@ The eight-stage final pipeline audits scientific logic, contributions, claim evi
 - Required synthetic scenarios: 8/8 passed.
 - Additional RA-L boundary scenario: 1/1 passed.
 - Total synthetic cases: 9/9 passed.
-- Independent completion audit: 179/179 checks passed.
+- Independent completion audit: 295/295 checks passed (current structural/routing run; not drawing-quality validation).
 - Official `skill-creator` quick validation: PASS.
 - Every routed case loaded valid domain and journal scopes, selected the expected workflow, returned three relevant cards, enforced score and role/evidence gates, and stayed below the maximum of five.
 - Final independent validation is recorded in `validation/PHASE4_FINAL_VALIDATION.json`.
@@ -60,3 +60,7 @@ The eight-stage final pipeline audits scientific logic, contributions, claim evi
 Phase 5 must use at least one real manuscript to test whether routing remains stable across changing sections; whether the scientific architecture matches author intent; whether requested experiments are executable; whether figure plans survive real data constraints; whether prose preserves terminology and evidence boundaries; and whether reviewer findings improve the draft without over-rewriting. Only after that phase may the Skill be called stable.
 
 Upstream Corpus, Knowledge, and Exemplars were not modified or expanded. No RA-L skill was started.
+
+## Visual-design improvement, 2026-09-05
+
+Added a separate 20-case layer with 38 visually and contextually reviewed figures from 20 A-level source papers. Reviews are AI inspection, not human confirmation, and cover only listed figures. Raw corpus/Knowledge/Exemplar registries remain unchanged. The local page viewer and source digests support verification. Figure planning now separates corpus priors, inspected construction references and manuscript-derived designs, connects data capture to figures, and separates specification readiness from execution/visual/independent verification. See `validation/VISUAL_IMPROVEMENT_REPORT.md` for behavioral evidence and remaining limits.

@@ -8,6 +8,7 @@ import json
 import os
 import py_compile
 import re
+import statistics
 import subprocess
 import sys
 from pathlib import Path
@@ -51,10 +52,12 @@ required_files = [
     ]],
     *[f"templates/{name}.md" for name in [
         "PROJECT_PROFILE", "CLAIM_EVIDENCE_MATRIX", "CONTRIBUTION_MATRIX", "EXPERIMENT_MATRIX",
-        "FIGURE_TABLE_PLAN", "FIGURE_DESIGN_BRIEF", "PAGE_BUDGET", "PAPER_BLUEPRINT", "SECTION_BRIEF",
+        "FIGURE_TABLE_PLAN", "FIGURE_DESIGN_BRIEF", "PAPER_FIGURE_DESCRIPTION", "PAGE_BUDGET", "PAPER_BLUEPRINT", "SECTION_BRIEF",
         "TERMINOLOGY_LEDGER", "FINAL_AUDIT_REPORT",
     ]],
     "references/UAV_VISUAL_PLAYBOOK.md",
+    "references/FIGURE_DESCRIPTION_TAXONOMY.md",
+    "references/WEB_GPT_FIGURE_PLANNER.md",
     "references/TERMINOLOGY_AND_CLARITY_CONTROL.md",
     "scripts/route_project.py", "scripts/run_synthetic_tests.py", "scripts/validate_phase4.py",
     "validation/SKILL_VALIDATION_PLAN.md", "validation/ROUTING_TESTS.md", "validation/WORKFLOW_TESTS.md",
@@ -75,7 +78,7 @@ frontmatter = yaml.safe_load(front.group(1)) if front else {}
 check("skill_frontmatter_only_name_description", set(frontmatter) == {"name", "description"}, str(list(frontmatter)))
 check("skill_name_valid", frontmatter.get("name") == "ieee-trans-skill")
 check("skill_description_trigger_scope", all(x.lower() in frontmatter.get("description", "").lower() for x in ["ieee transactions", "experiment", "reviewer", "ra-l"]))
-check("skill_description_visual_scope", all(x.lower() in frontmatter.get("description", "").lower() for x in ["visual architecture", "figure-count", "uav hardware/flight/trajectory"]))
+check("skill_description_visual_scope", all(x.lower() in frontmatter.get("description", "").lower() for x in ["visual architecture", "figure-count", "figure-description markdown", "uav hardware/flight/trajectory"]))
 line_count = len(skill_text.splitlines())
 word_count = len(re.findall(r"\b\w+\b", skill_text))
 check("skill_under_500_lines", line_count < 500, str(line_count))
@@ -107,7 +110,9 @@ required_skill_terms = [
     "MISSING_INPUT", "NEEDS_EXPERIMENT", "NEEDS_REFERENCE", "NEEDS_AUTHOR_DECISION",
     "CLAIM_WITHOUT_EVIDENCE", "PAPER ARCHITECTURE READY", "SUBMISSION-LEVEL DRAFT",
     "Formal General Rule", "Do Not Generalize", "RA-L", "three exemplars", "at most five",
-    "FIGURE_DESIGN_BRIEF", "UAV_VISUAL_PLAYBOOK", "full-paper visual architecture",
+    "FIGURE_DESIGN_BRIEF", "PAPER_FIGURE_DESCRIPTION", "FIGURE_DESCRIPTION_TAXONOMY", "WEB_GPT_FIGURE_PLANNER", "UAV_VISUAL_PLAYBOOK", "full-paper visual architecture",
+    "DATA_PLOT", "VECTOR_SCHEMATIC", "PHOTO_COMPOSITE", "NOT_READY",
+    "three-layer evidence contract", "MANUSCRIPT_DERIVED", "manuscript-specific claim/evidence trigger",
     "TERMINOLOGY_LEDGER", "TERMINOLOGY_CLARITY_AUDIT", "one concept–one canonical name", "rename globally",
 ]
 for term in required_skill_terms:
@@ -129,8 +134,9 @@ template_contracts = {
     "CLAIM_EVIDENCE_MATRIX.md": ["Required evidence", "Available evidence", "Missing evidence", "Metric", "Baseline"],
     "CONTRIBUTION_MATRIX.md": ["Novelty boundary", "Problem addressed", "Mechanism", "Strength", "Risk"],
     "EXPERIMENT_MATRIX.md": ["Scientific question", "Failure criterion", "Baselines and fairness", "Reproducibility"],
-    "FIGURE_TABLE_PLAN.md": ["Evidence role", "What it proves", "Loss if removed"],
-    "FIGURE_DESIGN_BRIEF.md": ["Core claim defended", "Panel specification", "UAV/hardware/flight specification", "Data and integrity contract", "Caption contract", "Acceptance checks"],
+    "FIGURE_TABLE_PLAN.md": ["Evidence role", "Exact subtype", "Rendering route", "What it proves", "Loss if removed", "PAPER_FIGURE_DESCRIPTION.md"],
+    "FIGURE_DESIGN_BRIEF.md": ["Core claim defended", "Rendering route", "Panel specification", "Input-data schema", "Node-edge schema", "UAV/hardware/flight specification", "Downstream AI/designer handoff", "Data and integrity contract", "Caption contract", "Acceptance checks"],
+    "PAPER_FIGURE_DESCRIPTION.md": ["Figure classification summary", "Current action", "100-paper corpus rule ID", "Manuscript-specific trigger", "Three-layer inclusion decision", "Reference figure-pattern evidence", "Do-not-copy boundary", "Cross-figure visual dictionary", "Exact subtype", "Rendering route", "One-paragraph visual description", "Data schema and plotting specification", "Node-edge specification", "Real-source composition", "Copy-ready downstream handoff", "training convergence curve", "Negative constraints", "Whole-document handoff checklist"],
     "PAGE_BUDGET.md": ["Target journal", "Method complexity", "Contingency reserve"],
     "PAPER_BLUEPRINT.md": ["Purpose", "Scientific question", "Input dependencies", "Transition from previous", "Transition to next"],
     "SECTION_BRIEF.md": ["Relevant General rules", "Selected exemplars", "Canonical terms", "Forbidden aliases", "Forbidden overclaims", "Expected output"],
@@ -142,11 +148,48 @@ for name, terms in template_contracts.items():
     check(f"template_contract:{name}", all(term.lower() in text.lower() for term in terms), str([t for t in terms if t.lower() not in text.lower()]))
 
 visual_workflow = (ROOT / "workflows/06_FIGURE_TABLE_DESIGN.md").read_text(encoding="utf-8")
-for term in ["Minimum defensible count", "recommended working count", "figure-role inventory", "per-figure drawing briefs", "UAV-specific hard check", "CLAIM_WITHOUT_EVIDENCE"]:
+for term in ["Minimum defensible count", "recommended working count", "figure-role inventory", "consolidated figure-description document", "PAPER_FIGURE_DESCRIPTION.md", "100-paper corpus rule ID", "manuscript claim/evidence trigger", "MANUSCRIPT_DERIVED", "rendering route", "per-figure drawing briefs", "UAV-specific hard check", "CLAIM_WITHOUT_EVIDENCE"]:
     check(f"visual_workflow_contract:{term}", term.lower() in visual_workflow.lower())
 uav_playbook = (ROOT / "references/UAV_VISUAL_PLAYBOOK.md").read_text(encoding="utf-8")
 for term in ["median of 10 figures", "Platform/setup figure", "Flight sequence", "Trajectory figure", "State/control curves", "Swarm/formation figure", "P059", "P109"]:
     check(f"uav_visual_playbook:{term}", term.lower() in uav_playbook.lower())
+
+figure_taxonomy = (ROOT / "references/FIGURE_DESCRIPTION_TAXONOMY.md").read_text(encoding="utf-8")
+for term in ["DATA_PLOT", "VECTOR_SCHEMATIC", "PHOTO_COMPOSITE", "Training convergence curve", "Comparison bar", "Robustness or sensitivity curve", "Time-series response", "Trajectory or spatial map", "Hardware/photo/flight composite", "Using figures from reference papers", "Do Not Generalize", "Never ask a generative-image model to create quantitative evidence"]:
+    check(f"figure_description_taxonomy:{term}", term.lower() in figure_taxonomy.lower())
+
+figure_audit = (ROOT / "audits/FIGURE_TABLE_AUDIT.md").read_text(encoding="utf-8")
+for term in ["exact subtype", "rendering route", "DATA_PLOT", "VECTOR_SCHEMATIC", "PHOTO_COMPOSITE", "PAPER_FIGURE_DESCRIPTION.md", "synthetic physical evidence"]:
+    check(f"figure_audit_handoff:{term}", term.lower() in figure_audit.lower())
+
+web_planner = (ROOT / "references/WEB_GPT_FIGURE_PLANNER.md").read_text(encoding="utf-8")
+for term in ["本文件自包含", "三层图片依据", "C100-COUNT-001", "C100-TYPE-RL", "C100-JRN-TRO", "C100-ROLE-QUANT", "C100-PHYSICAL-YES", "不要只检查现有图片", "PAPER_FIGURE_DESCRIPTION.md", "DATA_PLOT", "VECTOR_SCHEMATIC", "PHOTO_COMPOSITE", "NOT_READY", "训练收敛曲线"]:
+    check(f"web_gpt_planner:{term}", term.lower() in web_planner.lower())
+
+# Verify the portable protocol's 100-paper empirical anchors against live metadata.
+visual_anatomy = read_csv(KNOWLEDGE / "00_META/PAPER_ANATOMY.csv")
+visual_catalog_a = [r for r in read_csv(KNOWLEDGE / "00_META/FIGURE_CATALOG.csv") if r["Role"] == "A"]
+figure_counts = [float(r["Number_of_figures"]) for r in visual_anatomy]
+panel_counts = [float(r["Number_of_figure_panels"]) for r in visual_anatomy]
+check("web_planner_live_100_papers", len(visual_anatomy) == 100, str(len(visual_anatomy)))
+check("web_planner_live_1163_a_figures", len(visual_catalog_a) == 1163, str(len(visual_catalog_a)))
+check("web_planner_live_median_figures_10", statistics.median(figure_counts) == 10, str(statistics.median(figure_counts)))
+check("web_planner_live_median_panels_20", statistics.median(panel_counts) == 20, str(statistics.median(panel_counts)))
+visual_type_counts: dict[str, int] = {}
+visual_type_papers: dict[str, set[str]] = {}
+for row in visual_catalog_a:
+    for figure_type in (x.strip() for x in row["Figure_types"].split(";") if x.strip()):
+        visual_type_counts[figure_type] = visual_type_counts.get(figure_type, 0) + 1
+        visual_type_papers.setdefault(figure_type, set()).add(row["Paper_ID"])
+expected_visual_type_counts = {
+    "UNCLASSIFIED": (659, 99), "QUANTITATIVE_RESULT": (213, 72), "SCENARIO": (157, 58),
+    "TRAJECTORY": (125, 47), "PROBLEM": (73, 34), "METHOD_FRAMEWORK": (42, 33),
+    "REAL_WORLD": (23, 13), "QUALITATIVE_RESULT": (20, 14), "SENSITIVITY": (19, 11),
+    "ROBUSTNESS": (17, 12), "GENERALIZATION": (5, 5), "ABLATION": (4, 3), "RUNTIME": (2, 2),
+}
+for figure_type, expected in expected_visual_type_counts.items():
+    actual = (visual_type_counts.get(figure_type, 0), len(visual_type_papers.get(figure_type, set())))
+    check(f"web_planner_live_type:{figure_type}", actual == expected, f"actual={actual} expected={expected}")
 
 terminology_reference = (ROOT / "references/TERMINOLOGY_AND_CLARITY_CONTROL.md").read_text(encoding="utf-8")
 for term in ["One concept–one canonical name", "One name–one concept", "Term-admission test", "Acronym control", "Cross-section terminology contract", "actor, action, object, condition", "Rename globally"]:

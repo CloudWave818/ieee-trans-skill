@@ -32,8 +32,8 @@
 
 ## Asset inventory
 
-| ID | Figure/table type | Priority | Scientific question | Evidence role | Claim/contribution | Data dependency | Related section | Column span | Panel count | Drawing brief | Caption function | What it proves | Loss if removed | Status |
-|---|---|---|---|---|---|---|---|---|---:|---|---|---|---|---|
+| ID | Primary family | Exact subtype | Rendering route | Priority | Scientific question | Evidence role | Claim/contribution | Data dependency | Related section | Column span | Panel count | Description block | Caption function | What it proves | Loss if removed | Status |
+|---|---|---|---|---|---|---|---|---|---|---|---:|---|---|---|---|---|
 
 ## Sequence
 
@@ -69,3 +69,7 @@
 - Assets to merge/delete:
 - Major claims without visual/table or nonvisual proof:
 - Figures without executable drawing briefs:
+- Figures missing from `PAPER_FIGURE_DESCRIPTION.md`:
+- Data plots without source-data schema:
+- Schematics without node-edge specification:
+- Photo composites without real-source provenance:

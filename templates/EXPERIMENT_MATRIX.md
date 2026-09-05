@@ -22,3 +22,7 @@
 - Comparable tuning effort:
 - Test leakage check:
 - Unavoidable asymmetry and disclosure:
+
+## Visual capture dependencies
+
+For each planned evidence figure, name the trial-level fields, raw files and units to retain, source clocks and synchronization tolerance, coordinate transforms, event/frame IDs and representative-run selection rule. Keep single-run examples separate from multi-run summaries. If logs or views are absent, mark the figure NOT_READY and feed its capture requirements into the experiment before execution.

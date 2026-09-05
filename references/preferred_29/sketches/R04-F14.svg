@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 640" width="180mm" height="115.2mm">
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8" fill="#38434B"/></marker></defs>
+<rect width="1000" height="640" fill="white"/>
+<g font-family="Arial, sans-serif" fill="#26343E">
+<rect x="30" y="40" width="260" height="110" rx="8" fill="#EDF0F2" stroke="#687681" stroke-width="1.8"/>
+<text x="160.0" y="64" text-anchor="middle" font-size="20">(a) Flight frame 1</text>
+<path d="M45,132 l65.0,-20 l52.0,16 l65.0,-27" fill="none" stroke="#A8B1B8" stroke-width="2"/>
+<rect x="310" y="40" width="260" height="110" rx="8" fill="#F4F8FC" stroke="#687681" stroke-width="1.8"/>
+<text x="440.0" y="64" text-anchor="middle" font-size="20">Map at event 1</text>
+<rect x="30" y="175" width="260" height="110" rx="8" fill="#EDF0F2" stroke="#687681" stroke-width="1.8"/>
+<text x="160.0" y="199" text-anchor="middle" font-size="20">(b) Flight frame 2</text>
+<path d="M45,267 l65.0,-20 l52.0,16 l65.0,-27" fill="none" stroke="#A8B1B8" stroke-width="2"/>
+<rect x="310" y="175" width="260" height="110" rx="8" fill="#F4F8FC" stroke="#687681" stroke-width="1.8"/>
+<text x="440.0" y="199" text-anchor="middle" font-size="20">Map at event 2</text>
+<rect x="30" y="310" width="260" height="110" rx="8" fill="#EDF0F2" stroke="#687681" stroke-width="1.8"/>
+<text x="160.0" y="334" text-anchor="middle" font-size="20">(c) Flight frame 3</text>
+<path d="M45,402 l65.0,-20 l52.0,16 l65.0,-27" fill="none" stroke="#A8B1B8" stroke-width="2"/>
+<rect x="310" y="310" width="260" height="110" rx="8" fill="#F4F8FC" stroke="#687681" stroke-width="1.8"/>
+<text x="440.0" y="334" text-anchor="middle" font-size="20">Map at event 3</text>
+<rect x="30" y="445" width="540" height="130" rx="8" fill="#FFFFFF" stroke="#687681" stroke-width="1.8"/>
+<text x="300.0" y="469" text-anchor="middle" font-size="20">(d) Shape error vs time (s)</text>
+<path d="M60,550 H550 M60,550 V510.0" fill="none" stroke="#495760" stroke-width="2"/>
+<rect x="620" y="40" width="350" height="535" rx="8" fill="#F4F8FC" stroke="#687681" stroke-width="1.8"/>
+<text x="795.0" y="64" text-anchor="middle" font-size="20">(e) Full spatial trajectories</text>
+<text x="30" y="623" font-size="18">R04-F14 | layout study only • no source image or measured curve reconstructed</text></g></svg>

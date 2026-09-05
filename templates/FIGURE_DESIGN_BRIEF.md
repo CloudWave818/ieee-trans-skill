@@ -8,6 +8,12 @@
 - Core claim defended:
 - Scientific question answered:
 - Evidence role:
+- Corpus prior and support scope (if applicable):
+- Inspected case / figure / PDF page, or `NO_MATCHING_INSPECTED_REFERENCE`:
+- Preferred-29 construction to imitate (palette / groups / pictograms / connectors / panels), and the manuscript-specific replacement:
+- Manuscript trigger; `MANUSCRIPT_DERIVED` rationale if no reference matches:
+- Primary family and exact subtype:
+- Rendering route: `DATA_PLOT` / `VECTOR_SCHEMATIC` / `PHOTO_COMPOSITE` / `TABLE` / `NOT_READY`
 - Priority: `MANDATORY` / `CONDITIONAL`
 - What the paper loses if removed:
 
@@ -19,6 +25,8 @@
 - Panel grid and reading order:
 - Shared legend/axis strategy:
 - Minimum final text size:
+- Layout sketch for key mechanism/composite figure:
+- Bottleneck → changed operation → observable consequence → validating experiment:
 
 ## Drawing specification
 
@@ -30,6 +38,25 @@ Describe the full canvas from left to right and top to bottom. State the visual 
 
 | Panel | Purpose | Objects/data shown | Axes/units or spatial layout | Encoding and annotations | Data/source dependency |
 |---|---|---|---|---|---|
+
+### Input-data schema for `DATA_PLOT`
+
+| Field/column | Meaning | Unit | Role (x/y/group/facet/error/annotation) | Filtering/aggregation | Source file |
+|---|---|---|---|---|---|
+
+- Plot statistic and uncertainty:
+- Runs/seeds/folds:
+- For RL: training vs fixed evaluation metric; reward version; environment-step/update/wall-clock budget; pretraining/adaptation cost; independent-seed vs parallel-environment distinction:
+- Smoothing or transformation, if justified:
+- Required reference lines/bounds/events:
+
+### Node-edge schema for `VECTOR_SCHEMATIC`
+
+| ID | Node/group label | Scientific meaning | Inputs | Outputs | Position/group | Visual treatment |
+|---|---|---|---|---|---|---|
+
+| From | To | Arrow/signal label | Direction/style | Scientific meaning |
+|---|---|---|---|---|
 
 ### Visual grammar
 
@@ -78,6 +105,15 @@ Complete when applicable.
 - Visible takeaway:
 - Details delegated to main text:
 
+## Downstream AI/designer handoff
+
+- Copy-ready task specification:
+- Required source files/data:
+- Elements that may be visually optimized:
+- Elements that must remain exact:
+- Negative constraints / do not draw:
+- Expected editable output:
+
 ## Acceptance checks
 
 - [ ] Supports one identifiable claim.
@@ -89,3 +125,9 @@ Complete when applicable.
 - [ ] Simulation and physical evidence cannot be confused.
 - [ ] Caption explains the figure without overstating the evidence.
 - [ ] A researcher or designer can draw the figure without guessing scientific content.
+
+## Capture and execution
+
+For time-aligned composites, record trial IDs, representative-run selection, clocks/zero point, synchronization method/tolerance, frame/event IDs, units and coordinate transforms. See `references/VISUAL_DESIGN_EVIDENCE.md`.
+
+Record specification readiness, actual editable draft/preview, final-width inspection, and independent handoff separately. Include execution questions, scientific guesses and repairs. Never call an unrendered brief visually checked.
