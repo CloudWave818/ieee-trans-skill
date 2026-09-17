@@ -345,12 +345,12 @@
     {
       "check": "skill_under_500_lines",
       "status": "PASS",
-      "detail": "193"
+      "detail": "195"
     },
     {
       "check": "skill_under_5000_words",
       "status": "PASS",
-      "detail": "2459"
+      "detail": "2566"
     },
     {
       "check": "no_todo_placeholders",
