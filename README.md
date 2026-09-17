@@ -20,6 +20,16 @@ The repository contains the skill, its derived Knowledge and Exemplar resources,
 
 只需一张图时说明图的任务，例如“只设计方法框图，写清策略动作、训练/部署边界和安全过滤器接口”。更完整的用例见 [题目驱动示例](examples/preferred_uav_rl/PAPER_FIGURE_DESCRIPTION.md)，范本入口见 [29 篇图例索引](references/preferred_29/INDEX.md)。
 
+方法框架图现在接入用户提供的 [ieee-trans-framework-style 子模块](modules/ieee-trans-framework-style/README.md)，包含原始参考图片、内容提炼规则、节点—连线规格和绘图提示模板。主技能遇到方法框架图、网络/系统结构图或算法总览图时会读取它；实验数据图和实物图仍使用各自规范。可以直接这样请求：
+
+```text
+使用 $ieee-trans-skill 的 ieee-trans-framework-style 子模块，
+阅读我的方法文字，按其参考图风格绘制方法框架图。
+提炼真实输入、核心机制、分支和输出，保持连线准确。
+```
+
+子模块也可单独读取 [SKILL.md](modules/ieee-trans-framework-style/SKILL.md) 使用。它的五个文件按用户提供的压缩包原样保留；加入项目不代表已经另外安装到个人全局技能目录。
+
 未安装也可在本地任务中要求 Codex 读取本仓库的 `SKILL.md` 并按其中流程执行。网页版使用 [图片规划协议](references/WEB_GPT_FIGURE_PLANNER.md)，随手稿上传；如需重新检查参考原图，还要提供相应 PDF/图页。
 
 ## Install on Windows

@@ -34,6 +34,8 @@ Do not plan figures from section titles alone. A method contribution normally ne
 
 ### 2. Classify the paper and figure types
 
+For method frameworks, network/system architectures and algorithm overviews, load `../modules/ieee-trans-framework-style/SKILL.md` and its reference image. Its specific framework style takes precedence over the general visual palette; preserve manuscript-derived nodes, ports and data flow. Use its templates for the drawing contract. Other figure types continue through their existing routes.
+
 Classify the paper before estimating the count:
 
 - theory/control-led;
