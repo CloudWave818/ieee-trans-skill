@@ -74,11 +74,11 @@ Keep these categories distinct:
 
 ## Clarity repair
 
-For each difficult sentence, recover five items: actor, action, object, condition, and consequence/evidence. If one is absent, add it only when supported; otherwise mark the missing information.
+For each difficult sentence, identify the relevant actor or scientific object, action/relation, condition, and consequence/evidence. Add missing information when it is necessary for this sentence and supported; otherwise flag the specific unresolved claim. A definition or setup sentence need not contain every item.
 
 - Replace noun stacks with verbs: “performance improvement realization” becomes the supported action that caused the measured change.
 - Replace empty subjects: name the estimator, policy, controller, experiment, or result instead of “this framework” or “it.”
-- Split sentences that contain multiple claims, conditions, contrasts, or causal steps.
+- Split independent claims or overloaded reasoning when this clarifies scope; retain closely related conditions, contrasts and consequences in the same sentence when they express the scientific relationship more clearly.
 - Keep conditions next to the claim they limit.
 - Prefer a familiar field term over an ornate synonym.
 - Delete signposting that adds no logical relation. A transition should express contrast, cause, consequence, condition, or scope.

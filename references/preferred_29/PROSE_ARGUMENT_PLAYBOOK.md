@@ -1,6 +1,6 @@
 # 用范文学习论证与叙述
 
-用于摘要、Introduction、方法、结果、全稿风格修订，以及用户指出“像说明书”的任务。先读取 [writing_moves/INDEX.md](writing_moves/INDEX.md) 中所选主范本的写作卡，再回到卡中指定的原文页。逐篇卡记录摘要/引言的实际推进和方法/结果的抽样观察；不是29篇都遵循的一套句子模板。
+用于摘要、Introduction、方法、结果、全稿风格修订，以及用户指出“像说明书”的任务。先读取 [writing_moves/INDEX.md](writing_moves/INDEX.md) 中所选主范本的写作卡，再回到卡中指定的原文页。逐篇卡记录摘要/引言的实际推进和方法/结果的抽样观察；不是29篇都遵循的一套句子模板。逐句的主语、谓语、条件范围、信息次序与数字表达使用 [SENTENCE_CRAFT_PLAYBOOK.md](SENTENCE_CRAFT_PLAYBOOK.md) 和卡内微观单元，与段落论证一起修订。
 
 ## 1. 先判断缺的是论证还是措辞
 

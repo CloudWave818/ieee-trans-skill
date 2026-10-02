@@ -31,6 +31,8 @@ Inspect registries first; do not open every knowledge document or card.
 
 For this user's reference-matched production, read `workflows/13_REFERENCE_MATCHED_PRODUCTION.md` before the table below. `references/preferred_29/manuscript_profiles/` and `evidence_profiles/` provide source-specific structure and experimental/citation practice; `framework_anchors/` provides actual original crops with measured geometry. These selected sources control presentation over the older generalized knowledge. Do not treat a generic sketch as an inspected source figure or read the entire source-block archive during ordinary routing.
 
+For reference-matched prose, use `references/preferred_29/PROSE_ARGUMENT_PLAYBOOK.md`, `references/preferred_29/SENTENCE_CRAFT_PLAYBOOK.md` and the inspected source unit to interpret the older section/writing files. The arrow chains in `02_SECTIONS/RESULTS_AND_DISCUSSION.md` and `05_WRITING/SCIENTIFIC_ARGUMENTATION.md` are coverage questions for applicable scientific roles, not compulsory sentence or paragraph order. A setup, definition, conditional result or focused Letter need not contain every role; never invent a mechanism explanation or add a boundary sentence to complete a chain. Keep real evidence requirements and assumptions in force.
+
 | Task | Additional sources |
 |---|---|
 | project architecture | `01_GENERAL/`, routed domains, routed journal |

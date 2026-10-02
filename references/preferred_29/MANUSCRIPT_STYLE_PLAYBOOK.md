@@ -85,7 +85,7 @@ R12 的 RA-L 虽然紧凑，也保留了八个编号一级节。Letter 不等于
 
 ## 句段仿写用动作，不用套句
 
-摘要、Introduction及“像说明书”的文字修订，继续读 [PROSE_ARGUMENT_PLAYBOOK.md](PROSE_ARGUMENT_PLAYBOOK.md) 与 [writing_moves/INDEX.md](writing_moves/INDEX.md) 中所选主范本的卡。它们补充逐篇的实际句段推进、技术选择理由及公式/引用角色；章节统计和下面三处样本不能代替这些局部原文检查。
+摘要、Introduction及“像说明书”的文字修订，继续读 [PROSE_ARGUMENT_PLAYBOOK.md](PROSE_ARGUMENT_PLAYBOOK.md)、[SENTENCE_CRAFT_PLAYBOOK.md](SENTENCE_CRAFT_PLAYBOOK.md) 与 [writing_moves/INDEX.md](writing_moves/INDEX.md) 中所选主范本的卡。逐篇微观单元还分析相邻句的主语、谓语、信息次序、条件范围、数字比较和证据强度；章节统计和下面三处样本不能代替实际原文检查。宏观论证与句内选择共同修订，方法及结果也适用。
 
 对每个主要子节选该来源的一处真实样本，执行以下三条记录：`source locator → source moves → project replacements`。例如 R12 p3 b19 的动作是“固定速度限制缺陷→联合优化理由→辅助动作定义”。新稿必须先给自己的被调参数及限制，再解释自己的接口，随后才写自己的策略分解。引用或术语不能只替换原文名词后保留整段。
 

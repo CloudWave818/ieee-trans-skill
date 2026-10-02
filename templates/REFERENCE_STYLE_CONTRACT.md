@@ -19,6 +19,7 @@
 - Introduction paragraph duties:
 - Selected writing-move card and actual source unit:
 - Sentence/paragraph dependencies and technical-choice rationale to preserve or change:
+- Adjacent micro source unit/page; subject/predicate, information order, condition scope, comparison/numeric role and evidence strength to adapt:
 - Related-work location / thematic grouping / citation placement:
 - Method overview → definitions → equations → mechanism explanations:
 - Experiment questions / subsection order:

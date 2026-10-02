@@ -22,6 +22,8 @@
 - Missing-state labels:
 - Selected actual source unit/page and writing-move card:
 - Source dependency to preserve; project reason to change it:
+- Selected adjacent source sentences; relevant subject/predicate, condition scope, information order and comparison/numeric choices:
+- Project facts, statistical units, qualifiers and citation attributions that sentence revision must preserve:
 
 ## Paragraph plan
 

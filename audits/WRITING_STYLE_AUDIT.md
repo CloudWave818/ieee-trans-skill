@@ -4,6 +4,9 @@
 
 - Does the section actually instantiate the locked preferred source's structure, paragraph duties, equation rhythm and citation placement, with source-page mappings and project-specific replacements?
 - Has the applicable actual source unit and its `writing_moves/` card been read, rather than treating section statistics or generic antipattern frequencies as sentence-level guidance?
+- Have the selected source's actual adjacent sentences informed subject/predicate, information order, condition scope, antecedents, comparison/numeric roles and calibrated evidence strength, using `references/preferred_29/SENTENCE_CRAFT_PLAYBOOK.md`?
+- Do results numbers answer a scientific judgment with an explicit comparator, statistical unit and direction, retaining necessary magnitude, uncertainty and denominators rather than simply listing or deleting values?
+- Are observation, supported inference, author hypothesis and proof distinguished? Does stylistic tightening preserve assumptions, counterexamples, lack of benefit and experimental limits?
 - Can the reader follow what each next sentence resolves or adds? If prose units can be freely reordered, is that an appropriate setup/list or an argument missing dependencies?
 - Do technical choices have supported reasons, and do key equations lead to a calculation, consequence or next step beyond symbol definitions?
 - Does each citation support its nearby proposition with an accurate scope, rather than a bundle supporting unrelated criticisms?
@@ -21,7 +24,7 @@
 - Do Abstract and Conclusion stay within verified results?
 - Are sentences concise without deleting assumptions or scientific qualifiers?
 - Can the reader identify the actor, action, object, condition, and evidence without decoding abstract noun chains?
-- Does each sentence carry one main claim and each paragraph one scientific job?
+- Is each sentence's main judgment and the scope of its related conditions/comparisons readable, without forcing a connected argument into isolated simple facts? Does each paragraph perform one scientific job?
 - Are vague antecedents such as “this method,” “the above strategy,” and “it” resolved when multiple referents exist?
 - Is journal emphasis respected without imitating exemplar phrases?
 

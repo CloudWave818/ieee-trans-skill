@@ -161,7 +161,7 @@ Use `templates/PAGE_BUDGET.md` with the target journal, paper type, and complexi
 
 Before prose, fill `templates/SECTION_BRIEF.md` with the selected preferred manuscript's section/paragraph moves and source pages. Preserve the main style lock across the paper; re-route supporting exemplars only when their scientific role changes.
 
-For reference-matched prose or a complaint that writing reads like a manual, read `references/preferred_29/PROSE_ARGUMENT_PLAYBOOK.md` and the chosen `writing_moves/` card. Inspect the actual abstract/introduction or applicable method/result pages. Transfer sentence/paragraph dependencies, choice rationale, equation consequences and citation roles; section counts and generic antipattern statistics alone cannot establish writing style. Keep production contracts in working notes, and validate the change with actual before/after prose.
+For reference-matched prose or a complaint that writing reads like a manual, read `references/preferred_29/PROSE_ARGUMENT_PLAYBOOK.md`, `references/preferred_29/SENTENCE_CRAFT_PLAYBOOK.md` and the chosen `writing_moves/` card. Inspect the actual applicable source unit, including its adjacent sentences. Transfer argument dependencies and sentence choices: scientific subject, precise predicate, information order, condition scope, comparison/numeric role, antecedent and calibrated evidence strength. Section counts and generic antipattern statistics cannot establish sentence craft. Keep production contracts in working notes, preserve project facts, and validate the change with actual before/after prose read both sentence by sentence and as a paragraph.
 
 - Ground every technical statement in user evidence or a verified reference.
 - Use exemplars for architecture and evidence roles, never sentence copying.
@@ -179,7 +179,7 @@ For any multi-section draft, terminology-heavy section, translation, or consiste
 - Treat a new named module, mechanism, loss, state, signal, or metric as a terminology decision. Add it to the ledger before drafting with it.
 - Align the title, abstract, contributions, method, equations, algorithms, figures, tables, experiments, conclusion, and supplementary material with the same canonical names.
 - Distinguish related concepts explicitly. Do not collapse a platform, subsystem, algorithm, policy, objective, signal, and metric into one vague label such as “framework” or “strategy.”
-- Prefer a concrete actor–action–object sentence over abstract noun chains. Each sentence should carry one main claim; each paragraph should perform one scientific job.
+- Prefer a concrete actor–action–object relation over abstract noun chains. Keep the main judgment and its conditions or comparisons readable; preserve tightly related clauses rather than forcing every sentence into one simple fact. Each paragraph should perform one scientific job.
 - Repair unclear antecedents such as “this method,” “the above mechanism,” or “it” when more than one referent is possible.
 - Rename globally: if a canonical term changes, log the rename and apply it throughout, including captions, legends, symbols, pseudocode, and cross-references.
 

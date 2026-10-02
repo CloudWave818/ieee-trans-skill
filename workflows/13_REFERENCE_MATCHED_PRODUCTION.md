@@ -21,7 +21,7 @@ Use before substantive production for the user's reference-matching requests. Fo
 填 `templates/REFERENCE_STYLE_CONTRACT.md`，整篇任务将其保存为项目的 `STYLE_LOCK.md`；一张图可直接附在该图规格中。记录以下四层：
 
 1. **论文形态**：主范本 ID、PDF 版本/页码、章节树与节内顺序、各段职责、图表首次出现位置、正文与参考文献的预算。
-2. **文字节奏**：摘要的句子职责，Introduction 如何由场景进入挑战，related work 独立还是内嵌，方法如何从总览走到公式，结果如何按问题排列；继续读所选 `writing_moves/` 卡与 `PROSE_ARGUMENT_PLAYBOOK.md`，用原文页定位记录句段依存、选择理由、公式后果和引用作用。迁移职责与节奏，按本稿事实重建论证，不复制句子或统一所有来源的顺序。
+2. **文字节奏**：摘要的句子职责，Introduction 如何由场景进入挑战，related work 独立还是内嵌，方法如何从总览走到公式，结果如何按问题排列；继续读所选 `writing_moves/` 卡、`PROSE_ARGUMENT_PLAYBOOK.md` 与 `SENTENCE_CRAFT_PLAYBOOK.md`。回到相邻原句，记录句段依存以及主语、谓语、信息次序、条件范围、指代、比较/数字职责、证据强度与引用归属。迁移选择与关系，按本稿事实重建文字，不复制句子或统一所有来源的顺序。
 3. **视觉参数**：具体图号与裁图、宽高比、组框与模块的相对位置、留白、字体层级、线型/箭头/图案、颜色关系、子图标记、图注和表格形态。
 4. **证据顺序**：范本先测什么、怎样分基线、在哪验证核心机制与边界；逐项写明本稿保留、替换、删去及理由。
 
