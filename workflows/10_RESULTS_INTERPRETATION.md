@@ -8,6 +8,8 @@ Require actual results, the experiment setup, metric definitions, baseline condi
 
 Use the elements supported by the data:
 
+These are interpretation roles, not a fixed sentence order or a requirement to include all six in every paragraph. For reference-matched prose, read the selected `references/preferred_29/writing_moves/` result sample and `PROSE_ARGUMENT_PLAYBOOK.md`; the experiment question and observed donor argument determine grouping and emphasis.
+
 1. **Observation** — the salient pattern, not every number.
 2. **Comparison** — the relevant comparator under fair conditions.
 3. **Quantitative evidence** — values, uncertainty, or effect size actually present.

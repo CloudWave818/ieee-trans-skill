@@ -20,11 +20,15 @@
 - Previous-section dependency:
 - Next-section contract:
 - Missing-state labels:
+- Selected actual source unit/page and writing-move card:
+- Source dependency to preserve; project reason to change it:
 
 ## Paragraph plan
 
 | Paragraph/unit | Scientific function | Inputs | Claim/evidence | Transition | Completion test |
 |---|---|---|---|---|---|
+
+For argument-bearing units, state what prior question/condition each unit resolves and what new information it leaves for the next. Keep this planning note outside manuscript prose; independent setup items need not be forced into a causal sequence.
 
 ## Exit audit
 

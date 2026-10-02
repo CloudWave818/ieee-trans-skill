@@ -17,6 +17,8 @@
 
 - Abstract sentence duties:
 - Introduction paragraph duties:
+- Selected writing-move card and actual source unit:
+- Sentence/paragraph dependencies and technical-choice rationale to preserve or change:
 - Related-work location / thematic grouping / citation placement:
 - Method overview → definitions → equations → mechanism explanations:
 - Experiment questions / subsection order:

@@ -161,11 +161,13 @@ Use `templates/PAGE_BUDGET.md` with the target journal, paper type, and complexi
 
 Before prose, fill `templates/SECTION_BRIEF.md` with the selected preferred manuscript's section/paragraph moves and source pages. Preserve the main style lock across the paper; re-route supporting exemplars only when their scientific role changes.
 
+For reference-matched prose or a complaint that writing reads like a manual, read `references/preferred_29/PROSE_ARGUMENT_PLAYBOOK.md` and the chosen `writing_moves/` card. Inspect the actual abstract/introduction or applicable method/result pages. Transfer sentence/paragraph dependencies, choice rationale, equation consequences and citation roles; section counts and generic antipattern statistics alone cannot establish writing style. Keep production contracts in working notes, and validate the change with actual before/after prose.
+
 - Ground every technical statement in user evidence or a verified reference.
 - Use exemplars for architecture and evidence roles, never sentence copying.
-- For results, prefer `Observation → Comparison → Quantitative evidence → Explanation → Mechanism → Scientific implication`, omitting steps only when data do not support them.
+- For results, check observation, comparison, evidence, supported explanation and scientific consequence as applicable roles. The inspected donor and experiment question control their order, grouping and emphasis; each paragraph need not contain every role.
 - Do not manufacture causal explanations. Connect explanations to the method, assumptions, experiment, or data.
-- Build the introduction as `Problem → Gap → Challenge → Insight → Approach → Contributions` after the architecture is stable.
+- Use `Problem → Gap → Challenge → Insight → Approach → Contributions` as an introduction coverage check after the architecture is stable; the inspected donor and the new argument control order, grouping and contribution form.
 - Draft conclusion, abstract, and title only from stabilized claims and results.
 
 ## Control terminology and clarity

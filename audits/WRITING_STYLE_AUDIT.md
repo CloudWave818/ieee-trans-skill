@@ -3,6 +3,11 @@
 ## Checks
 
 - Does the section actually instantiate the locked preferred source's structure, paragraph duties, equation rhythm and citation placement, with source-page mappings and project-specific replacements?
+- Has the applicable actual source unit and its `writing_moves/` card been read, rather than treating section statistics or generic antipattern frequencies as sentence-level guidance?
+- Can the reader follow what each next sentence resolves or adds? If prose units can be freely reordered, is that an appropriate setup/list or an argument missing dependencies?
+- Do technical choices have supported reasons, and do key equations lead to a calculation, consequence or next step beyond symbol definitions?
+- Does each citation support its nearby proposition with an accurate scope, rather than a bundle supporting unrelated criticisms?
+- Are abstract, introduction preview, contributions and conclusion doing different jobs instead of repeating a method/test inventory?
 - Has the article form retained its intended level of expansion, with rendered density compared to the main source when a manuscript artifact is available?
 
 - Does each paragraph have one scientific function and a clear logical relation to its neighbors?
