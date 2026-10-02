@@ -6,7 +6,7 @@ If the user specifies a target, load exactly its profile from `IEEE_TRANS_KNOWLE
 
 Supported core profiles: `TAC`, `TAES`, `TASE`, `TCNS`, `TCST`, `TCYB`, `TIE`, `TIV`, `TMECH`, `TNNLS`, `TRO`, `TSMCS`, and `TVT`. Use `EXTENDED_JOURNALS.md` only for the registered extended set.
 
-`RA-L` is out of scope. Return `MISSING_INPUT` or recommend the future RA-L-specific skill; never route RA-L through this long-paper workflow.
+`RA-L` and short Letters are supported through `config/RAL.md`, with `article_form=LETTER` and a source-matched compact blueprint. The historical embedded registry contains no RA-L rule; leave that journal-rule list empty and load the local overlay. Never impose Transactions medians or long-paper section budgets on this route.
 
 ## When the journal is undecided
 

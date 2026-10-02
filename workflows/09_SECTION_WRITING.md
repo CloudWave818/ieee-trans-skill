@@ -7,9 +7,10 @@ Require a named target section, relevant project evidence, and either a Paper Bl
 ## Prepare
 
 1. Copy `templates/SECTION_BRIEF.md`.
+   Read the section of the locked preferred manuscript profile. Record its source pages, paragraph duties, sentence/equation rhythm and citation placements in the brief; supporting exemplars do not replace the main writing style.
 2. Load the matching file in `IEEE_TRANS_KNOWLEDGE/02_SECTIONS/`.
 3. Load only relevant writing guidance from `05_WRITING/`.
-4. Re-route three exemplars for the target section, at most five for a complex section.
+4. Select historical supporting candidates only if a named question remains unresolved by the main preferred source. Zero supporting cards is valid; the router's three-to-five pool does not require loading unrelated examples.
 5. Load `templates/TERMINOLOGY_LEDGER.md` or create the relevant subset for this section.
 6. Record claims, evidence, rules, exemplar roles/boundaries, forbidden overclaims, canonical terminology, allowed new terms, and expected output.
 
@@ -23,7 +24,7 @@ Require a named target section, relevant project evidence, and either a Paper Bl
 - Prefer concrete actor–action–object sentences; split a sentence when it carries more than one main claim or hides the logical condition.
 - Bind claims to evidence or verified references at the correct rhetorical location.
 - Use journal and domain profiles to adjust emphasis, not to imitate stock phrasing.
-- Use exemplar architecture only; do not copy sentences, transitions, or contribution wording.
+- Reproduce the selected source's rhetorical duties, relative depth and paragraph transitions using new scientific content; do not copy source sentences or claims. Use the preferred evidence/citation playbook to choose citation grouping and placement, then verify every actual reference for the new manuscript.
 - Mark unsupported passages with the approved missing-state label rather than filling them.
 
 ## Section-specific rules

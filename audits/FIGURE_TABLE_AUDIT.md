@@ -2,6 +2,8 @@
 
 ## Checks
 
+- For reference-matched tasks, were the main source and actual crop/page opened, and source/new renderings compared for geometry, hierarchy, pictograms, fonts, arrows and density? Similar colors or a completed brief do not pass. Distinguish sketches from originals and record scientifically necessary deviations in STYLE_LOCK.
+
 - Does every asset answer a scientific question and support a claim?
 - Is its evidence role distinct from nearby assets?
 - Would deleting it remove information rather than decoration?
@@ -26,8 +28,13 @@
 - Does the corpus prior support only the scope claimed, with exact figure/page/image references for construction claims?
 - Are manuscript-derived designs allowed and labeled honestly when no inspected reference matches?
 - Does the mechanism view expose a specific changed operation and its observable consequence?
+- If a local original was borrowed, was its complete source context inspected and its drawing rebuilt with current scientific objects? A source patch is a reference, not a new-method asset. Input/context pictures inside a computation box do not by themselves explain that computation.
 - Do key figures have a layout sketch and an executable trial/time/data collection contract?
 - Are specification, rendering, final-width inspection and independent handoff reported separately with actual artifacts?
+
+## Whole-paper rendering check
+
+For a whole-paper deliverable, inspect the actual figure group in manuscript context: overview, necessary mechanism views, experimental setup and available evidence figures. Compare their order, relative space, captions and first text callouts with the selected source. Do not prescribe every figure type or the donor's figure count. Planned data plots are not rendered evidence, and one completed framework does not establish the appearance of the complete paper.
 
 ## Blockers
 

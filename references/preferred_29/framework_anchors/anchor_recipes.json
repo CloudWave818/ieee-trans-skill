@@ -1,0 +1,251 @@
+{
+  "schema_version": 1,
+  "coordinate_system": "PDF points; top-left origin. Zone bboxes are measured from PDF vector paths where available, or estimated against the actual raster figure with the stated tolerance. Normalized bboxes are computed against crop_bbox_pt, not the full page.",
+  "anchors": [
+    {
+      "anchor_id": "R01-F2",
+      "case_id": "R01-F2",
+      "family": "compact-single-column-system",
+      "crop_bbox_pt": [313.2, 54.0, 557.99, 173.07],
+      "caption_start_y_pt": 179.23,
+      "geometry_evidence": "Embedded source raster placement is exact; internal boundaries measured visually against the source raster, tolerance about 1.5 pt.",
+      "zones": [
+        {"id":"sensors","role":"input","bbox_pt":[318,104,367,132],"parent":null,"shape":"unfilled thin rectangle"},
+        {"id":"state_processing","role":"parallel estimation","bbox_pt":[379,72,428,165],"parent":null,"shape":"three vertically stacked unfilled rectangles"},
+        {"id":"planner","role":"core group","bbox_pt":[439,69,494,169],"parent":null,"shape":"light blue-gray rounded group with black dashed perimeter"},
+        {"id":"planner_stages","role":"three serial stages","bbox_pt":[442,72,491,165],"parent":"planner","shape":"three white rectangles with narrow vertical gaps"},
+        {"id":"actuation","role":"output and feedback","bbox_pt":[504,104,554,165],"parent":null,"shape":"two stacked white rectangles"}
+      ],
+      "palette_probes": [{"name":"planner tint","point_pt":[440.5,98],"evidence":"median rendered pixel sample; source is raster"}],
+      "typography": {"status":"visual observation, raster labels are not recoverable PDF fonts","observed":"Regular sans-serif labels; group heading bold sans-serif. Black labels inside compact boxes, generally 1-3 short lines. The serif IEEE caption is outside the anchor.","transfer":"Use this compact sans-serif family when selecting R01; do not impose the serif labels of R06/R23 on it."},
+      "arrows": {"grammar":"Thin black solid arrows, orthogonal fan-out bus after the sensor box, orthogonal bus feeding the planner; vertical arrows through three planner stages; trajectory server points up to controller.","routing":"Line exits meet box edges; no rounded connector ornaments, numbered steps, gradient strokes, or arrow badges.","source_labels":"Most arrows are unlabelled in this small source diagram; add essential interface labels only when the new method needs them."},
+      "pictograms": {"source_content":"No platform photo, neural network glyph, miniature plot, or geometry vignette appears in this framework.","transfer":"This is the useful compact alternative when a real system can be explained by its interfaces and three algorithm stages."},
+      "distinctive_features": ["Single-column aspect ratio about 2.06", "Five functional columns, with the third algorithm column highlighted", "Three vertical white boxes inside one tinted dashed planner group", "Compact black-and-white system appearance"],
+      "transfer_boundary": "Copy the geometry and sparse appearance. Replace sensing, prediction, search, corridor, optimization and control interfaces with the actual project modules; these source algorithms are not automatically requirements for a new method.",
+      "failure_to_avoid": "A full-width generic pastel pipeline with icons would not look like this source. Neither would making every group equally large or equally colored."
+    },
+    {
+      "anchor_id": "R06-F2",
+      "case_id": "R06-F2",
+      "family": "nested-mechanism-card-system",
+      "crop_bbox_pt": [72.6,60.25,536.25,259.85],
+      "caption_start_y_pt": 266.63,
+      "geometry_evidence": "Group and card bboxes, stroke widths, dash lengths and fills are extracted from source PDF vector paths; crop adds a small stroke margin.",
+      "zones": [
+        {"id":"platform","role":"hardware evidence","bbox_pt":[74.27,61.91,241.28,178.14],"parent":null,"shape":"black dashed rounded container; photo nearly fills the interior"},
+        {"id":"perception","role":"three inputs","bbox_pt":[74.27,187.18,241.28,258.17],"parent":null,"shape":"black dashed rounded container with three blue cards"},
+        {"id":"planning","role":"core group","bbox_pt":[254.94,61.91,534.60,258.17],"parent":null,"shape":"black dashed rounded container"},
+        {"id":"intention","role":"vertical mechanism group","bbox_pt":[260.60,76.39,339.03,254.44],"parent":"planning","shape":"orange dashed rounded subcontainer; three stacked orange cards"},
+        {"id":"prediction","role":"two parallel mechanism cards","bbox_pt":[348.76,76.39,529.43,147.72],"parent":"planning","shape":"blue dashed rounded subcontainer; two blue cards"},
+        {"id":"optimization","role":"three mechanism cards","bbox_pt":[348.90,150.28,529.43,254.44],"parent":"planning","shape":"green dashed rounded subcontainer; small distance card above visible-region card, tall optimization card on right"}
+      ],
+      "palette_probes": [
+        {"name":"orange card","point_pt":[266,112],"evidence":"source vector fill plus rendered pixel sample","vector_rgb":[0.973,0.796,0.678],"opacity":1},
+        {"name":"prediction blue","point_pt":[355.5,111],"evidence":"source vector fill plus rendered pixel sample","vector_rgb":[0.706,0.780,0.906],"opacity":1},
+        {"name":"optimization green","point_pt":[448.5,217],"evidence":"source vector fill plus rendered pixel sample","vector_rgb":[0.773,0.878,0.706],"opacity":1},
+        {"name":"perception blue","point_pt":[80.5,218],"evidence":"source vector fill plus rendered pixel sample","vector_rgb":[0.741,0.843,0.933],"opacity":1}
+      ],
+      "typography": {"status":"source PDF text spans extracted","observed":"TimesNewRomanPS-BoldMT. Typical card label size 6.90 pt; platform/perception headings about 9.17 pt; main planning heading 11.53 pt at source size. Headings centered; black or dark-navy serif.","transfer":"Keep serif bold label hierarchy and concise 1-2 line card titles. Do not replace actual mechanism thumbnails with empty giant boxes."},
+      "stroke_grammar": {"outer_width_pt":1.580865,"outer_dash_pt":[4.742595,1.580865],"subgroup_width_pt":1.43715,"subgroup_dash_pt":[4.31145,1.43715],"card_width_pt":0.86229},
+      "arrows": {"grammar":"Black solid orthogonal arrows; flow from platform down to perception, from perception through an elbow to intention/planning; interior arrows move right and down across nested cards.","routing":"Narrow gaps are reserved for arrows; group colors appear on dashed group outlines and card fills. White miniature mechanisms sit inside colored cards.","source_labels":"The card names explain each computation. The small figure is not a broad labelled-data-arrow storyboard."},
+      "pictograms": {"source_content":"Real drone photo with component callouts; three actual perception outputs; reachable-region fan/obstacle diagram, pose/limb sketch, red intention primitives, predicted trajectories, visibility cone, map with planned trajectory.","transfer":"Use a photo only if the new project has one. Each miniature must visualize an actual operation, e.g. feasible region, candidate futures or constraint geometry; avoid decorative icon substitution."},
+      "distinctive_features": ["Actual left hardware/perception envelope is 36% of figure width, not the 20% in the old sketch", "Planning envelope occupies about 60% of width", "Orange group is a tall column; blue and green groups are stacked on its right", "Almost every mechanism card contains a small scientific illustration", "Rounded dashed containers and bold serif card labels"],
+      "transfer_boundary": "Transfer nested composition, proportions, white mechanism thumbnails, border grammar and typography. Source intention inference, tracking-distance criterion and visibility optimizer must not be copied into a method that lacks them.",
+      "failure_to_avoid": "The old R06-F2 SVG reduces this figure to three oversized empty rectangles and changes the source topology. It is a semantic sketch and must not be treated as the visual reference."
+    },
+    {
+      "anchor_id":"R12-F2",
+      "case_id":"R12-F2",
+      "family":"compact-hierarchical-policy-planner",
+      "crop_bbox_pt":[315.746,56.07169,554.24615,256.28101],
+      "caption_start_y_pt":261.42081,
+      "geometry_evidence":"Embedded source raster placement is exact. Internal card/envelope bounds visually measured from the actual raster at PDF scale, tolerance about 1.5 pt. No vector fonts or source RGB are inferred from this raster.",
+      "zones":[
+        {"id":"environment","role":"upper scene mechanism","bbox_pt":[320.7,61,399.2,109],"parent":null,"shape":"black italic title above blue spatial-flow/scene miniature"},
+        {"id":"vehicle","role":"upper system mechanism","bbox_pt":[485,61,528,108],"parent":null,"shape":"black italic title above a small red/gray quadrotor glyph"},
+        {"id":"sensing_and_control","role":"middle system envelope","bbox_pt":[331,127,533.4,147.8],"parent":null,"shape":"three aligned blue-gray rectangles: local mapping, state estimator, tracking controller"},
+        {"id":"hierarchical_policy","role":"lower learning-and-planning group","bbox_pt":[324.6,166.6,542.5,253],"parent":null,"shape":"thin navy dashed rounded enclosure"},
+        {"id":"agility_policy","role":"learned high-level branch","bbox_pt":[330.4,171.5,403.3,246.7],"parent":"hierarchical_policy","shape":"red/pink rounded card containing a drawn neural-network graph"},
+        {"id":"agility_interface","role":"explicit high-level action","bbox_pt":[411.4,196,455.5,213.5],"parent":"hierarchical_policy","shape":"gold right arrow, labelled agility level with mathematical variable"},
+        {"id":"trajectory_planner","role":"model-based branch","bbox_pt":[461.3,172,534.6,247.3],"parent":"hierarchical_policy","shape":"orange rounded card containing an optimization objective and constraints"}
+      ],
+      "palette_probes":[
+        {"name":"mapping/estimation/control blue-gray","point_pt":[334,130],"evidence":"median rendered pixel sample; whole source framework is raster"},
+        {"name":"agility-policy red/pink","point_pt":[333,190],"evidence":"median rendered pixel sample; whole source framework is raster"},
+        {"name":"trajectory-planner orange","point_pt":[465,191],"evidence":"median rendered pixel sample; whole source framework is raster"},
+        {"name":"interface-arrow gold","point_pt":[440,210],"evidence":"median rendered pixel sample; whole source framework is raster"}
+      ],
+      "typography":{"status":"visual observation; all figure text is embedded in source raster, PDF caption fonts excluded","observed":"Bold italic sans-serif titles for Environment, Vehicle, Agility Policy and Trajectory Planner; smaller italic sans-serif system/interface labels; serif mathematical objective, constraints and variables. Exact font family and source point sizes cannot be recovered from this PDF.","transfer":"Keep the sans-serif italic engineering labels paired with serif math, the compact hierarchy, and an explicit action label between the two lower cards. Do not substitute a universal regular Times flowchart."},
+      "arrows":{"grammar":"Gold filled arrow polygons with thin dark/dashed edges. Environment and vehicle use a double-headed potential-collision arrow. Depth/measurements flow down to sensing; local-map/state-estimate arrows point down into the lower hierarchical policy; the planner returns a trajectory up to tracking control and control commands up to the vehicle.","routing":"Upper sensing/control row shares one baseline. The lower red learned policy and orange model-based planner are separated by a conspicuous horizontal agility-level arrow. Short vertical/diagonal arrows preserve the complete system loop.","source_labels":"Potential collision, depth, external and internal measurements, local map, state estimates, planned trajectory, control command, agility level. Source action is a high-level speed/agility bound, not direct motor thrust or attitude."},
+      "pictograms":{"source_content":"Blue environment/flow miniature, quadrotor glyph, explicit neural-network graph inside the red card, actual optimization objective and constraints inside the orange card.","transfer":"Use a true learned-policy graph and the actual planner objective/constraint structure when the new method is hierarchical. The equation miniature is part of the visual identity and cannot be replaced by an empty Planner box."},
+      "distinctive_features":["Compact single-column framework, ratio around 1.19 rather than a broad panoramic pipeline", "Upper environment/vehicle mechanism row, middle sensing/control row, lower dashed hierarchical-policy region", "Two lower cards: red learned policy and orange mathematical planner", "Gold polygon arrows are the functional connectors", "Explicit high-level agility action separates learned control authority from low-level tracking"],
+      "transfer_boundary":"Transfer the compact three-level composition, colors, arrow polygons, learned-network glyph and optimizer-equation miniature. Preserve the new project's actual learned action and model-based planner; speed/agility constraints belong to this source method and are not mandatory for every RL paper. Source equations must be replaced with validated project equations.",
+      "failure_to_avoid":"Using the full-width R20/R25 training pipeline solely because the method uses RL misses this Letter's visual structure. Replacing the optimization equations and neural graph with two empty rounded boxes would lose its distinctive mechanism content."
+    },
+    {
+      "anchor_id":"R20-F2",
+      "case_id":"R20-F2",
+      "family":"training-loop-with-mechanism-and-reward-strip",
+      "crop_bbox_pt":[54,54,558,310.81],
+      "caption_start_y_pt":316.96,
+      "geometry_evidence":"Embedded source raster placement is exact; internal zones are visually measured at source size, tolerance about 2 pt. Source crop is unchanged raster content rendered through the PDF.",
+      "zones":[
+        {"id":"training","role":"main outer zone","bbox_pt":[54,54,558,232],"parent":null,"shape":"very pale blue rounded background"},
+        {"id":"reset_and_expand","role":"two scientific mechanisms","bbox_pt":[58,60,188,225],"parent":"training","shape":"lavender rounded enclosure containing two white cards"},
+        {"id":"intention_and_state","role":"policy observations","bbox_pt":[225,57,322,223],"parent":"training","shape":"mint rounded enclosure containing two white cards"},
+        {"id":"policy","role":"network","bbox_pt":[347,89,433,190],"parent":"training","shape":"cyan rounded card with an explicit neural-network diagram"},
+        {"id":"platform","role":"environment/dynamics","bbox_pt":[463,96,552,168],"parent":"training","shape":"source platform render/photo rectangle"},
+        {"id":"flight","role":"task illustration","bbox_pt":[54,234,170,310.81],"parent":null,"shape":"lavender rounded card with 3D trajectory miniature"},
+        {"id":"reward_strip","role":"reward decomposition","bbox_pt":[176,234,558,308],"parent":null,"shape":"pale peach rounded strip with four yellow rounded reward cells and blue plus symbols"}
+      ],
+      "palette_probes":[
+        {"name":"training background","point_pt":[550,85],"evidence":"median rendered pixel sample; source raster"},
+        {"name":"reset lavender","point_pt":[61,88],"evidence":"median rendered pixel sample; source raster"},
+        {"name":"intention mint","point_pt":[228,91],"evidence":"median rendered pixel sample; source raster"},
+        {"name":"policy cyan","point_pt":[352,151],"evidence":"median rendered pixel sample; source raster"},
+        {"name":"task lavender","point_pt":[60,254],"evidence":"median rendered pixel sample; source raster"},
+        {"name":"reward pale peach","point_pt":[184,240],"evidence":"median rendered pixel sample; source raster"},
+        {"name":"reward yellow","point_pt":[187,267],"evidence":"median rendered pixel sample; source raster"}
+      ],
+      "typography":{"status":"visual observation; entire source framework is an embedded raster","observed":"Bold sans-serif card headings, regular sans-serif interface labels. Compact two-line headings; training title aligned at upper right; reward title centered at bottom. Exact font family and point sizes cannot be recovered from this PDF.","transfer":"Keep source sans-serif weight hierarchy, illustrated cards, and short data-flow labels rather than a generic serif box template."},
+      "arrows":{"grammar":"Thicker black forward horizontal arrows across the top flow; thin orthogonal feedback loops run below the policy/platform; separate previous-action and seed-point return paths.","routing":"Forward chain is visually dominant. Reward area uses big blue plus signs, not a row of flow arrows.","source_labels":"Biased Sampling, Input, Action, Previous action, Seed points; 100 Hz on the policy is a source-specific interface value."},
+      "pictograms":{"source_content":"Reset mixture donut and legend, state-expansion ray/scatter miniature, aerobatic intent montage, quadrotor coordinates, explicit MLP glyph, platform image, task trajectory.","transfer":"A new sampling mechanism needs its own diagram with real variable semantics. Source donut percentages and 100 Hz must not be reused as project values."},
+      "distinctive_features":["Upper training zone around 69% of crop height, lower task/reward strip around 30%", "Two vertically stacked miniatures inside each tall observation group", "One broad left-to-right policy loop with visible feedback", "Four yellow reward cells separated by blue plus signs"],
+      "transfer_boundary":"Transfer composition, enclosed scientific miniatures, loop hierarchy and reward strip. Use actual reset rules, observation fields, network and reward decomposition from the new project.",
+      "failure_to_avoid":"Collapsing the reset mechanism to one labelled empty box discards the feature that makes this framework recognizably similar to the reference."
+    },
+    {
+      "anchor_id":"R23-F3",
+      "case_id":"R23-F3",
+      "family":"network-data-domains-and-gradient-paths",
+      "crop_bbox_pt":[54.3,54.3,556.7,264],
+      "caption_start_y_pt":270.63,
+      "geometry_evidence":"Outer container, CNN stack shapes and image grids measured from source PDF paths and image placements. Semantic envelopes around ungrouped stages are approximate and are marked as envelopes.",
+      "zones":[
+        {"id":"outer","role":"whole training figure","bbox_pt":[55.33,55.28,555.64,262.82],"parent":null,"shape":"thin black rounded perimeter over nearly white gray fill"},
+        {"id":"physics_and_render","role":"data source envelope","bbox_pt":[63.62,68.36,154.09,225.02],"parent":"outer","shape":"physics/render circular arrows; 3DGS mark; real-scene thumbnail"},
+        {"id":"image_domains","role":"three explicit data grids","bbox_pt":[156.89,63.73,239.59,253.59],"parent":"outer","shape":"three 3x3 image collages with titles and black thin borders"},
+        {"id":"critic","role":"privileged branch envelope","bbox_pt":[275.30,73.45,413,109],"parent":"outer","shape":"four offset pale-green CNN plates, green circular GRU, vertical MLP bar"},
+        {"id":"state_fusion","role":"state branch envelope","bbox_pt":[278,111,413,165],"parent":"outer","shape":"blue state vector/fusion box, purple circular GRU, vertical MLP bar"},
+        {"id":"actor_encoder","role":"RGB branch","bbox_pt":[279.84,179.88,325.80,212.54],"parent":"outer","shape":"three offset purple CNN plates"},
+        {"id":"adaptation","role":"domain-loss mechanism envelope","bbox_pt":[341.56,174,434,249.64],"parent":"outer","shape":"orange GRL/Reverse blocks, stacked features, orange domain-classifier wedge"},
+        {"id":"latent_plot","role":"mechanism illustration","bbox_pt":[454.42,69.79,528.36,143.85],"parent":"outer","shape":"small square with two domains, circular distribution envelopes and red motion arrows"},
+        {"id":"score_loss","role":"loss envelope","bbox_pt":[454,176,550.70,228],"parent":"outer","shape":"tiny score bars and orange classifier-loss card"}
+      ],
+      "palette_probes":[
+        {"name":"outer gray appearance","point_pt":[548,80],"vector_rgb":[0.851,0.851,0.851],"opacity":0.2,"evidence":"source vector fill and opacity; sample records rendered appearance"},
+        {"name":"critic green","point_pt":[282,99],"vector_rgb":[0.878,0.922,0.851],"opacity":1,"evidence":"source vector fill plus rendered sample"},
+        {"name":"actor purple","point_pt":[283,205],"vector_rgb":[0.788,0.753,0.882],"opacity":1,"evidence":"source vector fill plus rendered sample"},
+        {"name":"gradient reversal orange","point_pt":[345,192],"vector_rgb":[0.969,0.769,0.616],"opacity":1,"evidence":"source vector fill plus rendered sample"},
+        {"name":"classifier-loss orange","point_pt":[540,209],"vector_rgb":[0.961,0.706,0.510],"opacity":0.78,"evidence":"source vector fill and opacity; sample records rendered appearance"}
+      ],
+      "typography":{"status":"source PDF figure text spans extracted","observed":"Predominantly TimesNewRomanPSMT, common main labels 8.75 pt; auxiliary labels 6.58 pt; tiny state symbols 4.41 pt. Some 9.87 pt labels and a 13.16 pt bold source mark. These are source-sized measurements, not a recommendation to make new diagrams illegibly small.","transfer":"Preserve regular serif module labels and compact scientific math. If new text cannot fit legibly at publication width, simplify or expand the figure instead of shrinking all labels."},
+      "arrows":{"grammar":"Black solid forward arrows; red dashed PPO backward routes at top and center; orange dashed adversarial reverse route along the bottom. Circular arrows only describe physics-to-render generation.","routing":"Forward edges and backward paths use separate spatial channels. A small lower-left legend explicitly explains solid/dashed arrows.","source_labels":"Privilege information, State, Sim Feature, Real Feature, GRL, PPO Loss. Use the actual training-only inputs and update directions of the new method."},
+      "pictograms":{"source_content":"Depth/RGB/real RGB grids; stacked CNN plates; GRU circles; vertical MLP bars; colored feature stack; distribution-shift miniature; score-bar miniature.","transfer":"These are concrete mechanism drawings, not decorative icons. Transfer their grammar only for genuine encoders, recurrent modules, feature alignment and loss branches."},
+      "distinctive_features":["Overall ratio around 2.40", "Three vertically aligned source-image grids at left-center", "Specific stack/circle/bar glyphs distinguish CNN/GRU/MLP", "A regular serif scientific diagram rather than uniformly rounded cards", "Multiple gradient colors and forward/backward legend"],
+      "transfer_boundary":"Transfer network glyphs, image-domain lanes and separate gradient routing. Copying privileged depth or domain adaptation into a method without those components would change its scientific claim.",
+      "failure_to_avoid":"The existing SVG replaces the full diagram with five empty rectangles, loses image-grid composition and makes PPO a separate giant card. It is not an appearance template."
+    },
+    {
+      "anchor_id":"R25-F1",
+      "case_id":"R25-F1",
+      "family":"asymmetric-network-training-deployment-control",
+      "crop_bbox_pt":[48.8,55.9,563.2,220.2],
+      "caption_start_y_pt":226.01,
+      "geometry_evidence":"Whole and network backgrounds, encoder/GRU shapes and controller card bounds extracted from source vector paths; training/deployment lane envelopes measured from source image placements and arrows.",
+      "zones":[
+        {"id":"whole","role":"figure background","bbox_pt":[49.11,56.17,562.98,219.77],"parent":null,"shape":"almost-white gray rounded background; no thick outer border"},
+        {"id":"observations","role":"input vector and depth","bbox_pt":[52.46,89.75,104.93,194.75],"parent":"whole","shape":"pale blue rounded area with orange state-vector table and grayscale depth thumbnail"},
+        {"id":"critic","role":"upper branch","bbox_pt":[108.13,59,279.83,122.98],"parent":"whole","shape":"pale peach rounded background"},
+        {"id":"actor","role":"lower branch","bbox_pt":[108.08,125.2,279.83,193.30],"parent":"whole","shape":"matching pale peach rounded background"},
+        {"id":"encoder_critic","role":"CNN","bbox_pt":[132.87,60.73,176,104.53],"parent":"critic","shape":"blue-gray trapezoid"},
+        {"id":"encoder_actor","role":"CNN","bbox_pt":[132.87,146.43,176,190.28],"parent":"actor","shape":"matching blue-gray trapezoid"},
+        {"id":"gru_critic","role":"fusion","bbox_pt":[198.19,86.84,241.78,115.06],"parent":"critic","shape":"pale-green rounded rectangle"},
+        {"id":"gru_actor","role":"fusion","bbox_pt":[198.19,132.70,241.78,160.98],"parent":"actor","shape":"matching pale-green rounded rectangle"},
+        {"id":"training_lane","role":"simulation control envelope","bbox_pt":[394,76,448.39,188.21],"parent":"whole","shape":"controller card, quadrotor miniature, simulation thumbnail"},
+        {"id":"deployment_lane","role":"real control envelope","bbox_pt":[458.19,75.93,509.73,188.21],"parent":"whole","shape":"PX4 source logo, quadrotor miniature, real-world thumbnail"},
+        {"id":"safety_filter","role":"deployment-only mechanism","bbox_pt":[333.90,162.86,377.45,184.22],"parent":"whole","shape":"small pale-magenta rounded card"},
+        {"id":"legend","role":"flow-key envelope","bbox_pt":[518.85,74,557.94,206.54],"parent":"whole","shape":"four vertical arrow samples with red italic labels"}
+      ],
+      "palette_probes":[
+        {"name":"whole gray appearance","point_pt":[550,61],"vector_rgb":[0.929,0.929,0.929],"opacity":0.251,"evidence":"source vector opacity; rendered sample"},
+        {"name":"branch pale peach appearance","point_pt":[113,65],"vector_rgb":[0.973,0.796,0.678],"opacity":0.349,"evidence":"source vector opacity over gray background; rendered sample"},
+        {"name":"CNN pale blue appearance","point_pt":[139,91],"vector_rgb":[0.706,0.780,0.906],"opacity":0.502,"evidence":"source vector opacity; rendered sample"},
+        {"name":"GRU pale green appearance","point_pt":[202,110],"vector_rgb":[0.773,0.878,0.706],"opacity":0.502,"evidence":"source vector opacity; rendered sample"},
+        {"name":"controller/filter pale magenta appearance","point_pt":[336,174],"vector_rgb":[0.980,0.733,0.988],"opacity":0.251,"evidence":"source vector opacity; rendered sample"},
+        {"name":"training green line","point_pt":[335,139],"vector_rgb":[0.573,0.816,0.314],"opacity":1,"evidence":"vector line color; probe may fall in white, use vector color for arrows"},
+        {"name":"deployment blue line","point_pt":[533,105.44],"vector_rgb":[0,0.690,0.941],"opacity":1,"evidence":"source vector line color and rendered legend-line sample"}
+      ],
+      "typography":{"status":"source PDF figure spans and font resources extracted","observed":"English network labels are mostly MicrosoftYaHei-Bold around 5.42 pt; CambriaMath around 4.49-6.60 pt for symbols; Calibri-BoldItalic 7.58 pt for the legend; Consolas-BoldItalic 6.60 pt for Actor/Critic. Caption serif text lies outside crop.","transfer":"This anchor does not use universal Times labels. Match compact bold sans-serif module labels, italic branch labels and scientific math. Source 5.42 pt is a tiny figure label and should not be reproduced blindly if the new figure has longer names."},
+      "stroke_grammar":{"module_width_pt":0.472699,"gradient_style":"red dashed","forward_style":"black solid","training_style":"green solid","deployment_style":"cyan solid"},
+      "arrows":{"grammar":"Black forward network arrows; red dashed backpropagation next to actor/critic outputs; green training and blue deployment paths run around top and bottom of the figure.","routing":"Network branches share x positions. Simulation and real-world control paths occupy adjacent right-side vertical lanes; HOCBF is visibly on the deployment branch.","source_labels":"Ground Truth, Observations, Motor Thrusts; action shown as thrust and attitude references. The source does not expand the action-to-acceleration filter conversion."},
+      "pictograms":{"source_content":"State-vector table, grayscale depth input, CNN trapezoids, GRU rounded boxes, MLP wedges, two quadrotor images, simulation and real thumbnails, PX4 logo.","transfer":"Use authentic project sensor/platform imagery and actual controller identity. Preserve glyph variety and aligned two-row architecture; do not fabricate real experiment imagery."},
+      "distinctive_features":["Very wide ratio around 3.13", "Aligned upper critic/lower actor backgrounds occupy left-center", "CNN/GRU/MLP use different shapes", "Training and deployment line colors are functional", "Four-line arrow legend on right", "Very faint transparent backgrounds, not saturated pastel panels"],
+      "transfer_boundary":"Transfer visual architecture and train/deploy lane grammar. The new method must specify its actual action units, controller and filter location; source interface omissions are not a reason to omit a needed conversion.",
+      "failure_to_avoid":"A three-card flowchart loses the dual network branches, module glyphs, faint fills and colored control paths. Copying only raw fill RGB without source opacity makes backgrounds much too dark."
+    },
+    {
+      "anchor_id":"R29-F2",
+      "case_id":"R29-F2",
+      "family":"hardware-software-dynamics-multipanel",
+      "crop_bbox_pt":[59,48,542.2,637.4],
+      "caption_start_y_pt":643.2,
+      "geometry_evidence":"All three outer frame bounds and software module geometry extracted from PDF paths. Hardware and some software illustrations are raster. The crop includes panel titles above interrupted frame edges.",
+      "zones":[
+        {"id":"hardware","role":"panel a","bbox_pt":[60.47,55.92,540.35,222.42],"parent":null,"shape":"thin black rounded frame with title knockout at top"},
+        {"id":"software","role":"panel b","bbox_pt":[60.58,232.65,540.46,494.57],"parent":null,"shape":"matching framed panel"},
+        {"id":"dynamics","role":"panel c","bbox_pt":[60.47,504.59,540.47,635.85],"parent":null,"shape":"matching frame with four mechanism miniatures"},
+        {"id":"task","role":"software first band","bbox_pt":[67.26,244,534.06,323],"parent":"software","shape":"pale blue horizontal band; two outlined task groups"},
+        {"id":"planning","role":"software second band","bbox_pt":[67.26,328,534.06,373.73],"parent":"software","shape":"pale orange band; trajectory and deformation planning"},
+        {"id":"control","role":"software lower left","bbox_pt":[67,383.63,415.89,484.39],"parent":"software","shape":"pale yellow background; two-level control module graph"},
+        {"id":"estimation","role":"software lower right","bbox_pt":[423.39,432.91,531.33,484.39],"parent":"software","shape":"pale green lower-right area"}
+      ],
+      "palette_probes":[
+        {"name":"task pale blue","point_pt":[80,249],"evidence":"rendered sample; this upper panel includes source raster content"},
+        {"name":"task group blue","point_pt":[106,255],"evidence":"rendered sample; source raster"},
+        {"name":"planning pale orange","point_pt":[80,342],"evidence":"rendered sample; source raster"},
+        {"name":"planning module orange","point_pt":[105,339],"vector_rgb":[0.973,0.796,0.678],"opacity":1,"evidence":"source vector fill; rendered sample"},
+        {"name":"control background cream","point_pt":[70,390],"vector_rgb":[1,0.973,0.898],"opacity":1,"evidence":"source vector fill; rendered sample"},
+        {"name":"control module yellow","point_pt":[105,414],"vector_rgb":[1,0.902,0.600],"opacity":1,"evidence":"source vector fill; rendered sample"},
+        {"name":"estimation green","point_pt":[434,465],"vector_rgb":[0.773,0.878,0.706],"opacity":1,"evidence":"source vector fill; rendered sample"}
+      ],
+      "typography":{"status":"figure labels predominantly raster or outlined drawing; exact font family not recoverable from text spans","observed":"Bold sans-serif panel/module labels and task captions; italic serif mathematical interface symbols. Panel titles use a/b/c prefixes within a white knockout in the frame top edge. Serif article caption sits outside the crop.","transfer":"Preserve sans-serif label/serif math pairing and frame title interruption; avoid claiming a precise source font family."},
+      "stroke_grammar":{"outer_width_pt":1.525,"module_width_pt":1.017,"hardware_subframe_width_pt":0.678,"planning_constraint_dash_pt":[4.0668,3.0501]},
+      "arrows":{"grammar":"Thin gray orthogonal arrows in software, annotated with italic mathematical variables; black module borders; paired light-blue bidirectional hardware arrows; dynamics arrows use coordinate colors.","routing":"Tasks feed planning; planning splits into trajectory and deformation paths. Position/attitude/servo control and actuator/estimator feedback paths remain distinct.","source_labels":"Source states/commands and control gains belong to the source system; transfer the symbol placement convention with the new project variables."},
+      "pictograms":{"source_content":"Actual central robot image, mechanism line drawings, task silhouettes, deformation miniature, actuator images, morphing geometry and force/coordinate panels.","transfer":"For a software-only paper, use the software sub-anchor. The full vertical multipanel needs real hardware/mechanism content and should not be filled with invented product imagery."},
+      "distinctive_features":["Portrait multipanel, ratio about 0.82", "Hardware/software/dynamics height split around 28/44/22% plus title/gap space", "White knockout panel titles interrupt frame borders", "Software uses horizontal pastel bands and genuine task/mechanism illustrations", "Geometry and forces occupy a separate evidence-rich lower panel"],
+      "transfer_boundary":"This is Nature Communications rather than an IEEE Letter/Transactions layout. Borrow the figure grammar where requested, then fit the appropriate IEEE full-width figure. It does not establish an IEEE manuscript page template.",
+      "failure_to_avoid":"Compressing the entire portrait graphic into IEEE single-column width makes its text unreadable. Its software band is a better starting point for a control-only manuscript."
+    },
+    {
+      "anchor_id":"R29-F2-software",
+      "case_id":"R29-F2",
+      "parent_anchor_id":"R29-F2",
+      "family":"horizontal-functional-bands-software",
+      "crop_bbox_pt":[59,225,542.2,496.2],
+      "geometry_evidence":"Faithful subcrop of actual panel b; borders and principal modules measured from source PDF paths.",
+      "zones":[
+        {"id":"outer","role":"software frame","bbox_pt":[60.58,232.65,540.46,494.57],"parent":null,"shape":"black rounded frame with interrupted title edge"},
+        {"id":"task","role":"first band","bbox_pt":[67.26,244,534.06,323],"parent":"outer","shape":"blue task band with two outlined task groups"},
+        {"id":"planning","role":"second band","bbox_pt":[67.26,328,534.06,373.73],"parent":"outer","shape":"orange band split between trajectory/deformation branches"},
+        {"id":"control","role":"lower left","bbox_pt":[67,383.63,415.89,484.39],"parent":"outer","shape":"cream area, yellow control modules"},
+        {"id":"actuator","role":"lower right upper","bbox_pt":[424,384,534,428],"parent":"outer","shape":"gray actuator band, real actuator thumbnail"},
+        {"id":"estimation","role":"lower right lower","bbox_pt":[423.39,432.91,531.33,484.39],"parent":"outer","shape":"green estimation area"}
+      ],
+      "palette_probes":[
+        {"name":"task background","point_pt":[80,249],"evidence":"rendered sample from source raster/vector composite"},
+        {"name":"planning background","point_pt":[80,342],"evidence":"rendered sample from source raster/vector composite"},
+        {"name":"control background","point_pt":[70,390],"vector_rgb":[1,0.973,0.898],"opacity":1,"evidence":"source vector fill plus rendered sample"},
+        {"name":"control module","point_pt":[105,414],"vector_rgb":[1,0.902,0.600],"opacity":1,"evidence":"source vector fill plus rendered sample"},
+        {"name":"estimator module","point_pt":[434,465],"vector_rgb":[0.773,0.878,0.706],"opacity":1,"evidence":"source vector fill plus rendered sample"}
+      ],
+      "typography":{"status":"visual observation; main figure labels outlined/raster","observed":"Bold sans-serif functional labels; vertical band labels at left; black italic serif symbols adjacent to arrows; white title knockout.","transfer":"Keep label families tied to this anchor. The source math is not the variable specification of a new method."},
+      "stroke_grammar":{"outer_width_pt":1.525,"module_width_pt":1.017},
+      "arrows":{"grammar":"Gray orthogonal connections with arrowhead direction and italic variable names; control feedback paths run in reserved gaps.","routing":"Two planning branches feed different controllers/actuators. Avoid a single linear chain if the actual method is a closed-loop graph.","source_labels":"Interface variables must be replaced with actual manuscript notation."},
+      "pictograms":{"source_content":"Task silhouettes, deformation/motor-speed miniature, servo and motor thumbnails.","transfer":"Match small diagrams to supported tasks and actual mechanisms; use available real platform assets only."},
+      "distinctive_features":["Landscape ratio about 1.78", "Blue task band around 29% height, orange planning around 17%, lower control/actuation/estimation around 37%", "Sideways functional-band labels", "Unequal functional region sizes reflect control graph", "Concrete task and actuator miniatures"],
+      "transfer_boundary":"Style transfer only; the source multi-DoF robot and adaptive/INDI control are not required for a different manuscript. Use the parent anchor for original full-figure context.",
+      "failure_to_avoid":"An empty planner-controller-estimator box row omits task miniatures, two-level control, actuator split and annotated feedback, which are major components of this look."
+    }
+  ]
+}

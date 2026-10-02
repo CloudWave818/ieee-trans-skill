@@ -29,6 +29,8 @@ Inspect registries first; do not open every knowledge document or card.
 
 ## Task-directed loading
 
+For this user's reference-matched production, read `workflows/13_REFERENCE_MATCHED_PRODUCTION.md` before the table below. `references/preferred_29/manuscript_profiles/` and `evidence_profiles/` provide source-specific structure and experimental/citation practice; `framework_anchors/` provides actual original crops with measured geometry. These selected sources control presentation over the older generalized knowledge. Do not treat a generic sketch as an inspected source figure or read the entire source-block archive during ordinary routing.
+
 | Task | Additional sources |
 |---|---|
 | project architecture | `01_GENERAL/`, routed domains, routed journal |

@@ -36,10 +36,10 @@ def run_case(case: dict) -> dict:
         check("domains", set(expected["domains"]).issubset(result["domains"]), f"actual={result['domains']}")
         check("domain_limit", 2 <= len(result["domains"]) <= 4, str(result["domains"]))
         check("journal", result["target_journal"] == expected["journal"] and result["journal_locked"], result["target_journal"])
-        check("journal_profile", Path(result["knowledge"]["journal_profile"]).name == f"{expected['journal']}.md")
+        check("journal_profile", Path(result["knowledge"]["journal_profile"]).name == ("RAL.md" if expected["journal"] == "RA-L" else f"{expected['journal']}.md"))
         check("general_rules", set(expected["general_rules"]).issubset(result["knowledge"]["general_rule_ids"]), str(result["knowledge"]["general_rule_ids"]))
         check("domain_rules", bool(result["knowledge"]["domain_rule_ids"]), str(result["knowledge"]["domain_rule_ids"]))
-        check("journal_rule", result["knowledge"]["journal_rule_ids"] == [f"JRN-{expected['journal']}-001"], str(result["knowledge"]["journal_rule_ids"]))
+        check("journal_rule", result["knowledge"]["journal_rule_ids"] == ([] if expected["journal"] == "RA-L" else [f"JRN-{expected['journal']}-001"]), str(result["knowledge"]["journal_rule_ids"]))
         check("workflow", expected["workflow"] in result["workflows"], str(result["workflows"]))
         exemplars = result["exemplars"]
         check("default_or_complex_count", len(exemplars) == (5 if case.get("complex_task") or len(result["domains"]) >= 4 or case.get("multi_section") else 3), str(len(exemplars)))
@@ -49,7 +49,8 @@ def run_case(case: dict) -> dict:
         check("role_or_evidence_gate", all(x["score_breakdown"]["role"] > 0 or x["score_breakdown"]["evidence"] > 0 for x in exemplars))
         check("domain_relevance", all(x["score_breakdown"]["domain"] > 0 for x in exemplars), str([(x["exemplar_id"], x["score_breakdown"]["domain"]) for x in exemplars]))
         check("boundary_loaded", all(x["do_not_generalize"] and x["boundary_gate"] == "REVIEW_REQUIRED_BEFORE_USE" for x in exemplars))
-        check("no_ral", result["target_journal"] != "RA-L")
+        check("article_form_routing", result["target_journal"] != "RA-L" or (result["article_form"] == "LETTER" and result["journal_overlay_status"] == "LOCAL_LETTER_OVERLAY_NO_HISTORICAL_JOURNAL_RULE"))
+        check("source_style_routing", bool(result.get("reference_style")) and result["reference_workflow"] == "13_REFERENCE_MATCHED_PRODUCTION")
 
         # Verify returned domain and journal rules against the authoritative registry scopes.
         rules = {r["Rule_ID"]: r for r in __import__("route_project").read_csv(KNOWLEDGE / "00_META/RULE_REGISTRY.csv")}
@@ -91,7 +92,7 @@ def write_reports(results: list[dict]):
             workflow_lines.append(f"| {item['case_id']} | {item['status']} | {route_result['mode']} | {' → '.join(route_result['workflows'])} |")
     failures = [(item["case_id"], c) for item in results for c in item["checks"] if c["status"] == "FAIL"]
     routing_lines += ["", "## Failure details", ""] + ([f"- {case}: {c['check']} — {c['detail']}" for case, c in failures] or ["- None."])
-    workflow_lines += ["", "## Coverage", "", "- Cases 1–5 cover the five required domain/journal combinations.", "- Case 6 covers full-draft revision.", "- Case 7 covers experiment-only routing.", "- Case 8 covers figure-only routing.", "- Case 9 enforces the RA-L boundary."]
+    workflow_lines += ["", "## Coverage", "", "- Cases 1–5 cover the five required domain/journal combinations.", "- Case 6 covers full-draft revision.", "- Case 7 covers experiment-only routing.", "- Case 8 covers figure-only routing.", "- Case 9 verifies RA-L Letter routing, compact source selection, and the explicit local overlay."]
     (ROOT / "validation/ROUTING_TESTS.md").write_text("\n".join(routing_lines), encoding="utf-8")
     (ROOT / "validation/WORKFLOW_TESTS.md").write_text("\n".join(workflow_lines), encoding="utf-8")
 

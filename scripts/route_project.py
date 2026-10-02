@@ -61,7 +61,7 @@ RAL_ALIASES = {"RAL", "RA-L", "IEEE RA-L", "IEEE ROBOTICS AND AUTOMATION LETTERS
 
 MODE_WORKFLOWS = {
     "A": ["01_PROJECT_DIAGNOSIS", "02_RESEARCH_ARCHITECTURE", "03_CONTRIBUTION_DESIGN", "04_CLAIM_EVIDENCE_DESIGN", "05_EXPERIMENT_DESIGN", "06_FIGURE_TABLE_DESIGN", "07_PAGE_BUDGET", "08_SECTION_OUTLINE"],
-    "B": ["01_PROJECT_DIAGNOSIS", "02_RESEARCH_ARCHITECTURE", "03_CONTRIBUTION_DESIGN", "04_CLAIM_EVIDENCE_DESIGN", "05_EXPERIMENT_DESIGN", "08_SECTION_OUTLINE"],
+    "B": ["01_PROJECT_DIAGNOSIS", "02_RESEARCH_ARCHITECTURE", "03_CONTRIBUTION_DESIGN", "04_CLAIM_EVIDENCE_DESIGN", "05_EXPERIMENT_DESIGN", "06_FIGURE_TABLE_DESIGN", "07_PAGE_BUDGET", "08_SECTION_OUTLINE"],
     "C": ["01_PROJECT_DIAGNOSIS", "04_CLAIM_EVIDENCE_DESIGN", "10_RESULTS_INTERPRETATION", "06_FIGURE_TABLE_DESIGN", "08_SECTION_OUTLINE"],
     "D": ["01_PROJECT_DIAGNOSIS", "11_FULL_PAPER_INTEGRATION", "09_SECTION_WRITING", "12_FINAL_AUDIT"],
     "E": ["01_PROJECT_DIAGNOSIS", "04_CLAIM_EVIDENCE_DESIGN", "05_EXPERIMENT_DESIGN"],
@@ -113,7 +113,7 @@ def select_domains(project: dict) -> tuple[list[str], dict[str, int]]:
 def normalize_journal(value: object) -> str:
     journal = str(value or "").strip().upper().replace("IEEE TRANSACTIONS ON ", "")
     if journal in RAL_ALIASES or journal.replace("-", "") == "RAL":
-        raise ValueError("RA-L is outside this long-form IEEE Transactions skill.")
+        return "RA-L"
     return journal if journal in JOURNALS else "UNDECIDED"
 
 
@@ -142,6 +142,12 @@ def select_mode(project: dict) -> str:
     state = str(project.get("manuscript_state", "IDEA_ONLY")).upper()
     if re.search(r"reviewer|peer review|审稿", task): return "H"
     if re.search(r"journal fit|journal adaptation|venue|期刊适配|选刊", task): return "G"
+    manuscript_scope = bool(re.search(r"(?:paper|manuscript|section|compact|letter)[- ]+(?:blueprint|outline)|章节蓝图|全文整合|全文撰写|(?:write|draft).*(?:full|whole|complete)[- ](?:paper|manuscript)", task))
+    if manuscript_scope:
+        if re.search(r"revis|improv|修改|润色全文", task) or state in {"REVISION", "FULL_DRAFT", "DRAFT_PARTIAL"}: return "D"
+        if re.search(r"integration|integrate|全文整合", task): return "J"
+        if state == "EXPERIMENT_COMPLETE": return "C"
+        return "B" if state in {"METHOD_READY", "EXPERIMENT_PARTIAL"} else "A"
     if re.search(r"figure|table|visual|图表|作图|表格", task): return "F"
     if re.search(r"experiment design|design experiment|实验设计|experiments? only", task): return "E"
     if re.search(r"revis|improv|修改|润色全文", task) or state in {"REVISION", "FULL_DRAFT", "DRAFT_PARTIAL"}: return "D"
@@ -304,12 +310,21 @@ def route(project: dict) -> dict:
     rules = read_csv(required[0])
     selected_rules = select_rules(project, domains, journal, rules)
     candidates = journal_candidates(domains, project) if journal == "UNDECIDED" else [journal]
-    journal_profile = str(KNOWLEDGE / "07_JOURNALS" / f"{journal}.md") if journal != "UNDECIDED" else "NEEDS_AUTHOR_DECISION"
+    journal_profile = (str(SKILL_ROOT / "config/RAL.md") if journal == "RA-L" else
+                       str(KNOWLEDGE / "07_JOURNALS" / f"{journal}.md") if journal != "UNDECIDED" else "NEEDS_AUTHOR_DECISION")
     routes = read_csv(required[1]); registry = read_csv(required[2])
     selected_cards = score_exemplars(project, domains, journal, mode, selected_rules, routes, registry)
     missing_states = []
     if journal == "UNDECIDED": missing_states.append({"state": "NEEDS_AUTHOR_DECISION", "item": "Target journal", "options": candidates})
     if not str(project.get("research_problem", "")).strip(): missing_states.append({"state": "MISSING_INPUT", "item": "Primary scientific problem"})
+    default_form = "LETTER" if journal == "RA-L" else "TRANSACTIONS" if journal in JOURNALS else "UNDECIDED"
+    article_form = str(project.get("article_form", default_form)).upper()
+    if article_form not in {"LETTER", "TRANSACTIONS", "CONFERENCE", "OTHER", "UNDECIDED"}:
+        raise ValueError("article_form must be LETTER, TRANSACTIONS, CONFERENCE, OTHER or UNDECIDED")
+    from select_style_reference import select_references
+    style_route = select_references(normalized_text(project), article_form=article_form,
+                                    paper_id=project.get("preferred_paper_id"),
+                                    framework_id=project.get("preferred_framework_id"))
     return {
         "status": "ROUTED",
         "case_id": project.get("case_id", "UNSPECIFIED"),
@@ -320,6 +335,10 @@ def route(project: dict) -> dict:
         "target_journal": journal,
         "journal_locked": journal != "UNDECIDED",
         "journal_candidates": candidates,
+        "article_form": article_form,
+        "reference_style": style_route,
+        "reference_workflow": "13_REFERENCE_MATCHED_PRODUCTION",
+        "journal_overlay_status": "LOCAL_LETTER_OVERLAY_NO_HISTORICAL_JOURNAL_RULE" if journal == "RA-L" else "HISTORICAL_PROFILE",
         "knowledge": {
             "general_rule_ids": selected_rules["general"],
             "domain_rule_ids": selected_rules["domain"],
@@ -334,12 +353,14 @@ def route(project: dict) -> dict:
         "exemplar_count": len(selected_cards),
         "default_exemplar_count": 3,
         "maximum_exemplar_count": 5,
+        "historical_exemplar_use": "OPTIONAL_CANDIDATE_POOL_ONLY; use zero if preferred main source covers the question",
         "missing_states": missing_states,
         "constraints": [
             "Read each selected card's Do Not Generalize boundary before use.",
             "Use user project evidence before corpus or exemplar content.",
             "Do not treat corpus statistics as quotas.",
             "Do not fabricate missing scientific evidence.",
+            "Lock a preferred source manuscript and real source figure before production; older exemplars supplement evidence only.",
         ],
     }
 

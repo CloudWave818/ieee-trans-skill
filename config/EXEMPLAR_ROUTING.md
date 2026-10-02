@@ -1,5 +1,7 @@
 # Exemplar Routing
 
+For source-matched production, the locked preferred manuscript/evidence profile is the main exemplar. Historical scoring below returns a candidate pool only. Read zero additional historical cards when that source covers the actual question; select a supporting card only to close a named gap. Its broad domain match cannot import an unrelated tether, barrier, SLAM, theory or hardware burden into a compact Letter.
+
 Use `IEEE_TRANS_EXEMPLARS/00_META/EXEMPLAR_ROUTING.csv`, then open only the selected cards.
 
 For a one-figure Mode F task, the SKILL.md local exception applies: use one to three inspected visual cases, or an explicit no-match manuscript-derived design, without forcing three full-paper exemplars. The scoring/default-count rules below govern full-project exemplar routing.

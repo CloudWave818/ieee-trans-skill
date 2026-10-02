@@ -3,10 +3,10 @@
   "overall_status": "PASS",
   "completion_status": "PHASE 4 IEEE TRANS WRITING SKILL CONSTRUCTED / READY FOR REAL-PAPER VALIDATION",
   "summary": {
-    "checks": 295,
-    "passed": 295,
+    "checks": 296,
+    "passed": 296,
     "failed": 0,
-    "synthetic_cases": 9,
+    "synthetic_cases": 10,
     "rules": 42,
     "exemplars": 27,
     "exemplar_rule_links": 189
@@ -345,12 +345,12 @@
     {
       "check": "skill_under_500_lines",
       "status": "PASS",
-      "detail": "195"
+      "detail": "207"
     },
     {
       "check": "skill_under_5000_words",
       "status": "PASS",
-      "detail": "2566"
+      "detail": "3004"
     },
     {
       "check": "no_todo_placeholders",
@@ -365,7 +365,7 @@
     {
       "check": "agent_short_description",
       "status": "PASS",
-      "detail": "Plan IEEE evidence and figures in preferred UAV styles"
+      "detail": "Match papers and figures to 29 source references"
     },
     {
       "check": "agent_default_prompt_mentions_skill",
@@ -739,6 +739,16 @@
     },
     {
       "check": "workflow_exit:12_FINAL_AUDIT.md",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "workflow_entry:13_REFERENCE_MATCHED_PRODUCTION.md",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "workflow_exit:13_REFERENCE_MATCHED_PRODUCTION.md",
       "status": "PASS",
       "detail": ""
     },
@@ -1133,11 +1143,6 @@
       "detail": ""
     },
     {
-      "check": "web_gpt_planner:不要只检查现有图片",
-      "status": "PASS",
-      "detail": ""
-    },
-    {
       "check": "web_gpt_planner:PAPER_FIGURE_DESCRIPTION.md",
       "status": "PASS",
       "detail": ""
@@ -1375,17 +1380,17 @@
     {
       "check": "synthetic_runner_exit",
       "status": "PASS",
-      "detail": "{\n  \"overall_status\": \"PASS\",\n  \"cases\": 9,\n  \"passed\": 9,\n  \"failed\": 0\n}"
+      "detail": "{\n  \"overall_status\": \"PASS\",\n  \"cases\": 10,\n  \"passed\": 10,\n  \"failed\": 0\n}"
     },
     {
       "check": "synthetic_overall_pass",
       "status": "PASS",
-      "detail": "{'cases': 9, 'passed': 9, 'failed': 0}"
+      "detail": "{'cases': 10, 'passed': 10, 'failed': 0}"
     },
     {
       "check": "synthetic_at_least_eight",
       "status": "PASS",
-      "detail": "9"
+      "detail": "10"
     },
     {
       "check": "all_synthetic_checks_pass",
@@ -1395,12 +1400,12 @@
     {
       "check": "default_three_exemplars",
       "status": "PASS",
-      "detail": "[3, 3, 3, 3, 3, 3, 3]"
+      "detail": "[3, 3, 3, 3, 3, 3, 3, 3]"
     },
     {
       "check": "complex_cross_domain_five_exemplars",
       "status": "PASS",
-      "detail": "[5]"
+      "detail": "[5, 5]"
     },
     {
       "check": "maximum_five_exemplars",
@@ -1413,7 +1418,7 @@
       "detail": ""
     },
     {
-      "check": "ral_excluded",
+      "check": "ral_letter_supported",
       "status": "PASS",
       "detail": ""
     },

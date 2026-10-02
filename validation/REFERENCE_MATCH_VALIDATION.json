@@ -1,0 +1,1409 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "check": "manuscript:complete_unique_source_coverage",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "manuscript:R01:portable_card",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R01:exact_profile_source",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R01:source_grounded_rhetoric",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R01:source_specific_blueprint",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "manuscript:R02:portable_card",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R02:exact_profile_source",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R02:source_grounded_rhetoric",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R02:source_specific_blueprint",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "manuscript:R03:portable_card",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R03:exact_profile_source",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R03:source_grounded_rhetoric",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R03:source_specific_blueprint",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "manuscript:R04:portable_card",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R04:exact_profile_source",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R04:source_grounded_rhetoric",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R04:source_specific_blueprint",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "manuscript:R05:portable_card",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R05:exact_profile_source",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R05:source_grounded_rhetoric",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R05:source_specific_blueprint",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "manuscript:R06:portable_card",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R06:exact_profile_source",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R06:source_grounded_rhetoric",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R06:source_specific_blueprint",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "manuscript:R07:portable_card",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R07:exact_profile_source",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R07:source_grounded_rhetoric",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R07:source_specific_blueprint",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "manuscript:R08:portable_card",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R08:exact_profile_source",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R08:source_grounded_rhetoric",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R08:source_specific_blueprint",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "manuscript:R09:portable_card",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R09:exact_profile_source",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R09:source_grounded_rhetoric",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R09:source_specific_blueprint",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "manuscript:R10:portable_card",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R10:exact_profile_source",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R10:source_grounded_rhetoric",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R10:source_specific_blueprint",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "manuscript:R11:portable_card",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R11:exact_profile_source",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R11:source_grounded_rhetoric",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R11:source_specific_blueprint",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "manuscript:R12:portable_card",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R12:exact_profile_source",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R12:source_grounded_rhetoric",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R12:source_specific_blueprint",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "manuscript:R13:portable_card",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R13:exact_profile_source",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R13:source_grounded_rhetoric",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R13:source_specific_blueprint",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "manuscript:R14:portable_card",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R14:exact_profile_source",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R14:source_grounded_rhetoric",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R14:source_specific_blueprint",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "manuscript:R15:portable_card",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R15:exact_profile_source",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R15:source_grounded_rhetoric",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R15:source_specific_blueprint",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "manuscript:R16:portable_card",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R16:exact_profile_source",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R16:source_grounded_rhetoric",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R16:source_specific_blueprint",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "manuscript:R17:portable_card",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R17:exact_profile_source",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R17:source_grounded_rhetoric",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R17:source_specific_blueprint",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "manuscript:R18:portable_card",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R18:exact_profile_source",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R18:source_grounded_rhetoric",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R18:source_specific_blueprint",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "manuscript:R19:portable_card",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R19:exact_profile_source",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R19:source_grounded_rhetoric",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R19:source_specific_blueprint",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "manuscript:R20:portable_card",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R20:exact_profile_source",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R20:source_grounded_rhetoric",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R20:source_specific_blueprint",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "manuscript:R21:portable_card",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R21:exact_profile_source",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R21:source_grounded_rhetoric",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R21:source_specific_blueprint",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "manuscript:R22:portable_card",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R22:exact_profile_source",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R22:source_grounded_rhetoric",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R22:source_specific_blueprint",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "manuscript:R23:portable_card",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R23:exact_profile_source",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R23:source_grounded_rhetoric",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R23:source_specific_blueprint",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "manuscript:R24:portable_card",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R24:exact_profile_source",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R24:source_grounded_rhetoric",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R24:source_specific_blueprint",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "manuscript:R25:portable_card",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R25:exact_profile_source",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R25:source_grounded_rhetoric",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R25:source_specific_blueprint",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "manuscript:R26:portable_card",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R26:exact_profile_source",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R26:source_grounded_rhetoric",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R26:source_specific_blueprint",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "manuscript:R27:portable_card",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R27:exact_profile_source",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R27:source_grounded_rhetoric",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R27:source_specific_blueprint",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "manuscript:R28:portable_card",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R28:exact_profile_source",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R28:source_grounded_rhetoric",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R28:source_specific_blueprint",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "manuscript:R29:portable_card",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R29:exact_profile_source",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R29:source_grounded_rhetoric",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R29:source_specific_blueprint",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "evidence:complete_unique_source_coverage",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "evidence:R01:portable_card",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R01:evidence_source_pages",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R01:experiment_protocol_and_boundary",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "evidence:R02:portable_card",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R02:evidence_source_pages",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R02:experiment_protocol_and_boundary",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "evidence:R03:portable_card",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R03:evidence_source_pages",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R03:experiment_protocol_and_boundary",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "evidence:R04:portable_card",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R04:evidence_source_pages",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R04:experiment_protocol_and_boundary",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "evidence:R05:portable_card",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R05:evidence_source_pages",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R05:experiment_protocol_and_boundary",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "evidence:R06:portable_card",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R06:evidence_source_pages",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R06:experiment_protocol_and_boundary",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "evidence:R07:portable_card",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R07:evidence_source_pages",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R07:experiment_protocol_and_boundary",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "evidence:R08:portable_card",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R08:evidence_source_pages",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R08:experiment_protocol_and_boundary",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "evidence:R09:portable_card",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R09:evidence_source_pages",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R09:experiment_protocol_and_boundary",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "evidence:R10:portable_card",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R10:evidence_source_pages",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R10:experiment_protocol_and_boundary",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "evidence:R11:portable_card",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R11:evidence_source_pages",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R11:experiment_protocol_and_boundary",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "evidence:R12:portable_card",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R12:evidence_source_pages",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R12:experiment_protocol_and_boundary",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "evidence:R13:portable_card",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R13:evidence_source_pages",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R13:experiment_protocol_and_boundary",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "evidence:R14:portable_card",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R14:evidence_source_pages",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R14:experiment_protocol_and_boundary",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "evidence:R15:portable_card",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R15:evidence_source_pages",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R15:experiment_protocol_and_boundary",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "evidence:R16:portable_card",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R16:evidence_source_pages",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R16:experiment_protocol_and_boundary",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "evidence:R17:portable_card",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R17:evidence_source_pages",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R17:experiment_protocol_and_boundary",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "evidence:R18:portable_card",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R18:evidence_source_pages",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R18:experiment_protocol_and_boundary",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "evidence:R19:portable_card",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R19:evidence_source_pages",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R19:experiment_protocol_and_boundary",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "evidence:R20:portable_card",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R20:evidence_source_pages",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R20:experiment_protocol_and_boundary",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "evidence:R21:portable_card",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R21:evidence_source_pages",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R21:experiment_protocol_and_boundary",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "evidence:R22:portable_card",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R22:evidence_source_pages",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R22:experiment_protocol_and_boundary",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "evidence:R23:portable_card",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R23:evidence_source_pages",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R23:experiment_protocol_and_boundary",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "evidence:R24:portable_card",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R24:evidence_source_pages",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R24:experiment_protocol_and_boundary",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "evidence:R25:portable_card",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R25:evidence_source_pages",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R25:experiment_protocol_and_boundary",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "evidence:R26:portable_card",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R26:evidence_source_pages",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R26:experiment_protocol_and_boundary",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "evidence:R27:portable_card",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R27:evidence_source_pages",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R27:experiment_protocol_and_boundary",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "evidence:R28:portable_card",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R28:evidence_source_pages",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R28:experiment_protocol_and_boundary",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "evidence:R29:portable_card",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R29:evidence_source_pages",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R29:experiment_protocol_and_boundary",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R01:bundled_source_hash",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R02:bundled_source_hash",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R03:bundled_source_hash",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R04:bundled_source_hash",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R05:bundled_source_hash",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R06:bundled_source_hash",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R07:bundled_source_hash",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R08:bundled_source_hash",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R09:bundled_source_hash",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R10:bundled_source_hash",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R11:bundled_source_hash",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R12:bundled_source_hash",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R13:bundled_source_hash",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R14:bundled_source_hash",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R15:bundled_source_hash",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R16:bundled_source_hash",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R17:bundled_source_hash",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R18:bundled_source_hash",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R19:bundled_source_hash",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R20:bundled_source_hash",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R21:bundled_source_hash",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R22:bundled_source_hash",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R23:bundled_source_hash",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R24:bundled_source_hash",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R25:bundled_source_hash",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R26:bundled_source_hash",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R27:bundled_source_hash",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R28:bundled_source_hash",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R29:bundled_source_hash",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "anchors:unique_anchor_ids",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R01-F2:actual_crop_and_card",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R01-F2:crop_identity",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R06-F2:actual_crop_and_card",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R06-F2:crop_identity",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R12-F2:actual_crop_and_card",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R12-F2:crop_identity",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R20-F2:actual_crop_and_card",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R20-F2:crop_identity",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R23-F3:actual_crop_and_card",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R23-F3:crop_identity",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R25-F1:actual_crop_and_card",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R25-F1:crop_identity",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R29-F2:actual_crop_and_card",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R29-F2:crop_identity",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R29-F2-software:actual_crop_and_card",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "R29-F2-software:crop_identity",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "retrieval:intention_predictor_not_generic_framework",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "retrieval:purpose:asymmetric_training_deployment",
+      "passed": true,
+      "detail": {
+        "expected": "R25-F1",
+        "actual": "R25-F1"
+      }
+    },
+    {
+      "check": "retrieval:purpose:asymmetric_training_deployment:explainable_candidate",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "retrieval:purpose:domain_gradient_paths",
+      "passed": true,
+      "detail": {
+        "expected": "R23-F3",
+        "actual": "R23-F3"
+      }
+    },
+    {
+      "check": "retrieval:purpose:domain_gradient_paths:explainable_candidate",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "retrieval:purpose:module_interfaces",
+      "passed": true,
+      "detail": {
+        "expected": "R01-F2",
+        "actual": "R01-F2"
+      }
+    },
+    {
+      "check": "retrieval:purpose:module_interfaces:explainable_candidate",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "retrieval:purpose:intention_prediction_mechanism",
+      "passed": true,
+      "detail": {
+        "expected": "R06-F2",
+        "actual": "R06-F2"
+      }
+    },
+    {
+      "check": "retrieval:purpose:intention_prediction_mechanism:explainable_candidate",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "retrieval:purpose:hierarchical_policy_planner",
+      "passed": true,
+      "detail": {
+        "expected": "R12-F2",
+        "actual": "R12-F2"
+      }
+    },
+    {
+      "check": "retrieval:purpose:hierarchical_policy_planner:explainable_candidate",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "retrieval:purpose:reset_distribution_rewards",
+      "passed": true,
+      "detail": {
+        "expected": "R20-F2",
+        "actual": "R20-F2"
+      }
+    },
+    {
+      "check": "retrieval:purpose:reset_distribution_rewards:explainable_candidate",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "retrieval:purpose:hardware_software_dynamics",
+      "passed": true,
+      "detail": {
+        "expected": "R29-F2",
+        "actual": "R29-F2"
+      }
+    },
+    {
+      "check": "retrieval:purpose:hardware_software_dynamics:explainable_candidate",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "retrieval:purpose:software_functional_bands",
+      "passed": true,
+      "detail": {
+        "expected": "R29-F2-software",
+        "actual": "R29-F2-software"
+      }
+    },
+    {
+      "check": "retrieval:purpose:software_functional_bands:explainable_candidate",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "retrieval:bilingual_training_deployment",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "retrieval:explicit_reference_preserved",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "retrieval:hierarchical_letter_uses_its_own_framework",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "retrieval:no_forced_unknown_match",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "retrieval:article_form_alone_does_not_select_framework",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "retrieval:explicit_framework_beats_purpose_ranking",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "retrieval:invalid_source_id_rejected",
+      "passed": true,
+      "detail": ""
+    }
+  ],
+  "papers": 29,
+  "manuscript_profiles": 29,
+  "evidence_profiles": 29,
+  "actual_framework_crops": 8,
+  "scope": "Source identity, coverage, locator and retrieval checks. Does not certify aesthetic fidelity or correctness of all scientific interpretations."
+}

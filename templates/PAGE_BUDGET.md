@@ -7,6 +7,9 @@ All quantities are conditional planning ranges, not fixed corpus quotas.
 - Target journal/profile:
 - Official format/limit verified?:
 - Paper type:
+- Article form (distinct from observed preprint length):
+- Selected preferred source / main-article vs supplementary boundary:
+- Source section-space and figure-density fingerprint:
 - Method complexity:
 - Experiment complexity:
 - Planned figures/tables:

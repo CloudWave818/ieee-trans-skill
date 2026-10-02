@@ -2,7 +2,7 @@
 
 Synthetic tests execute `scripts/route_project.py` against the live Phase-2/3 registries.
 
-Result: **9/9 cases passed**.
+Result: **10/10 cases passed**.
 
 | Case | Status | Domains | Journal | Exemplars |
 |---|---|---|---|---|
@@ -14,7 +14,8 @@ Result: **9/9 cases passed**.
 | CASE_06_FULL_DRAFT_REVISION | PASS | ROBOTICS; RL_MARL; NAVIGATION_PLANNING | TRO | EX_006; EX_013; EX_017 |
 | CASE_07_EXPERIMENT_ONLY | PASS | RL_MARL; CONTROL | TNNLS | EX_021; EX_006; EX_019 |
 | CASE_08_FIGURE_ONLY | PASS | UAV_AUTONOMY; NAVIGATION_PLANNING; ROBOTICS; TRAJECTORY_OPTIMIZATION | TIE | EX_002; EX_014; EX_024; EX_026; EX_005 |
-| CASE_09_RAL_BOUNDARY | PASS | excluded | RA-L out of scope | 0 |
+| CASE_09_RAL_LETTER | PASS | ROBOTICS; NAVIGATION_PLANNING | RA-L | EX_003; EX_004; EX_017 |
+| CASE_10_MIXED_LETTER_BLUEPRINT | PASS | RL_MARL; UAV_AUTONOMY; CONTROL; TRAJECTORY_OPTIMIZATION | RA-L | EX_026; EX_001; EX_002; EX_003; EX_004 |
 
 ## Failure details
 

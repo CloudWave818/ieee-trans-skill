@@ -4,7 +4,7 @@
 
 ---
 
-Create a compact, publication-oriented academic method framework figure for the method specified below. Use the attached reference image only as a visual style anchor. Reconstruct the scientific content entirely from the supplied method specification.
+Create an academic method framework figure that closely follows the attached ORIGINAL reference figure. Preserve its composition, proportions, hierarchy, pictogram grammar, typography, colors and connector treatment as specified below. Rebuild scientific content entirely from the supplied method specification. Do not redesign the style.
 
 ## Scientific content
 
@@ -31,13 +31,21 @@ Exact labels and notation:
 
 ## Required visual grammar
 
-Use a white canvas and a compact horizontal composition. Organize the method into softly tinted functional groups, with thin dark dashed outer borders and bold serif stage titles placed just above the group borders. Arrange the main flow left to right and most internal pipelines top to bottom. Let the core mechanism receive more space when needed.
+Original reference: [paper ID, figure, PDF page and attached actual crop; no sketch substitute].
 
-Use thin solid outlines and modest rounded corners for internal modules. Use nested grouping only where it reflects real structure. Preserve three levels of hierarchy: functional stages, operations, and compact local representations of data or mechanisms.
+Layout to retain: [actual aspect ratio, normalized zone bounds, ordering, rows/columns and whitespace copied from the selected source's visual arrangement].
 
-Use a restrained pastel palette: soft gray for inputs, pale peach for representation when applicable, light blue-gray for the core mechanism, and pale cream-yellow for outputs when applicable. Use consistent pale green, pale blue, peach, pink, or lavender accents for actual operation or feature categories. Maintain any manuscript-specific color semantics given above. Use dark, thin arrows and readable serif typography similar to the reference.
+Typography and shapes to retain: [observed font family/hierarchy, border treatment, corners, group nesting, label placement]. Do not impose serif fonts, dashed groups, three layers or a horizontal flow when the selected reference uses another arrangement.
+
+Palette and line treatment: [specific source colors or honestly approximate colors, fills, outline widths, arrowheads and solid/dashed semantics]. Reassign color meanings to the new research explicitly.
+
+Source-to-new-content mapping: [each major source visual zone/pictogram → actual new scientific object; list minimal topology changes with their scientific reasons]. Do not replace mechanism graphics with identical text boxes.
+
+Source slots to omit or merge: [operations in the reference that have no counterpart in this method]. Retain the source's visual grammar while adjusting card counts and relative space to the actual computations. Never repeat a perception output to fill a slot, or present an intermediate output signal as an additional algorithm. Distinguish computation, data, constraints and output signals explicitly.
 
 Integrate small meaningful pictograms or local schematics: the actual input entities, feature blocks, graph relations, token sequences, candidate trajectories, constrained geometry, belief representations, or output objects specified above. Do not insert irrelevant pictograms merely to decorate the figure.
+
+Each miniature must explain its named scientific relationship; do not fill every module with the same red dot and curve. Devote appropriate space to the supported core mechanism. If its internals are unspecified, preserve a named black-box operation and accurate interfaces instead of inventing internals for visual density.
 
 Keep connectors short and clean, using explicit ports and mostly orthogonal routing. Place supported feedback or recurrent paths around the outside. Avoid crossings, and do not allow arrows to pass through text. Distinguish training-only edges from online data flow when the method actually contains both.
 
@@ -45,7 +53,7 @@ Keep labels concise and readable at the specified final column width. Align same
 
 ## Hard exclusions
 
-Do not copy the reference method, caption, network modules, branch topology, or mathematical variables. Do not invent Transformer, GRU, MLP, Gaussian distributions, losses, residual links, layer counts, training updates, or control interfaces.
+Do not transfer unsupported reference scientific content. Match visual placement and routing closely wherever the actual new mechanism allows; change dependencies when scientific correctness requires it. Do not invent Transformer, GRU, MLP, Gaussian distributions, losses, residual links, layer counts, training updates, or control interfaces.
 
 Do not turn the figure into a sparse row of generic boxes, a slide deck, a dashboard, a dark technology poster, or a glossy infographic. No large headline, heavy shadows, glow, decorative 3-D layers, long paragraphs inside boxes, or unsupported results.
 

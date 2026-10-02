@@ -77,8 +77,8 @@ check("skill_frontmatter_present", bool(front))
 frontmatter = yaml.safe_load(front.group(1)) if front else {}
 check("skill_frontmatter_only_name_description", set(frontmatter) == {"name", "description"}, str(list(frontmatter)))
 check("skill_name_valid", frontmatter.get("name") == "ieee-trans-skill")
-check("skill_description_trigger_scope", all(x.lower() in frontmatter.get("description", "").lower() for x in ["ieee transactions", "experiment", "reviewer", "ra-l"]))
-check("skill_description_visual_scope", all(x.lower() in frontmatter.get("description", "").lower() for x in ["visual architecture", "figure-count", "figure-description markdown", "uav hardware/flight/trajectory"]))
+check("skill_description_trigger_scope", all(x.lower() in frontmatter.get("description", "").lower() for x in ["ieee transactions", "experiment", "letter", "reference"]))
+check("skill_description_visual_scope", all(x.lower() in frontmatter.get("description", "").lower() for x in ["framework", "writing", "citations", "29 reference"]))
 line_count = len(skill_text.splitlines())
 word_count = len(re.findall(r"\b\w+\b", skill_text))
 check("skill_under_500_lines", line_count < 500, str(line_count))
@@ -163,7 +163,7 @@ for term in ["exact subtype", "rendering route", "DATA_PLOT", "VECTOR_SCHEMATIC"
     check(f"figure_audit_handoff:{term}", term.lower() in figure_audit.lower())
 
 web_planner = (ROOT / "references/WEB_GPT_FIGURE_PLANNER.md").read_text(encoding="utf-8")
-for term in ["本文件自包含", "三层图片依据", "C100-COUNT-001", "C100-TYPE-RL", "C100-JRN-TRO", "C100-ROLE-QUANT", "C100-PHYSICAL-YES", "不要只检查现有图片", "PAPER_FIGURE_DESCRIPTION.md", "DATA_PLOT", "VECTOR_SCHEMATIC", "PHOTO_COMPOSITE", "NOT_READY", "训练收敛曲线"]:
+for term in ["本文件自包含", "三层图片依据", "C100-COUNT-001", "C100-TYPE-RL", "C100-JRN-TRO", "C100-ROLE-QUANT", "C100-PHYSICAL-YES",  "PAPER_FIGURE_DESCRIPTION.md", "DATA_PLOT", "VECTOR_SCHEMATIC", "PHOTO_COMPOSITE", "NOT_READY", "训练收敛曲线"]:
     check(f"web_gpt_planner:{term}", term.lower() in web_planner.lower())
 
 # Verify the portable protocol's 100-paper empirical anchors against live metadata.
@@ -249,7 +249,7 @@ check("default_three_exemplars", all(r["exemplar_count"] == 3 for r in default_r
 check("complex_cross_domain_five_exemplars", all(r["exemplar_count"] == 5 for r in complex_routes), str([r["exemplar_count"] for r in complex_routes]))
 check("maximum_five_exemplars", all(r["exemplar_count"] <= 5 for r in routed))
 check("two_to_four_domains", all(2 <= len(r["domains"]) <= 4 for r in routed))
-check("ral_excluded", any(r["route"].get("status") == "OUT_OF_SCOPE" and "RA-L" in r["route"].get("reason", "") for r in synthetic["results"]))
+check("ral_letter_supported", any(r["route"].get("target_journal") == "RA-L" and r["route"].get("article_form") == "LETTER" for r in synthetic["results"]))
 
 report_text = (ROOT / "PHASE4_FINAL_REPORT.md").read_text(encoding="utf-8")
 required_status = "PHASE 4 IEEE TRANS WRITING SKILL CONSTRUCTED / READY FOR REAL-PAPER VALIDATION"

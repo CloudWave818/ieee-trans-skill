@@ -6,6 +6,8 @@ Require a Claim–Evidence Matrix. Use for Modes A, B, E, or when audit identifi
 
 ## Design from claims
 
+Read `references/preferred_29/EVIDENCE_AND_CITATION_PLAYBOOK.md` and the locked main paper's `evidence_profiles/<ID>.md`. Start from its actual experiment sequence and table/figure grouping, map each evidence role to the new claims, and record what is retained, replaced or omitted. A reference's simulator, parameter sweep, hardware or success threshold does not become the new project's default without a scientific reason. If the paper is a Letter, prioritize its decisive claim tests rather than inheriting the old long-paper breadth.
+
 For each nonclosed claim, define:
 
 1. scientific question and failure criterion;

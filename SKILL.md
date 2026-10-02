@@ -1,9 +1,9 @@
 ---
 name: ieee-trans-skill
-description: Build, diagnose, revise, or audit long-form IEEE Transactions manuscripts in UAVs, robotics, autonomous systems, navigation or trajectory planning, reinforcement learning, MARL, multi-agent decision making, game-theoretic methods, and intelligent, distributed, or learning-based control. Use for idea/method/results-to-paper planning, experiment and evidence design, full-paper visual architecture, corpus-grounded figure-count/type planning, portable Web-GPT figure-planning protocols, AI-ready figure-description Markdown, drawing/data-plot specifications, UAV hardware/flight/trajectory visuals, terminology/acronym/clarity control, journal adaptation, section/full-paper revision, and reviewer audit. Exclude IEEE Robotics and Automation Letters (RA-L), short-letter workflows, and grammar-only polishing without scientific-architecture decisions.
+description: Draft, revise, and design IEEE Transactions or Letter papers in UAVs, robotics, planning, RL/MARL and control using the user's 29 reference papers. Match selected originals in manuscript structure, writing rhythm, figures, framework layout, captions, citations and experiment organization; turn a topic or research plan into a source-matched blueprint and concrete visuals while keeping claims and results grounded in the new project. Use for full papers, sections, experiments and figure work; exclude grammar-only edits without reference-style or scientific-architecture decisions.
 ---
 
-# IEEE Transactions Paper Architect
+# IEEE Reference-Matched Paper Architect
 
 ## Operating contract
 
@@ -13,9 +13,19 @@ Resolve paths from the directory containing this file. Before any substantive pa
 
 1. `config/KNOWLEDGE_PATHS.md` for authoritative sources and selective-loading rules.
 2. `workflows/01_PROJECT_DIAGNOSIS.md` for the input and state contract.
-3. The one mode-specific workflow selected below.
+3. `workflows/13_REFERENCE_MATCHED_PRODUCTION.md` to select and lock the user's actual reference style, then the one mode-specific workflow selected below. For a local task use only its relevant contract fields.
 
-Do not load every domain, journal, card, or source paper. Do not use this skill for RA-L.
+Do not load every domain, journal, card, or source paper. RA-L and short Letters use `config/RAL.md` and an inspected compact reference, rather than inheriting long-form Transactions budgets.
+
+## Match the supplied papers first
+
+The user's 29 PDFs control presentation for this workflow. Select one main paper for structure and writing, and one concrete original figure for each major framework. Read `references/preferred_29/MANUSCRIPT_STYLE_PLAYBOOK.md`, the selected manuscript profile, and `references/preferred_29/EVIDENCE_AND_CITATION_PLAYBOOK.md` when experiments or citations matter. Use `scripts/select_style_reference.py` for candidate retrieval and `templates/REFERENCE_STYLE_CONTRACT.md` to record the mapping. Source-informed decisions must cite paper ID and PDF page, not a generic “IEEE style” label.
+
+Match section and paragraph duties, relative space, equation-to-prose rhythm, figure sequence, table/caption form and citation placement. Framework drawings must inspect real source crops from `references/preferred_29/framework_anchors/`; preserve the chosen figure's layout skeleton, relative proportions, pictogram grammar, palette and connectors as far as the new scientific topology permits. Do not replace them with arbitrary rounded boxes or enforce the historical single-image style on every paper. Old sketches are planning drafts, not original figures.
+
+Use `references/preferred_29/framework_anchors/SELECTION_AND_CRITIQUE.md` to compare the originals' distinct strengths. Choose again for each new method and figure purpose; R06 and any generated test drawing are not universal defaults. Preserve visual grammar while removing original slots that have no scientific counterpart. A whole-paper figure plan may use different layouts for overview, mechanism, network, training/deployment and experiments while keeping terminology, typography and caption rules consistent.
+
+Keep science and presentation separate: imitate visual and rhetorical structure closely; rebuild mechanism, sentences, citations and experimental data from the new project. Compare actual renderings side by side and record deviations. A detailed drawing brief or passing structural test does not certify a similar-looking finished paper.
 
 ## Diagnose before writing
 
@@ -23,7 +33,7 @@ Create `templates/PROJECT_PROFILE.md` and classify:
 
 - target journal or `UNDECIDED`;
 - two to four relevant domains;
-- paper type and method type;
+- paper type, method type and article form (`LETTER`, `TRANSACTIONS`, `CONFERENCE`, `OTHER`, or `UNDECIDED`), distinguished from the local reference PDF's observed layout;
 - primary scientific problem and application system;
 - theoretical level and physical-experiment availability;
 - manuscript state: `IDEA_ONLY`, `METHOD_READY`, `EXPERIMENT_PARTIAL`, `EXPERIMENT_COMPLETE`, `DRAFT_PARTIAL`, `FULL_DRAFT`, or `REVISION`;
@@ -38,7 +48,7 @@ Never draft full prose before this diagnosis. For a tightly scoped user request,
 | Mode | Trigger | Primary workflow |
 |---|---|---|
 | A — IDEA TO PAPER | idea or problem only | 02 → 03 → 04 → 05 → 06 → 07 → 08 |
-| B — METHOD TO PAPER | stable mechanism, incomplete manuscript | 02 → 03 → 04 → 05 → 08 |
+| B — METHOD TO PAPER | stable mechanism, incomplete manuscript | 02 → 03 → 04 → 05 → 06 → 07 → 08 |
 | C — RESULTS TO PAPER | verified results drive the paper | 04 → 10 → 06 → 08 |
 | D — DRAFT IMPROVEMENT | partial/full draft or revision | 01 diagnosis → 11 integration → targeted 09 |
 | E — EXPERIMENT DESIGN | experiments only | 04 → 05 |
@@ -54,15 +64,15 @@ For a one-figure Mode F request, embed the relevant diagnosis and claim checks i
 
 ## Route knowledge
 
-Load in this order:
+First lock the selected preferred-29 references. Then load supporting knowledge in this order:
 
 1. Applicable Formal General Rule entries from `IEEE_TRANS_KNOWLEDGE/00_META/RULE_REGISTRY.csv`.
 2. Two to four domain profiles selected with `config/DOMAIN_ROUTING.md`.
-3. One locked journal profile selected with `config/JOURNAL_ROUTING.md`.
-4. Three exemplars by default, at most five, selected with `config/EXEMPLAR_ROUTING.md`.
+3. One locked journal profile selected with `config/JOURNAL_ROUTING.md`, or the local `config/RAL.md` Letter overlay.
+4. Supporting historical candidates only for a question not covered by the locked preferred source. The deterministic router returns three exemplars by default, at most five; these are a candidate pool, not mandatory extra reading. Use zero when the main preferred source is sufficient.
 5. Raw corpus evidence only when a rule, profile, or card needs source-level adjudication.
 
-Before using any selected card, read its exact `Do Not Generalize` section and keep that boundary in the decision log.
+Before using any selected historical exemplar card, read its exact `Do Not Generalize` section and keep that boundary in the decision log. The older three exemplars supplement evidence burden; they do not displace the preferred main manuscript/figure style.
 
 Use `scripts/route_project.py --input <project.json>` for deterministic routing when a normalized JSON project profile is available. Record chosen rules, profiles, cards, exclusions, and unresolved conflicts in the work product.
 
@@ -93,7 +103,7 @@ Advance only when the current gate has evidence:
 |---|---|---|
 | G0 Diagnosis | Project Profile + Terminology Baseline | state, task, domains, paper type, journal status, and existing naming risks identified |
 | G1 Architecture | Research architecture | Problem→Gap→Challenge→Mechanism→Claim→Evidence chain complete or explicitly provisional |
-| G2 Contributions | Contribution Matrix | two to four verifiable contributions or an explicit unresolved contribution decision |
+| G2 Contributions | Contribution Matrix | verifiable contributions at the selected source's granularity; a focused Letter may have one principal contribution |
 | G3 Claims | Claim–Evidence Matrix | every major claim has available or planned evidence; gaps labeled |
 | G4 Experiments | Experiment Matrix | claims map to fair tests, metrics, baselines, and analysis |
 | G5 Visuals | Visual Architecture + Figure/Table Plan + `PAPER_FIGURE_DESCRIPTION.md` | total count is justified; every asset has a scientific question, evidence role, source data, rendering route, section home, and executable drawing or plotting specification |
@@ -103,11 +113,13 @@ Advance only when the current gate has evidence:
 
 For local modes, enforce only the gates that protect the requested output. Never bypass G3 for experiment, results, or evidence-bearing figure work.
 
+Gate outputs may be sections of one requested blueprint or drawing document. Consolidate shared conventions and repeated status fields; do not produce separate boilerplate files or unrelated historical-card audits just to satisfy a count.
+
 ## Design contributions and evidence
 
 Use `templates/CONTRIBUTION_MATRIX.md` and `templates/CLAIM_EVIDENCE_MATRIX.md`.
 
-- Prefer two to four distinct, falsifiable contributions.
+- Use distinct, falsifiable contributions at the chosen manuscript's granularity. Two to four are common planning candidates; a source-matched focused Letter can use one principal contribution rather than manufacturing extra items.
 - Reject “many experiments,” “integrated framework,” routine algorithm use, or unspecified performance improvement as standalone contributions.
 - Mark a major unsupported claim `CLAIM_WITHOUT_EVIDENCE`; never hide it with polished language.
 - Require ablation, robustness, generalization, runtime, theory, or physical validation only when the claim and routed rules require them.
@@ -121,7 +133,7 @@ For a whole paper or multi-figure request, read `references/FIGURE_DESCRIPTION_T
 
 For UAV visual design, the user's 29 preferred papers are the primary style and construction library: read `references/preferred_29/STYLE_PLAYBOOK.md`, then retrieve specific figures with `scripts/query_visual_cases.py`. Use `references/preferred_29/INDEX.md` for paper stories and the 281 figure records; select detailed cards rather than loading them all. Deliberately adapt their color relationships, grouping, pictograms, connectors and panel composition to the manuscript's actual mechanism. These visual sources may be used regardless of their publication venue; the RA-L writing exclusion does not exclude a supplied visual reference. Older cases supplement missing relationships. For learning-based UAV work read `references/preferred_29/RL_FIGURE_PLAYBOOK.md`; actual RL training normally needs a learning-process figure considered alongside final task, safety, ablation and transfer evidence. A network or a frozen zero-shot model alone does not imply RL.
 
-For a method framework, network architecture, system architecture or algorithm overview, read the user's dedicated [framework-style module](modules/ieee-trans-framework-style/SKILL.md) and inspect its `assets/reference-framework-style.jpg`. Use its method-extraction and node/edge templates, compact horizontal groups, subtle fills, dashed group boundaries and serif labels. This more specific reference controls framework styling; use the preferred-29 cases for relevant scientific construction and evidence. Derive every module and connection from the current manuscript, not the reference network. Apply this module only to framework figures; other figure families retain their existing workflows. Keep raster previews and editable vector deliverables accurately labeled.
+For a method framework, network architecture, system architecture or algorithm overview, read the user's dedicated [framework-style module](modules/ieee-trans-framework-style/SKILL.md). Inspect the selected preferred-29 original figure crop and transfer its actual geometry, hierarchy, typography, palette, pictograms and connectors. The historical `assets/reference-framework-style.jpg` is an optional anchor, not a universal override. Derive every module and connection from the current manuscript. Apply this module only to framework figures; other figure families retain their existing workflows. Keep raster previews and editable vector deliverables accurately labeled.
 
 A title alone is enough to produce a concrete `PROVISIONAL_FROM_TITLE` visual plan and editable mechanism/layout sketch. Separate known inputs, design assumptions and unresolved mechanisms. Do not require a full manuscript to begin; do not turn assumed mechanisms into claims or invent results. See `examples/preferred_uav_rl/PAPER_FIGURE_DESCRIPTION.md` for a worked example.
 
@@ -147,7 +159,7 @@ Use `templates/PAGE_BUDGET.md` with the target journal, paper type, and complexi
 
 ## Write sections
 
-Before prose, fill `templates/SECTION_BRIEF.md`. Re-route exemplars for the current section; do not reuse one fixed set across the paper.
+Before prose, fill `templates/SECTION_BRIEF.md` with the selected preferred manuscript's section/paragraph moves and source pages. Preserve the main style lock across the paper; re-route supporting exemplars only when their scientific role changes.
 
 - Ground every technical statement in user evidence or a verified reference.
 - Use exemplars for architecture and evidence roles, never sentence copying.

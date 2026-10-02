@@ -1,6 +1,6 @@
 # ieee-trans-skill
 
-A portable Codex skill for planning, drafting, auditing, and revising long-form IEEE Transactions manuscripts in UAV autonomy, robotics, navigation and planning, trajectory optimization, reinforcement learning, multi-agent decision making, and control.
+A portable Codex skill for source-matched IEEE Transactions and Letter papers in UAV autonomy, robotics, planning, reinforcement learning, multi-agent decision making and control.
 
 The repository contains the skill, its derived Knowledge and Exemplar resources, and the **29 user-preferred source PDFs** in [papers/preferred_29](papers/preferred_29). These PDFs total about 249 MiB and match the versions used in the figure-reading records. The older 120-paper corpus remains separate.
 
@@ -28,7 +28,9 @@ The repository contains the skill, its derived Knowledge and Exemplar resources,
 提炼真实输入、核心机制、分支和输出，保持连线准确。
 ```
 
-子模块也可单独读取 [SKILL.md](modules/ieee-trans-framework-style/SKILL.md) 使用。它的五个文件按用户提供的压缩包原样保留；加入项目不代表已经另外安装到个人全局技能目录。
+子模块也可单独读取 [SKILL.md](modules/ieee-trans-framework-style/SKILL.md) 使用。2026-10-02 已改为先选真实论文原图，再锁定布局、字体、配色、机制小图与连线。历史单张参考图保留为可选范本，不统一覆盖所有图。
+
+全文工作从 [范本匹配流程](workflows/13_REFERENCE_MATCHED_PRODUCTION.md) 开始。已加入 [29 篇稿件指纹](references/preferred_29/manuscript_profiles/INDEX.md)、[写作组织指南](references/preferred_29/MANUSCRIPT_STYLE_PLAYBOOK.md)、[实验与引用指南](references/preferred_29/EVIDENCE_AND_CITATION_PLAYBOOK.md) 和 [8 个原图锚点](references/preferred_29/framework_anchors/INDEX.md)。RA-L/Letter 使用紧凑来源和本地路由；文章形态与预印本页数分开判断。
 
 未安装也可在本地任务中要求 Codex 读取本仓库的 `SKILL.md` 并按其中流程执行。网页版使用 [图片规划协议](references/WEB_GPT_FIGURE_PLANNER.md)，随手稿上传；如需重新检查参考原图，还要提供相应 PDF/图页。
 

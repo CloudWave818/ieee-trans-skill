@@ -14,6 +14,8 @@
 - Is runtime measured for efficiency, latency, onboard, or real-time claims?
 - Is physical validation required and available for deployment claims?
 - Are failures, trade-offs, complexity, and reproducibility addressed?
+- Can each central result be traced through the actual run IDs, log fields, filtering/aggregation, metric denominator, uncertainty and plotted/table value to its caption and prose? Baseline names and evaluation conditions must remain identical along that chain.
+- Does the decisive controlled comparison test the claimed mechanism, and would a null or negative outcome lead to narrowing the claim? A proposed protocol is not a completed experiment.
 
 ## Blockers
 

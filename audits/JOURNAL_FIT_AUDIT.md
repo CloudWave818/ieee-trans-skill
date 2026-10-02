@@ -3,8 +3,8 @@
 ## Checks
 
 - Is one target journal explicitly locked?
-- Is its profile present in `IEEE_TRANS_KNOWLEDGE/07_JOURNALS/`?
-- Is RA-L excluded?
+- Is its profile present in `IEEE_TRANS_KNOWLEDGE/07_JOURNALS/`, or is the RA-L local overlay explicitly loaded?
+- Is article form recorded independently of the reference PDF page length, and does a Letter use a compact matched source?
 - Does the paper's scientific object and contribution match the venue scope?
 - Does the theory/system balance match the paper type and journal-specific rule?
 - Are physical validation, runtime, assumptions, proofs, or implementation emphasized only when applicable?
@@ -15,7 +15,7 @@
 
 ## Blockers
 
-Mark `BLOCKER` for out-of-scope venue choice, RA-L routing, or a central evidence mismatch that cannot be corrected without changing the paper.
+Mark `BLOCKER` for unsupported venue requirements presented as verified, a Letter silently expanded into a Transactions blueprint, or a central evidence mismatch that cannot be corrected without changing the paper.
 
 ## Output
 

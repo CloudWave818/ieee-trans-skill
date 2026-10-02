@@ -7,6 +7,7 @@ from pathlib import Path
 
 DEFAULT_CASES = Path(__file__).resolve().parents[1]/'references/visual_cases/cases.json'
 PREFERRED_CASES = Path(__file__).resolve().parents[1]/'references/preferred_29/cases.json'
+ANCHORS = Path(__file__).resolve().parents[1]/'references/preferred_29/framework_anchors/anchors.json'
 
 # Match the scientific relationship in the figure, not merely the paper's topic.
 ALIASES = [
@@ -89,6 +90,14 @@ if __name__ == '__main__':
     if args.source=='legacy' or (args.source=='auto' and not results):
         source='LEGACY_VISUAL_CASES'
         results = query(json.loads(DEFAULT_CASES.read_text(encoding='utf-8')), args.terms, args.limit)
+    if ANCHORS.is_file():
+        originals={a['case_id']:a for a in json.loads(ANCHORS.read_text(encoding='utf-8')) if a['anchor_id']==a['case_id']}
+        for result in results:
+            if result['case_id'] in originals:
+                a=originals[result['case_id']]
+                result['original_crop']=a['crop_path']
+                result['measured_style_card']=a['card_path']
+                result['style_priority']='Actual original crop and geometry override older sketch recipes.'
     print(json.dumps({'status':'MATCHES' if results else 'NO_MATCHING_INSPECTED_REFERENCE',
                       'source_set':source,'results':results,
                       'use':'Read the card and its limits; lexical relevance is not scientific applicability. Title-only plans remain provisional.'},ensure_ascii=False,indent=2))

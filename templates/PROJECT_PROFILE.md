@@ -15,6 +15,8 @@
 | Journal status (`LOCKED`/`UNDECIDED`) |  |  |  |
 | Research domains (2–4) |  |  |  |
 | Primary paper type |  |  |  |
+| Article form (LETTER / TRANSACTIONS / CONFERENCE / OTHER / UNDECIDED) |  |  |  |
+| Preferred main paper / source pages / STYLE_LOCK location |  |  |  |
 | Secondary paper types |  |  |  |
 | Method type |  |  |  |
 | Application system |  |  |  |

@@ -7,7 +7,7 @@ Require research architecture, contributions, claim–evidence matrix, experimen
 ## Procedure
 
 1. Copy `templates/PAPER_BLUEPRINT.md`.
-2. Choose sections by scientific function; split Problem Formulation, Preliminaries, or Related Work only when the section creates a reusable contract.
+2. Begin with the locked preferred source's exact section tree, relative space and figure sequence from its manuscript profile. Map these units to the new scientific functions; split, merge or move only with a content or target-format reason. Record deviations, including main-text versus supplementary boundaries. Letter and Transactions use distinct selected blueprints.
 3. For every section and subsection, record purpose, scientific question, required content/evidence, figures, tables, equations, input dependencies, expected length, and both transitions.
 4. Map every contribution and major claim to at least one section and evidence location.
 5. Verify that assumptions appear before use, mechanisms before effects, and evidence after the relevant setup.

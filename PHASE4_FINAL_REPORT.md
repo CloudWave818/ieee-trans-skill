@@ -1,5 +1,7 @@
 # Phase 4 Final Report
 
+Historical build report. The 2026-10-02 revision in `workflows/13_REFERENCE_MATCHED_PRODUCTION.md` supersedes the original RA-L exclusion and generic presentation priority described below. Current reference matching uses 29 manuscript/evidence profiles and actual framework crops; see `validation/REFERENCE_MATCH_IMPROVEMENT_REPORT.md` for the new audit.
+
 Status: `PHASE 4 IEEE TRANS WRITING SKILL CONSTRUCTED / READY FOR REAL-PAPER VALIDATION`
 
 ## 1. Skill architecture

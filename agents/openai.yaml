@@ -1,4 +1,4 @@
 interface:
-  display_name: "IEEE Transactions Paper Architect"
-  short_description: "Plan IEEE evidence and figures in preferred UAV styles"
-  default_prompt: "Use $ieee-trans-skill to turn my topic or manuscript into a concrete PAPER_FIGURE_DESCRIPTION.md, prioritizing the user-preferred 29 UAV figure references and separating design assumptions from real evidence."
+  display_name: "IEEE Reference-Matched Paper Architect"
+  short_description: "Match papers and figures to 29 source references"
+  default_prompt: "Use $ieee-trans-skill to develop my topic or research plan into a paper matching the selected original reference in structure, writing, figures and experiments, with a concrete STYLE_LOCK and source-comparison renderings."
