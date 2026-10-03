@@ -22,6 +22,9 @@ These are interpretation roles, not a fixed sentence order or a requirement to i
 - Distinguish observation from causal explanation.
 - State exceptions, failure cases, and trade-offs; do not cherry-pick only the best setting.
 - Avoid repeated “Fig. X shows” or “Table X shows” openings followed by number transcription.
+- Keep the experiment question and controlled contrast visible; a chronological account of operations cannot substitute for interpretation. Preserve required setup facts in an actual reader-visible location.
+- State common scope once where it is established, and local limits where they affect the conclusion. Consolidate redundant disclaimers without suppressing failures, contrary evidence or untested main claims.
+- If granular values are omitted from prose, retain necessary evidence in the actual manuscript assets; an internal data ledger is not a reader-visible destination.
 - Compare normalized conditions and disclose unavailable statistics.
 - Use “supports,” “is consistent with,” or scoped language when direct causal evidence is absent.
 - Do not promote a simulation result to real-world deployment or an in-distribution test to strong generalization.

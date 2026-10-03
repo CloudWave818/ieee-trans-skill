@@ -27,7 +27,8 @@ Require a named target section, relevant project evidence, and either a Paper Bl
 - Use journal and domain profiles to adjust emphasis, not to imitate stock phrasing.
 - Reproduce the selected source's rhetorical duties, relative depth and paragraph transitions using new scientific content; do not copy source sentences or claims. Use the preferred evidence/citation playbook to choose citation grouping and placement, then verify every actual reference for the new manuscript.
 - Explain supported reasons for technical choices and what equations or results permit the reader to conclude. Retain necessary implementation detail; do not replace all method paragraphs with inventories of named components.
-- Mark unsupported passages with the approved missing-state label rather than filling them.
+- Repair repetitive self-defense and procedure-led experimental narrative using the applicable tests in `PROSE_ARGUMENT_PLAYBOOK.md`. Preserve scientific conditions, fair-comparison limits, negative findings and reproducibility details; keep production audit states outside the manuscript.
+- Mark unsupported passages in working drafts or author notes with the approved missing-state label rather than filling them. Resolve the evidence gap or narrow the claim to supported facts before final manuscript prose; production labels are not submission text, and deleting a label does not resolve the gap.
 
 ## Section-specific rules
 

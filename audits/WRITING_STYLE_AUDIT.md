@@ -7,6 +7,9 @@
 - Have the selected source's actual adjacent sentences informed subject/predicate, information order, condition scope, antecedents, comparison/numeric roles and calibrated evidence strength, using `references/preferred_29/SENTENCE_CRAFT_PLAYBOOK.md`?
 - Do results numbers answer a scientific judgment with an explicit comparator, statistical unit and direction, retaining necessary magnitude, uncertainty and denominators rather than simply listing or deleting values?
 - Are observation, supported inference, author hypothesis and proof distinguished? Does stylistic tightening preserve assumptions, counterexamples, lack of benefit and experimental limits?
+- Does repeated defensive prose add a necessary condition or evidence boundary? Consolidate repetition and internal audit language without hiding limitations, unfair comparisons or negative results.
+- Are experiments organized around research questions and controlled comparisons, with necessary setup/replication detail preserved and results interpreted instead of narrated as an execution log?
+- When detailed values leave a paragraph, is their necessary evidence available to the manuscript reader at an actual location? Compression or an internal ledger alone does not establish stronger prose.
 - Can the reader follow what each next sentence resolves or adds? If prose units can be freely reordered, is that an appropriate setup/list or an argument missing dependencies?
 - Do technical choices have supported reasons, and do key equations lead to a calculation, consequence or next step beyond symbol definitions?
 - Does each citation support its nearby proposition with an accurate scope, rather than a bundle supporting unrelated criticisms?

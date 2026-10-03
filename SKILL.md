@@ -167,6 +167,7 @@ For reference-matched prose or a complaint that writing reads like a manual, rea
 - Use exemplars for architecture and evidence roles, never sentence copying.
 - For results, check observation, comparison, evidence, supported explanation and scientific consequence as applicable roles. The inspected donor and experiment question control their order, grouping and emphasis; each paragraph need not contain every role.
 - Do not manufacture causal explanations. Connect explanations to the method, assumptions, experiment, or data.
+- Repair defensive repetition and experiment-as-procedure prose using the preferred prose guide. Preserve necessary scope, fair-comparison conditions, negative findings and replication detail; internal audit states stay in working notes.
 - Use `Problem → Gap → Challenge → Insight → Approach → Contributions` as an introduction coverage check after the architecture is stable; the inspected donor and the new argument control order, grouping and contribution form.
 - Draft conclusion, abstract, and title only from stabilized claims and results.
 
