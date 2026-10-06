@@ -33,7 +33,7 @@ Exact labels and notation:
 
 Original reference: [paper ID, figure, PDF page and attached actual crop; no sketch substitute].
 
-Layout to retain: [actual aspect ratio, normalized zone bounds, ordering, rows/columns and whitespace copied from the selected source's visual arrangement].
+Layout to retain: [source aspect ratio, normalized zone bounds, ordering, rows/columns and whitespace]. Separately state [target publication span, final physical width × height, target aspect ratio and any necessary panel/module reflow]. Preserve the reference grammar; do not stretch it or shrink a wide diagram into a column with unreadable labels.
 
 Typography and shapes to retain: [observed font family/hierarchy, border treatment, corners, group nesting, label placement]. Do not impose serif fonts, dashed groups, three layers or a horizontal flow when the selected reference uses another arrangement.
 
@@ -49,7 +49,7 @@ Each miniature must explain its named scientific relationship; do not fill every
 
 Keep connectors short and clean, using explicit ports and mostly orthogonal routing. Place supported feedback or recurrent paths around the outside. Avoid crossings, and do not allow arrows to pass through text. Distinguish training-only edges from online data flow when the method actually contains both.
 
-Keep labels concise and readable at the specified final column width. Align same-level modules and stage titles. Use a small legend only when needed. Keep the caption outside the figure image.
+Keep labels concise and readable at the specified final publication width. Align same-level modules and stage titles. Use a small legend only when needed. Keep the caption outside the figure image.
 
 ## Hard exclusions
 
@@ -60,6 +60,6 @@ Do not turn the figure into a sparse row of generic boxes, a slide deck, a dashb
 Any illustrative local distribution or curve must be schematic, not presented as measured evidence. Do not invent physical experimental photographs.
 
 Final canvas and label settings:
-[Actual target aspect ratio, output dimensions where applicable, typography hierarchy, language, and any final-width constraints.]
+[Publication span SINGLE_COLUMN / DOUBLE_COLUMN / PAGE_WIDTH; final width × height in mm from the actual template or a labeled provisional assumption; target aspect ratio and landscape/square/portrait shape; panel grid; output pixels where applicable; final font/line sizes, language and manuscript insertion width. Span and shape are independent.]
 
 Render the specified method, not a generic example of a plausible method.

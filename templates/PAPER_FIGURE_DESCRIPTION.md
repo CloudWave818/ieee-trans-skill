@@ -31,6 +31,19 @@ Description status audits the specification only. Actual rendering, final-width 
 | ID | Existing/proposed | Current action (`KEEP`/`REDESIGN`/`MERGE`/`DELETE`/`ADD`) | Proposed number/title | Primary family | Exact subtype | Rendering route (`DATA_PLOT`/`VECTOR_SCHEMATIC`/`PHOTO_COMPOSITE`/`TABLE`/`NOT_READY`) | 100-paper corpus rule ID(s), if applicable | Manuscript trigger | Main claim | Source inputs | Section | Width | Status |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 
+## Publication layout contract
+
+- Manuscript layout: two-column / single-column / undecided
+- Geometry source (template/file/options or explicit provisional assumption):
+- Actual single-column width / full text width / usable height, mm:
+- Layout status: template-verified / provisional
+- Single-column and cross-column roles; reasons for any all-wide group:
+
+| Figure ID | Publication span (`SINGLE_COLUMN`/`DOUBLE_COLUMN`/`PAGE_WIDTH`) | Final width × height, mm | Shape/ratio and panel rows × columns | Why this span; why a smaller arrangement would lose information | Intended placement |
+|---|---|---|---|---|---|
+
+Apply the mixed-width decisions in [figure workflow](../workflows/06_FIGURE_TABLE_DESIGN.md). Copy each row's geometry into its figure block and executor handoff. These are publication dimensions, not screen-preview pixels; mark assumptions provisional when no template is available.
+
 ## Reference figure-pattern evidence
 
 For UAV figures prioritize the user's preferred 29. Deliberately adapt their color relationships, grouping, pictogram grammar, connectors and panel composition to manuscript-specific objects and mechanisms. Identify the exact borrowed construction and changes. Do not pass reference photographs, measured curves or claims off as the author's evidence.
@@ -93,9 +106,12 @@ Describe exactly what the finished figure should look like from left to right an
 
 ### D. Canvas and panel layout
 
-- Target width: one-column / two-column / page-wide
-- Target aspect ratio:
+- Publication span: `SINGLE_COLUMN` / `DOUBLE_COLUMN` / `PAGE_WIDTH`
+- Final width × height, mm; actual template geometry or provisional basis:
+- Span rationale; compact layout considered before choosing cross-column:
+- Target aspect ratio and shape: landscape / square / portrait (independent of span)
 - Panel grid and reading order:
+- Old-to-new panel-ID mapping and caption/text-callout updates required by reflow:
 - Shared axes/legend/colorbar:
 - Minimum final text size:
 - Layout sketch (required for key mechanisms/composites; no invented result curves):
@@ -181,6 +197,8 @@ Compose only the supplied real images/frames into the specified panel order. App
 ```
 
 - Required source bundle:
+- Locked publication span, final width × height, panel grid and minimum final font size copied from D:
+- Manuscript insertion environment/control and width expression:
 - Editable output expected:
 - Preview/export expected:
 - Visually flexible elements:
@@ -197,6 +215,7 @@ Compose only the supplied real images/frames into the specified panel order. App
 - Editable draft and preview paths; executor and supplied brief/bundle:
 - Execution status: `NOT_EXECUTED` / `DRAFT_RENDERED` / `VISUALLY_CHECKED` / `INDEPENDENT_HANDOFF_TESTED`:
 - Final-width inspection evidence; clarification count and unresolved guesses:
+- Actual exported dimensions / inserted span and scale; deviation from the locked geometry and repair:
 - Errors found, repair and rerun result:
 
 ### H. Caption and manuscript contract
@@ -231,6 +250,7 @@ Compose only the supplied real images/frames into the specified panel order. App
 - [ ] Physical/qualitative evidence is traceable to real sources.
 - [ ] Terminology matches the manuscript, equations, algorithms, and ledger.
 - [ ] Readable at final IEEE column size and in grayscale.
+- [ ] Declared, exported and inserted span/size agree; labels remain readable at that size. Unexecuted stages stay explicitly pending.
 - [ ] Caption describes the visible evidence without overclaiming.
 
 ---
@@ -250,4 +270,5 @@ Compose only the supplied real images/frames into the specified panel order. App
 - [ ] Every `PHOTO_COMPOSITE` has provenance for every source.
 - [ ] Missing inputs are labeled rather than fabricated.
 - [ ] Visual encodings and canonical terminology remain consistent across the paper.
+- [ ] Group layout includes justified single-column/cross-column choices; an all-wide group has explicit reasons, not a shared landscape default.
 - [ ] Final captions and in-text interpretations are planned.

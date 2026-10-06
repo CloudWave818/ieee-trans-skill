@@ -35,6 +35,16 @@
 | ID | Primary family | Exact subtype | Rendering route | Priority | Scientific question | Evidence role | Claim/contribution | Data dependency | Related section | Column span | Panel count | Description block | Caption function | What it proves | Loss if removed | Status |
 |---|---|---|---|---|---|---|---|---|---|---|---:|---|---|---|---|---|
 
+## Publication layout
+
+- Manuscript layout and actual geometry source; provisional assumptions if unavailable:
+- Single-column width / full text width / usable height, mm:
+
+| Asset ID | Publication span | Final width × height, mm | Shape/ratio | Panel rows × columns | Span rationale and intended placement |
+|---|---|---|---|---|---|
+
+Use [the figure workflow](../workflows/06_FIGURE_TABLE_DESIGN.md) to mix widths by scientific role. Keep canvas shape separate from span and carry these dimensions into each brief, export and manuscript insertion. Record pending rendering checks honestly.
+
 ## Sequence
 
 | Order | Asset ID | Proposed number | Argument stage | Why here | Transition to next asset |
@@ -72,4 +82,5 @@
 - Figures missing from `PAPER_FIGURE_DESCRIPTION.md`:
 - Data plots without source-data schema:
 - Schematics without node-edge specification:
+- Unexplained all-wide group or mismatched plan/export/insertion spans:
 - Photo composites without real-source provenance:

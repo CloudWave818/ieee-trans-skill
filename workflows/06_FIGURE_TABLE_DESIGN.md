@@ -117,6 +117,19 @@ Use `MISSING_INPUT`, `NEEDS_EXPERIMENT`, or `NEEDS_AUTHOR_DECISION` instead of i
 
 For key mechanism and composite figures, add a layout sketch with panel proportions and an explicit bottleneck → changed operation → observable consequence chain. Specify collection fields, clocks, synchronization tolerance, event IDs and representative-run selection before experiments. See the evidence reference for the full contract.
 
+### 6a. Lock publication width and mix the figure group
+
+Treat publication span and canvas shape as separate decisions. A single-column figure can be landscape, square or portrait; a cross-column figure can be a wide overview or a compact multipanel grid. Do not infer either decision from the source image's pixel dimensions.
+
+1. Read the actual manuscript/template geometry: single-column width, full text width, usable height and class/options. Record the source and units. When it is unavailable, mark dimensions `PROVISIONAL`; 85 mm single-column and 175 mm cross-column may be used as drawing assumptions, never as universal IEEE requirements. Replace them when the real template is available. This mixed-span preference applies to two-column manuscripts, not single-column publication layouts.
+2. Assign each figure `SINGLE_COLUMN` or `DOUBLE_COLUMN`, its final width × height in mm, width/height ratio, panel rows × columns, span reason and intended section/placement. Use `PAGE_WIDTH` only for a genuinely different page layout. Record the choices in one group-level layout table and carry them unchanged into the relevant per-figure brief and handoff.
+3. For this user's two-column papers, normally keep the dense method overview/framework cross-column and landscape. Start later compact comparisons, ablations, robustness/runtime curves, local mechanism views, representative trajectories and platform views at single-column width. Enlarge only when scientific detail, a common comparison, spatial extent or synchronized panels needs the extra width. Preserve a compact inspected framework as single-column when that is the better fit. No fixed count or single-/double-column ratio is required.
+4. Choose panel packing from the reading relationship. At single-column width, consider vertically stacked panels with a shared legend/x-axis; use a compact 2×2 grid only when labels and objects remain readable. More than two panels does not automatically require cross-column width. Keep related evidence together; do not split each metric into another figure merely to create a width mix.
+5. Recompose for the selected span before export: arrange panels/modules, shorten labels without changing terms, place shared legends and set final physical font/line sizes. Never achieve single-column placement by stretching the source aspect ratio, shrinking a wide master until its labels become tiny, cropping scientific objects or discarding comparison detail. Preserve reference visual grammar while documenting necessary layout changes. When panel order/grouping changes, map old to new panel IDs and synchronize caption and text callouts before inserting the new asset; a layout-only task records this dependency without silently rewriting the scientific text.
+6. Transfer final geometry to the executor and insertion code. In a two-column LaTeX manuscript, `figure` normally uses the actual `\columnwidth`; `figure*` uses the actual `\textwidth`. Inside subfigures/minipages use their local `\linewidth`, not an unrelated outer width. For Word or another tool, apply the same span and physical dimensions through its layout controls. Check the actual exported bounding box and insertion scale so the final fonts/line widths match the brief.
+7. Inspect previews at their declared widths and, for a manuscript deliverable, in the actual PDF. Check labels, legends, curves/markers, panel gaps, arrows, caption and figure height together. A planning-only task records these checks as `NOT_EXECUTED`; it does not invent result plots or require manuscript compilation to pass specification readiness.
+8. Audit the whole group for usable single-column and cross-column roles and page balance. An unexplained all-cross-column group or reuse of the same wide-strip canvas for unrelated figures is `REVISE`. Landscape single-column plots are valid; do not manufacture portrait figures to satisfy a shape quota. If every figure genuinely needs cross-column width, record the per-figure scientific/layout reason and why a compact arrangement loses information; do not manufacture a single-column asset to satisfy a quota.
+
 ### 7. UAV-specific hard check
 
 For UAV papers, explicitly answer:
@@ -140,7 +153,7 @@ Ask for every asset: “What does this prove?” and “What is lost if it is re
 
 - Use figures for spatial, temporal, architectural, distributional, behavioral, or qualitative relationships.
 - Use tables for exact multi-method/multi-metric values, configurations, hardware specifications, and compact comparisons.
-- Prefer two-column width for dense architecture, more than two panels, multi-agent trajectories, or photo-plus-plot composites.
+- Use cross-column width when dense architecture, spatial detail or related panels actually need it. Panel count, multi-agent content or a photo-plus-plot label alone does not decide span; use the layout contract above.
 - Plan captions to state object, condition, encoding, metric, comparison, and visible takeaway without overstating causality.
 - Treat column span, typography, panel count, and export type as explicit design decisions.
 
@@ -158,5 +171,6 @@ Pass G5 only when:
 4. one consolidated `PAPER_FIGURE_DESCRIPTION.md` exists;
 5. every figure has an executable drawing or plotting specification, rendering route, and copy-ready handoff block;
 6. UAV physical/flight claims pass the UAV-specific hard check.
+7. Publication span, final dimensions, panel grid and span rationale are explicit and consistent across the group plan, per-figure specification and handoff; two-column figure groups do not default to unexplained all-wide layouts.
 
 This passes specification readiness only (`SPEC_READY`) for the explicitly scoped, executable artifact/panels. Returning a useful `PROVISIONAL` gap-bearing plan does not close G5. For mixed composites, specify each panel's rendering route; an available mechanism may be rendered as a planning draft while missing empirical panels and the full evidence figure remain NOT_READY. Record rendered preview, final-size inspection and independent handoff separately. Never infer those statuses from G5 or a validation script.

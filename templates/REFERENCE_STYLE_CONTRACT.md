@@ -37,6 +37,7 @@ Compare only the closest 2–3 candidates when an original was not specified. A 
 |---|---|---|---|---|
 
 - Source aspect ratio and target width:
+- Publication span / final width × height / actual template geometry or provisional basis; span and orientation chosen independently:
 - Groups, nested modules, pictograms and whitespace:
 - Font family / title-label hierarchy / final physical sizes:
 - Fill / outline / solid-dashed relations:
@@ -51,10 +52,12 @@ Compare only the closest 2–3 candidates when an original was not specified. A 
 
 ## Whole-paper figure plan (only for whole-paper work)
 
-|Planned figure|Question it answers|Purpose: overview / mechanism / network / training-deployment / evidence|Specific original / source page|Visual rules shared across the paper|Content basis|
-|---|---|---|---|---|---|
+|Planned figure|Question it answers|Purpose: overview / mechanism / network / training-deployment / evidence|Specific original / source page|Publication span / final W×H / panel grid / rationale|Visual rules shared across the paper|Content basis|
+|---|---|---|---|---|---|---|
 
 Use only needed figure types. Layout may differ by purpose; terminology, label hierarchy, line weights, variable colors and caption rules remain consistent. Never apply one tested framework to every paper or every figure.
+
+For a two-column manuscript, explicitly plan a usable single-column/cross-column mix and follow the width contract in [workflow 06](../workflows/06_FIGURE_TABLE_DESIGN.md); do not inherit one wide framework canvas for the whole group.
 
 ## Evidence mapping (required only for experiment/results work)
 

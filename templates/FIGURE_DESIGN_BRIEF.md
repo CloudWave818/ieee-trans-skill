@@ -20,8 +20,10 @@
 ## Final layout
 
 - Figure type: architecture / algorithm / scenario / trajectory / time series / comparison / robustness / hardware / flight sequence / composite / other
-- Target width: one-column / two-column / page-wide
-- Target aspect ratio:
+- Publication span: `SINGLE_COLUMN` / `DOUBLE_COLUMN` / `PAGE_WIDTH`
+- Final width × height, mm; template source or provisional assumption:
+- Why this span; compact arrangement considered:
+- Target aspect ratio and landscape/square/portrait shape (independent of span):
 - Panel grid and reading order:
 - Shared legend/axis strategy:
 - Minimum final text size:
@@ -113,12 +115,15 @@ Complete when applicable.
 - Elements that must remain exact:
 - Negative constraints / do not draw:
 - Expected editable output:
+- Locked publication span, final width × height, panel grid and final font/line sizes:
+- Manuscript insertion environment/control and width expression:
 
 ## Acceptance checks
 
 - [ ] Supports one identifiable claim.
 - [ ] Every panel has a distinct evidence role.
 - [ ] Readable at final IEEE column size.
+- [ ] Brief, export and manuscript placement use the same span/physical size; pending execution stages are stated.
 - [ ] Axes, units, legends, symbols, and panel labels are complete.
 - [ ] Baseline comparison and uncertainty are fair where applicable.
 - [ ] Photos, screenshots, and trajectories are traceable to the experiment.

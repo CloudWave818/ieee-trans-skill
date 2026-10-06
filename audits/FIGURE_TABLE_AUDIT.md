@@ -36,6 +36,15 @@
 
 For a whole-paper deliverable, inspect the actual figure group in manuscript context: overview, necessary mechanism views, experimental setup and available evidence figures. Compare their order, relative space, captions and first text callouts with the selected source. Do not prescribe every figure type or the donor's figure count. Planned data plots are not rendered evidence, and one completed framework does not establish the appearance of the complete paper.
 
+## Publication width and mixed figure group
+
+- Are single-column width, full text width and available height obtained from the actual template, or explicitly provisional?
+- Are publication span, physical width × height, canvas shape, panel grid and span rationale recorded separately? Single-column does not mean portrait, and cross-column does not mean landscape.
+- Does the two-column paper use single-column assets where compact questions allow them, with cross-column overviews/composites where needed? Mark an unexplained all-wide group or repeated wide-strip canvas `REVISE`; landscape single-column plots are valid. Check scientific reasons rather than imposing a count or shape ratio.
+- Was a wide composition recomposed for single-column placement instead of merely shrunk? Inspect final-size labels, legends, line widths, marker separation and scientific detail. Panel count alone cannot justify cross-column width.
+- Do plan → handoff → exported bounding box → actual manuscript span/scale agree? In two-column LaTeX, check `figure`/`figure*`, the relevant `\columnwidth`/`\textwidth`, and local `\linewidth` inside panels; use equivalent controls in other editors.
+- Do figure height, caption and first callout fit the manuscript page without excessive blanks or a chain of unnecessary wide floats? Record actual preview/PDF pages for executed checks; planning-only tasks keep export/insertion checks `NOT_EXECUTED`.
+
 ## Blockers
 
 Mark `BLOCKER` for misleading encoding, wrong or invented data, synthetic physical evidence presented as real, missing central evidence, irreproducible comparison conditions, or a visual contradicting the text.
