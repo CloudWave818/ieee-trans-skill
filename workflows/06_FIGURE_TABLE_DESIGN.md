@@ -134,6 +134,8 @@ Treat publication span and canvas shape as separate decisions. A single-column f
 
 When a real-world experiment needs detailed scene or capture instructions, use `../references/preferred_29/real_world_scenes/INDEX.md`, its `PLAYBOOK.md` and workflow14. Embed the detailed environment/object/timeline/camera/composite fields in the physical figure entry, or link one consolidated filled scene brief. Supply a complete external-model description for a proposed illustrative scene separately from a real-source evidence assembly. A planning illustration may describe proposed ghost poses; PHOTO_COMPOSITE requires authenticated actual frames. Scene records distinguish real flight, other hardware, recorded datasets, simulation and renderer per source panel.
 
+For a photographic scene or a detailed AI handoff, also read `../references/preferred_29/real_world_scenes/PHOTOGRAPHIC_HANDOFF.md`. Expand the selected environment's materials, lighting, depth, camera and physical scale; keep the standalone model prompt complete even if the author-facing explanation is short. Separate the photographic panel from data plotting/vector annotation duties.
+
 For UAV papers, explicitly answer:
 
 - Is the platform itself visible and annotated?
