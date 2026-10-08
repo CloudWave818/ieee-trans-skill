@@ -165,6 +165,8 @@ For a training convergence curve additionally state training versus evaluation m
 - Frames excluded and selection rule:
 - Elements that must not be generated, replaced, or beautified:
 
+For a physical-scene/flight figure, embed or link a filled [real-world experiment brief](REAL_WORLD_EXPERIMENT_BRIEF.md): indoor/outdoor choice, obstacle positions or deliberate absence, platform count, start/goal, flight events, camera/frame timing, registration, trajectory/ghost treatment and final panel dimensions. Separate proposed scene illustration from actual evidence assembly in the handoff. A scene-only request may use that brief as its sole deliverable.
+
 ### F. Visual encoding
 
 - Proposed method:

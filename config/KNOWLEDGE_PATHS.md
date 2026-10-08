@@ -17,7 +17,7 @@ Fail with `MISSING_INPUT` when neither the portable nor legacy Knowledge/Exempla
 
 ## Always inspect first
 
-For a one-figure Mode F request, apply the SKILL.md local exception: inspect the visual-case index and only the rule/profile entries that can change that figure. Do not load all five registry/control documents below merely to satisfy a full-project default.
+For a one-figure Mode F request or a scoped physical-scene/capture description, apply the SKILL.md local exception: inspect the relevant visual/scene index and only the rule/profile entries that can change that output. For scene-only work use workflow14 and the preferred-29 real_world_scenes layer; do not load all five registry/control documents below merely to satisfy a full-project default.
 
 1. `IEEE_TRANS_KNOWLEDGE/00_META/RULE_REGISTRY.csv` - active 42-rule registry.
 2. `IEEE_TRANS_KNOWLEDGE/08_SYNTHESIS/GENERAL_VS_DOMAIN_VS_JOURNAL.md` - load order and authority.
@@ -39,6 +39,7 @@ For reference-matched prose, use `references/preferred_29/PROSE_ARGUMENT_PLAYBOO
 | section writing | matching file in `02_SECTIONS/`, one writing file in `05_WRITING/`, section-routed cards |
 | claim/evidence or experiments | `03_EVIDENCE/CLAIM_EVIDENCE_SYSTEM.md`, requested evidence file, routed rules/cards |
 | figures/tables | matching files in `04_VISUALS/`, evidence needs, visual-role cards; `references/VISUAL_DESIGN_EVIDENCE.md`; UAV style first from `references/preferred_29/STYLE_PLAYBOOK.md` and selected preferred cards; old `references/visual_cases/` supplements |
+| detailed real-world scene/flight/capture/presentation text | `workflows/14_REAL_WORLD_SCENE_AND_CAPTURE.md`, `templates/REAL_WORLD_EXPERIMENT_BRIEF.md`, preferred-29 `real_world_scenes/INDEX.md` and `PLAYBOOK.md`; selected cases and actual bundled source pages; no full-paper inventory for a local request |
 | page budget | `01_GENERAL/PAGE_AND_SPACE_BUDGET.md`, paper-type route, journal profile |
 | reviewer audit | rule registry, target journal, claim/evidence artifacts, `audits/REVIEWER_AUDIT.md` |
 

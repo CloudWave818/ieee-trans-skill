@@ -6,7 +6,7 @@ Require a provisional claim–evidence matrix. Use for Mode F or before a full P
 
 ## Required output levels
 
-Produce all three levels unless the user explicitly asks for only one figure.
+Produce all three levels unless the user explicitly asks for only one figure or a scoped real-experiment scene/presentation description. For the latter use [workflow14](14_REAL_WORLD_SCENE_AND_CAPTURE.md) and its filled brief; do not force a full-paper inventory or render an image.
 
 1. **Full-paper visual architecture** — how many figures/tables are justified, which roles are mandatory or optional, and how Fig. 1 through Fig. N carry the paper's argument.
 2. **Consolidated figure-description document** — one project-level `PAPER_FIGURE_DESCRIPTION.md` containing the figure inventory and a complete, AI-readable specification for every planned figure.
@@ -131,6 +131,8 @@ Treat publication span and canvas shape as separate decisions. A single-column f
 8. Audit the whole group for usable single-column and cross-column roles and page balance. An unexplained all-cross-column group or reuse of the same wide-strip canvas for unrelated figures is `REVISE`. Landscape single-column plots are valid; do not manufacture portrait figures to satisfy a shape quota. If every figure genuinely needs cross-column width, record the per-figure scientific/layout reason and why a compact arrangement loses information; do not manufacture a single-column asset to satisfy a quota.
 
 ### 7. UAV-specific hard check
+
+When a real-world experiment needs detailed scene or capture instructions, use `../references/preferred_29/real_world_scenes/INDEX.md`, its `PLAYBOOK.md` and workflow14. Embed the detailed environment/object/timeline/camera/composite fields in the physical figure entry, or link one consolidated filled scene brief. Supply a complete external-model description for a proposed illustrative scene separately from a real-source evidence assembly. A planning illustration may describe proposed ghost poses; PHOTO_COMPOSITE requires authenticated actual frames. Scene records distinguish real flight, other hardware, recorded datasets, simulation and renderer per source panel.
 
 For UAV papers, explicitly answer:
 

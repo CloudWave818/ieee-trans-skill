@@ -1,6 +1,6 @@
 ---
 name: ieee-trans-skill
-description: Draft, revise, and design IEEE Transactions or Letter papers in UAVs, robotics, planning, RL/MARL and control using the user's 29 reference papers. Match selected originals in manuscript structure, writing rhythm, figures, framework layout, captions, citations and experiment organization; turn a topic or research plan into a source-matched blueprint and concrete visuals while keeping claims and results grounded in the new project. Use for full papers, sections, experiments and figure work; exclude grammar-only edits without reference-style or scientific-architecture decisions.
+description: Draft, revise, and design IEEE Transactions or Letter papers in UAVs, robotics, planning, RL/MARL and control using the user's 29 reference papers. Match selected originals in manuscript structure, writing rhythm, figures, framework layout, captions, citations and experiments; turn a manuscript or plan into grounded prose, visuals or a detailed real-world UAV scene, flight, capture and figure-presentation brief for another model. Use for full papers, sections, experiments and figure work; exclude grammar-only edits without reference-style or scientific-architecture decisions.
 ---
 
 # IEEE Reference-Matched Paper Architect
@@ -51,14 +51,16 @@ Never draft full prose before this diagnosis. For a tightly scoped user request,
 | B — METHOD TO PAPER | stable mechanism, incomplete manuscript | 02 → 03 → 04 → 05 → 06 → 07 → 08 |
 | C — RESULTS TO PAPER | verified results drive the paper | 04 → 10 → 06 → 08 |
 | D — DRAFT IMPROVEMENT | partial/full draft or revision | 01 diagnosis → 11 integration → targeted 09 |
-| E — EXPERIMENT DESIGN | experiments only | 04 → 05 |
-| F — FIGURE TABLE DESIGN | full-paper visual architecture, figure inventory, AI-ready figure-description Markdown, drawing briefs, figures, or tables | 04 → 06 |
+| E — EXPERIMENT DESIGN | experiments or physical scene/flight/capture planning | 04 → 05; physical-scene task → 14 |
+| F — FIGURE TABLE DESIGN | full-paper visual architecture, figure inventory, AI-ready descriptions, real-experiment presentation briefs, drawing briefs, figures, or tables | 04 → 06; physical-scene description → 14 |
 | G — JOURNAL ADAPTATION | choose or adapt to a venue | journal routing → 07 → 08 → 12 |
 | H — REVIEWER AUDIT | pre-submission or rejection-risk review | 12 |
 | I — SECTION WRITING | one named section | 09 plus the section-specific knowledge file |
 | J — FULL PAPER INTEGRATION | align a near-complete manuscript | 11 → 12 |
 
 When more than one mode applies, choose the narrowest mode that answers the request. Do not run the whole pipeline for a local task.
+
+When the user requests only a detailed real-world experiment description, use `workflows/14_REAL_WORLD_SCENE_AND_CAPTURE.md` and fill `templates/REAL_WORLD_EXPERIMENT_BRIEF.md`. This scoped brief replaces the full-paper visual inventory/G5 document for that request; no image generation or compilation is required. Use the preferred-29 `real_world_scenes/` index and playbook, inspect selected actual source figures, then describe one concrete manuscript-specific environment, object placement, flight/events, capture view, motion treatment and final single-/cross-column layout. Include a self-contained handoff for another model, distinguishing a proposed scene illustration from assembly of actual experimental evidence. Unknown measured inputs may receive explicit proposed design values without being asserted as facts. A completed description does not certify an executed flight or rendered figure.
 
 For a one-figure Mode F request, embed the relevant diagnosis and claim checks in the requested figure document. Leave the journal UNDECIDED when it does not affect this decision; do not select a venue or create a full-paper profile/budget. Retrieve one to three relevant inspected visual cases instead of loading three full-paper exemplars. Zero matching cases is permitted with an explicit MANUSCRIPT_DERIVED rationale. Load only the rules/profiles that affect this figure and audit only its applicable claims, inputs and rendering. This local exception controls the broader default routing and completion instructions below and in supporting configs/workflows; the deterministic full-project router retains its existing defaults.
 
@@ -154,6 +156,8 @@ For a mixed composite, assign a route to each panel and a whole-figure readiness
 - `NOT_READY`: the necessary data or visual source is missing; use an approved missing-state label.
 
 For UAV or autonomous-flight papers, also read `references/UAV_VISUAL_PLAYBOOK.md`. Explicitly decide whether the claims require a platform photograph, sensor/computation annotation, experiment-site overview, external flight sequence, onboard/FPV view, 2-D or 3-D trajectory, time-aligned state/control curves, formation/safety-distance view, failure or disturbance case, and simulation-to-real comparison. Do not claim a physical or flight result when the corresponding asset or source data are unavailable.
+
+For the physical layer, use `references/preferred_29/real_world_scenes/INDEX.md` and `PLAYBOOK.md` to select source-matched scenes and presentation. Run workflow14 when detailed environment/capture guidance is requested, or embed its applicable fields into the full figure description. Describe indoor/outdoor and obstacle choices from the scientific question, not visual drama. Specify whether visible UAV instances are simultaneous agents, times of one flight or independent runs. Match scene composites, algorithm panels, event sequences and synchronized traces to their evidence roles; do not make a rendered source scene or real recorded dataset stand in for closed-loop physical flight.
 
 For every asset, state what it proves and what the paper loses if it is removed. Remove, merge, or demote assets without an evidence role. If no image is generated, the completed `PAPER_FIGURE_DESCRIPTION.md` is still a required deliverable and must be sufficiently explicit for a downstream AI or researcher to execute without guessing scientific content.
 

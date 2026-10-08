@@ -135,4 +135,6 @@ Complete when applicable.
 
 For time-aligned composites, record trial IDs, representative-run selection, clocks/zero point, synchronization method/tolerance, frame/event IDs, units and coordinate transforms. See `references/VISUAL_DESIGN_EVIDENCE.md`.
 
+For a real-world UAV scene/flight brief, use [workflow14](../workflows/14_REAL_WORLD_SCENE_AND_CAPTURE.md) and embed or link the filled [scene template](REAL_WORLD_EXPERIMENT_BRIEF.md). State indoor/outdoor, obstacle/no-obstacle reasoning and placement, flight/events, camera view, temporal/comparative treatment and final panel dimensions. Give a self-contained proposed-scene illustration handoff separately from real-source evidence assembly; a description-only request stops at the complete text specification.
+
 Record specification readiness, actual editable draft/preview, final-width inspection, and independent handoff separately. Include execution questions, scientific guesses and repairs. Never call an unrendered brief visually checked.

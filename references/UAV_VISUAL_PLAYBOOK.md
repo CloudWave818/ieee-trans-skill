@@ -4,6 +4,8 @@
 
 Use this reference to plan the complete visual argument of a UAV/autonomous-flight Transactions paper and to write executable figure briefs. It does not require every paper to contain every listed figure.
 
+For the user's requested detailed real-environment descriptions, prioritize [the 29-paper scene index](preferred_29/real_world_scenes/INDEX.md) and [scene playbook](preferred_29/real_world_scenes/PLAYBOOK.md), then [workflow14](../workflows/14_REAL_WORLD_SCENE_AND_CAPTURE.md). They identify actual environments, motion/capture treatments and physical-source boundaries. The output is a concrete filled [scene brief](../templates/REAL_WORLD_EXPERIMENT_BRIEF.md): site, obstacle/no-obstacle reasoning, object coordinates, flight events, camera, single-/cross-column panel dimensions and an external-model handoff. It can be completed before an experiment is performed; a proposed illustration is labeled accordingly.
+
 ## Corpus anchor and limits
 
 The 35 A-level papers classified primarily as UAV autonomy contain a median of 10 figures, IQR 8–15, observed range 2–23. The caption classifier identifies at least 61 quantitative-result, 48 scenario, 45 trajectory, 24 problem, 17 method-framework, and 10 explicit real-world figure entries across these papers. Because 244 entries remain unclassified, these are conservative lower bounds, not complete prevalence estimates.
@@ -83,7 +85,7 @@ Usually 6–10 figures. Favor property/feasible-region illustration, controller 
 
 ### Flight sequence
 
-- Use four to six ordered frames with timestamps or phase labels.
+- Select ordered frames by meaningful task events or a justified time interval; four to six is a candidate composition, not a universal frame quota. State whether they are separate frames, same-flight composites, simultaneous agents or independent trials.
 - Keep the camera viewpoint stable when possible.
 - Mark UAV, target, obstacles, reference state, or safety boundary consistently.
 - Add an onboard/FPV row only when perception or visual servoing is part of the claim.

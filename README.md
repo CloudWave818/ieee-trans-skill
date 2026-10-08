@@ -20,6 +20,19 @@ The repository contains the skill, its derived Knowledge and Exemplar resources,
 
 只需一张图时说明图的任务，例如“只设计方法框图，写清策略动作、训练/部署边界和安全过滤器接口”。更完整的用例见 [题目驱动示例](examples/preferred_uav_rl/PAPER_FIGURE_DESCRIPTION.md)，范本入口见 [29 篇图例索引](references/preferred_29/INDEX.md)。
 
+只想规划真实实验、不直接画图时，可这样调用：
+
+```text
+使用 $ieee-trans-skill。我的手稿/研究方案在：[路径]。
+请根据论文主张和29篇真实实验范本，给一份完整的真实实验场景与展示说明。
+写清室内还是室外、障碍物有无及具体位置、几架无人机怎样飞、关键阶段、从哪里拍，
+用几张图、算法怎么分面、轨迹/叠影/透明度怎么呈现、单栏或跨栏及最终毫米宽高。
+给我一段可直接交给另一模型的详细绘制描述；已有事实与拟议实验条件分开。
+这次只写说明，不画图。
+```
+
+新[场景索引](references/preferred_29/real_world_scenes/INDEX.md)覆盖29篇、74个场景、77个展示记录；已查看89个关键PDF页及附近实验文字。它区分真实飞行、其他实机、录制数据、仿真与渲染，也区分同次飞行叠影、真实多机和多次试验后注册。[专用工作流](workflows/14_REAL_WORLD_SCENE_AND_CAPTURE.md)交付填满的场景说明与自包含提示词，允许明确拟议的场景示意；真实论文证据组装另依赖实际照片/帧与日志。说明完成不等于实验或图片已完成。源记录可用 `python scripts/validate_real_world_scenes.py` 核查。
+
 方法框架图现在接入用户提供的 [ieee-trans-framework-style 子模块](modules/ieee-trans-framework-style/README.md)，包含原始参考图片、内容提炼规则、节点—连线规格和绘图提示模板。主技能遇到方法框架图、网络/系统结构图或算法总览图时会读取它；实验数据图和实物图仍使用各自规范。可以直接这样请求：
 
 ```text

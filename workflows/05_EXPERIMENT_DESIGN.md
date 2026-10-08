@@ -29,6 +29,10 @@ For each nonclosed claim, define:
 - Require physical validation for deployment/real-world claims or a strong system/journal expectation; otherwise state the simulation boundary.
 - Use proof or controlled analysis, rather than forced ablation, when that directly identifies a theory-led mechanism.
 
+## Physical scene and capture planning
+
+When a physical layer is relevant, consult `../references/preferred_29/real_world_scenes/INDEX.md` and `PLAYBOOK.md`, then inspect one to three relevant source figures and their nearby text. Use [workflow14](14_REAL_WORLD_SCENE_AND_CAPTURE.md) to turn the claim into a specific indoor/outdoor scene, justified obstacle arrangement, flight/event plan, camera/frame collection and presentation. A description-only request produces the filled scene brief rather than an unrelated full experiment matrix. For broader experiment design, embed the applicable fields in the matrix and link the detailed brief when needed. Proposed scene values, actual source facts and illustrative placement remain distinct; physical execution, mechanism validation and task success require their own evidence.
+
 ## Fairness gate
 
 Check shared data, information, sensing, compute budget, tuning effort, constraints, and evaluation conditions. Disclose unavoidable asymmetry. Never invent a missing baseline or result.

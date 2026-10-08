@@ -6,6 +6,8 @@
 
 Use before substantive production for the user's reference-matching requests. For a local task diagnose and map only what can change that output; a title or research plan can start a provisional mapping.
 
+若只要真实实验的详细场景/飞行/拍摄/展示文字，直接进入 `14_REAL_WORLD_SCENE_AND_CAPTURE.md` 与 preferred-29 `real_world_scenes/`；按该输出选一至三幅真实实验来源，把参照映射写入一份填满的场景说明。不强制全文主范本、STYLE_LOCK单独文件、全文图组或渲染；下面全文/框架生产要求只在相应任务中适用。
+
 ## 1. 选择主范本
 
 读 `references/preferred_29/MANUSCRIPT_STYLE_PLAYBOOK.md`，用 `scripts/select_style_reference.py` 检索候选，随后读候选的逐篇 profile。选择依据按次序为：作者指定 → 文章形态与任务 → 科学机制/信息流 → 实验资源 → 篇幅与视觉密度。标签匹配只是候选，不自动证明适合。

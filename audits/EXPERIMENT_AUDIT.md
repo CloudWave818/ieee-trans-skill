@@ -16,6 +16,9 @@
 - Are failures, trade-offs, complexity, and reproducibility addressed?
 - Can each central result be traced through the actual run IDs, log fields, filtering/aggregation, metric denominator, uncertainty and plotted/table value to its caption and prose? Baseline names and evaluation conditions must remain identical along that chain.
 - Does the decisive controlled comparison test the claimed mechanism, and would a null or negative outcome lead to narrowing the claim? A proposed protocol is not a completed experiment.
+- For a detailed physical-scene brief, are indoor/outdoor, obstacles/no obstacles, spatial placement, flight/events, camera/frame selection, publication dimensions and external-model handoff concrete and scientifically motivated?
+- Are actual flight, nonflight hardware, recorded datasets, simulation and renderer separated per source panel? Are simultaneous agents, one-flight time ghosts and multiple registered trials distinguishable?
+- Are proposed venue/dimensions/poses labeled as proposed, with measured trajectory and photo/trial association grounded separately? Does the brief remain useful for a proposed illustration when real evidence assembly is still pending?
 
 ## Blockers
 
